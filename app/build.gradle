@@ -7,14 +7,12 @@ android {
     buildToolsVersion "25.0.2"
     defaultConfig {
         applicationId "com.zjy.myrxdemo"
-      /*  jackOptions {
-            enabled true
-        }*/
         minSdkVersion 21
         targetSdkVersion 25
         versionCode 1
         versionName "1.0"
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+
     }
     buildTypes {
         release {
