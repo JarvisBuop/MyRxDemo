@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/MyRxDemo.iml" filepath="$PROJECT_DIR$/MyRxDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ToolLib/ToolLib.iml" filepath="$PROJECT_DIR$/ToolLib/ToolLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ToolLib/toasty/toasty.iml" filepath="$PROJECT_DIR$/ToolLib/toasty/toasty.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ToolLib/zlibrary/zlibrary.iml" filepath="$PROJECT_DIR$/ToolLib/zlibrary/zlibrary.iml" />
+    </modules>
+  </component>
+</project>
