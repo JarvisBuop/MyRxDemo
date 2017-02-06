@@ -4,10 +4,6 @@
         "source": "/Users/zhoujunyou/AndroidStudioProjects/MyRxDemo/ToolLib/toasty/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/layout/abc_search_dropdown_item_icons_2line.xml"
     },
     {
-        "merged": "/Users/zhoujunyou/AndroidStudioProjects/MyRxDemo/ToolLib/toasty/build/intermediates/res/merged/release/layout/notification_action_tombstone.xml",
-        "source": "/Users/zhoujunyou/AndroidStudioProjects/MyRxDemo/ToolLib/toasty/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/layout/notification_action_tombstone.xml"
-    },
-    {
         "merged": "/Users/zhoujunyou/AndroidStudioProjects/MyRxDemo/ToolLib/toasty/build/intermediates/res/merged/release/layout/abc_action_bar_view_list_nav_layout.xml",
         "source": "/Users/zhoujunyou/AndroidStudioProjects/MyRxDemo/ToolLib/toasty/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/layout/abc_action_bar_view_list_nav_layout.xml"
     },
@@ -30,10 +26,6 @@
     {
         "merged": "/Users/zhoujunyou/AndroidStudioProjects/MyRxDemo/ToolLib/toasty/build/intermediates/res/merged/release/layout/abc_expanded_menu_layout.xml",
         "source": "/Users/zhoujunyou/AndroidStudioProjects/MyRxDemo/ToolLib/toasty/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/layout/abc_expanded_menu_layout.xml"
-    },
-    {
-        "merged": "/Users/zhoujunyou/AndroidStudioProjects/MyRxDemo/ToolLib/toasty/build/intermediates/res/merged/release/layout/notification_template_icon_group.xml",
-        "source": "/Users/zhoujunyou/AndroidStudioProjects/MyRxDemo/ToolLib/toasty/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/layout/notification_template_icon_group.xml"
     },
     {
         "merged": "/Users/zhoujunyou/AndroidStudioProjects/MyRxDemo/ToolLib/toasty/build/intermediates/res/merged/release/layout/notification_template_lines_media.xml",
@@ -94,10 +86,6 @@
     {
         "merged": "/Users/zhoujunyou/AndroidStudioProjects/MyRxDemo/ToolLib/toasty/build/intermediates/res/merged/release/layout/abc_list_menu_item_layout.xml",
         "source": "/Users/zhoujunyou/AndroidStudioProjects/MyRxDemo/ToolLib/toasty/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/layout/abc_list_menu_item_layout.xml"
-    },
-    {
-        "merged": "/Users/zhoujunyou/AndroidStudioProjects/MyRxDemo/ToolLib/toasty/build/intermediates/res/merged/release/layout/notification_action.xml",
-        "source": "/Users/zhoujunyou/AndroidStudioProjects/MyRxDemo/ToolLib/toasty/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/layout/notification_action.xml"
     },
     {
         "merged": "/Users/zhoujunyou/AndroidStudioProjects/MyRxDemo/ToolLib/toasty/build/intermediates/res/merged/release/layout/abc_alert_dialog_title_material.xml",

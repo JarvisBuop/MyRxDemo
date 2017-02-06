@@ -9,6 +9,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/ToolLib" />
+            <option value="$PROJECT_DIR$/ToolLib/bottom-bar" />
             <option value="$PROJECT_DIR$/ToolLib/toasty" />
             <option value="$PROJECT_DIR$/ToolLib/zlibrary" />
             <option value="$PROJECT_DIR$/app" />

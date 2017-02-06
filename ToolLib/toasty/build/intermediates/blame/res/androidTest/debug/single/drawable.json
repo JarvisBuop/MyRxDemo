@@ -24,10 +24,6 @@
         "source": "/Users/zhoujunyou/AndroidStudioProjects/MyRxDemo/ToolLib/toasty/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/drawable/abc_item_background_holo_light.xml"
     },
     {
-        "merged": "/Users/zhoujunyou/AndroidStudioProjects/MyRxDemo/ToolLib/toasty/build/intermediates/res/merged/androidTest/debug/drawable/abc_btn_colored_material.xml",
-        "source": "/Users/zhoujunyou/AndroidStudioProjects/MyRxDemo/ToolLib/toasty/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/drawable/abc_btn_colored_material.xml"
-    },
-    {
         "merged": "/Users/zhoujunyou/AndroidStudioProjects/MyRxDemo/ToolLib/toasty/build/intermediates/res/merged/androidTest/debug/drawable/abc_seekbar_thumb_material.xml",
         "source": "/Users/zhoujunyou/AndroidStudioProjects/MyRxDemo/ToolLib/toasty/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/drawable/abc_seekbar_thumb_material.xml"
     },
@@ -108,10 +104,6 @@
         "source": "/Users/zhoujunyou/AndroidStudioProjects/MyRxDemo/ToolLib/toasty/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/drawable/abc_ic_arrow_drop_right_black_24dp.xml"
     },
     {
-        "merged": "/Users/zhoujunyou/AndroidStudioProjects/MyRxDemo/ToolLib/toasty/build/intermediates/res/merged/androidTest/debug/drawable/abc_edit_text_material.xml",
-        "source": "/Users/zhoujunyou/AndroidStudioProjects/MyRxDemo/ToolLib/toasty/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/drawable/abc_edit_text_material.xml"
-    },
-    {
         "merged": "/Users/zhoujunyou/AndroidStudioProjects/MyRxDemo/ToolLib/toasty/build/intermediates/res/merged/androidTest/debug/drawable/abc_textfield_search_material.xml",
         "source": "/Users/zhoujunyou/AndroidStudioProjects/MyRxDemo/ToolLib/toasty/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/drawable/abc_textfield_search_material.xml"
     },
@@ -140,12 +132,12 @@
         "source": "/Users/zhoujunyou/AndroidStudioProjects/MyRxDemo/ToolLib/toasty/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/drawable/abc_item_background_holo_dark.xml"
     },
     {
-        "merged": "/Users/zhoujunyou/AndroidStudioProjects/MyRxDemo/ToolLib/toasty/build/intermediates/res/merged/androidTest/debug/drawable/abc_text_cursor_material.xml",
-        "source": "/Users/zhoujunyou/AndroidStudioProjects/MyRxDemo/ToolLib/toasty/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/drawable/abc_text_cursor_material.xml"
-    },
-    {
         "merged": "/Users/zhoujunyou/AndroidStudioProjects/MyRxDemo/ToolLib/toasty/build/intermediates/res/merged/androidTest/debug/drawable/abc_ratingbar_material.xml",
         "source": "/Users/zhoujunyou/AndroidStudioProjects/MyRxDemo/ToolLib/toasty/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/drawable/abc_ratingbar_material.xml"
+    },
+    {
+        "merged": "/Users/zhoujunyou/AndroidStudioProjects/MyRxDemo/ToolLib/toasty/build/intermediates/res/merged/androidTest/debug/drawable/abc_text_cursor_material.xml",
+        "source": "/Users/zhoujunyou/AndroidStudioProjects/MyRxDemo/ToolLib/toasty/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/drawable/abc_text_cursor_material.xml"
     },
     {
         "merged": "/Users/zhoujunyou/AndroidStudioProjects/MyRxDemo/ToolLib/toasty/build/intermediates/res/merged/androidTest/debug/drawable/abc_ic_clear_material.xml",

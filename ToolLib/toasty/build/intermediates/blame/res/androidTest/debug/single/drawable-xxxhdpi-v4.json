@@ -40,12 +40,12 @@
         "source": "/Users/zhoujunyou/AndroidStudioProjects/MyRxDemo/ToolLib/toasty/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/drawable-xxxhdpi-v4/abc_ic_star_half_black_36dp.png"
     },
     {
-        "merged": "/Users/zhoujunyou/AndroidStudioProjects/MyRxDemo/ToolLib/toasty/build/intermediates/res/merged/androidTest/debug/drawable-xxxhdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.png",
-        "source": "/Users/zhoujunyou/AndroidStudioProjects/MyRxDemo/ToolLib/toasty/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/drawable-xxxhdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.png"
-    },
-    {
         "merged": "/Users/zhoujunyou/AndroidStudioProjects/MyRxDemo/ToolLib/toasty/build/intermediates/res/merged/androidTest/debug/drawable-xxxhdpi-v4/abc_ic_menu_selectall_mtrl_alpha.png",
         "source": "/Users/zhoujunyou/AndroidStudioProjects/MyRxDemo/ToolLib/toasty/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/drawable-xxxhdpi-v4/abc_ic_menu_selectall_mtrl_alpha.png"
+    },
+    {
+        "merged": "/Users/zhoujunyou/AndroidStudioProjects/MyRxDemo/ToolLib/toasty/build/intermediates/res/merged/androidTest/debug/drawable-xxxhdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.png",
+        "source": "/Users/zhoujunyou/AndroidStudioProjects/MyRxDemo/ToolLib/toasty/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/drawable-xxxhdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.png"
     },
     {
         "merged": "/Users/zhoujunyou/AndroidStudioProjects/MyRxDemo/ToolLib/toasty/build/intermediates/res/merged/androidTest/debug/drawable-xxxhdpi-v4/ic_check_white_48dp.png",

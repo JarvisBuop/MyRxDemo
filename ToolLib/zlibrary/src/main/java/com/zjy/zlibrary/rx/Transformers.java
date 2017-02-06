@@ -15,7 +15,7 @@ public class Transformers {
         return new Observable.Transformer<T, T>() {
             @Override
             public Observable<T> call(Observable<T> observable) {
-                return observable.observeOn(Schedulers.newThread())
+                return observable.subscribeOn(Schedulers.newThread())
                         .observeOn(AndroidSchedulers.mainThread());
             }
         };

@@ -21,7 +21,7 @@ public class DialogUtil {
                 .title(title)
                 .content(content)
                 .progress(true, 0)
-                .progressIndeterminateStyle(horizontal)
-                .show();
+                .progressIndeterminateStyle(horizontal).build();
+
     }
 }

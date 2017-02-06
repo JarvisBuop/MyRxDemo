@@ -14,19 +14,20 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-import com.afollestad.materialdialogs.MaterialDialog;
 import com.zjy.myrxdemo.MainActivity;
 import com.zjy.myrxdemo.R;
 import com.zjy.zlibrary.activity.BaseActivity;
 import com.zjy.zlibrary.dialog.DialogUtil;
+import com.zjy.zlibrary.dialog.Progress;
+import com.zjy.zlibrary.dialog.ProgressDegate;
 import com.zjy.zlibrary.rx.Transformers;
+import com.zjy.zlibrary.rx.subscriber.NetWorkSubscriber;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import es.dmoral.toasty.Toasty;
 import rx.Observable;
-import rx.Subscriber;
 import rx.functions.Func1;
 
 public class LoginActivity extends BaseActivity {
@@ -60,9 +61,9 @@ public class LoginActivity extends BaseActivity {
 
     @OnClick(R.id.bt_go)
     public void login(View view) {
-        mUser.userName=etUserName.getText();
-        mUser.passWord=etPassWord.getText();
-        if(!localCheckOK()){
+        mUser.userName = etUserName.getText();
+        mUser.passWord = etPassWord.getText();
+        if (!localCheckOK()) {
             return;
         }
         remoteCheck();
@@ -70,63 +71,55 @@ public class LoginActivity extends BaseActivity {
     }
 
 
-
     private boolean localCheckOK() {
-        if(etUserName.getEditableText().length()<6){
-            Toasty.error(this,"用户名长度必须大于6").show();
+        if (etUserName.getEditableText().length() < 6) {
+            Toasty.error(this, "用户名长度必须大于6").show();
             return false;
-        }else if(etPassWord.getEditableText().length()<6){
-            Toasty.error(this,"用户密码长度必须大于6").show();
+        } else if (etPassWord.getEditableText().length() < 6) {
+            Toasty.error(this, "用户密码长度必须大于6").show();
             return false;
         }
         return true;
     }
 
     private void remoteCheck() {
-        final MaterialDialog materialDialog = DialogUtil.showIndeterminateProgressDialog(LoginActivity.this, false);
-        materialDialog.show();
+        Progress progress = new ProgressDegate(DialogUtil.showIndeterminateProgressDialog(LoginActivity.this, false,"","正在登录,请等待..."));
         Observable.just(mUser)
-                .map(new Func1<User, Boolean>() {
+                .map(new Func1<User, String>() {
                     @Override
-                    public Boolean call(User user) {
+                    public String call(User user) {
                         try {
                             Thread.sleep(2000);
                         } catch (InterruptedException e) {
                             e.printStackTrace();
                         }
-                        if(!TextUtils.equals(user.userName,"zjyzjy")){
-                            Toasty.error(LoginActivity.this,"不存在该用户名").show();
-                            return false;
+                        if (!TextUtils.equals(user.userName, "zjyzjy")) {
+
+                            return "不存在该用户名";
                         }
-                        if(!TextUtils.equals(user.passWord,"123123")){
-                            Toasty.error(LoginActivity.this,"密码错误").show();
-                            return false;
+                        if (!TextUtils.equals(user.passWord, "123123")) {
+                            return "密码错误";
                         }
-                        return true;
+                        return "success";
                     }
                 })
-                .compose(this.bindToLifecycle())
-                .compose(Transformers.rxNetWork())
-                .subscribe(new Subscriber<Object>() {
+                .compose(this.<String>bindToLifecycle())
+                .compose(Transformers.<String>rxNetWork())
+                .subscribe(new NetWorkSubscriber<String>(progress) {
                     @Override
-                    public void onCompleted() {
-
-                    }
-
-                    @Override
-                    public void onError(Throwable e) {
-
-                    }
-
-                    @Override
-                    public void onNext(Object object) {
-                        Explode explode = new Explode();
-                        explode.setDuration(500);
-                        getWindow().setExitTransition(explode);
-                        getWindow().setEnterTransition(explode);
-                        ActivityOptionsCompat oc2 = ActivityOptionsCompat.makeSceneTransitionAnimation(LoginActivity.this);
-                        Intent i2 = new Intent(LoginActivity.this, MainActivity.class);
-                        startActivity(i2, oc2.toBundle());
+                    public void onNext(String result) {
+                        super.onNext(result);
+                        if (TextUtils.equals(result, "success")) {
+                            Explode explode = new Explode();
+                            explode.setDuration(500);
+                            getWindow().setExitTransition(explode);
+                            getWindow().setEnterTransition(explode);
+                            ActivityOptionsCompat oc2 = ActivityOptionsCompat.makeSceneTransitionAnimation(LoginActivity.this);
+                            Intent i2 = new Intent(LoginActivity.this, MainActivity.class);
+                            startActivity(i2, oc2.toBundle());
+                        } else {
+                            Toasty.error(LoginActivity.this, result).show();
+                        }
                     }
 
                 });
@@ -149,7 +142,7 @@ public class LoginActivity extends BaseActivity {
 
     }
 
-    public static final class User{
+    public static final class User {
         public CharSequence userName;
         public CharSequence passWord;
     }
