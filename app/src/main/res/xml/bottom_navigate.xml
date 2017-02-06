@@ -4,7 +4,7 @@
         id="@+id/tab_cash"
         icon="@mipmap/icon_cash_gray"
         title="收银"
-        barColorWhenSelected="@color/colorAccent" />
+        barColorWhenSelected="@color/app_color" />
     <tab
         id="@+id/tab_coupon"
         icon="@mipmap/icon_coupon_gray"
