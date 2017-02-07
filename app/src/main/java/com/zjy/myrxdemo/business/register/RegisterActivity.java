@@ -1,4 +1,4 @@
-package com.zjy.myrxdemo.business.login;
+package com.zjy.myrxdemo.business.register;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;

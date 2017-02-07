@@ -19,7 +19,7 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".business.login.RegisterActivity"
+        <activity android:name=".business.register.RegisterActivity"
                   android:theme="@style/Translucent">
 
         </activity>

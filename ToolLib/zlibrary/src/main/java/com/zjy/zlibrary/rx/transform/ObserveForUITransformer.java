@@ -1,8 +1,8 @@
-package com.zjy.zlibrary.rx;
+package com.zjy.zlibrary.rx.transform;
 
 import android.support.annotation.NonNull;
 
-import com.zjy.util.ThreadUtils;
+import com.zjy.zlibrary.util.ThreadUtils;
 
 import rx.Observable;
 import rx.android.schedulers.AndroidSchedulers;
