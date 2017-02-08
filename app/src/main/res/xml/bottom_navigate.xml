@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+        id="@+id/tab_cash"
+        icon="@mipmap/icon_cash_gray"
+        title="收银"
+        barColorWhenSelected="@color/app_color" />
+    <tab
+        id="@+id/tab_coupon"
+        icon="@mipmap/icon_coupon_gray"
+        title="验券"
+        barColorWhenSelected="#5D4037" />
+    <tab
+        id="@+id/tab_member"
+        icon="@mipmap/icon_member_gray"
+        title="会员"
+        barColorWhenSelected="#7B1FA2" />
+    <tab
+        id="@+id/tab_set"
+        icon="@mipmap/icon_set_gray"
+        title="设置"
+        barColorWhenSelected="#FF9800" />
+</tabs>
