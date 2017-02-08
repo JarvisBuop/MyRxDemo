@@ -19,8 +19,15 @@ public class RemoteDataSource implements DataSource {
         }
         return instance;
     }
+
+
     @Override
     public Observable<User> getUser() {
+        return null;
+    }
+
+    @Override
+    public Observable<Boolean> saveUser(User user) {
         return null;
     }
 }

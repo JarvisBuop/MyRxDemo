@@ -17,6 +17,7 @@ import com.zjy.myrxdemo.MainActivity;
 import com.zjy.myrxdemo.R;
 import com.zjy.myrxdemo.business.register.RegisterActivity;
 import com.zjy.myrxdemo.component.injection.Injection;
+import com.zjy.myrxdemo.data.model.User;
 import com.zjy.zlibrary.activity.BaseActivity;
 import com.zjy.zlibrary.dialog.DialogUtil;
 import com.zjy.zlibrary.dialog.Progress;
@@ -60,6 +61,12 @@ public class LoginActivity extends BaseActivity implements LoginContract.View{
     }
 
     @Override
+    protected void onResume() {
+        super.onResume();
+        mLoginPresenter.subscribe();
+    }
+
+    @Override
     protected void onPause() {
         super.onPause();
         mLoginPresenter.unsubscribe();
@@ -99,6 +106,12 @@ public class LoginActivity extends BaseActivity implements LoginContract.View{
         ActivityOptionsCompat oc2 = ActivityOptionsCompat.makeSceneTransitionAnimation(LoginActivity.this);
         Intent i2 = new Intent(LoginActivity.this, MainActivity.class);
         startActivity(i2, oc2.toBundle());
+    }
+
+    @Override
+    public void showUser(User user) {
+        etUserName.setText(user.userName);
+        etPassWord.setText(user.password);
     }
 
 }

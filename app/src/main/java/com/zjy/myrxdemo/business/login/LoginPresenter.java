@@ -30,12 +30,20 @@ public class LoginPresenter implements LoginContract.Presenter {
 
     @Override
     public void subscribe() {
-        mRepository.getUser().subscribe(new Action1<User>() {
-            @Override
-            public void call(User user) {
-
-            }
-        });
+        mRepository.getUser()
+                .filter(new Func1<User, Boolean>() {
+                    @Override
+                    public Boolean call(User s) {
+                        return s != null;
+                    }
+                })
+                .compose(Transformers.<User>rxNetWork())
+                .subscribe(new Action1<User>() {
+                    @Override
+                    public void call(User user) {
+                        mLoginView.showUser(user);
+                    }
+                });
     }
 
     @Override
@@ -44,15 +52,15 @@ public class LoginPresenter implements LoginContract.Presenter {
     }
 
     @Override
-    public void login(String userName, String password,Progress progress) {
-        if(!localCheckOK(userName,password)){
-            return ;
+    public void login(String userName, String password, Progress progress) {
+        if (!localCheckOK(userName, password)) {
+            return;
         }
-        remoteCheck(userName,password,progress);
+        remoteCheck(userName, password, progress);
 
     }
 
-    private boolean localCheckOK(String userName,String password) {
+    private boolean localCheckOK(String userName, String password) {
         if (userName.length() < 6) {
             mLoginView.toastError("用户名长度必须大于6");
             return false;
@@ -64,8 +72,8 @@ public class LoginPresenter implements LoginContract.Presenter {
     }
 
     private void remoteCheck(String userName, String password, Progress progress) {
-        mUser.userName=userName;
-        mUser.password=password;
+        mUser.userName = userName;
+        mUser.password = password;
         Subscription subscription = Observable.just(mUser)
                 .map(new Func1<User, String>() {
                     @Override
@@ -91,6 +99,7 @@ public class LoginPresenter implements LoginContract.Presenter {
                     public void onNext(String result) {
                         super.onNext(result);
                         if (TextUtils.equals(result, "success")) {
+                            mRepository.saveUser(mUser).subscribe();
                             mLoginView.loginSuccess();
                         } else {
                             mLoginView.toastError(result);
@@ -100,4 +109,5 @@ public class LoginPresenter implements LoginContract.Presenter {
         mSubscriptions.add(subscription);
 
     }
+
 }

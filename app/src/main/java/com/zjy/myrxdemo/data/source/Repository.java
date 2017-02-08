@@ -23,10 +23,16 @@ public class Repository implements DataSource {
         mRemoteDataSource = remoteDataSource;
     }
 
+
+
+
     @Override
     public Observable<User> getUser() {
         return mLocalDataSource.getUser();
     }
 
-
+    @Override
+    public Observable<Boolean> saveUser(User user) {
+        return mLocalDataSource.saveUser(user);
+    }
 }

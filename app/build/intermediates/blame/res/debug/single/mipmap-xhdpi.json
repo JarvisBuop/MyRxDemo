@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "/Users/zhoujunyou/AndroidStudioProjects/MyRxDemo/app/build/intermediates/res/merged/debug/mipmap-xhdpi/icon_member_gray.png",
+        "source": "/Users/zhoujunyou/AndroidStudioProjects/MyRxDemo/app/src/main/res/mipmap-xhdpi/icon_member_gray.png"
+    },
+    {
+        "merged": "/Users/zhoujunyou/AndroidStudioProjects/MyRxDemo/app/build/intermediates/res/merged/debug/mipmap-xhdpi/ic_launcher.png",
+        "source": "/Users/zhoujunyou/AndroidStudioProjects/MyRxDemo/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/zhoujunyou/AndroidStudioProjects/MyRxDemo/app/build/intermediates/res/merged/debug/mipmap-xhdpi/icon_cash_gray.png",
+        "source": "/Users/zhoujunyou/AndroidStudioProjects/MyRxDemo/app/src/main/res/mipmap-xhdpi/icon_cash_gray.png"
+    },
+    {
+        "merged": "/Users/zhoujunyou/AndroidStudioProjects/MyRxDemo/app/build/intermediates/res/merged/debug/mipmap-xhdpi/icon_coupon_gray.png",
+        "source": "/Users/zhoujunyou/AndroidStudioProjects/MyRxDemo/app/src/main/res/mipmap-xhdpi/icon_coupon_gray.png"
+    },
+    {
+        "merged": "/Users/zhoujunyou/AndroidStudioProjects/MyRxDemo/app/build/intermediates/res/merged/debug/mipmap-xhdpi/icon_set_gray.png",
+        "source": "/Users/zhoujunyou/AndroidStudioProjects/MyRxDemo/app/src/main/res/mipmap-xhdpi/icon_set_gray.png"
+    }
+]

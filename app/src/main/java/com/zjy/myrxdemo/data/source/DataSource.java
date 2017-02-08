@@ -6,4 +6,5 @@ import rx.Observable;
 
 public interface DataSource {
     Observable<User> getUser();
+    Observable<Boolean> saveUser(User user);
 }

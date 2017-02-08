@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/zhoujunyou/AndroidStudioProjects/MyRxDemo/app/build/intermediates/res/merged/debug/drawable-ldpi-v4/toast_frame.9.png",
+        "source": "/Users/zhoujunyou/AndroidStudioProjects/MyRxDemo/app/build/intermediates/exploded-aar/MyRxDemo.ToolLib/toasty/unspecified/res/drawable-ldpi-v4/toast_frame.9.png"
+    },
+    {
+        "merged": "/Users/zhoujunyou/AndroidStudioProjects/MyRxDemo/app/build/intermediates/res/merged/debug/drawable-ldpi-v4/md_nav_back.png",
+        "source": "/Users/zhoujunyou/AndroidStudioProjects/MyRxDemo/app/build/intermediates/exploded-aar/com.afollestad.material-dialogs/core/0.9.2.3/res/drawable-ldpi-v4/md_nav_back.png"
+    }
+]
