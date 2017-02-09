@@ -2,7 +2,8 @@ package com.zjy.myrxdemo.data.source.local;
 
 import com.google.gson.Gson;
 import com.zjy.myrxdemo.component.injection.Injection;
-import com.zjy.myrxdemo.data.model.User;
+import com.zjy.myrxdemo.data.model.login.LoginResponse;
+import com.zjy.myrxdemo.data.model.login.User;
 import com.zjy.myrxdemo.data.source.DataSource;
 import com.zjy.myrxdemo.data.source.PersistenceContract;
 import com.zjy.myrxdemo.data.source.local.db.AppDB;
@@ -64,5 +65,10 @@ public class LocalDataSource implements DataSource {
                 subscriber.onCompleted();
             }
         });
+    }
+
+    @Override
+    public Observable<LoginResponse> login(String UserName, String password, String deviceId, String V, String AP, String apiVersion) {
+        return null;
     }
 }

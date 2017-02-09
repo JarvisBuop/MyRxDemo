@@ -1,6 +1,7 @@
 package com.zjy.myrxdemo.data.source;
 
-import com.zjy.myrxdemo.data.model.User;
+import com.zjy.myrxdemo.data.model.login.LoginResponse;
+import com.zjy.myrxdemo.data.model.login.User;
 
 import rx.Observable;
 
@@ -34,5 +35,10 @@ public class Repository implements DataSource {
     @Override
     public Observable<Boolean> saveUser(User user) {
         return mLocalDataSource.saveUser(user);
+    }
+
+    @Override
+    public Observable<LoginResponse> login(String UserName, String password, String deviceId, String V, String AP, String apiVersion) {
+        return mRemoteDataSource.login(UserName,password,deviceId,V,AP,apiVersion);
     }
 }

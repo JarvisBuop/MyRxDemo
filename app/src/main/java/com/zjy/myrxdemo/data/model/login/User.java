@@ -1,4 +1,4 @@
-package com.zjy.myrxdemo.data.model;
+package com.zjy.myrxdemo.data.model.login;
 
 public class User {
     public String userName;

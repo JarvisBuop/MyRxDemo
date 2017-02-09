@@ -1,21 +1,31 @@
 package com.zjy.myrxdemo.business.login;
 
 
+import android.os.Build;
 import android.text.TextUtils;
 
-import com.zjy.myrxdemo.data.model.User;
+import com.blankj.utilcode.utils.AppUtils;
+import com.blankj.utilcode.utils.DeviceUtils;
+import com.zjy.myrxdemo.component.injection.Injection;
+import com.zjy.myrxdemo.component.rx.NetWorkSubscriber;
+import com.zjy.myrxdemo.component.util.DeviceInfoUtil;
+import com.zjy.myrxdemo.component.util.MD5Utility;
+import com.zjy.myrxdemo.component.util.WifiUtil;
+import com.zjy.myrxdemo.data.model.BaseResponse;
+import com.zjy.myrxdemo.data.model.login.LoginResponse;
+import com.zjy.myrxdemo.data.model.login.User;
 import com.zjy.myrxdemo.data.source.Repository;
+import com.zjy.myrxdemo.framework.ConfigConstants;
 import com.zjy.zlibrary.dialog.Progress;
-import com.zjy.zlibrary.rx.subscriber.NetWorkSubscriber;
 import com.zjy.zlibrary.rx.transform.Transformers;
 
-import rx.Observable;
-import rx.Subscription;
 import rx.functions.Action1;
 import rx.functions.Func1;
 import rx.subscriptions.CompositeSubscription;
+import timber.log.Timber;
 
 public class LoginPresenter implements LoginContract.Presenter {
+    public static final String TAG=LoginPresenter.class.getSimpleName();
     private final Repository mRepository;
     private final LoginContract.View mLoginView;
     private CompositeSubscription mSubscriptions;
@@ -56,58 +66,42 @@ public class LoginPresenter implements LoginContract.Presenter {
         if (!localCheckOK(userName, password)) {
             return;
         }
-        remoteCheck(userName, password, progress);
+        mUser.userName=userName;
+        mUser.password=password;
+        String ePassword=  MD5Utility.md5("SMARTSCENE" + password);
+        String DeviceID= TextUtils.isEmpty(Build.SERIAL)?DeviceUtils.getMacAddress():Build.SERIAL;
+        String V=String.valueOf(AppUtils.getAppVersionCode(Injection.provideContext()));
+        String AP= WifiUtil.getSSID(Injection.provideContext())
+                + DeviceInfoUtil.getPrintType()+ String.format("(%s)", android.os.Build.MODEL);
+        mRepository.login(userName,ePassword,DeviceID,V,AP, ConfigConstants.getbApiVersionValue())
+                .compose(Transformers.<LoginResponse>rxNetWork())
+                .subscribe(new NetWorkSubscriber<LoginResponse>(progress) {
+                    @Override
+                    public void onSuccess(BaseResponse o) {
+                        Timber.i(TAG,o);
+                        mRepository.saveUser(mUser).subscribe();
+                        mLoginView.loginSuccess();
+                    }
+
+                    @Override
+                    public void onFailed(String message) {
+                        mLoginView.toastError(message);
+                    }
+                });
+
 
     }
 
     private boolean localCheckOK(String userName, String password) {
-        if (userName.length() < 6) {
-            mLoginView.toastError("用户名长度必须大于6");
+        if (userName.length() < 1) {
+            mLoginView.toastError("用户名不能为空");
             return false;
         } else if (password.length() < 6) {
-            mLoginView.toastError("用户密码长度必须大于6");
+            mLoginView.toastError("用户密码不能为空");
             return false;
         }
         return true;
     }
 
-    private void remoteCheck(String userName, String password, Progress progress) {
-        mUser.userName = userName;
-        mUser.password = password;
-        Subscription subscription = Observable.just(mUser)
-                .map(new Func1<User, String>() {
-                    @Override
-                    public String call(User user) {
-                        try {
-                            Thread.sleep(2000);
-                        } catch (InterruptedException e) {
-                            e.printStackTrace();
-                        }
-                        if (!TextUtils.equals(user.userName, "zjyzjy")) {
-
-                            return "不存在该用户名";
-                        }
-                        if (!TextUtils.equals(user.password, "123123")) {
-                            return "密码错误";
-                        }
-                        return "success";
-                    }
-                })
-                .compose(Transformers.<String>rxNetWork())
-                .subscribe(new NetWorkSubscriber<String>(progress) {
-                    @Override
-                    public void onNext(String result) {
-                        super.onNext(result);
-                        if (TextUtils.equals(result, "success")) {
-                            mRepository.saveUser(mUser).subscribe();
-                            mLoginView.loginSuccess();
-                        } else {
-                            mLoginView.toastError(result);
-                        }
-                    }
-                });
-        mSubscriptions.add(subscription);
-
-    }
 
 }

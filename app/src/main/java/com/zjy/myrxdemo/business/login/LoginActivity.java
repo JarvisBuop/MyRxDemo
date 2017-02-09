@@ -17,7 +17,7 @@ import com.zjy.myrxdemo.MainActivity;
 import com.zjy.myrxdemo.R;
 import com.zjy.myrxdemo.business.register.RegisterActivity;
 import com.zjy.myrxdemo.component.injection.Injection;
-import com.zjy.myrxdemo.data.model.User;
+import com.zjy.myrxdemo.data.model.login.User;
 import com.zjy.zlibrary.activity.BaseActivity;
 import com.zjy.zlibrary.dialog.DialogUtil;
 import com.zjy.zlibrary.dialog.Progress;
