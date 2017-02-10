@@ -2,8 +2,12 @@ package com.zjy.myrxdemo.data.source.remote;
 
 import com.blankj.utilcode.utils.NetworkUtils;
 import com.zjy.myrxdemo.component.injection.Injection;
-import com.zjy.myrxdemo.data.model.login.LoginResponse;
+import com.zjy.myrxdemo.data.model.BaseResponse;
+import com.zjy.myrxdemo.data.model.login.ShopInfo;
 import com.zjy.myrxdemo.data.model.login.User;
+import com.zjy.myrxdemo.data.model.login.bean.LoginResponse;
+import com.zjy.myrxdemo.data.model.login.bean.PayConfigModel;
+import com.zjy.myrxdemo.data.model.login.bean.UnionConfigModel;
 import com.zjy.myrxdemo.data.source.DataSource;
 import com.zjy.zlibrary.gsonconverter.GsonConverterFactory;
 
@@ -97,7 +101,47 @@ public class RemoteDataSource implements DataSource {
     }
 
 
+    ///////////////////////////////////////////////////////////////////////////
+    //        remote use
+    ///////////////////////////////////////////////////////////////////////////
 
+    @Override
+    public Observable<LoginResponse> login(String UserName, String password, String deviceId, String V, String AP, String apiVersion) {
+        return mMwService.getLoginResponse(UserName,password,deviceId,V,AP,apiVersion);
+    }
+
+    @Override
+    public Observable<BaseResponse<PayConfigModel>> getPayConfig(String token, String apiVersion) {
+        return mMwService.getPayConfigResponse(token,apiVersion);
+    }
+
+    @Override
+    public Observable<BaseResponse<UnionConfigModel>> getUnionConfig(String token, String apiVersion) {
+        return mMwService.getUnionConfigResponse(token,apiVersion);
+    }
+
+    ///////////////////////////////////////////////////////////////////////////
+    //                 local use
+    ///////////////////////////////////////////////////////////////////////////
+    @Override
+    public Observable<ShopInfo> getShopInfo() {
+        return null;
+    }
+
+    @Override
+    public Observable<Boolean> saveShopInfo(ShopInfo shopInfo) {
+        return null;
+    }
+
+    @Override
+    public Observable<Boolean> saveSessionId(String sessionId) {
+        return null;
+    }
+
+    @Override
+    public Observable<String> getSessionId() {
+        return null;
+    }
 
     @Override
     public Observable<User> getUser() {
@@ -109,8 +153,4 @@ public class RemoteDataSource implements DataSource {
         return null;
     }
 
-    @Override
-    public Observable<LoginResponse> login(String UserName, String password, String deviceId, String V, String AP, String apiVersion) {
-        return mMwService.getLoginResponse(UserName,password,deviceId,V,AP,apiVersion);
-    }
 }

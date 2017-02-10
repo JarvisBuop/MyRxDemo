@@ -8,7 +8,8 @@ import com.zjy.zlibrary.dialog.Progress;
 import rx.Subscriber;
 import timber.log.Timber;
 
-public abstract class NetWorkSubscriber<T extends BaseResponse> extends Subscriber<T> {
+
+public abstract class NetWorkSubscriber<T extends BaseResponse,E> extends Subscriber<T> {
     public static final String TAG=NetWorkSubscriber.class.getSimpleName();
     private Progress mProgress;
 
@@ -28,10 +29,10 @@ public abstract class NetWorkSubscriber<T extends BaseResponse> extends Subscrib
     }
 
     @Override
-    public void onNext(BaseResponse o) {
+    public void onNext(T o) {
         mProgress.hide();
         if(o.errno==0){
-            onSuccess(o);
+            onSuccess((E) o.getData());
         }else {
             onFailed(o.errmsg);
         }
@@ -43,6 +44,6 @@ public abstract class NetWorkSubscriber<T extends BaseResponse> extends Subscrib
         mProgress.show();
     }
 
-    public abstract void  onSuccess(BaseResponse o);
+    public abstract void  onSuccess(E data);
     public abstract void  onFailed(String message);
 }

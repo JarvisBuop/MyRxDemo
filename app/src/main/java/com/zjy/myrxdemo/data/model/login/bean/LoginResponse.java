@@ -1,4 +1,4 @@
-package com.zjy.myrxdemo.data.model.login;
+package com.zjy.myrxdemo.data.model.login.bean;
 
 import com.zjy.myrxdemo.data.model.BaseResponse;
 

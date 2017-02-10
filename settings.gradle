@@ -1,1 +1,1 @@
-include ':app', ':ToolLib:zlibrary',":ToolLib:toasty",":ToolLib:bottom-bar"
+include ':app', ':ToolLib:zlibrary', ':BusinessLib:baselib', ":ToolLib:toasty", ":ToolLib:bottom-bar"

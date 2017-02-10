@@ -5,6 +5,8 @@ import android.content.Context;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.graphics.drawable.Drawable;
+import android.os.Handler;
+import android.os.Looper;
 import android.support.annotation.CheckResult;
 import android.support.annotation.ColorInt;
 import android.support.annotation.DrawableRes;
@@ -52,6 +54,7 @@ public class Toasty {
     int WARNING_COLOR = Color.parseColor("#FFA900");
 
     private static final String TOAST_TYPEFACE = "sans-serif-condensed";
+    public static Handler sHandler = new Handler(Looper.getMainLooper());
     private static Toast currentToast;
 
     private Toasty() {
@@ -216,6 +219,8 @@ public class Toasty {
         return currentToast;
     }
 
+
+
     /**
      * 取消吐司显示
      */
@@ -224,6 +229,15 @@ public class Toasty {
             currentToast.cancel();
             currentToast = null;
         }
+    }
+
+    public static void safeError(final Context context, final String s){
+        sHandler.post(new Runnable() {
+            @Override
+            public void run() {
+                error(context,s).show();
+            }
+        });
     }
 
 }

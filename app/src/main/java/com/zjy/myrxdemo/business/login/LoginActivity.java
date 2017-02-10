@@ -94,7 +94,7 @@ public class LoginActivity extends BaseActivity implements LoginContract.View{
 
     @Override
     public void toastError(String errorMsg) {
-        Toasty.error(this,errorMsg).show();
+        Toasty.safeError(this,errorMsg);
     }
 
     @Override
