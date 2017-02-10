@@ -1,11 +1,15 @@
 package com.zjy.myrxdemo.data.source;
 
-import com.zjy.myrxdemo.data.model.BaseResponse;
+import com.zjy.baselib.data.model.NetWorkResponse;
 import com.zjy.myrxdemo.data.model.login.ShopInfo;
 import com.zjy.myrxdemo.data.model.login.User;
+import com.zjy.myrxdemo.data.model.login.bean.AdvModel;
+import com.zjy.myrxdemo.data.model.login.bean.ConfigQRModel;
 import com.zjy.myrxdemo.data.model.login.bean.LoginResponse;
 import com.zjy.myrxdemo.data.model.login.bean.PayConfigModel;
 import com.zjy.myrxdemo.data.model.login.bean.UnionConfigModel;
+
+import java.util.List;
 
 import rx.Observable;
 
@@ -30,12 +34,12 @@ public class Repository implements DataSource {
 
 
     @Override
-    public Observable<Boolean> saveSessionId(String sessionId) {
-        return mLocalDataSource.saveSessionId(sessionId);
+    public void saveSessionId(String sessionId) {
+        mLocalDataSource.saveSessionId(sessionId);
     }
 
     @Override
-    public Observable<String> getSessionId() {
+    public String getSessionId() {
         return mLocalDataSource.getSessionId();
     }
 
@@ -65,12 +69,22 @@ public class Repository implements DataSource {
     }
 
     @Override
-    public Observable<BaseResponse<PayConfigModel>> getPayConfig(String token, String apiVersion) {
+    public Observable<NetWorkResponse<PayConfigModel>> getPayConfig(String token, String apiVersion) {
         return mRemoteDataSource.getPayConfig(token,apiVersion);
     }
 
     @Override
-    public Observable<BaseResponse<UnionConfigModel>> getUnionConfig(String token, String apiVersion) {
+    public Observable<NetWorkResponse<UnionConfigModel>> getUnionConfig(String token, String apiVersion) {
         return mRemoteDataSource.getUnionConfig(token,apiVersion);
+    }
+
+    @Override
+    public Observable<NetWorkResponse<AdvModel>> getAdvUrl(String token, int businessId, String dimension, String apiVersion) {
+        return mRemoteDataSource.getAdvUrl(token,businessId,dimension,apiVersion);
+    }
+
+    @Override
+    public Observable<NetWorkResponse<List<ConfigQRModel>>> getConfigQR(String token, String apiVersion) {
+        return mRemoteDataSource.getConfigQR(token,apiVersion);
     }
 }

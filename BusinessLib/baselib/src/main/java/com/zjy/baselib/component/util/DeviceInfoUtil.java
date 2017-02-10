@@ -1,10 +1,11 @@
-package com.zjy.myrxdemo.component.util;
+package com.zjy.baselib.component.util;
 
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.os.Build;
 
-import com.zjy.myrxdemo.component.injection.Injection;
+import com.blankj.utilcode.utils.Utils;
+
 
 public class DeviceInfoUtil {
     public static final String LAKALA = "com.lkl.cloudpos.payment";
@@ -101,7 +102,7 @@ public class DeviceInfoUtil {
     private static boolean hasPackage(String packageName) {
         PackageInfo packageInfo = null;
         try {
-            packageInfo = Injection.provideContext().getPackageManager().getPackageInfo(packageName, 0);
+            packageInfo = Utils.getContext().getPackageManager().getPackageInfo(packageName, 0);
 
         } catch (PackageManager.NameNotFoundException e) {
             packageInfo = null;

@@ -1,15 +1,15 @@
-package com.zjy.myrxdemo.component.rx;
+package com.zjy.baselib.component.rx;
 
 import android.support.annotation.NonNull;
 
-import com.zjy.myrxdemo.data.model.BaseResponse;
+import com.zjy.baselib.data.model.NetWorkResponse;
 import com.zjy.zlibrary.dialog.Progress;
 
 import rx.Subscriber;
 import timber.log.Timber;
 
 
-public abstract class NetWorkSubscriber<T extends BaseResponse,E> extends Subscriber<T> {
+public abstract class NetWorkSubscriber<T extends NetWorkResponse,E> extends Subscriber<T> {
     public static final String TAG=NetWorkSubscriber.class.getSimpleName();
     private Progress mProgress;
 
@@ -32,7 +32,7 @@ public abstract class NetWorkSubscriber<T extends BaseResponse,E> extends Subscr
     public void onNext(T o) {
         mProgress.hide();
         if(o.errno==0){
-            onSuccess((E) o.getData());
+            onSuccess((E) o.data);
         }else {
             onFailed(o.errmsg);
         }

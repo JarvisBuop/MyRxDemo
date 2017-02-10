@@ -1,10 +1,14 @@
 package com.zjy.myrxdemo.data.source.remote;
 
-import com.zjy.myrxdemo.data.model.BaseResponse;
+import com.zjy.baselib.data.model.NetWorkResponse;
+import com.zjy.myrxdemo.data.model.login.bean.AdvModel;
+import com.zjy.myrxdemo.data.model.login.bean.ConfigQRModel;
 import com.zjy.myrxdemo.data.model.login.bean.LoginResponse;
 import com.zjy.myrxdemo.data.model.login.bean.PayConfigModel;
 import com.zjy.myrxdemo.data.model.login.bean.UnionConfigModel;
-import com.zjy.myrxdemo.framework.ConfigConstants;
+import com.zjy.baselib.framework.ConfigConstants;
+
+import java.util.List;
 
 import retrofit2.http.Field;
 import retrofit2.http.FormUrlEncoded;
@@ -24,11 +28,22 @@ public interface MwService {
                                                @Query("apiVersion")String apiVersion);
     @FormUrlEncoded
     @POST("b/api/config.getpayconfig")
-    Observable<BaseResponse<PayConfigModel>> getPayConfigResponse(@Field("token") String token,
-                                                                  @Field("apiVersion") String apiVersion);
+    Observable<NetWorkResponse<PayConfigModel>> getPayConfigResponse(@Field("token") String token,
+                                                                     @Field("apiVersion") String apiVersion);
     @FormUrlEncoded
     @POST("b/api/config.getunionshopconfig")
-    Observable<BaseResponse<UnionConfigModel>> getUnionConfigResponse(@Field("token") String token,
-                                                                      @Field("apiVersion") String apiVersion);
+    Observable<NetWorkResponse<UnionConfigModel>> getUnionConfigResponse(@Field("token") String token,
+                                                                         @Field("apiVersion") String apiVersion);
+    @FormUrlEncoded
+    @POST("b/api/softconfig.startupimage")
+    Observable<NetWorkResponse<AdvModel>> getAdvResopnse(@Field("token")String token,
+                                                         @Field("businessId")int businessId,
+                                                         @Field("dimension")String dimension,
+                                                         @Field("apiVersion")String apiVersion);
+
+    @FormUrlEncoded
+    @POST("b/api/config.qr")
+    Observable<NetWorkResponse<List<ConfigQRModel>>> getQRResponse(@Field("token")String token,
+                                                                   @Field("apiVersion")String apiVersion);
 
 }

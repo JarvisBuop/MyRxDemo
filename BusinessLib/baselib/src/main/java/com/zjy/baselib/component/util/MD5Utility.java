@@ -1,4 +1,4 @@
-package com.zjy.myrxdemo.component.util;
+package com.zjy.baselib.component.util;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;

@@ -1,8 +1,8 @@
-package com.zjy.myrxdemo.data.source.local.db;
+package com.zjy.baselib.data.source.local;
 
 import org.greenrobot.greendao.annotation.Entity;
-import org.greenrobot.greendao.annotation.Generated;
 import org.greenrobot.greendao.annotation.Id;
+import org.greenrobot.greendao.annotation.Generated;
 
 @Entity(nameInDb = "my_rx_table")
 public class AppDB {

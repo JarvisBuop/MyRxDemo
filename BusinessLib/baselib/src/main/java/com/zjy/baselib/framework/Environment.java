@@ -1,4 +1,4 @@
-package com.zjy.myrxdemo.framework;
+package com.zjy.baselib.framework;
 
 public class Environment {
     public static final int PRODUCT = 100;

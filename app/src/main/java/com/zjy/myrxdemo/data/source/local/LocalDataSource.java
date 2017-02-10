@@ -1,22 +1,25 @@
 package com.zjy.myrxdemo.data.source.local;
 
 import com.google.gson.Gson;
-import com.zjy.myrxdemo.component.injection.Injection;
-import com.zjy.myrxdemo.data.model.BaseResponse;
+import com.zjy.baselib.component.Injection.Injection;
+import com.zjy.baselib.data.model.NetWorkResponse;
+import com.zjy.baselib.data.source.PersistenceContract;
+import com.zjy.baselib.data.source.local.AppDB;
+import com.zjy.baselib.data.source.local.AppDBDao;
+import com.zjy.baselib.data.source.local.DaoSession;
+import com.zjy.baselib.data.source.local.PreferencesManager;
 import com.zjy.myrxdemo.data.model.login.ShopInfo;
 import com.zjy.myrxdemo.data.model.login.User;
+import com.zjy.myrxdemo.data.model.login.bean.AdvModel;
+import com.zjy.myrxdemo.data.model.login.bean.ConfigQRModel;
 import com.zjy.myrxdemo.data.model.login.bean.LoginResponse;
 import com.zjy.myrxdemo.data.model.login.bean.PayConfigModel;
 import com.zjy.myrxdemo.data.model.login.bean.UnionConfigModel;
 import com.zjy.myrxdemo.data.source.DataSource;
-import com.zjy.myrxdemo.data.source.PersistenceContract;
-import com.zjy.myrxdemo.data.source.local.db.AppDB;
-import com.zjy.myrxdemo.data.source.local.db.AppDBDao;
-import com.zjy.myrxdemo.data.source.local.db.DaoMaster;
-import com.zjy.myrxdemo.data.source.local.db.DaoSession;
-import com.zjy.myrxdemo.data.source.local.db.DbOpenHelper;
 
 import org.greenrobot.greendao.query.QueryBuilder;
+
+import java.util.List;
 
 import rx.Observable;
 import rx.Subscriber;
@@ -27,7 +30,7 @@ public class LocalDataSource implements DataSource {
     private static LocalDataSource instance = null;
     private final DaoSession mDaoSession;
     private LocalDataSource(){
-        mDaoSession=new DaoMaster(new DbOpenHelper(Injection.provideContext(), PersistenceContract.AppDBEntry.DB_NAME).getWritableDatabase()).newSession();
+        mDaoSession= Injection.provideDaoSession();
     }
 
     public static LocalDataSource getInstance() {
@@ -39,37 +42,15 @@ public class LocalDataSource implements DataSource {
         return instance;
     }
 
-    @Override
-    public Observable<Boolean> saveSessionId(final String sessionId) {
-        return Observable.create(new Observable.OnSubscribe<Boolean>() {
-            @Override
-            public void call(Subscriber<? super Boolean> subscriber) {
-                AppDB appDB = new AppDB();
-                appDB.setKey(PersistenceContract.AppDBEntry.SESSION_ID);
-                appDB.setValue(sessionId);
-                long l = mDaoSession.getAppDBDao().insertOrReplace(appDB);
-                if(l>0){
-                    subscriber.onNext(true);
-                }else {
-                    subscriber.onError(new Exception("insert data failed"));
-                }
-                subscriber.onCompleted();
 
-            }
-        });
+    @Override
+    public void saveSessionId(String sessionId) {
+         PreferencesManager.saveSessionId(sessionId);
     }
 
     @Override
-    public Observable<String> getSessionId() {
-        return Observable.create(new Observable.OnSubscribe<String>() {
-            @Override
-            public void call(Subscriber<? super String> subscriber) {
-                QueryBuilder<AppDB> qb = mDaoSession.getAppDBDao().queryBuilder();
-                AppDB unique = qb.where(AppDBDao.Properties.Key.eq(PersistenceContract.AppDBEntry.SESSION_ID)).unique();
-                subscriber.onNext(unique.getValue());
-                subscriber.onCompleted();
-            }
-        });
+    public String getSessionId() {
+        return PreferencesManager.getSessionId();
     }
 
     @Override
@@ -144,12 +125,22 @@ public class LocalDataSource implements DataSource {
     }
 
     @Override
-    public Observable<BaseResponse<PayConfigModel>> getPayConfig(String token, String apiVersion) {
+    public Observable<NetWorkResponse<PayConfigModel>> getPayConfig(String token, String apiVersion) {
         return null;
     }
 
     @Override
-    public Observable<BaseResponse<UnionConfigModel>> getUnionConfig(String token, String apiVersion) {
+    public Observable<NetWorkResponse<UnionConfigModel>> getUnionConfig(String token, String apiVersion) {
+        return null;
+    }
+
+    @Override
+    public Observable<NetWorkResponse<AdvModel>> getAdvUrl(String token, int businessId, String dimension, String apiVersion) {
+        return null;
+    }
+
+    @Override
+    public Observable<NetWorkResponse<List<ConfigQRModel>>> getConfigQR(String token, String apiVersion) {
         return null;
     }
 

@@ -1,4 +1,4 @@
-package com.zjy.myrxdemo.framework;
+package com.zjy.baselib.framework;
 
 public class ConfigConstants {
     public final static String URL_ROOT_PRODUCT = "http://zf.mwee.cn/";

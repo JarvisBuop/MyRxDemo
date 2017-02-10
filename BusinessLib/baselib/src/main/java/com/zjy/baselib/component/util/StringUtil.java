@@ -1,4 +1,4 @@
-package com.zjy.myrxdemo.component.util;
+package com.zjy.baselib.component.util;
 
 public class StringUtil {
     // 去除高级备注中的<x> </x>

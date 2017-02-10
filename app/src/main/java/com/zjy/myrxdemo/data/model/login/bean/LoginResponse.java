@@ -1,8 +1,8 @@
 package com.zjy.myrxdemo.data.model.login.bean;
 
-import com.zjy.myrxdemo.data.model.BaseResponse;
+import com.zjy.baselib.data.model.NetWorkResponse;
 
-public class LoginResponse extends BaseResponse {
+public class LoginResponse extends NetWorkResponse {
     public String SessionID = "";
     public String UserID = "";
     public String ShopID = "";

@@ -16,7 +16,7 @@ import android.widget.EditText;
 import com.zjy.myrxdemo.MainActivity;
 import com.zjy.myrxdemo.R;
 import com.zjy.myrxdemo.business.register.RegisterActivity;
-import com.zjy.myrxdemo.component.injection.Injection;
+import com.zjy.myrxdemo.component.AppInjection;
 import com.zjy.myrxdemo.data.model.login.User;
 import com.zjy.zlibrary.activity.BaseActivity;
 import com.zjy.zlibrary.dialog.DialogUtil;
@@ -50,7 +50,7 @@ public class LoginActivity extends BaseActivity implements LoginContract.View{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         ButterKnife.bind(this);
-        mLoginPresenter=new LoginPresenter(Injection.provideRepository(),this);
+        mLoginPresenter=new LoginPresenter(AppInjection.provideRepository(),this);
         progress = new ProgressDegate(DialogUtil.showIndeterminateProgressDialog(this, false,"","正在登录,请等待..."));
     }
 

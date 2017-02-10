@@ -6,19 +6,19 @@ import android.text.TextUtils;
 
 import com.blankj.utilcode.utils.AppUtils;
 import com.blankj.utilcode.utils.DeviceUtils;
-import com.zjy.myrxdemo.component.injection.Injection;
-import com.zjy.myrxdemo.component.rx.NetWorkSubscriber;
-import com.zjy.myrxdemo.component.util.DeviceInfoUtil;
-import com.zjy.myrxdemo.component.util.MD5Utility;
-import com.zjy.myrxdemo.component.util.WifiUtil;
-import com.zjy.myrxdemo.data.model.BaseResponse;
+import com.zjy.baselib.component.Injection.Injection;
+import com.zjy.baselib.component.rx.NetWorkSubscriber;
+import com.zjy.baselib.component.util.DeviceInfoUtil;
+import com.zjy.baselib.component.util.MD5Utility;
+import com.zjy.baselib.component.util.WifiUtil;
+import com.zjy.baselib.data.model.NetWorkResponse;
+import com.zjy.baselib.framework.ConfigConstants;
 import com.zjy.myrxdemo.data.model.login.ShopInfo;
 import com.zjy.myrxdemo.data.model.login.User;
 import com.zjy.myrxdemo.data.model.login.bean.LoginResponse;
 import com.zjy.myrxdemo.data.model.login.bean.PayConfigModel;
 import com.zjy.myrxdemo.data.model.login.bean.UnionConfigModel;
 import com.zjy.myrxdemo.data.source.Repository;
-import com.zjy.myrxdemo.framework.ConfigConstants;
 import com.zjy.zlibrary.dialog.Progress;
 import com.zjy.zlibrary.rx.transform.Transformers;
 
@@ -97,16 +97,17 @@ public class LoginPresenter implements LoginContract.Presenter {
                          mRepository.saveUser(user).subscribe();
                          ShopInfo shopInfo = LoginConfig.buildShopInfoFromLoginResponse(loginResponse);
                          mRepository.saveShopInfo(shopInfo).subscribe();
-                         mRepository.saveSessionId(shopInfo.sessionId).subscribe();
+                         mRepository.saveSessionId(shopInfo.sessionId);
                          return Observable.just(shopInfo);
                      }
 
                     }
                 })
-                .flatMap(new Func1<ShopInfo, Observable<BaseResponse<PayConfigModel>>>() {
+                .flatMap(new Func1<ShopInfo, Observable<NetWorkResponse<PayConfigModel>>>() {
                     @Override
-                    public Observable<BaseResponse<PayConfigModel>> call(ShopInfo shopInfo) {
-                        //
+                    public Observable<NetWorkResponse<PayConfigModel>> call(ShopInfo shopInfo) {
+                        mSubscriptions.add(LoginConfig.getAdvUrl(mRepository).subscribe());
+                        mSubscriptions.add(LoginConfig.getConfigQR(mRepository).subscribe());
                         if(!shopInfo.bCashEn){
                            return Observable.empty();
                         }else {
@@ -116,20 +117,14 @@ public class LoginPresenter implements LoginContract.Presenter {
                     }
                 })
 
-                .flatMap(new Func1<BaseResponse<PayConfigModel>, Observable<String>>() {
+                .flatMap(new Func1<NetWorkResponse<PayConfigModel>, Observable<NetWorkResponse<UnionConfigModel>>>() {
                     @Override
-                    public Observable<String> call(BaseResponse<PayConfigModel> payConfigResponse) {
-                        return mRepository.getSessionId();
+                    public  Observable<NetWorkResponse<UnionConfigModel>> call(NetWorkResponse<PayConfigModel> payConfigResponse) {
+                        return mRepository.getUnionConfig(mRepository.getSessionId(),ConfigConstants.getbApiVersionValue());
                     }
                 })
-                .flatMap(new Func1<String, Observable<BaseResponse<UnionConfigModel>>>() {
-                    @Override
-                    public Observable<BaseResponse<UnionConfigModel>> call(String s) {
-                        return mRepository.getUnionConfig(s,ConfigConstants.getbApiVersionValue());
-                    }
-                })
-                .compose(Transformers.<BaseResponse<UnionConfigModel>>rxNetWork())
-                .subscribe(new NetWorkSubscriber<BaseResponse<UnionConfigModel>,UnionConfigModel>(progress) {
+                .compose(Transformers.<NetWorkResponse<UnionConfigModel>>rxNetWork())
+                .subscribe(new NetWorkSubscriber<NetWorkResponse<UnionConfigModel>,UnionConfigModel>(progress) {
                     @Override
                     public void onSuccess(UnionConfigModel o) {
                         mLoginView.loginSuccess();

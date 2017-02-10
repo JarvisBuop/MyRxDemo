@@ -2,13 +2,22 @@ package com.zjy.myrxdemo.business.login;
 
 import android.text.TextUtils;
 
-import com.zjy.myrxdemo.component.util.StringUtil;
+import com.zjy.baselib.component.util.StringUtil;
+import com.zjy.baselib.data.model.NetWorkResponse;
 import com.zjy.myrxdemo.data.model.login.ShopInfo;
+import com.zjy.myrxdemo.data.model.login.bean.AdvModel;
+import com.zjy.myrxdemo.data.model.login.bean.ConfigQRModel;
 import com.zjy.myrxdemo.data.model.login.bean.LoginResponse;
+import com.zjy.myrxdemo.data.source.Repository;
+import com.zjy.baselib.framework.ConfigConstants;
+import com.zjy.zlibrary.rx.transform.Transformers;
 
 import org.jivesoftware.smack.util.Base64;
 
+import java.util.List;
+
 import rx.Observable;
+import rx.functions.Func1;
 
 public class LoginConfig {
 
@@ -166,7 +175,25 @@ public class LoginConfig {
         return mShopInfo;
     }
 
-    public static Observable<String> getAdvUrl(){
-        return null;
+    public static Observable<Boolean> getAdvUrl(final Repository repository) {
+        return repository.getAdvUrl(repository.getSessionId(), 32, "16:9", "V8")
+                .map(new Func1<NetWorkResponse<AdvModel>, Boolean>() {
+                    @Override
+                    public Boolean call(NetWorkResponse<AdvModel> advModelNetWorkResponse) {
+                        return true;
+                    }
+                })
+                .compose(Transformers.<Boolean>rxNetWork());
+    }
+
+    public static Observable<Boolean> getConfigQR(final Repository repository) {
+        return repository.getConfigQR(repository.getSessionId(), ConfigConstants.getbApiVersionValue())
+                .map(new Func1<NetWorkResponse<List<ConfigQRModel>>, Boolean>() {
+                    @Override
+                    public Boolean call(NetWorkResponse<List<ConfigQRModel>> listNetWorkResponse) {
+                        return true;
+                    }
+                })
+                .compose(Transformers.<Boolean>rxNetWork());
     }
 }
