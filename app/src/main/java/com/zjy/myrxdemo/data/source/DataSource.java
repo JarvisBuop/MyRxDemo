@@ -1,8 +1,9 @@
 package com.zjy.myrxdemo.data.source;
 
 import com.zjy.baselib.data.model.NetWorkResponse;
+import com.zjy.baselib.data.model.bean.SessionModel;
+import com.zjy.baselib.data.model.bean.User;
 import com.zjy.myrxdemo.data.model.login.ShopInfo;
-import com.zjy.myrxdemo.data.model.login.User;
 import com.zjy.myrxdemo.data.model.login.bean.AdvModel;
 import com.zjy.myrxdemo.data.model.login.bean.ConfigQRModel;
 import com.zjy.myrxdemo.data.model.login.bean.LoginResponse;
@@ -25,4 +26,5 @@ public interface DataSource {
     Observable<NetWorkResponse<UnionConfigModel>> getUnionConfig(String token, String apiVersion);
     Observable<NetWorkResponse<AdvModel>> getAdvUrl(String token,int businessId,String dimension,String apiVersion);
     Observable<NetWorkResponse<List<ConfigQRModel>>> getConfigQR(String token,String apiVersion);
+    Observable<NetWorkResponse<SessionModel>> refreshSessionId(String UserName,String Password,String DeviceID);
 }

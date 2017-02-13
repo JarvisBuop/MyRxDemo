@@ -13,11 +13,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.zjy.baselib.data.model.bean.User;
 import com.zjy.myrxdemo.MainActivity;
 import com.zjy.myrxdemo.R;
 import com.zjy.myrxdemo.business.register.RegisterActivity;
 import com.zjy.myrxdemo.component.AppInjection;
-import com.zjy.myrxdemo.data.model.login.User;
 import com.zjy.zlibrary.activity.BaseActivity;
 import com.zjy.zlibrary.dialog.DialogUtil;
 import com.zjy.zlibrary.dialog.Progress;
@@ -86,6 +86,7 @@ public class LoginActivity extends BaseActivity implements LoginContract.View{
         }
 
     }
+
 
     @Override
     public void setPresenter(LoginContract.Presenter presenter) {

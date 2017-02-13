@@ -1,6 +1,6 @@
 package com.zjy.myrxdemo.business.login;
 
-import com.zjy.myrxdemo.data.model.login.User;
+import com.zjy.baselib.data.model.bean.User;
 import com.zjy.zlibrary.base.BasePresenter;
 import com.zjy.zlibrary.base.BaseView;
 import com.zjy.zlibrary.dialog.Progress;

@@ -8,13 +8,14 @@ import com.blankj.utilcode.utils.AppUtils;
 import com.blankj.utilcode.utils.DeviceUtils;
 import com.zjy.baselib.component.Injection.Injection;
 import com.zjy.baselib.component.rx.NetWorkSubscriber;
+import com.zjy.baselib.component.rx.ServiceException;
 import com.zjy.baselib.component.util.DeviceInfoUtil;
 import com.zjy.baselib.component.util.MD5Utility;
 import com.zjy.baselib.component.util.WifiUtil;
 import com.zjy.baselib.data.model.NetWorkResponse;
+import com.zjy.baselib.data.model.bean.User;
 import com.zjy.baselib.framework.ConfigConstants;
 import com.zjy.myrxdemo.data.model.login.ShopInfo;
-import com.zjy.myrxdemo.data.model.login.User;
 import com.zjy.myrxdemo.data.model.login.bean.LoginResponse;
 import com.zjy.myrxdemo.data.model.login.bean.PayConfigModel;
 import com.zjy.myrxdemo.data.model.login.bean.UnionConfigModel;
@@ -87,8 +88,7 @@ public class LoginPresenter implements LoginContract.Presenter {
                     @Override
                     public Observable<ShopInfo> call(LoginResponse loginResponse) {
                      if(loginResponse.errno!=0){
-                         mLoginView.toastError(loginResponse.errmsg);
-                         return Observable.empty();
+                         return Observable.error(new ServiceException(loginResponse.errno,loginResponse.errmsg));
                      }else {
                          User user = new User();
                          user.userName = userName;
@@ -132,7 +132,7 @@ public class LoginPresenter implements LoginContract.Presenter {
 
                     @Override
                     public void onFailed(String message) {
-
+                        mLoginView.toastError(message);
                     }
                 });
         mSubscriptions.add(subscription);

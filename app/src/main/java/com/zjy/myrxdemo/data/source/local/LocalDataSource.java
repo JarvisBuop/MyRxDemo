@@ -3,13 +3,15 @@ package com.zjy.myrxdemo.data.source.local;
 import com.google.gson.Gson;
 import com.zjy.baselib.component.Injection.Injection;
 import com.zjy.baselib.data.model.NetWorkResponse;
+import com.zjy.baselib.data.model.bean.SessionModel;
+import com.zjy.baselib.data.model.bean.User;
 import com.zjy.baselib.data.source.PersistenceContract;
 import com.zjy.baselib.data.source.local.AppDB;
 import com.zjy.baselib.data.source.local.AppDBDao;
+import com.zjy.baselib.data.source.local.BaseLocalDataSource;
 import com.zjy.baselib.data.source.local.DaoSession;
 import com.zjy.baselib.data.source.local.PreferencesManager;
 import com.zjy.myrxdemo.data.model.login.ShopInfo;
-import com.zjy.myrxdemo.data.model.login.User;
 import com.zjy.myrxdemo.data.model.login.bean.AdvModel;
 import com.zjy.myrxdemo.data.model.login.bean.ConfigQRModel;
 import com.zjy.myrxdemo.data.model.login.bean.LoginResponse;
@@ -55,35 +57,12 @@ public class LocalDataSource implements DataSource {
 
     @Override
     public Observable<User> getUser() {
-        return Observable.create(new Observable.OnSubscribe<User>() {
-            @Override
-            public void call(Subscriber<? super User> subscriber) {
-                QueryBuilder<AppDB> qb = mDaoSession.getAppDBDao().queryBuilder();
-                AppDB unique = qb.where(AppDBDao.Properties.Key.eq(PersistenceContract.AppDBEntry.USER)).unique();
-                User user = new Gson().fromJson(unique.getValue(), User.class);
-                subscriber.onNext(user);
-                subscriber.onCompleted();
-            }
-        });
+        return BaseLocalDataSource.getInstance().getUser();
     }
 
     @Override
     public Observable<Boolean> saveUser(final User user) {
-        return Observable.create(new Observable.OnSubscribe<Boolean>() {
-            @Override
-            public void call(Subscriber<? super Boolean> subscriber) {
-                AppDB appDB = new AppDB();
-                appDB.setKey(PersistenceContract.AppDBEntry.USER);
-                appDB.setValue(new Gson().toJson(user));
-                long l = mDaoSession.getAppDBDao().insertOrReplace(appDB);
-                if(l>0){
-                    subscriber.onNext(true);
-                }else {
-                    subscriber.onError(new Exception("insert data failed"));
-                }
-                subscriber.onCompleted();
-            }
-        });
+        return BaseLocalDataSource.getInstance().saveUser(user);
     }
 
     @Override
@@ -141,6 +120,11 @@ public class LocalDataSource implements DataSource {
 
     @Override
     public Observable<NetWorkResponse<List<ConfigQRModel>>> getConfigQR(String token, String apiVersion) {
+        return null;
+    }
+
+    @Override
+    public Observable<NetWorkResponse<SessionModel>> refreshSessionId(String UserName, String Password, String DeviceID) {
         return null;
     }
 

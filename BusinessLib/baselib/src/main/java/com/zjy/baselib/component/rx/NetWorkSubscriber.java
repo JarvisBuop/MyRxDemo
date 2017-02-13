@@ -26,6 +26,9 @@ public abstract class NetWorkSubscriber<T extends NetWorkResponse,E> extends Sub
     public void onError(Throwable e) {
         mProgress.hide();
         Timber.e(e);
+        if(e instanceof ServiceException){
+            onFailed(((ServiceException) e).errorMsg);
+        }
     }
 
     @Override
