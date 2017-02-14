@@ -106,10 +106,10 @@ public class LoginPresenter implements LoginContract.Presenter {
                 .flatMap(new Func1<ShopInfo, Observable<NetWorkResponse<PayConfigModel>>>() {
                     @Override
                     public Observable<NetWorkResponse<PayConfigModel>> call(ShopInfo shopInfo) {
-                        mSubscriptions.add(LoginConfig.getAdvUrl(mRepository).subscribe());
-                        mSubscriptions.add(LoginConfig.getConfigQR(mRepository).subscribe());
+                        LoginConfig.getAdvUrl(mRepository).subscribe();
+                        LoginConfig.getConfigQR(mRepository).subscribe();
                         if(!shopInfo.bCashEn){
-                           return Observable.empty();
+                           return Observable.error(new ServiceException(ServiceException.TRANSFORM_TO_FAILED,"不支持收银"));
                         }else {
                             return mRepository.getPayConfig(shopInfo.sessionId,ConfigConstants.getbApiVersionValue());
                         }
@@ -120,7 +120,14 @@ public class LoginPresenter implements LoginContract.Presenter {
                 .flatMap(new Func1<NetWorkResponse<PayConfigModel>, Observable<NetWorkResponse<UnionConfigModel>>>() {
                     @Override
                     public  Observable<NetWorkResponse<UnionConfigModel>> call(NetWorkResponse<PayConfigModel> payConfigResponse) {
-                        return mRepository.getUnionConfig(mRepository.getSessionId(),ConfigConstants.getbApiVersionValue());
+                        if(payConfigResponse.errno!=0){
+                            return Observable.error(new ServiceException(ServiceException.TRANSFORM_TO_FAILED,payConfigResponse.errmsg));
+                        }
+                       if(DeviceInfoUtil.isWizarPOS() || DeviceInfoUtil.isLianDiA8()){
+                           return mRepository.getUnionConfig(mRepository.getSessionId(),ConfigConstants.getbApiVersionValue());
+                        }
+                        return Observable.error(new ServiceException(ServiceException.TRANSFORM_TO_FAILED,"不支持银联收款"));
+
                     }
                 })
                 .compose(Transformers.<NetWorkResponse<UnionConfigModel>>rxNetWork())
@@ -133,6 +140,12 @@ public class LoginPresenter implements LoginContract.Presenter {
                     @Override
                     public void onFailed(String message) {
                         mLoginView.toastError(message);
+                        mLoginView.loginSuccess();
+                    }
+
+                    @Override
+                    public void onError(String message) {
+                        mLoginView.toastError(message);
                     }
                 });
         mSubscriptions.add(subscription);
@@ -144,7 +157,7 @@ public class LoginPresenter implements LoginContract.Presenter {
         if (userName.length() < 1) {
             mLoginView.toastError("用户名不能为空");
             return false;
-        } else if (password.length() < 6) {
+        } else if (password.length() < 1) {
             mLoginView.toastError("用户密码不能为空");
             return false;
         }

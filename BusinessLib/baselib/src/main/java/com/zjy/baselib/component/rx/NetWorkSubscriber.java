@@ -27,13 +27,17 @@ public abstract class NetWorkSubscriber<T extends NetWorkResponse,E> extends Sub
         mProgress.hide();
         Timber.e(e);
         if(e instanceof ServiceException){
-            onFailed(((ServiceException) e).errorMsg);
+            if(((ServiceException) e).errorNo==ServiceException.TRANSFORM_TO_FAILED){
+                onFailed(((ServiceException) e).errorMsg);
+                return;
+            }
+            onError(((ServiceException) e).errorMsg);
         }
+
     }
 
     @Override
     public void onNext(T o) {
-        mProgress.hide();
         if(o.errno==0){
             onSuccess((E) o.data);
         }else {
@@ -49,4 +53,5 @@ public abstract class NetWorkSubscriber<T extends NetWorkResponse,E> extends Sub
 
     public abstract void  onSuccess(E data);
     public abstract void  onFailed(String message);
+    public abstract void  onError(String message);
 }

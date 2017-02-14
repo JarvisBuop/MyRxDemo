@@ -1,6 +1,7 @@
 package com.zjy.baselib.component.rx;
 
 public class ServiceException extends Exception {
+    public static final int TRANSFORM_TO_FAILED=999;
     public int errorNo;
     public String errorMsg;
     public ServiceException(int errorNo,String errorMsg) {
