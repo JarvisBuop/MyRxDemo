@@ -8,10 +8,10 @@ import android.widget.FrameLayout;
 import com.roughike.bottombar.BottomBar;
 import com.roughike.bottombar.OnTabReselectListener;
 import com.roughike.bottombar.OnTabSelectListener;
+import com.zjy.zlibrary.util.FragmentUtils;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import es.dmoral.toasty.Toasty;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
         mBottomBar.setOnTabSelectListener(new OnTabSelectListener() {
             @Override
             public void onTabSelected(@IdRes int tabId) {
+                FragmentUtils.replaceFragment(getSupportFragmentManager(),R.id.container,TabMessage.get(tabId,false),false);
                 //messageView.setText(TabMessage.get(tabId, false));
             }
         });
@@ -34,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         mBottomBar.setOnTabReselectListener(new OnTabReselectListener() {
             @Override
             public void onTabReSelected(@IdRes int tabId) {
-                Toasty.info(getApplicationContext(),TabMessage.get(tabId,true)).show();
+                TabMessage.get(tabId,true);
                 //Toast.makeText(getApplicationContext(), TabMessage.get(tabId, true), Toast.LENGTH_LONG).show();
             }
         });

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="app_color">#f44336</color>
+    <!--transparent-->
+    <color name="transparent">#00000000</color>
+    <!--white-->
+    <color name="white_1st">#ffffff</color>
+
+    <!--yellow-->
+    <color name="yellow_1st">#cc9600</color>
+
+    <!--gray-->
+    <color name="gray_1st">#848484</color>
+    <color name="gray_2nd">#646665</color>
+    <color name="gray_3th">#999999</color>
+    <!--black-->
+    <color name="black_1st">#333333</color>
+    <!--blue-->
+    <color name="blue_546e7a">#546e7a</color>
+
+
+</resources>

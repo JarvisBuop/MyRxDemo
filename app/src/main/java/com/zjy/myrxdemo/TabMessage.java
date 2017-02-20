@@ -1,31 +1,38 @@
 package com.zjy.myrxdemo;
 
+import android.support.v4.app.Fragment;
+
+import com.zjy.baselib.component.Injection.Injection;
+import com.zjy.cash.business.cash.CashFragment;
+
+import es.dmoral.toasty.Toasty;
+
 /**
  * Created by iiro on 7.6.2016.
  */
 public class TabMessage {
-    public static String get(int menuItemId, boolean isReselection) {
-        String message = "Content for ";
+    public static Fragment get(int menuItemId, boolean isReselection) {
+        Fragment fragment=null;
 
         switch (menuItemId) {
             case R.id.tab_cash:
-                message += "cash";
+                fragment = CashFragment.newInstance();
                 break;
             case R.id.tab_coupon:
-                message += "coupon";
+                fragment =CashFragment.newInstance();
                 break;
             case R.id.tab_member:
-                message += "member";
+                fragment =CashFragment.newInstance();
                 break;
             case R.id.tab_set:
-                message += "set";
+                fragment =CashFragment.newInstance();
                 break;
         }
 
         if (isReselection) {
-            message += " WAS RESELECTED! YAY!";
+            Toasty.warning(Injection.provideContext(),"WAS RESELECTED! YAY!").show();
         }
 
-        return message;
+        return fragment;
     }
 }
