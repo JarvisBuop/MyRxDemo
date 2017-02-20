@@ -3,7 +3,7 @@ package com.zjy.myrxdemo;
 import android.os.Bundle;
 import android.support.annotation.IdRes;
 import android.support.v7.app.AppCompatActivity;
-import android.widget.TextView;
+import android.widget.FrameLayout;
 
 import com.roughike.bottombar.BottomBar;
 import com.roughike.bottombar.OnTabReselectListener;
@@ -15,8 +15,8 @@ import es.dmoral.toasty.Toasty;
 
 public class MainActivity extends AppCompatActivity {
 
-    @BindView(R.id.messageView)
-    TextView messageView;
+    @BindView(R.id.container)
+    FrameLayout container;
     @BindView(R.id.bottomBar)
     BottomBar mBottomBar;
     @Override
@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         mBottomBar.setOnTabSelectListener(new OnTabSelectListener() {
             @Override
             public void onTabSelected(@IdRes int tabId) {
-                messageView.setText(TabMessage.get(tabId, false));
+                //messageView.setText(TabMessage.get(tabId, false));
             }
         });
 

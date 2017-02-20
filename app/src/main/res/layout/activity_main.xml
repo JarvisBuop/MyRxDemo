@@ -5,13 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/messageView"
+    <FrameLayout
+        android:id="@+id/container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@+id/bottomBar"
         android:gravity="center"
-        android:text="Hi mom!"/>
+        />
 
     <com.roughike.bottombar.BottomBar
         android:id="@+id/bottomBar"
