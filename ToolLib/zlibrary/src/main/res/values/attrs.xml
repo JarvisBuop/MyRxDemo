@@ -12,4 +12,17 @@
         <attr name="title_mode" format="string|reference"/>
         <attr name="center_ellipsize" format="string|reference"/>
     </declare-styleable>
+
+    <declare-styleable name="twoTextView">
+        <attr name="two_leftText" format="string|reference"/>
+        <attr name="two_rightText" format="string|reference"/>
+        <attr name="two_leftTextColor" format="color|reference"/>
+        <attr name="two_rightTextColor" format="color|reference"/>
+        <attr name="two_leftTextSize" format="reference|dimension"/>
+        <attr name="two_rightTextSize" format="reference|dimension"/>
+        <attr name="two_leftGravity" format="integer"/>
+        <attr name="two_rightGravity" format="integer"/>
+        <attr name="two_leftLayoutWeight" format="float"/>
+        <attr name="two_rightLayoutWeight" format="float"/>
+    </declare-styleable>
 </resources>

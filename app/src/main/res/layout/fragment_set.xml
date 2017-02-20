@@ -1,0 +1,172 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/rl_stat"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <com.zjy.zlibrary.widget.TitleBar
+        android:id="@+id/titleBar"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_color"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/titleBar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white_1st"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_print_num"
+                style="@style/tv_sp_set"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/print_number"
+                    android:textColor="#333333"
+                    android:textSize="18sp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_print_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:paddingRight="10dp"
+                    android:drawableRight="@drawable/arrow_set_down"
+                    android:textColor="#546e7a"
+                    android:textSize="18sp"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:background="@color/white_1st"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:divider="@drawable/divider_horizatal_gray"
+                android:dividerPadding="20dp"
+                android:orientation="vertical"
+                android:showDividers="middle">
+
+                <Button
+                    android:id="@+id/tv_vibratile"
+                    style="@style/tv_sp_set"
+                    android:drawableRight="@drawable/selector_switch_green"
+                    android:text="@string/key_vibraile"
+                    />
+
+                <Button
+                    android:id="@+id/tv_point_importable"
+                    style="@style/tv_sp_set"
+                    android:drawableRight="@drawable/selector_switch_green"
+                    android:text="@string/input_point"/>
+
+                <Button
+                    android:id="@+id/tv_auto_login"
+                    style="@style/tv_sp_set"
+                    android:drawableRight="@drawable/selector_switch_green"
+                    android:text="@string/auto_login"/>
+
+                <Button
+                    android:id="@+id/tv_discount"
+                    style="@style/tv_sp_set"
+                    android:drawableRight="@drawable/selector_switch_green"
+                    android:text="@string/portion_discount"/>
+
+                <Button
+                    android:id="@+id/tv_paylog_print"
+                    style="@style/tv_sp_set"
+                    android:drawableRight="@drawable/selector_switch_green"
+                    android:text="@string/paylog_print" />
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/tv_check"
+                style="@style/tv_sp_set"
+                android:layout_marginTop="10dp"
+
+                android:drawableRight="@drawable/arrow_set_right"
+                android:text="@string/log_again"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white_1st"
+                android:divider="@drawable/divider_horizatal_gray"
+                android:dividerPadding="20dp"
+                android:orientation="vertical"
+                android:showDividers="middle">
+
+                <Button
+                    android:id="@+id/tv_pay_statistics"
+                    style="@style/tv_sp_set"
+                    android:drawableRight="@drawable/arrow_set_right"
+                    android:text="@string/pay_statistics"
+                    />
+
+                <Button
+                    android:id="@+id/tv_coupon_statistics"
+                    style="@style/tv_sp_set"
+                    android:drawableRight="@drawable/arrow_set_right"
+                    android:text="@string/coupon_statistics"
+                    />
+
+                <Button
+                    android:id="@+id/tv_member_statistics"
+                    style="@style/tv_sp_set"
+                    android:drawableRight="@drawable/arrow_set_right"
+                    android:text="@string/member_statistics"
+                    />
+
+                <Button
+                    android:id="@+id/tv_modify_access_code"
+                    style="@style/tv_sp_set"
+                    android:drawableRight="@drawable/arrow_set_right"
+                    android:text="@string/modify_authcode"
+                    android:visibility="gone"
+                    />
+
+                <Button
+                    android:id="@+id/to_dev"
+                    style="@style/tv_sp_set"
+                    android:drawableRight="@drawable/arrow_set_right"
+                    android:text="@string/develop_set"
+                    android:visibility="gone"
+                    />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/appVersion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:textColor="@color/yellow_1st"
+                android:textSize="18sp"></TextView>
+
+            <TextView
+                android:id="@+id/tv_hotLine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:gravity="center"
+                android:text="@string/service_phone"
+                android:textColor="@color/yellow_1st"
+                android:textSize="20sp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

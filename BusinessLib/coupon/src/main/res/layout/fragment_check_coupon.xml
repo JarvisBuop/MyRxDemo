@@ -1,0 +1,156 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/rl_stat"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+    <com.zjy.zlibrary.widget.TitleBar
+        android:id="@+id/titleBar"
+        android:visibility="gone"
+        android:background="@color/app_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.zjy.zlibrary.widget.TitleBar>
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/titleBar"
+        android:background="@color/white_1st"
+        android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="left"
+                    android:text="@string/choose_coupon_type"
+                    android:textColor="@color/gray_4th"
+                    android:textSize="15sp"/>
+
+                <com.zjy.zlibrary.widget.FixGridView
+                    android:id="@+id/gv_coupon_type"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_horizontal"
+                    android:horizontalSpacing="2dp"
+                    android:numColumns="2"
+                    android:verticalSpacing="2dp"/>
+
+                <TextView
+                    android:id="@+id/tvSecond"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="left"
+                    android:text="@string/input_voucher_verification_code"
+                    android:textColor="@color/gray_4th"
+                    android:textSize="15sp"/>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="44dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/etSerial"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="3"
+                        android:background="@drawable/bg_check_edit"
+                        android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                        android:hint="@string/please_input_discount_code"
+                        android:inputType="number"
+                        android:maxLength="24"
+                        android:paddingLeft="20dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/black_2nd"
+                        android:textColorHint="@color/gray_5th"
+                        android:textCursorDrawable="@drawable/edit_cursor"
+                        android:textSize="16sp"/>
+
+                    <Button
+                        android:id="@+id/btnCheck"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/shape_coupon_id_btn"
+                        android:text="@string/validate"
+                        android:textColor="@color/white_1st"
+                        android:textSize="18sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_scan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        >
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="1px"
+                            android:layout_weight="1"
+                            android:background="@drawable/divider_horizatal_gray"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:text="@string/or"
+                            android:textColor="@color/gray_5th"/>
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="1px"
+                            android:layout_weight="1"
+                            android:background="@drawable/divider_horizatal_gray"/>
+                    </LinearLayout>
+
+                    <FrameLayout
+                        android:id="@+id/layout_coupon_scan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="15dp"
+                        android:layout_margin="20dp"
+                        android:clickable="true">
+
+                        <Button
+                            android:id="@+id/btnScan"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/selector_btn_main"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="@string/scan_qrcode_or_barcode"
+                            android:textColor="@color/white_1st"
+                            android:textSize="18sp"/>
+                    </FrameLayout>
+                </LinearLayout>
+            </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

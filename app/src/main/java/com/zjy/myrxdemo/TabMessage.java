@@ -4,6 +4,9 @@ import android.support.v4.app.Fragment;
 
 import com.zjy.baselib.component.Injection.Injection;
 import com.zjy.cash.business.cash.CashFragment;
+import com.zjy.coupon.business.check.CheckCouponFragment;
+import com.zjy.member.business.member.MemberFragment;
+import com.zjy.myrxdemo.business.set.SetFragment;
 
 import es.dmoral.toasty.Toasty;
 
@@ -19,13 +22,13 @@ public class TabMessage {
                 fragment = CashFragment.newInstance();
                 break;
             case R.id.tab_coupon:
-                fragment =CashFragment.newInstance();
+                fragment = CheckCouponFragment.newInstance();
                 break;
             case R.id.tab_member:
-                fragment =CashFragment.newInstance();
+                fragment = MemberFragment.newInstance();
                 break;
             case R.id.tab_set:
-                fragment =CashFragment.newInstance();
+                fragment = SetFragment.newInstance();
                 break;
         }
 

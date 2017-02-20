@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--会员信息-->
+    <style name="member_info_twotext">
+        <item name="android:layout_marginLeft">30dp</item>
+        <item name="android:layout_marginRight">30dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="two_leftTextColor">@color/gray_6th</item>
+        <item name="two_rightTextColor">@color/black_1st</item>
+        <item name="two_leftLayoutWeight">1</item>
+        <item name="two_rightLayoutWeight">2</item>
+        <item name="two_leftTextSize">15sp</item>
+        <item name="two_rightTextSize">15sp</item>
+    </style>
+</resources>

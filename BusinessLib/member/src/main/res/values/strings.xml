@@ -1,3 +1,26 @@
 <resources>
     <string name="app_name">member</string>
+    <!--use in member fragment-->
+    <string name="member_name">会员名:</string>
+    <string name="card_number">卡号:</string>
+    <string name="phone_number">手机号:</string>
+    <string name="consume_total">消费金额:</string>
+    <string name="favorable_choose">优惠选择:</string>
+    <string name="coupon">优惠券:</string>
+    <string name="activity_discount">活动优惠:</string>
+    <string name="point_deduction">积分抵扣:</string>
+    <string name="amount_payable">应付金额:</string>
+    <string name="now_pay">立即支付</string>
+    <string name="get_card_time">开卡时间:</string>
+    <string name="birthday_himt">生日:</string>
+    <string name="member_rank">会员等级:</string>
+    <string name="member_store_value">储值余额:</string>
+    <string name="point">积分</string>
+    <string name="use_record">使用记录</string>
+    <string name="member_privilege">会员特权</string>
+    <string name="consume_money">消费金额:</string>
+    <string name="reduce_point">减少积分</string>
+    <string name="add_point">增加积分</string>
+    <string name="recharge">充值</string>
+    <string name="no_privilege">暂无特权</string>
 </resources>

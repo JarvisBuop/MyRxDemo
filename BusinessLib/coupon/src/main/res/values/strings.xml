@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">coupon</string>
+    <!--use in check coupon fragment-->
+    <string name="choose_coupon_type">第一步：选择验券类型</string>
+    <string name="way_one">方式一：扫码验证</string>
+    <string name="way_two">方式二：输入验证码验证</string>
+    <string name="input_voucher_verification_code">第二步：输入券号或扫描二维码</string>
+    <string name="please_input_discount_code">输入优惠券券号</string>
+    <string name="validate">验证</string>
+    <string name="or">或者</string>
+    <string name="scan_qrcode_or_barcode">扫描二维码/条形码</string>
 </resources>

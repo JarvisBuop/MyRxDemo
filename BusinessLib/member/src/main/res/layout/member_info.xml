@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:twotext="http://schemas.android.com/apk/res-auto/com.zjy.zlibrary.widget.TwoTextView"
+           >
+    <com.zjy.zlibrary.widget.TwoTextView
+        android:id="@+id/tv_member_name"
+        style="@style/member_info_twotext"
+        twotext:two_leftText="@string/member_name"
+        >
+    </com.zjy.zlibrary.widget.TwoTextView>
+
+    <com.zjy.zlibrary.widget.TwoTextView
+        android:id="@+id/tv_member_card"
+        style="@style/member_info_twotext"
+        twotext:two_leftText="@string/card_number"
+        >
+    </com.zjy.zlibrary.widget.TwoTextView>
+
+    <com.zjy.zlibrary.widget.TwoTextView
+        android:id="@+id/tv_member_tel"
+        style="@style/member_info_twotext"
+        twotext:two_leftText="@string/phone_number"
+        >
+    </com.zjy.zlibrary.widget.TwoTextView>
+
+    <com.zjy.zlibrary.widget.TwoTextView
+        android:id="@+id/tv_member_consume_total"
+        style="@style/member_info_twotext"
+        twotext:two_leftText="@string/consume_money"
+        >
+    </com.zjy.zlibrary.widget.TwoTextView>
+
+    <com.zjy.zlibrary.widget.TwoTextView
+        android:id="@+id/tv_member_card_time"
+        style="@style/member_info_twotext"
+        twotext:two_leftText="@string/get_card_time"
+        >
+    </com.zjy.zlibrary.widget.TwoTextView>
+
+    <com.zjy.zlibrary.widget.TwoTextView
+        android:id="@+id/tv_member_birthday"
+        style="@style/member_info_twotext"
+        twotext:two_leftText="@string/birthday_himt"
+        >
+    </com.zjy.zlibrary.widget.TwoTextView>
+
+    <com.zjy.zlibrary.widget.TwoTextView
+        android:id="@+id/tv_member_rank"
+        style="@style/member_info_twotext"
+        twotext:two_leftText="@string/member_rank"
+        >
+    </com.zjy.zlibrary.widget.TwoTextView>
+
+    <com.zjy.zlibrary.widget.TwoTextView
+        android:id="@+id/tv_member_store_value"
+        style="@style/member_info_twotext"
+        twotext:two_leftText="@string/member_store_value"
+        >
+    </com.zjy.zlibrary.widget.TwoTextView>
+
+    <com.zjy.zlibrary.widget.TwoTextView
+        android:id="@+id/tv_member_point"
+        style="@style/member_info_twotext"
+        twotext:two_leftText="@string/point"
+        android:visibility="gone"
+        >
+    </com.zjy.zlibrary.widget.TwoTextView>
+
+</merge>

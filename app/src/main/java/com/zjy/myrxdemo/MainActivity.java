@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
     FrameLayout container;
     @BindView(R.id.bottomBar)
     BottomBar mBottomBar;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         mBottomBar.setOnTabSelectListener(new OnTabSelectListener() {
             @Override
             public void onTabSelected(@IdRes int tabId) {
-                FragmentUtils.replaceFragment(getSupportFragmentManager(),R.id.container,TabMessage.get(tabId,false),false);
+                FragmentUtils.replaceFragment(getSupportFragmentManager(), R.id.container, TabMessage.get(tabId, false), false);
                 //messageView.setText(TabMessage.get(tabId, false));
             }
         });
@@ -35,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         mBottomBar.setOnTabReselectListener(new OnTabReselectListener() {
             @Override
             public void onTabReSelected(@IdRes int tabId) {
-                TabMessage.get(tabId,true);
+                TabMessage.get(tabId, true);
                 //Toast.makeText(getApplicationContext(), TabMessage.get(tabId, true), Toast.LENGTH_LONG).show();
             }
         });

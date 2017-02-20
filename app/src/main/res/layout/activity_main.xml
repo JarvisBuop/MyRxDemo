@@ -19,6 +19,7 @@
         android:layout_height="56dp"
         android:layout_alignParentBottom="true"
         app:bb_behavior="shifting|underNavbar"
+        app:bb_showShadow="false"
         app:bb_tabXmlResource="@xml/bottom_navigate"/>
 
 </RelativeLayout>

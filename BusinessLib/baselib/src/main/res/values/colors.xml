@@ -3,9 +3,11 @@
     <color name="app_color">#f44336</color>
     <!--transparent-->
     <color name="transparent">#00000000</color>
+
     <!--white-->
     <color name="white_1st">#ffffff</color>
-
+    <color name="white_2nd">#ededed</color>
+    <color name="white_3th">#e6e6e6</color>
     <!--yellow-->
     <color name="yellow_1st">#cc9600</color>
 
@@ -13,8 +15,12 @@
     <color name="gray_1st">#848484</color>
     <color name="gray_2nd">#646665</color>
     <color name="gray_3th">#999999</color>
+    <color name="gray_4th">#595959</color>
+    <color name="gray_5th">#cccccc</color>
+    <color name="gray_6th">#999999</color>
     <!--black-->
     <color name="black_1st">#333333</color>
+    <color name="black_2nd">#000000</color>
     <!--blue-->
     <color name="blue_546e7a">#546e7a</color>
 
