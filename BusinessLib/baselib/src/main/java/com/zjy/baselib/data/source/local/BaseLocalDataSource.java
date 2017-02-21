@@ -13,8 +13,9 @@ import rx.Subscriber;
 public class BaseLocalDataSource {
     private static BaseLocalDataSource INSTANCE = null;
     private final DaoSession mDaoSession;
-    private BaseLocalDataSource(){
-        mDaoSession= Injection.provideDaoSession();
+
+    private BaseLocalDataSource() {
+        mDaoSession = Injection.provideDaoSession();
     }
 
     public static BaseLocalDataSource getInstance() {
@@ -32,7 +33,10 @@ public class BaseLocalDataSource {
             public void call(Subscriber<? super User> subscriber) {
                 QueryBuilder<AppDB> qb = mDaoSession.getAppDBDao().queryBuilder();
                 AppDB unique = qb.where(AppDBDao.Properties.Key.eq(PersistenceContract.AppDBEntry.USER)).unique();
-                User user = new Gson().fromJson(unique.getValue(), User.class);
+                User user=null;
+                if (unique != null) {
+                     user = new Gson().fromJson(unique.getValue(), User.class);
+                }
                 subscriber.onNext(user);
                 subscriber.onCompleted();
             }
@@ -47,9 +51,9 @@ public class BaseLocalDataSource {
                 appDB.setKey(PersistenceContract.AppDBEntry.USER);
                 appDB.setValue(new Gson().toJson(user));
                 long l = mDaoSession.getAppDBDao().insertOrReplace(appDB);
-                if(l>0){
+                if (l > 0) {
                     subscriber.onNext(true);
-                }else {
+                } else {
                     subscriber.onError(new Exception("insert data failed"));
                 }
                 subscriber.onCompleted();

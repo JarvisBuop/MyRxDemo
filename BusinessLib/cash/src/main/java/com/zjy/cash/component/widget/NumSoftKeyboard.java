@@ -10,7 +10,8 @@ import android.util.DisplayMetrics;
 import android.view.MotionEvent;
 import android.view.View;
 
-import com.zjy.zlibrary.R;
+import com.zjy.cash.R;
+
 
 public class NumSoftKeyboard extends View {
     private static final int NUM_COLUMNS = 3;
