@@ -3,7 +3,7 @@ package com.zjy.baselib.data.source.remote;
 import com.blankj.utilcode.utils.NetworkUtils;
 import com.readystatesoftware.chuck.ChuckInterceptor;
 import com.zjy.baselib.component.Injection.Injection;
-import com.zjy.zlibrary.gsonconverter.GsonConverterFactory;
+import com.zjy.baselib.component.gsonconverter.GsonConverterFactory;
 
 import java.io.File;
 import java.io.IOException;

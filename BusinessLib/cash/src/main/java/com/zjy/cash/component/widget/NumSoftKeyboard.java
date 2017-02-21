@@ -1,4 +1,4 @@
-package com.zjy.zlibrary.widget;
+package com.zjy.cash.component.widget;
 
 import android.content.Context;
 import android.content.res.TypedArray;

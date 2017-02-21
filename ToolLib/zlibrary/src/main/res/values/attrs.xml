@@ -1,12 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <declare-styleable name="NumSoftKeyboard">
-        <attr name="numBgColor" format="color|reference"/>
-        <attr name="numLineColor" format="color|reference"/>
-        <attr name="numFontColor" format="color|reference"/>
-        <attr name="numPressColor" format="color|reference"/>
-        <attr name="numBgColor2" format="color|reference"/>
-    </declare-styleable>
+
 
     <declare-styleable name="titleBar">
         <attr name="title_mode" format="string|reference"/>

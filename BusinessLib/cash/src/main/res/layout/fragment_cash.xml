@@ -21,7 +21,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <com.zjy.zlibrary.widget.NumSoftKeyboard
+        <com.zjy.cash.component.widget.NumSoftKeyboard
             android:id="@+id/num_soft_keyboard"
             android:layout_width="match_parent"
 
@@ -132,7 +132,7 @@
                 android:textColor="@color/selector_pay_text"
                 android:textSize="20sp"/>
 
-            <com.zjy.zlibrary.widget.MoneyEdit
+            <com.zjy.cash.component.widget.MoneyEdit
                 android:id="@+id/tv_money"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -176,7 +176,7 @@
                 android:textColor="@color/selector_pay_text"
                 android:textSize="20sp"/>
 
-            <com.zjy.zlibrary.widget.MoneyEdit
+            <com.zjy.cash.component.widget.MoneyEdit
                 android:id="@+id/et_pay_discount"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

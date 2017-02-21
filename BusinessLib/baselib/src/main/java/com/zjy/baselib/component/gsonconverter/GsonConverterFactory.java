@@ -1,4 +1,4 @@
-package com.zjy.zlibrary.gsonconverter;
+package com.zjy.baselib.component.gsonconverter;
 
 import com.google.gson.Gson;
 import com.google.gson.TypeAdapter;
