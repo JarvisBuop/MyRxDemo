@@ -9,10 +9,30 @@ android {
         multiDexEnabled true
 
     }
-    buildTypes {
+
+
+    signingConfigs {
         release {
+            storeFile file("zjy-release-key.jks")
+            storePassword "qweasd"
+            keyAlias "loginapp"
+            keyPassword "qweasd"
+        }
+    }
+    buildTypes {
+        debug{
+            versionNameSuffix "-debug"
             minifyEnabled false
+            zipAlignEnabled true
+            shrinkResources false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        release {
+            minifyEnabled true
+            zipAlignEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
         }
     }
     compileOptions {
