@@ -7,4 +7,4 @@ A:使用[SoundManager.java](../ToolLib/zlibrary/src/main/java/com/zjy/zlibrary/u
 
 Q:TextView展示多行中文 行尾不对齐。
 
-A:使用[AlignTextView.java](../ToolLib/zlibrary/src/main/java/com/zjy/zlibrary/widget/AlignTextView.java)
+A:使用[AlignTextView.java](../ToolLib/zlibrary/src/main/java/com/zjy/zlibrary/widget/AlignTextView.java)&&查看[github](https://github.com/androiddevelop/AlignTextView)
