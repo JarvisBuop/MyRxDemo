@@ -3,11 +3,13 @@ package com.zjy.baselib.data.source.local;
 import org.greenrobot.greendao.annotation.Entity;
 import org.greenrobot.greendao.annotation.Id;
 import org.greenrobot.greendao.annotation.Generated;
+import org.greenrobot.greendao.annotation.Unique;
 
 @Entity(nameInDb = "my_rx_table")
 public class AppDB {
     @Id(autoincrement = true)
     private Long id;
+    @Unique
     private String key;
     private String value;
     @Generated(hash = 1902199724)
