@@ -12,12 +12,11 @@ public class Transformers {
     }
 
     public static @NonNull <T> Observable.Transformer<T,T> rxNetWork(){
-        return new Observable.Transformer<T, T>() {
-            @Override
-            public Observable<T> call(Observable<T> observable) {
-                return observable.subscribeOn(Schedulers.newThread())
-                        .observeOn(AndroidSchedulers.mainThread());
-            }
-        };
+        return observable -> observable.subscribeOn(Schedulers.newThread())
+                .observeOn(AndroidSchedulers.mainThread());
+    }
+
+    public static <T> NeverErrorTransformer<T> neverError() {
+        return new NeverErrorTransformer<>();
     }
 }
