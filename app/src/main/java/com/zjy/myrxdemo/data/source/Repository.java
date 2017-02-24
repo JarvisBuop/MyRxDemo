@@ -75,8 +75,8 @@ public class Repository implements DataSource {
     @Override
     public Observable<NetWorkResponse<PayConfigModel>> getPayConfig(String token, String apiVersion) {
         return mRemoteDataSource.getPayConfig(token,apiVersion)
-                .lift(new ApiErrorOperator<>())
-                .compose(Transformers.neverError());
+                .lift(new ApiErrorOperator<>());
+
     }
 
     @Override

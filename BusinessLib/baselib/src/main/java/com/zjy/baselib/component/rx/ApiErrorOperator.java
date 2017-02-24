@@ -37,7 +37,7 @@ public final class ApiErrorOperator<T extends NetWorkResponse> implements Observ
         }
 
         if (response.errno!=0) {
-          subscriber.onError(new ServiceException(response));
+          subscriber.onError(new ServiceException(response.errno,response.errmsg));
         }
 
         subscriber.onNext(response);

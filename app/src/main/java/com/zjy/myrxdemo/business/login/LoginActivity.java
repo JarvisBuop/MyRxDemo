@@ -109,6 +109,7 @@ public class LoginActivity extends BaseActivity implements LoginContract.View{
         startActivity(i2, oc2.toBundle());
     }
 
+
     @Override
     public void showUser(User user) {
         etUserName.setText(user.userName);

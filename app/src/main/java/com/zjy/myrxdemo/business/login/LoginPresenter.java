@@ -25,9 +25,7 @@ import com.zjy.zlibrary.rx.transform.Transformers;
 
 import rx.Observable;
 import rx.Subscription;
-import rx.functions.Action1;
 import rx.functions.Func1;
-import rx.subjects.PublishSubject;
 import rx.subscriptions.CompositeSubscription;
 
 public class LoginPresenter implements LoginContract.Presenter {
@@ -36,7 +34,6 @@ public class LoginPresenter implements LoginContract.Presenter {
     private final LoginContract.View mLoginView;
     private CompositeSubscription mSubscriptions;
 
-    private PublishSubject<LoginResponse> lrSubject = PublishSubject.create();
 
     public LoginPresenter(Repository repository, LoginContract.View loginView) {
         mRepository = repository;
@@ -48,20 +45,12 @@ public class LoginPresenter implements LoginContract.Presenter {
     @Override
     public void subscribe() {
         mRepository.getUser()
-                .filter(new Func1<User, Boolean>() {
-                    @Override
-                    public Boolean call(User s) {
-                        return s != null;
-                    }
-                })
-                .compose(Transformers.<User>rxNetWork())
-                .subscribe(new Action1<User>() {
-                    @Override
-                    public void call(User user) {
-                        mLoginView.showUser(user);
-                        if (user.hasLogin) {
+                .filter(s -> s != null)
+                .compose(Transformers.rxNetWork())
+                .subscribe(user -> {
+                    mLoginView.showUser(user);
+                    if (user.hasLogin) {
 
-                        }
                     }
                 });
     }
@@ -109,7 +98,8 @@ public class LoginPresenter implements LoginContract.Presenter {
                         LoginConfig.getAdvUrl(mRepository).subscribe();
                         LoginConfig.getConfigQR(mRepository).subscribe();
                         if(!shopInfo.bCashEn){
-                           return Observable.error(new ServiceException(ServiceException.TRANSFORM_TO_FAILED,"不支持收银"));
+                           //return Observable.error(new ServiceException(ServiceException.TRANSFORM_TO_FAILED,"不支持收银"));
+                            return Observable.empty();
                         }else {
                             return mRepository.getPayConfig(shopInfo.sessionId,ConfigConstants.getbApiVersionValue());
                         }
@@ -120,32 +110,31 @@ public class LoginPresenter implements LoginContract.Presenter {
                 .flatMap(new Func1<NetWorkResponse<PayConfigModel>, Observable<NetWorkResponse<UnionConfigModel>>>() {
                     @Override
                     public  Observable<NetWorkResponse<UnionConfigModel>> call(NetWorkResponse<PayConfigModel> payConfigResponse) {
-                        if(payConfigResponse.errno!=0){
-                            return Observable.error(new ServiceException(ServiceException.TRANSFORM_TO_FAILED,payConfigResponse.errmsg));
-                        }
                        if(DeviceInfoUtil.isWizarPOS() || DeviceInfoUtil.isLianDiA8()){
                            return mRepository.getUnionConfig(mRepository.getSessionId(),ConfigConstants.getbApiVersionValue());
                         }
-                        return Observable.error(new ServiceException(ServiceException.TRANSFORM_TO_FAILED,"不支持银联收款"));
+                        //return Observable.error(new ServiceException(ServiceException.TRANSFORM_TO_FAILED,"不支持银联收款"));
+                        return Observable.empty();
 
                     }
                 })
-                .compose(Transformers.<NetWorkResponse<UnionConfigModel>>rxNetWork())
+                .compose(Transformers.rxNetWork())
                 .subscribe(new NetWorkSubscriber<NetWorkResponse<UnionConfigModel>,UnionConfigModel>(progress) {
-                    @Override
-                    public void onSuccess(UnionConfigModel o) {
-                        mLoginView.loginSuccess();
-                    }
 
                     @Override
-                    public void onFailed(String message) {
-                        mLoginView.toastError(message);
-                        mLoginView.loginSuccess();
+                    public void onNext(NetWorkResponse<UnionConfigModel> unionConfigModelNetWorkResponse) {
+
                     }
 
                     @Override
                     public void onError(String message) {
                         mLoginView.toastError(message);
+                    }
+
+                    @Override
+                    public void onCompleted() {
+                        super.onCompleted();
+                        mLoginView.loginSuccess();
                     }
                 });
         mSubscriptions.add(subscription);
