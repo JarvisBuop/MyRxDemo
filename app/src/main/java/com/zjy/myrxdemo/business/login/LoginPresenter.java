@@ -27,6 +27,7 @@ import rx.Observable;
 import rx.Subscription;
 import rx.functions.Func1;
 import rx.subscriptions.CompositeSubscription;
+import timber.log.Timber;
 
 public class LoginPresenter implements LoginContract.Presenter {
     public static final String TAG = LoginPresenter.class.getSimpleName();
@@ -98,6 +99,7 @@ public class LoginPresenter implements LoginContract.Presenter {
                         LoginConfig.getAdvUrl(mRepository).subscribe();
                         LoginConfig.getConfigQR(mRepository).subscribe();
                         if(!shopInfo.bCashEn){
+                            Timber.d("不支持收银");
                            //return Observable.error(new ServiceException(ServiceException.TRANSFORM_TO_FAILED,"不支持收银"));
                             return Observable.empty();
                         }else {
@@ -113,13 +115,14 @@ public class LoginPresenter implements LoginContract.Presenter {
                        if(DeviceInfoUtil.isWizarPOS() || DeviceInfoUtil.isLianDiA8()){
                            return mRepository.getUnionConfig(mRepository.getSessionId(),ConfigConstants.getbApiVersionValue());
                         }
+                        Timber.d("不支持银联收款");
                         //return Observable.error(new ServiceException(ServiceException.TRANSFORM_TO_FAILED,"不支持银联收款"));
                         return Observable.empty();
 
                     }
                 })
                 .compose(Transformers.rxNetWork())
-                .subscribe(new NetWorkSubscriber<NetWorkResponse<UnionConfigModel>,UnionConfigModel>(progress) {
+                .subscribe(new NetWorkSubscriber<NetWorkResponse<UnionConfigModel>>(progress) {
 
                     @Override
                     public void onNext(NetWorkResponse<UnionConfigModel> unionConfigModelNetWorkResponse) {
@@ -127,8 +130,9 @@ public class LoginPresenter implements LoginContract.Presenter {
                     }
 
                     @Override
-                    public void onError(String message) {
-                        mLoginView.toastError(message);
+                    public void onError(Throwable e) {
+                        super.onError(e);
+                        mLoginView.toastError(e.getMessage());
                     }
 
                     @Override

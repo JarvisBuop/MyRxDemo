@@ -20,3 +20,8 @@ A:[链接](http://gaomf.cn/2016/09/26/%E5%9C%A8Android%20Studio%E4%B8%AD%E4%BD%B
    com.sun.tools.javac.code.Symbol$CompletionFailure: 找不到java.lang.invoke.MethodType的类文件
    ```
    忘了在library添加 apply plugin: 'me.tatarka.retrolambda'
+
+---
+Q:Java比较字符串时间比较方便的方法
+
+A:[查看](http://blog.csdn.net/exceptional_derek/article/details/10823845)

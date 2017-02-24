@@ -9,7 +9,7 @@ import rx.Subscriber;
 import timber.log.Timber;
 
 
-public abstract class NetWorkSubscriber<T extends NetWorkResponse,E> extends Subscriber<T> {
+public  class NetWorkSubscriber<T extends NetWorkResponse> extends Subscriber<T> {
     public static final String TAG=NetWorkSubscriber.class.getSimpleName();
     private Progress mProgress;
 
@@ -24,15 +24,14 @@ public abstract class NetWorkSubscriber<T extends NetWorkResponse,E> extends Sub
 
     @Override
     public void onError(Throwable e) {
+        Timber.d(e);
         mProgress.hide();
-        if(e instanceof ServiceException){
-            Timber.e(e);
-            onError(((ServiceException) e).errorMsg);
-        }
-
     }
 
+    @Override
+    public void onNext(T t) {
 
+    }
 
     @Override
     public void onStart() {
@@ -40,5 +39,4 @@ public abstract class NetWorkSubscriber<T extends NetWorkResponse,E> extends Sub
         mProgress.show();
     }
 
-    public abstract void  onError(String message);
 }
