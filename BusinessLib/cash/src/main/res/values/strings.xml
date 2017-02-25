@@ -7,4 +7,21 @@
     <string name="sum_of_consumption">消费金额</string>
     <string name="in_discount">参与优惠金额</string>
 
+    <!--OrdersAdapter-->
+    <string name="paytype_alipay">支付方式 : 支付宝</string>
+    <string name="paytype_wechat">支付方式 : 微信</string>
+    <string name="paytype_union">支付方式 : 银联</string>
+    <string name="paytype_baifubao">支付方式 : 百度钱包</string>
+    <string name="paytype_member_card">支付方式 : 会员卡</string>
+    <string name="phoneNumber_lastFour">"手机末四位 : "</string>
+    <string name="orderAdapter_orderNo">"订单号 : "</string>
+    <string name="trade_time">"交易时间 : "</string>
+    <string name="true_cash">"实际收银 : "</string>
+    <string name="tableNo_hint">"桌号 : "</string>
+    <string name="failed_reason_hint">"失败原因 : "</string>
+    <string name="orderAdapters_pre_order_amount">"预点单金额 : "</string>
+    <string name="contact">"联系方式 : "</string>
+    <string name="order_amount">"订单金额 : "</string>
+    <string name="ordersAdapter_place_order_time">"下单时间 : "</string>
+
 </resources>
