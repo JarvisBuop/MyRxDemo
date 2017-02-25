@@ -25,3 +25,8 @@ A:[链接](http://gaomf.cn/2016/09/26/%E5%9C%A8Android%20Studio%E4%B8%AD%E4%BD%B
 Q:Java比较字符串时间比较方便的方法
 
 A:[查看](http://blog.csdn.net/exceptional_derek/article/details/10823845)
+
+---
+Q:用Windows AS下载gradle plugin 翻墙了也老是卡住
+
+A:[查看](http://tikitoo.github.io/2016/05/26/android-studio-gradle-build-run-faster/)
