@@ -49,7 +49,6 @@
         android:layout_alignBaseline="@+id/tv_print"
         android:layout_toRightOf="@+id/tv_print"
         android:text="0000"
-        android:textColor="@color/title_bg_color"
         android:textSize="15sp"/>
 
     <TextView
