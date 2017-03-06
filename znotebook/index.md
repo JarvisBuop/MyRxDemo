@@ -46,3 +46,8 @@ A:[查看](http://tikitoo.github.io/2016/05/26/android-studio-gradle-build-run-f
 Q:FastJson 解析json为Map的时候没按照顺序排列
 
 A:解析为LinkedHashMap
+
+---
+Q:其他机器没问题 小米手机遇到installation failed with message failed to establish session
+
+A:在开发者选项中关闭miui优化
