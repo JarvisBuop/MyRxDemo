@@ -7,9 +7,9 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.zjy.myrxdemo.R;
-import com.zjy.zlibrary.fragment.BaseFragment;
+import com.zjy.zlibrary.fragment.fragmentation.SupportFragment;
 
-public class SetFragment extends BaseFragment {
+public class SetFragment extends SupportFragment {
     public static final String TAG=SetFragment.class.getSimpleName();
 
     public static SetFragment newInstance() {

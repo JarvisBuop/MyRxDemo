@@ -7,9 +7,9 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.zjy.member.R;
-import com.zjy.zlibrary.fragment.BaseFragment;
+import com.zjy.zlibrary.fragment.fragmentation.SupportFragment;
 
-public class MemberFragment extends BaseFragment implements MemberContract.View {
+public class MemberFragment extends SupportFragment implements MemberContract.View {
     public static final String TAG=MemberFragment.class.getSimpleName();
 
     public static MemberFragment newInstance() {

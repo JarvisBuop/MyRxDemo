@@ -1,12 +1,6 @@
 package com.zjy.myrxdemo;
 
-import android.support.v4.app.Fragment;
-
 import com.zjy.baselib.component.Injection.Injection;
-import com.zjy.cash.business.cash.CashFragment;
-import com.zjy.coupon.business.check.CheckCouponFragment;
-import com.zjy.member.business.member.MemberFragment;
-import com.zjy.myrxdemo.business.set.SetFragment;
 
 import es.dmoral.toasty.Toasty;
 
@@ -14,21 +8,21 @@ import es.dmoral.toasty.Toasty;
  * Created by iiro on 7.6.2016.
  */
 public class TabMessage {
-    public static Fragment get(int menuItemId, boolean isReselection) {
-        Fragment fragment=null;
+    public static int get(int menuItemId, boolean isReselection) {
+        int  index=0;
 
         switch (menuItemId) {
             case R.id.tab_cash:
-                fragment = CashFragment.newInstance();
+                index=0;
                 break;
             case R.id.tab_coupon:
-                fragment = CheckCouponFragment.newInstance();
+                index=1;
                 break;
             case R.id.tab_member:
-                fragment = MemberFragment.newInstance();
+                index=2;
                 break;
             case R.id.tab_set:
-                fragment = SetFragment.newInstance();
+                index=3;
                 break;
         }
 
@@ -36,6 +30,6 @@ public class TabMessage {
             Toasty.warning(Injection.provideContext(),"WAS RESELECTED! YAY!").show();
         }
 
-        return fragment;
+        return index;
     }
 }

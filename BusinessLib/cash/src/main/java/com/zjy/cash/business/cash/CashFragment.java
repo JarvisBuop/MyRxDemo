@@ -8,10 +8,10 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.zjy.cash.R;
-import com.zjy.zlibrary.fragment.BaseFragment;
+import com.zjy.zlibrary.fragment.fragmentation.SupportFragment;
 import com.zjy.zlibrary.widget.TitleBar;
 
-public class CashFragment extends BaseFragment implements CashContract.View {
+public class CashFragment extends SupportFragment implements CashContract.View {
     public static final String TAG = CashFragment.class.getSimpleName();
     private TitleBar titleBar;
 

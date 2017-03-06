@@ -5,7 +5,6 @@
                 android:orientation="vertical">
     <com.zjy.zlibrary.widget.TitleBar
         android:id="@+id/titleBar"
-        android:visibility="gone"
         android:background="@color/app_color"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">

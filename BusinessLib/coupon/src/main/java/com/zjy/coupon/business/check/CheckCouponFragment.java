@@ -7,9 +7,9 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.zjy.coupon.R;
-import com.zjy.zlibrary.fragment.BaseFragment;
+import com.zjy.zlibrary.fragment.fragmentation.SupportFragment;
 
-public class CheckCouponFragment extends BaseFragment implements CheckCouponContract.View {
+public class CheckCouponFragment extends SupportFragment implements CheckCouponContract.View {
     public static final String TAG=CheckCouponFragment.class.getSimpleName();
 
     public static CheckCouponFragment newInstance() {
