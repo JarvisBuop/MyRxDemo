@@ -1,5 +1,6 @@
 package com.zjy.cash.business.cash;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
@@ -8,9 +9,11 @@ import android.view.ViewGroup;
 
 import com.zjy.cash.R;
 import com.zjy.zlibrary.fragment.BaseFragment;
+import com.zjy.zlibrary.widget.TitleBar;
 
 public class CashFragment extends BaseFragment implements CashContract.View {
     public static final String TAG = CashFragment.class.getSimpleName();
+    private TitleBar titleBar;
 
     public static CashFragment newInstance() {
 
@@ -36,5 +39,28 @@ public class CashFragment extends BaseFragment implements CashContract.View {
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        setUpTitleBar(view);
+    }
+
+    private void setUpTitleBar(View v) {
+        titleBar = (TitleBar) v.findViewById(R.id.titleBar);
+        titleBar.setVisibility(View.VISIBLE);
+        titleBar.addAction(new TitleBar.ImageAction(R.drawable.icon_cash_orders) {
+            @Override
+            public void performAction(View view) {
+
+            }
+        });
+        titleBar.setLeftImageResource(R.drawable.icon_search);
+        titleBar.setTitle("体验店");
+
+        titleBar.setLeftTextColor(Color.WHITE);
+        titleBar.setLeftClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+        titleBar.setTitleColor(Color.WHITE);
     }
 }

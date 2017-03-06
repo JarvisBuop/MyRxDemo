@@ -130,5 +130,14 @@
         android:layout_alignEnd="@id/cv"
         android:layout_marginEnd="-20dp"
         />
+    <TextView
+        android:padding="5dp"
+        android:text="入口->>"
+        android:id="@+id/fab_dev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        />
 
 </RelativeLayout>

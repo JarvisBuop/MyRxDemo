@@ -18,11 +18,17 @@
     <color name="gray_4th">#595959</color>
     <color name="gray_5th">#cccccc</color>
     <color name="gray_6th">#999999</color>
+    <color name="gray_7th">#cacaca</color>
+
     <!--black-->
     <color name="black_1st">#333333</color>
     <color name="black_2nd">#000000</color>
     <!--blue-->
     <color name="blue_546e7a">#546e7a</color>
+    <!--green-->
+    <color name="green_1st">#39b527</color>
+    <!--pink-->
+    <color name="pink_1st">#ef9a9a</color>
 
 
 </resources>

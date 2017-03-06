@@ -12,6 +12,7 @@ import android.transition.Explode;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import com.zjy.baselib.data.model.bean.User;
 import com.zjy.myrxdemo.MainActivity;
@@ -41,6 +42,8 @@ public class LoginActivity extends BaseActivity implements LoginContract.View{
     FloatingActionButton fab;
     @BindView(R.id.et_layout_username)
     TextInputLayout etLayoutUserName;
+    @BindView(R.id.fab_dev)
+    TextView tvDev;
     private Progress progress ;
     private LoginContract.Presenter mLoginPresenter;
 
@@ -85,6 +88,10 @@ public class LoginActivity extends BaseActivity implements LoginContract.View{
             startActivity(new Intent(this, RegisterActivity.class));
         }
 
+    }
+    @OnClick(R.id.fab_dev)
+    public void develop(View view){
+        loginSuccess();
     }
 
 
