@@ -11,9 +11,11 @@ import com.zjy.cash.R;
 import com.zjy.zlibrary.fragment.fragmentation.SupportFragment;
 import com.zjy.zlibrary.widget.TitleBar;
 
+import butterknife.ButterKnife;
+
 public class CashFragment extends SupportFragment implements CashContract.View {
     public static final String TAG = CashFragment.class.getSimpleName();
-    private TitleBar titleBar;
+    public TitleBar titleBar;
 
     public static CashFragment newInstance() {
 
@@ -33,6 +35,7 @@ public class CashFragment extends SupportFragment implements CashContract.View {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View root = inflater.inflate(R.layout.fragment_cash, container, false);
+        ButterKnife.bind(this,root);
         return root;
     }
 
