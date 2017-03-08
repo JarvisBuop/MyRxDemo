@@ -6,7 +6,7 @@ import com.zjy.myrxdemo.data.model.login.bean.ConfigQRModel;
 import com.zjy.myrxdemo.data.model.login.bean.LoginResponse;
 import com.zjy.myrxdemo.data.model.login.bean.PayConfigModel;
 import com.zjy.myrxdemo.data.model.login.bean.UnionConfigModel;
-import com.zjy.baselib.framework.ConfigConstants;
+import com.zjy.baselib.framework.HttpConstants;
 
 import java.util.List;
 
@@ -18,7 +18,7 @@ import retrofit2.http.Query;
 import rx.Observable;
 
 public interface MwService {
-    String HOST = ConfigConstants.getPDUrlRoot();
+    String HOST = HttpConstants.getPDUrlRoot();
     @GET("shop/login.php")
     Observable<LoginResponse> getLoginResponse(@Query("UserName")String UserName,
                                                @Query("Password")String password,

@@ -9,7 +9,7 @@ import com.zjy.myrxdemo.data.model.login.bean.AdvModel;
 import com.zjy.myrxdemo.data.model.login.bean.ConfigQRModel;
 import com.zjy.myrxdemo.data.model.login.bean.LoginResponse;
 import com.zjy.myrxdemo.data.source.Repository;
-import com.zjy.baselib.framework.ConfigConstants;
+import com.zjy.baselib.framework.HttpConstants;
 import com.zjy.zlibrary.rx.transform.Transformers;
 
 import org.jivesoftware.smack.util.Base64;
@@ -187,7 +187,7 @@ public class LoginConfig {
     }
 
     public static Observable<Boolean> getConfigQR(final Repository repository) {
-        return repository.getConfigQR(repository.getSessionId(), ConfigConstants.getbApiVersionValue())
+        return repository.getConfigQR(repository.getSessionId(), HttpConstants.getbApiVersionValue())
                 .map(new Func1<NetWorkResponse<List<ConfigQRModel>>, Boolean>() {
                     @Override
                     public Boolean call(NetWorkResponse<List<ConfigQRModel>> listNetWorkResponse) {

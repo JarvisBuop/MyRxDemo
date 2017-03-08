@@ -14,7 +14,7 @@ import com.zjy.baselib.component.util.MD5Utility;
 import com.zjy.baselib.component.util.WifiUtil;
 import com.zjy.baselib.data.model.NetWorkResponse;
 import com.zjy.baselib.data.model.bean.User;
-import com.zjy.baselib.framework.ConfigConstants;
+import com.zjy.baselib.framework.HttpConstants;
 import com.zjy.myrxdemo.data.model.login.ShopInfo;
 import com.zjy.myrxdemo.data.model.login.bean.LoginResponse;
 import com.zjy.myrxdemo.data.model.login.bean.PayConfigModel;
@@ -73,7 +73,7 @@ public class LoginPresenter implements LoginContract.Presenter {
                 + DeviceInfoUtil.getPrintType() + String.format("(%s)", android.os.Build.MODEL);
 
 
-        Subscription subscription = mRepository.login(userName, ePassword, DeviceID, V, AP, ConfigConstants.getbApiVersionValue())
+        Subscription subscription = mRepository.login(userName, ePassword, DeviceID, V, AP, HttpConstants.getbApiVersionValue())
                 .flatMap(new Func1<LoginResponse, Observable<ShopInfo>>() {
                     @Override
                     public Observable<ShopInfo> call(LoginResponse loginResponse) {
@@ -103,7 +103,7 @@ public class LoginPresenter implements LoginContract.Presenter {
                            //return Observable.error(new ServiceException(ServiceException.TRANSFORM_TO_FAILED,"不支持收银"));
                             return Observable.empty();
                         }else {
-                            return mRepository.getPayConfig(shopInfo.sessionId,ConfigConstants.getbApiVersionValue());
+                            return mRepository.getPayConfig(shopInfo.sessionId, HttpConstants.getbApiVersionValue());
                         }
 
                     }
@@ -113,7 +113,7 @@ public class LoginPresenter implements LoginContract.Presenter {
                     @Override
                     public  Observable<NetWorkResponse<UnionConfigModel>> call(NetWorkResponse<PayConfigModel> payConfigResponse) {
                        if(DeviceInfoUtil.isWizarPOS() || DeviceInfoUtil.isLianDiA8()){
-                           return mRepository.getUnionConfig(mRepository.getSessionId(),ConfigConstants.getbApiVersionValue());
+                           return mRepository.getUnionConfig(mRepository.getSessionId(), HttpConstants.getbApiVersionValue());
                         }
                         Timber.d("不支持银联收款");
                         //return Observable.error(new ServiceException(ServiceException.TRANSFORM_TO_FAILED,"不支持银联收款"));

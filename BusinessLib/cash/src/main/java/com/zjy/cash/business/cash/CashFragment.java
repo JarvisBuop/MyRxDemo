@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.zjy.cash.R;
+import com.zjy.cash.business.orders.OrdersActivity;
 import com.zjy.zlibrary.fragment.fragmentation.SupportFragment;
 import com.zjy.zlibrary.widget.TitleBar;
 
@@ -51,7 +52,7 @@ public class CashFragment extends SupportFragment implements CashContract.View {
         titleBar.addAction(new TitleBar.ImageAction(R.drawable.icon_cash_orders) {
             @Override
             public void performAction(View view) {
-
+                OrdersActivity.start(getContext());
             }
         });
         titleBar.setLeftImageResource(R.drawable.icon_search);

@@ -1,12 +1,8 @@
 package com.zjy.cash.data.source.remote;
 
-import com.zjy.baselib.data.model.NetWorkResponse;
 import com.zjy.baselib.data.source.remote.RetrofitHelper;
 import com.zjy.cash.data.model.order.OrdersResponse;
-import com.zjy.cash.data.model.order.PayOrder;
 import com.zjy.cash.data.source.CashDataSource;
-
-import java.util.ArrayList;
 
 import rx.Observable;
 
@@ -39,8 +35,14 @@ public class CashRemoteDataSource implements CashDataSource{
     ///////////////////////////////////////////////////////////////////////////
 //
 ///////////////////////////////////////////////////////////////////////////
+
     @Override
-    public Observable<OrdersResponse> getOrders() {
+    public Observable<OrdersResponse> getOrders(String token, int type, String all, int page, String mobile, String apiVersion) {
+        return null;
+    }
+
+    @Override
+    public String getSessionId() {
         return null;
     }
 }

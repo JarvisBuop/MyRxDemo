@@ -1,6 +1,6 @@
 package com.zjy.baselib.framework;
 
-public class ConfigConstants {
+public class HttpConstants {
     public final static String URL_ROOT_PRODUCT = "http://zf.mwee.cn/";
     public final static String URL_ROOT_DEV = "http://test.9now.net/";
 

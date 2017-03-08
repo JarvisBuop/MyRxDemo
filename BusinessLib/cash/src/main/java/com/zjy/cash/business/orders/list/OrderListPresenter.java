@@ -1,6 +1,7 @@
 package com.zjy.cash.business.orders.list;
 
 
+import com.zjy.baselib.framework.HttpConstants;
 import com.zjy.cash.data.model.order.OrdersResponse;
 import com.zjy.cash.data.source.CashRepository;
 
@@ -56,7 +57,7 @@ public class OrderListPresenter implements OrderListContract.Presenter {
     @Override
     public void loadData(final int cursor) {
         currentPage=cursor;
-        mRepository.getOrders()
+        mRepository.getOrders(mRepository.getSessionId(),orderType,"1",cursor,phoneNum, HttpConstants.getbApiVersionValue())
                .subscribe(new Subscriber<OrdersResponse>() {
                    @Override
                    public void onCompleted() {

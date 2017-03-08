@@ -1,6 +1,6 @@
 package com.zjy.cash.data.source.remote;
 
-import com.zjy.baselib.framework.ConfigConstants;
+import com.zjy.baselib.framework.HttpConstants;
 
 /**
  * Created with android studio
@@ -11,5 +11,5 @@ import com.zjy.baselib.framework.ConfigConstants;
  */
 
 public interface CashOrdersService {
-    String HOST = ConfigConstants.getPDUrlRoot();
+    String HOST = HttpConstants.getPDUrlRoot();
 }

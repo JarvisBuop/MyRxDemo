@@ -1,10 +1,6 @@
 package com.zjy.cash.data.source;
 
-import com.zjy.baselib.data.model.NetWorkResponse;
 import com.zjy.cash.data.model.order.OrdersResponse;
-import com.zjy.cash.data.model.order.PayOrder;
-
-import java.util.ArrayList;
 
 import rx.Observable;
 
@@ -18,5 +14,6 @@ import rx.Observable;
  */
 
 public interface CashDataSource {
-    Observable<OrdersResponse> getOrders();
+    Observable<OrdersResponse> getOrders(String token,int type,String all,int page,String mobile,String apiVersion);
+    String getSessionId();
 }

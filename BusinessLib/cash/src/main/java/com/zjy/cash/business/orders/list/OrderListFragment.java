@@ -5,6 +5,7 @@ import android.support.annotation.NonNull;
 import android.view.View;
 
 import com.chad.library.adapter.base.BaseQuickAdapter;
+import com.zjy.cash.component.CashInjecttion;
 import com.zjy.cash.data.model.order.PayOrder;
 import com.zjy.zlibrary.fragment.list.AbsListFragment;
 
@@ -13,15 +14,23 @@ import java.util.List;
 
 public class OrderListFragment extends AbsListFragment implements OrderListContract.View {
     public static final String ORDER_TYPE = "type";
-    private OrderListContract.Presenter mPresenter;
+    public static final int POS_CASH=1;
+    public static final int OTHER_CASH=2;
+    public static final int POS_REFUND=3;
+    public static final int OFFLINE_CASH=4;
 
+
+
+    private OrderListContract.Presenter mPresenter;
     public static OrderListFragment newInstance(int type) {
         Bundle args = new Bundle();
         args.putInt(ORDER_TYPE, type);
         OrderListFragment fragment = new OrderListFragment();
+        new OrderListPresenter(CashInjecttion.provideRepository(),fragment);
         fragment.setArguments(args);
         return fragment;
     }
+
 
     @Override
     public void setPresenter(OrderListContract.Presenter presenter) {
