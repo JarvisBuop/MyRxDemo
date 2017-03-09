@@ -7,7 +7,7 @@ public class HttpConstants {
     public final static String URL_ROOT_TEST="http://st.9now.net/";
 
 
-    public static final String B_API_VERSION_VALUE = "V6";
+    public static final String B_API_VERSION_VALUE = "V7";
     public static final String B_API_VERSION_DEV_VALUE = "T";
 
     private static String URL_NOW = URL_ROOT_TEST;

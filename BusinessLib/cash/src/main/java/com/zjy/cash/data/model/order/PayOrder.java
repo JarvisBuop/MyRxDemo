@@ -12,7 +12,7 @@ import java.util.ArrayList;
  */
 
 public class PayOrder implements Serializable {
-    public int id;// 订单id
+    public String id;// 订单id
     public String createDate;// 下单时间
     public String nick;// 用户名（搜索）
     public String detail;// 订单菜品概览（搜索）

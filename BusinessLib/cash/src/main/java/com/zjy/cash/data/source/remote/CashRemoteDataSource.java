@@ -1,8 +1,10 @@
 package com.zjy.cash.data.source.remote;
 
+import com.zjy.baselib.component.rx.ApiErrorOperator;
 import com.zjy.baselib.data.source.remote.RetrofitHelper;
 import com.zjy.cash.data.model.order.OrdersResponse;
 import com.zjy.cash.data.source.CashDataSource;
+import com.zjy.zlibrary.rx.transform.Transformers;
 
 import rx.Observable;
 
@@ -38,7 +40,9 @@ public class CashRemoteDataSource implements CashDataSource{
 
     @Override
     public Observable<OrdersResponse> getOrders(String token, int type, String all, int page, String mobile, String apiVersion) {
-        return null;
+        return mCashService.getOrders(token,type,all,page,mobile,apiVersion)
+                .lift(new ApiErrorOperator<OrdersResponse>())
+                .compose(Transformers.<OrdersResponse>rxNetWork());
     }
 
     @Override

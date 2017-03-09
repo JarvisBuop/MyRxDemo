@@ -1,5 +1,6 @@
 package com.zjy.cash.business.orders.list;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.view.View;
@@ -31,6 +32,18 @@ public class OrderListFragment extends AbsListFragment implements OrderListContr
         return fragment;
     }
 
+    @Override
+    public void onAttach(Context context) {
+        super.onAttach(context);
+        getExtraData();
+    }
+
+    private void getExtraData() {
+        if(getArguments()!=null){
+            int orderType = getArguments().getInt(ORDER_TYPE);
+            mPresenter.setOrderType(orderType);
+        }
+    }
 
     @Override
     public void setPresenter(OrderListContract.Presenter presenter) {
@@ -99,4 +112,6 @@ public class OrderListFragment extends AbsListFragment implements OrderListContr
     protected int getInitPageIndex() {
         return super.getInitPageIndex();
     }
+
+
 }
