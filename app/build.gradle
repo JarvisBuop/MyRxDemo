@@ -48,6 +48,5 @@ dependencies {
     compile project(':BusinessLib:cash')
     compile project(':BusinessLib:member')
     compile project(':BusinessLib:coupon')
-
-
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
 }

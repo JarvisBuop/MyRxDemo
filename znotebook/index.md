@@ -51,3 +51,8 @@ A:解析为LinkedHashMap
 Q:其他机器没问题 小米手机遇到installation failed with message failed to establish session
 
 A:在开发者选项中关闭miui优化
+
+---
+Q:Mac如何使用oh my zsh
+
+A:打开[这里](http://www.cnblogs.com/exlsunshine/p/4841955.html)
