@@ -61,6 +61,7 @@ public abstract class AbsListFragment extends BaseFragment implements IList {
         swipeLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
             public void onRefresh() {
+                mAdapter.removeAllFooterView();
                 refreshData();
             }
         });
@@ -90,8 +91,9 @@ public abstract class AbsListFragment extends BaseFragment implements IList {
         recyclerView.setAdapter(mAdapter);
         recyclerView.addOnItemTouchListener(new OnItemClickListener() {
             @Override
-            public void SimpleOnItemClick(BaseQuickAdapter adapter, View view, int position) {
+            public void onSimpleItemClick(BaseQuickAdapter adapter, View view, int position) {
                 AbsListFragment.this.onItemClick(adapter, view, position);
+
             }
         });
         swipeLayout.setEnabled(mRefreshEnable);
@@ -161,7 +163,7 @@ public abstract class AbsListFragment extends BaseFragment implements IList {
             recyclerView.post(new Runnable() {
                 @Override
                 public void run() {
-                    mAdapter.loadComplete();
+                    mAdapter.loadMoreEnd();
                 }
             });
         }
@@ -179,7 +181,7 @@ public abstract class AbsListFragment extends BaseFragment implements IList {
             recyclerView.post(new Runnable() {
                 @Override
                 public void run() {
-                    mAdapter.showLoadMoreFailedView();
+                    mAdapter.loadMoreFail();
                 }
             });
         }
@@ -203,7 +205,7 @@ public abstract class AbsListFragment extends BaseFragment implements IList {
             @Override
             public void run() {
                 swipeLayout.setRefreshing(false);
-                mAdapter.loadComplete();
+                mAdapter.loadMoreComplete();
             }
         });
     }

@@ -27,7 +27,7 @@ import java.util.ArrayList;
  * DESC:
  */
 
-public class OrderListAdapter extends BaseQuickAdapter<PayOrder> {
+public class OrderListAdapter extends BaseQuickAdapter<PayOrder,BaseViewHolder> {
     protected final Context context;
     private int[] tvIds = new int[]{R.id.tv_order_id, R.id.tv_pay_time, R.id.tv_real_price, R.id.tv_pay_table, R.id.tv_fail_reason, R.id.tv_phone, R.id.tv_source_price, R.id.tv_print, R.id.tv_pay_type};
 
