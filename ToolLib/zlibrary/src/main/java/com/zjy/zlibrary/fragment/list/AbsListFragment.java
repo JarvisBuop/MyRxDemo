@@ -249,9 +249,6 @@ public abstract class AbsListFragment extends BaseFragment implements IList {
         mInit = init;
     }
 
-    protected void notifyDataSetChanged() {
-        mAdapter.notifyDataSetChanged();
-    }
 
     @NonNull
     protected String getEmptyMsg() {

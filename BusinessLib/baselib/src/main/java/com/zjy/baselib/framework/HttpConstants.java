@@ -10,7 +10,7 @@ public class HttpConstants {
     public static final String B_API_VERSION_VALUE = "V7";
     public static final String B_API_VERSION_DEV_VALUE = "T";
 
-    private static String URL_NOW = URL_ROOT_TEST;
+    private static String URL_NOW = URL_ROOT_PRODUCT;
 
     /**
      * 设置非生产环境下的UrlRoot
