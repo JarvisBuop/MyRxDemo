@@ -61,3 +61,11 @@ A:打开[这里](http://www.cnblogs.com/exlsunshine/p/4841955.html)
 Q:如何创建GPG密钥 
 
 A:[查看](http://www.jianshu.com/p/268064e67719)
+
+---
+Q:如何将Library 发布到jcenter
+
+A:[步骤](http://www.jianshu.com/p/91a9d999aea0) 有几个小坑 到Bintray官网注册账号的时候需要注册个人账号
+    企业试用账号无法添加到Jcenter[个人注册网站](https://bintray.com/signup/oss)
+    调用/gradlew mouduel:bintrayUpload 命令时。 Daemon开了的话需要./gradlew --stop 下 不然一直不成功
+

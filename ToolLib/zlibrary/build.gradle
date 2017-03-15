@@ -1,6 +1,6 @@
 apply plugin: 'com.android.library'
 apply from: '../../global_config.gradle'
-//apply from: rootProject.file('gradle/gradle-mvn-push.gradle')
+apply from: rootProject.file('gradle/gradle-mvn-push.gradle')
 
 
 version rootProject.ext.VERSION_NAME

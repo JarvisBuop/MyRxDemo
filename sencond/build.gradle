@@ -1,6 +1,13 @@
 apply plugin: 'com.android.application'
 apply from: '../global_config.gradle'
 
+repositories {
+    maven {
+        url "http://dl.bintray.com/zhoujunyou2b/maven"
+    }
+}
+
+
 android {
 
 
@@ -22,7 +29,9 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile project(':ToolLib:zlibrary')
     compile project(':ToolLib:chipview')
+    compile project(':ToolLib:toasty')
+    compile project(':ToolLib:bottom-bar')
+    compile 'com.zhoujunyou:zlibrary:1.0.0'
     compile 'com.android.support.constraint:constraint-layout:+'
 }

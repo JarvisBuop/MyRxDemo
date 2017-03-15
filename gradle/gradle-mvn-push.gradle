@@ -89,10 +89,10 @@ def getBintrayKey() {
 
 bintray {
     user = 'zhoujunyou2b'
-    key = 'b05fe8cea0039670b77b4e8e7df6aee1a9bdb445'
+    key = 'c027f24369c902867fd6da65fd41530edf3eae8f'
     configurations = ['archives']
     pkg {
-        repo = 'zhoujunyou'
+        repo = 'maven'
         userOrg = BINTRAY_ORGANIZATION
         name = "${GROUP}:${POM_ARTIFACT_ID}"
         licenses =['Apache-2.0']
