@@ -6,14 +6,18 @@ import android.support.annotation.NonNull;
 import android.view.View;
 
 import com.chad.library.adapter.base.BaseQuickAdapter;
+import com.zjy.baselib.component.Injection.Injection;
 import com.zjy.cash.component.CashInjecttion;
 import com.zjy.cash.data.model.order.PayOrder;
+import com.zjy.zlibrary.component.scrollablelayout.ScrollableHelper;
 import com.zjy.zlibrary.fragment.list.AbsListFragment;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class OrderListFragment extends AbsListFragment implements OrderListContract.View {
+import es.dmoral.toasty.Toasty;
+
+public class OrderListFragment extends AbsListFragment implements OrderListContract.View,ScrollableHelper.ScrollableContainer {
     public static final String ORDER_TYPE = "type";
     public static final int POS_CASH=1;
     public static final int OTHER_CASH=2;
@@ -114,4 +118,11 @@ public class OrderListFragment extends AbsListFragment implements OrderListContr
     }
 
 
+    @Override
+    public View getScrollableView() {
+        if(recyclerView==null){
+            Toasty.error(Injection.provideContext(),"recyclerview is null").show();
+        }
+        return recyclerView;
+    }
 }
