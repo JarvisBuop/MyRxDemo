@@ -7,9 +7,10 @@ buildscript {
     dependencies {
         classpath 'com.android.tools.build:gradle:2.3.0'
         classpath 'com.jakewharton:butterknife-gradle-plugin:8.4.0'
-        classpath 'com.antfortune.freeline:gradle:0.8.5'
         classpath 'org.greenrobot:greendao-gradle-plugin:3.2.1'
         classpath 'me.tatarka:gradle-retrolambda:3.3.0'
+        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.6'
+        classpath "com.github.dcendents:android-maven-gradle-plugin:1.4.1"
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }
@@ -18,7 +19,10 @@ buildscript {
 allprojects {
     repositories {
         jcenter()
-        maven { url "https://jitpack.io" }
+        maven {
+            url "https://jitpack.io"
+        }
+
     }
 }
 
@@ -26,7 +30,27 @@ task clean(type: Delete) {
     delete rootProject.buildDir
 }
 
-ext{
-    supportLibraryVersion = "25.1.1"
+ext {
+    supportLibraryVersion = "25.2.0"
     retrofitLibraryVersion = "2.1.0"
+    GROUP = 'com.zhoujunyou'
+    VERSION_NAME = "${VERSION_NAME_PREFIX}${VERSION_NAME_SUFFIX}"
+
+    POM_PACKAGING = "pom"
+    POM_DESCRIPTION = "tool"
+
+    POM_URL = "https://github.com/zhoujunyou/MyRxDemo"
+    POM_SCM_URL = "https://github.com/zhoujunyou/MyRxDemo"
+    POM_ISSUE_URL = 'https://github.com/zhoujunyou/MyRxDemo/issues'
+
+    POM_LICENCE_NAME = "BSD License"
+    POM_LICENCE_URL = "https://opensource.org/licenses/BSD-3-Clause"
+    POM_LICENCE_DIST = "repo"
+
+    POM_DEVELOPER_ID = "zhoujunyou"
+    POM_DEVELOPER_NAME = "zhoujunyou."
+
+    BINTRAY_ORGANIZATION = "zhoujunyou"
+
 }
+

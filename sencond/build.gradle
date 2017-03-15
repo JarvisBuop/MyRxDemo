@@ -1,0 +1,28 @@
+apply plugin: 'com.android.application'
+apply from: '../global_config.gradle'
+
+android {
+
+
+    defaultConfig {
+        applicationId "com.example.testapp"
+        versionCode 2
+        versionName "1.1"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile project(':ToolLib:zlibrary')
+    compile project(':ToolLib:chipview')
+    compile 'com.android.support.constraint:constraint-layout:+'
+}

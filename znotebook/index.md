@@ -56,3 +56,8 @@ A:在开发者选项中关闭miui优化
 Q:Mac如何使用oh my zsh
 
 A:打开[这里](http://www.cnblogs.com/exlsunshine/p/4841955.html)
+
+---
+Q:如何创建GPG密钥 
+
+A:[查看](http://www.jianshu.com/p/268064e67719)
