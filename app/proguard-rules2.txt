@@ -1,0 +1,2 @@
+## see https://github.com/evant/gradle-retrolambda for java 8
+-dontwarn java.lang.invoke.*

@@ -1,6 +1,8 @@
 package com.zjy.myrxdemo.data.model.login.bean;
 
-public class WaitDisc  {
+import java.io.Serializable;
+
+public class WaitDisc implements Serializable{
     public int id;
     public int waittime;
     public String description;

@@ -1,11 +1,6 @@
 apply plugin: 'com.android.application'
 apply from: '../global_config.gradle'
 
-repositories {
-    maven {
-        url "http://dl.bintray.com/zhoujunyou2b/maven"
-    }
-}
 
 
 android {

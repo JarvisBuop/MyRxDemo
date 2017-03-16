@@ -1,6 +1,8 @@
 package com.zjy.myrxdemo.data.model.login.bean;
 
-public class Wave  {
+import java.io.Serializable;
+
+public class Wave implements Serializable {
     public String name;
     public String path;
     public boolean auto;

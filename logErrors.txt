@@ -1,0 +1,2 @@
+Note: there were 11 duplicate class definitions.
+      (http://proguard.sourceforge.net/manual/troubleshooting.html#duplicateclass)

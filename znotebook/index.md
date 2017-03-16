@@ -69,3 +69,7 @@ A:[步骤](http://www.jianshu.com/p/91a9d999aea0) 有几个小坑 到Bintray官�
     企业试用账号无法添加到Jcenter[个人注册网站](https://bintray.com/signup/oss)
     调用/gradlew mouduel:bintrayUpload 命令时。 Daemon开了的话需要./gradlew --stop 下 不然一直不成功
 
+---
+Q:如何输出gradle task日志
+
+A:./gradlew build > myLogs.txt 2> logErrors.txt
