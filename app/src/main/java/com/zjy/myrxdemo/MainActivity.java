@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.annotation.IdRes;
 import android.widget.FrameLayout;
 
+import com.alibaba.android.arouter.facade.annotation.Route;
 import com.roughike.bottombar.BottomBar;
 import com.roughike.bottombar.OnTabReselectListener;
 import com.roughike.bottombar.OnTabSelectListener;
@@ -17,6 +18,7 @@ import com.zjy.zlibrary.fragment.fragmentation.SupportFragment;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
+@Route(path = "/myapp/main_activity")
 public class MainActivity extends SupportActivity {
 
     @BindView(R.id.container)

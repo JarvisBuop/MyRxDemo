@@ -58,5 +58,7 @@ dependencies {
     compile 'com.google.code.gson:gson:2.8.0'
     compile 'com.readystatesoftware.chuck:library:1.0.1'
     compile 'com.jakewharton:butterknife:8.4.0'
+
+    compile 'com.alibaba:arouter-api:1.0.4'
 }
 

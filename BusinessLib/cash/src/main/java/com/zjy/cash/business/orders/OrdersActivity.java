@@ -4,8 +4,10 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 
+import com.alibaba.android.arouter.facade.annotation.Route;
 import com.zjy.zlibrary.fragment.fragmentation.SupportActivity;
 
+@Route(path = "/cash/orders_activity")
 public class OrdersActivity extends SupportActivity {
 
 

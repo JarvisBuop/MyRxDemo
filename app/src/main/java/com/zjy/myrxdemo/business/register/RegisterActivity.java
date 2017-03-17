@@ -12,12 +12,13 @@ import android.view.View;
 import android.view.ViewAnimationUtils;
 import android.view.animation.AccelerateInterpolator;
 
+import com.alibaba.android.arouter.facade.annotation.Route;
 import com.zjy.myrxdemo.R;
 import com.zjy.zlibrary.activity.BaseActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-
+@Route(path = "/myapp/register_activity")
 public class RegisterActivity extends BaseActivity {
 
     @BindView(R.id.fab)

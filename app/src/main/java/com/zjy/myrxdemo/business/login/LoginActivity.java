@@ -1,7 +1,6 @@
 package com.zjy.myrxdemo.business.login;
 
 import android.app.ActivityOptions;
-import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -14,10 +13,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.alibaba.android.arouter.launcher.ARouter;
 import com.zjy.baselib.data.model.bean.User;
-import com.zjy.myrxdemo.MainActivity;
 import com.zjy.myrxdemo.R;
-import com.zjy.myrxdemo.business.register.RegisterActivity;
 import com.zjy.myrxdemo.component.AppInjection;
 import com.zjy.zlibrary.activity.BaseActivity;
 import com.zjy.zlibrary.dialog.DialogUtil;
@@ -83,9 +81,11 @@ public class LoginActivity extends BaseActivity implements LoginContract.View{
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             ActivityOptions options =
                     ActivityOptions.makeSceneTransitionAnimation(this, fab, fab.getTransitionName());
-            startActivity(new Intent(this, RegisterActivity.class), options.toBundle());
+            //startActivity(new Intent(this, RegisterActivity.class), options.toBundle());
+            ARouter.getInstance().build("/myapp/register_activity").with(options.toBundle()).navigation(this);
         } else {
-            startActivity(new Intent(this, RegisterActivity.class));
+            //startActivity(new Intent(this, RegisterActivity.class));
+            ARouter.getInstance().build("/myapp/register_activity").navigation(this);
         }
 
     }
@@ -112,8 +112,9 @@ public class LoginActivity extends BaseActivity implements LoginContract.View{
         getWindow().setExitTransition(explode);
         getWindow().setEnterTransition(explode);
         ActivityOptionsCompat oc2 = ActivityOptionsCompat.makeSceneTransitionAnimation(LoginActivity.this);
-        Intent i2 = new Intent(LoginActivity.this, MainActivity.class);
-        startActivity(i2, oc2.toBundle());
+        //Intent i2 = new Intent(LoginActivity.this, MainActivity.class);
+        //startActivity(i2, oc2.toBundle());
+        ARouter.getInstance().build("/myapp/main_activity").with(oc2.toBundle()).navigation(this);
     }
 
 

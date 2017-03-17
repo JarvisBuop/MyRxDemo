@@ -3,6 +3,7 @@ package com.zjy.myrxdemo;
 import android.support.multidex.MultiDex;
 import android.support.multidex.MultiDexApplication;
 
+import com.alibaba.android.arouter.launcher.ARouter;
 import com.blankj.utilcode.utils.Utils;
 import com.zjy.baselib.component.Injection.Injection;
 import com.zjy.baselib.framework.Config;
@@ -17,9 +18,12 @@ public class MyRxApplication extends MultiDexApplication {
         MultiDex.install(this);
         Utils.init(this);
         Injection.init(this);
+        ARouter.init(this);
         if(BuildConfig.DEBUG){
             Timber.plant(new Timber.DebugTree());
             Config.setENV(Environment.DEV);
+            ARouter.openDebug();
+            ARouter.openLog();
         }
     }
 

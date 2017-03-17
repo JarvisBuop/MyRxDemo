@@ -78,5 +78,7 @@ public static java.lang.String TABLENAME;
 -keep class **$Properties
 -keep class com.zjy.baselib.data.source.local.AppDB { *; }
 
-
+#ARouter
+-keep public class com.alibaba.android.arouter.routes.**{*;}
+ -keep class * implements com.alibaba.android.arouter.facade.template.ISyringe{*;}
 
