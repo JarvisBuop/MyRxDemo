@@ -10,13 +10,9 @@ import com.zjy.baselib.component.Injection.Injection;
 import com.zjy.cash.R;
 import com.zjy.cash.business.Constants;
 import com.zjy.cash.data.model.order.PayOrder;
+import com.zjy.zlibrary.widget.DonutProgress;
 
 import java.util.ArrayList;
-
-
-
-
-
 
 
 /**
@@ -27,10 +23,10 @@ import java.util.ArrayList;
  * DESC:
  */
 
-public class OrderListAdapter extends BaseQuickAdapter<PayOrder,BaseViewHolder> {
+public class OrderListAdapter extends BaseQuickAdapter<PayOrder, BaseViewHolder> {
     protected final Context context;
     private int[] tvIds = new int[]{R.id.tv_order_id, R.id.tv_pay_time, R.id.tv_real_price, R.id.tv_pay_table, R.id.tv_fail_reason, R.id.tv_phone, R.id.tv_source_price, R.id.tv_print, R.id.tv_pay_type};
-
+    private float progress;
     public OrderListAdapter(ArrayList<PayOrder> items) {
         super(R.layout.smart_order_item, items);
         context = Injection.provideContext();
@@ -38,16 +34,16 @@ public class OrderListAdapter extends BaseQuickAdapter<PayOrder,BaseViewHolder> 
 
     @Override
     protected void convert(BaseViewHolder helper, PayOrder item) {
-        helper.setVisible(R.id.tv_has_eat,true)
-                .setVisible(R.id.tv_order_id,true)
-                .setVisible(R.id.tv_pay_time,true)
-                .setVisible(R.id.tv_phone,true)
-                .setVisible(R.id.tv_print,true)
-                .setVisible(R.id.tv_print_num,true)
-                .setVisible(R.id.tv_source_price,true)
-                .setVisible(R.id.bt_print,true)
+        helper.setVisible(R.id.tv_has_eat, true)
+                .setVisible(R.id.tv_order_id, true)
+                .setVisible(R.id.tv_pay_time, true)
+                .setVisible(R.id.tv_phone, true)
+                .setVisible(R.id.tv_print, true)
+                .setVisible(R.id.tv_print_num, true)
+                .setVisible(R.id.tv_source_price, true)
+                .setVisible(R.id.bt_print, true)
                 .setVisible(R.id.tv_pay_table, false)
-                .setVisible(R.id.tv_real_price,true)
+                .setVisible(R.id.tv_real_price, true)
                 .setVisible(R.id.tv_fail_reason, false)
                 .setVisible(R.id.bt_pay, false)
                 .setVisible(R.id.tv_pay_type, false)
@@ -169,12 +165,27 @@ public class OrderListAdapter extends BaseQuickAdapter<PayOrder,BaseViewHolder> 
                 helper.setTextColor(id, ContextCompat.getColor(context, R.color.gray_5th));
             } else {
                 if (id == R.id.tv_order_id) {
-                    helper.setTextColor(id, ContextCompat.getColor(context,R.color.black_1st));
+                    helper.setTextColor(id, ContextCompat.getColor(context, R.color.black_1st));
                 } else {
                     helper.setTextColor(id, ContextCompat.getColor(context, R.color.gray_3th));
                 }
             }
         }
 
+    }
+
+    @Override
+    public void onBindViewHolder(BaseViewHolder holder, int positions) {
+        if (positions == 0) {
+            DonutProgress donutProgress =  holder.getView(R.id.btn_jump);
+            donutProgress.setProgress(progress);
+        } else {
+            super.onBindViewHolder(holder, positions);
+        }
+    }
+
+    public void updateProgress(float progress){
+        this.progress=progress;
+        notifyItemChanged(0,progress);
     }
 }

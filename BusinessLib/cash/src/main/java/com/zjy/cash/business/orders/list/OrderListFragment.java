@@ -3,19 +3,25 @@ package com.zjy.cash.business.orders.list;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
+import android.view.LayoutInflater;
 import android.view.View;
 
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.zjy.baselib.component.Injection.Injection;
+import com.zjy.cash.R;
 import com.zjy.cash.component.CashInjecttion;
 import com.zjy.cash.data.model.order.PayOrder;
 import com.zjy.zlibrary.component.scrollablelayout.ScrollableHelper;
 import com.zjy.zlibrary.fragment.list.AbsListFragment;
+import com.zjy.zlibrary.rx.transform.Transformers;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 import es.dmoral.toasty.Toasty;
+import rx.Observable;
+import rx.functions.Action1;
 
 public class OrderListFragment extends AbsListFragment implements OrderListContract.View,ScrollableHelper.ScrollableContainer {
     public static final String ORDER_TYPE = "type";
@@ -27,6 +33,8 @@ public class OrderListFragment extends AbsListFragment implements OrderListContr
 
 
     private OrderListContract.Presenter mPresenter;
+    protected OrderListAdapter mListAdapter;
+
     public static OrderListFragment newInstance(int type) {
         Bundle args = new Bundle();
         args.putInt(ORDER_TYPE, type);
@@ -61,8 +69,30 @@ public class OrderListFragment extends AbsListFragment implements OrderListContr
 
 
     @Override
+    public void onResume() {
+        super.onResume();
+
+    }
+
+    @Override
     protected BaseQuickAdapter getAdapter() {
-        return new OrderListAdapter(((ArrayList<PayOrder>) getItems()));
+        mListAdapter = new OrderListAdapter(((ArrayList<PayOrder>) getItems()));
+        mListAdapter.addHeaderView(LayoutInflater.from(getContext()).inflate(R.layout.layout_donut_progress,null));
+        return mListAdapter;
+    }
+
+    @Override
+    protected void lazyInit() {
+        super.lazyInit();
+        Observable.interval(1,1, TimeUnit.SECONDS)
+                .take(20)
+                .compose(Transformers.<Long>observeForUI())
+                .subscribe(new Action1<Long>() {
+                    @Override
+                    public void call(Long aLong) {
+                        mListAdapter.updateProgress(aLong*5+5);
+                    }
+                });
     }
 
     /**

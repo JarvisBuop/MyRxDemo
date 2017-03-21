@@ -36,7 +36,7 @@ public abstract class AbsListFragment extends BaseFragment implements IList {
 
     protected int mCurrentPageIndex;
     private List mItems;
-    private BaseQuickAdapter mAdapter;
+    protected BaseQuickAdapter mAdapter;
 
 
     protected SwipeRefreshLayout swipeLayout;
@@ -119,17 +119,22 @@ public abstract class AbsListFragment extends BaseFragment implements IList {
     @Override
     public void setUserVisibleHint(boolean isVisibleToUser) {
         if (isVisibleToUser && isVisible() ) {
-            normalLoad(getInitPageIndex());
+            lazyInit();
         }
         super.setUserVisibleHint(isVisibleToUser);
 
     }
 
+    protected void lazyInit() {
+        normalLoad(getInitPageIndex());
+    }
+
+
     @Override
     public void onResume() {
         super.onResume();
         if (getUserVisibleHint() ) {
-            normalLoad(getInitPageIndex());
+            lazyInit();
         }
     }
 
