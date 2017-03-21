@@ -72,7 +72,7 @@ public class LoginPresenter implements LoginContract.Presenter {
         String AP = WifiUtil.getSSID(Injection.provideContext())
                 + DeviceInfoUtil.getPrintType() + String.format("(%s)", android.os.Build.MODEL);
 
-
+        mLoginView.showProgress();
         Subscription subscription = mRepository.login(userName, ePassword, DeviceID, V, AP, HttpConstants.getbApiVersionValue())
                 .flatMap(new Func1<LoginResponse, Observable<ShopInfo>>() {
                     @Override
@@ -122,7 +122,7 @@ public class LoginPresenter implements LoginContract.Presenter {
                     }
                 })
                 .compose(Transformers.rxNetWork())
-                .subscribe(new NetWorkSubscriber<NetWorkResponse<UnionConfigModel>>(progress) {
+                .subscribe(new NetWorkSubscriber<NetWorkResponse<UnionConfigModel>>() {
 
                     @Override
                     public void onNext(NetWorkResponse<UnionConfigModel> unionConfigModelNetWorkResponse) {
@@ -132,12 +132,14 @@ public class LoginPresenter implements LoginContract.Presenter {
                     @Override
                     public void onError(Throwable e) {
                         super.onError(e);
+                        mLoginView.hideProgress();
                         mLoginView.toastError(e.getMessage());
                     }
 
                     @Override
                     public void onCompleted() {
                         super.onCompleted();
+                        mLoginView.hideProgress();
                         mLoginView.loginSuccess();
                     }
                 });

@@ -10,6 +10,9 @@ public interface LoginContract {
         void toastError(String errorMsg);
         void loginSuccess();
         void showUser(User user);
+
+        void hideProgress();
+        void showProgress();
     }
     interface Presenter extends BasePresenter{
         void login(String userName, String password, Progress progress);

@@ -32,7 +32,7 @@ task clean(type: Delete) {
 }
 
 ext {
-    supportLibraryVersion = "25.2.0"
+    supportLibraryVersion = "25.3.0"
     retrofitLibraryVersion = "2.1.0"
     GROUP = 'com.zhoujunyou'
     VERSION_NAME = "${VERSION_NAME_PREFIX}${VERSION_NAME_SUFFIX}"

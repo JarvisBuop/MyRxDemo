@@ -58,7 +58,7 @@ public class LoginActivity extends BaseActivity implements LoginContract.View{
 
     @OnClick(R.id.bt_go)
     public void login(View view) {
-      mLoginPresenter.login(etUserName.getText().toString().trim(), etPassWord.getText().toString().trim(),progress);
+        mLoginPresenter.login(etUserName.getText().toString().trim(), etPassWord.getText().toString().trim(),progress);
     }
 
     @Override
@@ -122,6 +122,16 @@ public class LoginActivity extends BaseActivity implements LoginContract.View{
     public void showUser(User user) {
         etUserName.setText(user.userName);
         etPassWord.setText(user.password);
+    }
+
+    @Override
+    public void hideProgress() {
+        progress.hide();
+    }
+
+    @Override
+    public void showProgress() {
+        progress.show();
     }
 
 }
