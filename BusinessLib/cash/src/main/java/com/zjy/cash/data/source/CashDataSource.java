@@ -2,7 +2,7 @@ package com.zjy.cash.data.source;
 
 import com.zjy.cash.data.model.order.OrdersResponse;
 
-import rx.Observable;
+import io.reactivex.Observable;
 
 
 /**
@@ -14,6 +14,6 @@ import rx.Observable;
  */
 
 public interface CashDataSource {
-    Observable<OrdersResponse> getOrders(String token,int type,String all,int page,String mobile,String apiVersion);
+    Observable<OrdersResponse> getOrders(String token, int type, String all, int page, String mobile, String apiVersion);
     String getSessionId();
 }

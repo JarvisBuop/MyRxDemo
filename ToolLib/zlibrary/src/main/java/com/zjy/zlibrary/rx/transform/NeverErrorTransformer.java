@@ -1,32 +1,34 @@
 package com.zjy.zlibrary.rx.transform;
 
-import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 
-import rx.Observable;
-import rx.functions.Action1;
+import java.util.function.Consumer;
 
-public final class NeverErrorTransformer<T> implements Observable.Transformer<T, T> {
+import io.reactivex.Observable;
+import io.reactivex.ObservableSource;
+import io.reactivex.ObservableTransformer;
+
+public final class NeverErrorTransformer<T> implements ObservableTransformer<T, T> {
   private final @Nullable
-  Action1<Throwable> errorAction;
+  Consumer errorAction;
 
   protected NeverErrorTransformer() {
     this.errorAction = null;
   }
 
-  protected NeverErrorTransformer(final @Nullable Action1<Throwable> errorAction) {
+  protected NeverErrorTransformer(final Consumer<Throwable> errorAction) {
     this.errorAction = errorAction;
   }
 
+
   @Override
-  @NonNull
-  public Observable<T> call(final @NonNull Observable<T> source) {
-    return source
-      .doOnError(e -> {
-        if (errorAction != null) {
-          errorAction.call(e);
-        }
-      })
-      .onErrorResumeNext(Observable.empty());
+  public ObservableSource<T> apply(Observable<T> upstream) {
+    return upstream
+            .doOnError(e -> {
+              if (errorAction != null) {
+                errorAction.accept(e);
+              }
+            })
+            .onErrorResumeNext(Observable.empty());
   }
 }

@@ -1,28 +1,22 @@
 package com.zjy.zlibrary.rx.transform;
 
-import android.support.annotation.NonNull;
+import io.reactivex.Observable;
+import io.reactivex.ObservableSource;
+import io.reactivex.ObservableTransformer;
+import io.reactivex.android.schedulers.AndroidSchedulers;
+import io.reactivex.functions.Function;
 
-import com.zjy.zlibrary.util.ThreadUtils;
 
-import rx.Observable;
-import rx.android.schedulers.AndroidSchedulers;
-import rx.functions.Func1;
-import rx.schedulers.Schedulers;
+public final class ObserveForUITransformer<T> implements ObservableTransformer<T, T> {
 
-public final class ObserveForUITransformer<T> implements Observable.Transformer<T, T> {
-  @Override
-  public @NonNull
-  Observable<T> call(final @NonNull Observable<T> source) {
 
-    return source.flatMap(new Func1<T, Observable<T>>() {
-      @Override
-      public Observable<T> call(T t) {
-        if (ThreadUtils.isMainThread()) {
-          return Observable.just(t).observeOn(Schedulers.immediate());
-        } else {
-          return Observable.just(t).observeOn(AndroidSchedulers.mainThread());
-        }
-      }
-    });
-  }
+    @Override
+    public ObservableSource<T> apply(Observable<T> upstream) {
+        return upstream.flatMap(new Function<T, ObservableSource<T>>() {
+            @Override
+            public ObservableSource<T> apply(@io.reactivex.annotations.NonNull T t) throws Exception {
+                return Observable.just(t).observeOn(AndroidSchedulers.mainThread());
+            }
+        });
+    }
 }

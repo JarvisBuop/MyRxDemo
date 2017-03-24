@@ -3,7 +3,6 @@ package com.zjy.myrxdemo.business.login;
 import com.zjy.baselib.data.model.bean.User;
 import com.zjy.zlibrary.base.BasePresenter;
 import com.zjy.zlibrary.base.BaseView;
-import com.zjy.zlibrary.dialog.Progress;
 
 public interface LoginContract {
     interface View extends BaseView<Presenter>{
@@ -15,7 +14,7 @@ public interface LoginContract {
         void showProgress();
     }
     interface Presenter extends BasePresenter{
-        void login(String userName, String password, Progress progress);
+        void login(String userName, String password);
     }
 
 

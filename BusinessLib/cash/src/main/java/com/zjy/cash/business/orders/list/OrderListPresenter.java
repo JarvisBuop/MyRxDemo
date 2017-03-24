@@ -5,20 +5,21 @@ import com.zjy.baselib.framework.HttpConstants;
 import com.zjy.cash.data.model.order.OrdersResponse;
 import com.zjy.cash.data.source.CashRepository;
 
+import io.reactivex.Observer;
+import io.reactivex.disposables.CompositeDisposable;
+import io.reactivex.disposables.Disposable;
 
-import rx.Subscriber;
-import rx.subscriptions.CompositeSubscription;
 
 public class OrderListPresenter implements OrderListContract.Presenter {
     private final CashRepository mRepository;
     private final OrderListContract.View mOrdersView;
-    private CompositeSubscription mSubscriptions;
+    private CompositeDisposable mCompositeDisposable;
 
 
     public OrderListPresenter(CashRepository repository, OrderListContract.View loginView) {
         mRepository = repository;
         mOrdersView = loginView;
-        mSubscriptions = new CompositeSubscription();
+        mCompositeDisposable = new CompositeDisposable();
         mOrdersView.setPresenter(this);
     }
 
@@ -58,15 +59,21 @@ public class OrderListPresenter implements OrderListContract.Presenter {
     public void loadData(final int cursor) {
         currentPage=cursor;
         mRepository.getOrders(mRepository.getSessionId(),orderType,"1",cursor,phoneNum, HttpConstants.getbApiVersionValue())
-               .subscribe(new Subscriber<OrdersResponse>() {
-                   @Override
-                   public void onCompleted() {
-
-                   }
+               .subscribe(new Observer<OrdersResponse>() {
 
                    @Override
                    public void onError(Throwable e) {
                       mOrdersView.showError(e.getMessage());
+                   }
+
+                   @Override
+                   public void onComplete() {
+
+                   }
+
+                   @Override
+                   public void onSubscribe(Disposable d) {
+
                    }
 
                    @Override

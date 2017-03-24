@@ -14,7 +14,8 @@ import com.zjy.zlibrary.rx.transform.Transformers;
 
 import java.util.List;
 
-import rx.Observable;
+import io.reactivex.Observable;
+
 
 public class Repository implements DataSource {
     private static Repository INSTANCE = null;

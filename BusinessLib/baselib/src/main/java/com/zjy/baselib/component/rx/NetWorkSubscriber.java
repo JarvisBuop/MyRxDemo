@@ -2,18 +2,20 @@ package com.zjy.baselib.component.rx;
 
 import com.zjy.baselib.data.model.NetWorkResponse;
 
-import rx.Subscriber;
+import org.reactivestreams.Subscriber;
+import org.reactivestreams.Subscription;
+
 import timber.log.Timber;
 
 
-public  class NetWorkSubscriber<T extends NetWorkResponse> extends Subscriber<T> {
+public  class NetWorkSubscriber<T extends NetWorkResponse> implements Subscriber<T> {
     public static final String TAG=NetWorkSubscriber.class.getSimpleName();
 
     public NetWorkSubscriber() {
     }
 
     @Override
-    public void onCompleted() {
+    public void onComplete() {
 
     }
 
@@ -28,8 +30,7 @@ public  class NetWorkSubscriber<T extends NetWorkResponse> extends Subscriber<T>
     }
 
     @Override
-    public void onStart() {
-        super.onStart();
-    }
+    public void onSubscribe(Subscription s) {
 
+    }
 }

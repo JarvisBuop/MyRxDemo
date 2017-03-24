@@ -6,7 +6,8 @@ import com.zjy.baselib.data.source.local.PreferencesManager;
 import com.zjy.cash.data.model.order.OrdersResponse;
 import com.zjy.cash.data.source.CashDataSource;
 
-import rx.Observable;
+import io.reactivex.Observable;
+
 
 public class CashLocalDataSource implements CashDataSource {
     private static CashLocalDataSource instance = null;

@@ -7,8 +7,10 @@ import com.zjy.baselib.data.source.PersistenceContract;
 
 import org.greenrobot.greendao.query.QueryBuilder;
 
-import rx.Observable;
-import rx.Subscriber;
+import io.reactivex.Observable;
+import io.reactivex.ObservableEmitter;
+import io.reactivex.ObservableOnSubscribe;
+
 
 public class BaseLocalDataSource {
     private static BaseLocalDataSource INSTANCE = null;
@@ -28,37 +30,40 @@ public class BaseLocalDataSource {
     }
 
     public Observable<User> getUser() {
-        return Observable.create(new Observable.OnSubscribe<User>() {
+        return Observable.create(new ObservableOnSubscribe<User>() {
             @Override
-            public void call(Subscriber<? super User> subscriber) {
+            public void subscribe(ObservableEmitter<User> e) throws Exception {
                 QueryBuilder<AppDB> qb = mDaoSession.getAppDBDao().queryBuilder();
                 AppDB unique = qb.where(AppDBDao.Properties.Key.eq(PersistenceContract.AppDBEntry.USER)).unique();
                 User user=null;
                 if (unique != null) {
-                     user = new Gson().fromJson(unique.getValue(), User.class);
+                    user = new Gson().fromJson(unique.getValue(), User.class);
                 }
-                subscriber.onNext(user);
-                subscriber.onCompleted();
+                e.onNext(user);
+                e.onComplete();
             }
         });
+
     }
 
     public Observable<Boolean> saveUser(final User user) {
-        return Observable.create(new Observable.OnSubscribe<Boolean>() {
+        return Observable.create(new ObservableOnSubscribe<Boolean>() {
             @Override
-            public void call(Subscriber<? super Boolean> subscriber) {
+            public void subscribe(ObservableEmitter<Boolean> e) throws Exception {
                 AppDB appDB = new AppDB();
                 appDB.setKey(PersistenceContract.AppDBEntry.USER);
                 appDB.setValue(new Gson().toJson(user));
                 long l = mDaoSession.getAppDBDao().insertOrReplace(appDB);
                 if (l > 0) {
-                    subscriber.onNext(true);
+                    e.onNext(true);
                 } else {
-                    subscriber.onError(new Exception("insert data failed"));
+                    e.onError(new Exception("insert data failed"));
                 }
-                subscriber.onCompleted();
+                e.onComplete();
             }
         });
+
+
     }
 
 

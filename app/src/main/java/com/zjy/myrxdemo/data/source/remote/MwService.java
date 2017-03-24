@@ -1,21 +1,21 @@
 package com.zjy.myrxdemo.data.source.remote;
 
 import com.zjy.baselib.data.model.NetWorkResponse;
+import com.zjy.baselib.framework.HttpConstants;
 import com.zjy.myrxdemo.data.model.login.bean.AdvModel;
 import com.zjy.myrxdemo.data.model.login.bean.ConfigQRModel;
 import com.zjy.myrxdemo.data.model.login.bean.LoginResponse;
 import com.zjy.myrxdemo.data.model.login.bean.PayConfigModel;
 import com.zjy.myrxdemo.data.model.login.bean.UnionConfigModel;
-import com.zjy.baselib.framework.HttpConstants;
 
 import java.util.List;
 
+import io.reactivex.Observable;
 import retrofit2.http.Field;
 import retrofit2.http.FormUrlEncoded;
 import retrofit2.http.GET;
 import retrofit2.http.POST;
 import retrofit2.http.Query;
-import rx.Observable;
 
 public interface MwService {
     String HOST = HttpConstants.getPDUrlRoot();

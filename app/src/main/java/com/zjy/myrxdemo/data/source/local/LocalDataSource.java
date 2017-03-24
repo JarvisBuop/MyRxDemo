@@ -23,9 +23,7 @@ import org.greenrobot.greendao.query.QueryBuilder;
 
 import java.util.List;
 
-import rx.Observable;
-import rx.Subscriber;
-
+import io.reactivex.Observable;
 
 
 public class LocalDataSource implements DataSource {
@@ -67,34 +65,29 @@ public class LocalDataSource implements DataSource {
 
     @Override
     public Observable<ShopInfo> getShopInfo() {
-        return Observable.create(new Observable.OnSubscribe<ShopInfo>() {
-            @Override
-            public void call(Subscriber<? super ShopInfo> subscriber) {
-                QueryBuilder<AppDB> qb = mDaoSession.getAppDBDao().queryBuilder();
-                AppDB unique = qb.where(AppDBDao.Properties.Key.eq(PersistenceContract.AppDBEntry.SHOP_INFO)).unique();
-                ShopInfo shopInfo = new Gson().fromJson(unique.getValue(), ShopInfo.class);
-                subscriber.onNext(shopInfo);
-                subscriber.onCompleted();
-            }
+        return Observable.create(e -> {
+            QueryBuilder<AppDB> qb = mDaoSession.getAppDBDao().queryBuilder();
+            AppDB unique = qb.where(AppDBDao.Properties.Key.eq(PersistenceContract.AppDBEntry.SHOP_INFO)).unique();
+            ShopInfo shopInfo = new Gson().fromJson(unique.getValue(), ShopInfo.class);
+            e.onNext(shopInfo);
+            e.onComplete();
         });
+
     }
 
     @Override
     public Observable<Boolean> saveShopInfo(final ShopInfo shopInfo) {
-        return Observable.create(new Observable.OnSubscribe<Boolean>() {
-            @Override
-            public void call(Subscriber<? super Boolean> subscriber) {
-                AppDB appDB = new AppDB();
-                appDB.setKey(PersistenceContract.AppDBEntry.SHOP_INFO);
-                appDB.setValue(new Gson().toJson(shopInfo));
-                long l = mDaoSession.getAppDBDao().insertOrReplace(appDB);
-                if(l>0){
-                    subscriber.onNext(true);
-                }else {
-                    subscriber.onError(new Exception("insert data failed"));
-                }
-                subscriber.onCompleted();
+        return Observable.create(e -> {
+            AppDB appDB = new AppDB();
+            appDB.setKey(PersistenceContract.AppDBEntry.SHOP_INFO);
+            appDB.setValue(new Gson().toJson(shopInfo));
+            long l = mDaoSession.getAppDBDao().insertOrReplace(appDB);
+            if(l>0){
+                e.onNext(true);
+            }else {
+                e.onError(new Exception("insert data failed"));
             }
+            e.onComplete();
         });
     }
 

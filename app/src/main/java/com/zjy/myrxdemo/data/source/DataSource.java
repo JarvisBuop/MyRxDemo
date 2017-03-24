@@ -12,7 +12,8 @@ import com.zjy.myrxdemo.data.model.login.bean.UnionConfigModel;
 
 import java.util.List;
 
-import rx.Observable;
+import io.reactivex.Observable;
+
 
 public interface DataSource {
     void saveSessionId(String sessionId);

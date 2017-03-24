@@ -4,16 +4,18 @@ import android.support.annotation.NonNull;
 
 import com.zjy.baselib.data.model.NetWorkResponse;
 
-import rx.Observable;
-import rx.Subscriber;
+import io.reactivex.ObservableOperator;
+import io.reactivex.Observer;
+import io.reactivex.disposables.Disposable;
 
-public final class ApiErrorOperator<T extends NetWorkResponse> implements Observable.Operator<T, T> {
+
+public final class ApiErrorOperator<T extends NetWorkResponse> implements ObservableOperator<T, T> {
 
   public ApiErrorOperator() {
 
   }
 
-  @Override
+  /*@Override
   public Subscriber<? super T> call(final @NonNull Subscriber<? super T> subscriber) {
     return new Subscriber<T>() {
       @Override
@@ -41,6 +43,36 @@ public final class ApiErrorOperator<T extends NetWorkResponse> implements Observ
         }
 
         subscriber.onNext(response);
+      }
+    };
+  }*/
+
+  @Override
+  public Observer<? super T> apply(final Observer<? super T> observer) throws Exception {
+    return new Observer<T>() {
+      @Override
+      public void onComplete() {
+        observer.onComplete();
+      }
+
+      @Override
+      public void onError(final @NonNull Throwable e) {
+          observer.onError(e);
+      }
+
+      @Override
+      public void onSubscribe(Disposable d) {
+
+      }
+
+      @Override
+      public void onNext(T response) {
+
+        if (response.errno!=0) {
+          observer.onError(new ServiceException(response.errno,response.errmsg));
+        }
+
+        observer.onNext(response);
       }
     };
   }

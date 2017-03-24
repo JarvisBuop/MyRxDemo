@@ -24,4 +24,6 @@ dependencies {
     //数据库ORM框架
     compile 'org.greenrobot:greendao:3.2.0'
     compile 'com.tencent.bugly:crashreport_upgrade:latest.release'
+    compile 'com.facebook.stetho:stetho:1.4.2'
+
 }

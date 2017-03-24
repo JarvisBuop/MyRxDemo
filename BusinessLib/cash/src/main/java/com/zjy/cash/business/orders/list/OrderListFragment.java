@@ -20,8 +20,9 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import es.dmoral.toasty.Toasty;
-import rx.Observable;
-import rx.functions.Action1;
+import io.reactivex.Observable;
+import io.reactivex.Observer;
+import io.reactivex.disposables.Disposable;
 
 public class OrderListFragment extends AbsListFragment implements OrderListContract.View,ScrollableHelper.ScrollableContainer {
     public static final String ORDER_TYPE = "type";
@@ -87,11 +88,27 @@ public class OrderListFragment extends AbsListFragment implements OrderListContr
         Observable.interval(1,1, TimeUnit.SECONDS)
                 .take(20)
                 .compose(Transformers.<Long>observeForUI())
-                .subscribe(new Action1<Long>() {
+                .subscribe(new Observer<Long>() {
                     @Override
-                    public void call(Long aLong) {
+                    public void onSubscribe(Disposable d) {
+
+                    }
+
+                    @Override
+                    public void onNext(Long aLong) {
                         mListAdapter.updateProgress(aLong*5+5);
                     }
+
+                    @Override
+                    public void onError(Throwable e) {
+
+                    }
+
+                    @Override
+                    public void onComplete() {
+
+                    }
+
                 });
     }
 

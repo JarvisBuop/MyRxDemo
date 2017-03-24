@@ -7,7 +7,6 @@ import android.text.TextUtils;
 import com.blankj.utilcode.utils.AppUtils;
 import com.blankj.utilcode.utils.DeviceUtils;
 import com.zjy.baselib.component.Injection.Injection;
-import com.zjy.baselib.component.rx.NetWorkSubscriber;
 import com.zjy.baselib.component.rx.ServiceException;
 import com.zjy.baselib.component.util.DeviceInfoUtil;
 import com.zjy.baselib.component.util.MD5Utility;
@@ -20,26 +19,30 @@ import com.zjy.myrxdemo.data.model.login.bean.LoginResponse;
 import com.zjy.myrxdemo.data.model.login.bean.PayConfigModel;
 import com.zjy.myrxdemo.data.model.login.bean.UnionConfigModel;
 import com.zjy.myrxdemo.data.source.Repository;
-import com.zjy.zlibrary.dialog.Progress;
 import com.zjy.zlibrary.rx.transform.Transformers;
 
-import rx.Observable;
-import rx.Subscription;
-import rx.functions.Func1;
-import rx.subscriptions.CompositeSubscription;
+import io.reactivex.Observable;
+import io.reactivex.ObservableSource;
+import io.reactivex.Observer;
+import io.reactivex.annotations.NonNull;
+import io.reactivex.disposables.CompositeDisposable;
+import io.reactivex.disposables.Disposable;
+import io.reactivex.functions.Function;
 import timber.log.Timber;
+
+;
 
 public class LoginPresenter implements LoginContract.Presenter {
     public static final String TAG = LoginPresenter.class.getSimpleName();
     private final Repository mRepository;
     private final LoginContract.View mLoginView;
-    private CompositeSubscription mSubscriptions;
+    private CompositeDisposable mCompositeDisposable;
 
 
     public LoginPresenter(Repository repository, LoginContract.View loginView) {
         mRepository = repository;
         mLoginView = loginView;
-        mSubscriptions = new CompositeSubscription();
+        mCompositeDisposable = new CompositeDisposable();
         mLoginView.setPresenter(this);
     }
 
@@ -58,11 +61,11 @@ public class LoginPresenter implements LoginContract.Presenter {
 
     @Override
     public void unsubscribe() {
-        mSubscriptions.clear();
+        mCompositeDisposable.dispose();
     }
 
     @Override
-    public void login(final String userName, final String password, final Progress progress) {
+    public void login(final String userName, final String password) {
         if (!localCheckOK(userName, password)) {
             return;
         }
@@ -73,56 +76,59 @@ public class LoginPresenter implements LoginContract.Presenter {
                 + DeviceInfoUtil.getPrintType() + String.format("(%s)", android.os.Build.MODEL);
 
         mLoginView.showProgress();
-        Subscription subscription = mRepository.login(userName, ePassword, DeviceID, V, AP, HttpConstants.getbApiVersionValue())
-                .flatMap(new Func1<LoginResponse, Observable<ShopInfo>>() {
+        mRepository.login(userName, ePassword, DeviceID, V, AP, HttpConstants.getbApiVersionValue())
+                .flatMap(new Function<LoginResponse, ObservableSource<ShopInfo>>() {
                     @Override
-                    public Observable<ShopInfo> call(LoginResponse loginResponse) {
-                     if(loginResponse.errno!=0){
-                         return Observable.error(new ServiceException(loginResponse.errno,loginResponse.errmsg));
-                     }else {
-                         User user = new User();
-                         user.userName = userName;
-                         user.password = password;
-                         user.hasLogin = true;
-                         mRepository.saveUser(user).subscribe();
-                         ShopInfo shopInfo = LoginConfig.buildShopInfoFromLoginResponse(loginResponse);
-                         mRepository.saveShopInfo(shopInfo).subscribe();
-                         mRepository.saveSessionId(shopInfo.sessionId);
-                         return Observable.just(shopInfo);
-                     }
-
+                    public ObservableSource<ShopInfo> apply(@NonNull LoginResponse loginResponse) throws Exception {
+                        if(loginResponse.errno!=0){
+                            return Observable.error(new ServiceException(loginResponse.errno,loginResponse.errmsg));
+                        }else {
+                            User user = new User();
+                            user.userName = userName;
+                            user.password = password;
+                            user.hasLogin = true;
+                            mRepository.saveUser(user).subscribe();
+                            ShopInfo shopInfo = LoginConfig.buildShopInfoFromLoginResponse(loginResponse);
+                            mRepository.saveShopInfo(shopInfo).subscribe();
+                            mRepository.saveSessionId(shopInfo.sessionId);
+                            return Observable.just(shopInfo);
+                        }
                     }
                 })
-                .flatMap(new Func1<ShopInfo, Observable<NetWorkResponse<PayConfigModel>>>() {
+                .flatMap(new Function<ShopInfo, ObservableSource<NetWorkResponse<PayConfigModel>>>() {
                     @Override
-                    public Observable<NetWorkResponse<PayConfigModel>> call(ShopInfo shopInfo) {
+                    public ObservableSource<NetWorkResponse<PayConfigModel>> apply(@NonNull ShopInfo shopInfo) throws Exception {
                         LoginConfig.getAdvUrl(mRepository).subscribe();
                         LoginConfig.getConfigQR(mRepository).subscribe();
                         if(!shopInfo.bCashEn){
                             Timber.d("不支持收银");
-                           //return Observable.error(new ServiceException(ServiceException.TRANSFORM_TO_FAILED,"不支持收银"));
+                            //return Observable.error(new ServiceException(ServiceException.TRANSFORM_TO_FAILED,"不支持收银"));
                             return Observable.empty();
                         }else {
                             return mRepository.getPayConfig(shopInfo.sessionId, HttpConstants.getbApiVersionValue());
                         }
-
                     }
                 })
 
-                .flatMap(new Func1<NetWorkResponse<PayConfigModel>, Observable<NetWorkResponse<UnionConfigModel>>>() {
+                .flatMap(new Function<NetWorkResponse<PayConfigModel>, ObservableSource<NetWorkResponse<UnionConfigModel>>>() {
                     @Override
-                    public  Observable<NetWorkResponse<UnionConfigModel>> call(NetWorkResponse<PayConfigModel> payConfigResponse) {
-                       if(DeviceInfoUtil.isWizarPOS() || DeviceInfoUtil.isLianDiA8()){
-                           return mRepository.getUnionConfig(mRepository.getSessionId(), HttpConstants.getbApiVersionValue());
+                    public ObservableSource<NetWorkResponse<UnionConfigModel>> apply(@NonNull NetWorkResponse<PayConfigModel> payConfigModelNetWorkResponse) throws Exception {
+                        if(DeviceInfoUtil.isWizarPOS() || DeviceInfoUtil.isLianDiA8()){
+                            return mRepository.getUnionConfig(mRepository.getSessionId(), HttpConstants.getbApiVersionValue());
                         }
                         Timber.d("不支持银联收款");
                         //return Observable.error(new ServiceException(ServiceException.TRANSFORM_TO_FAILED,"不支持银联收款"));
                         return Observable.empty();
-
                     }
+
                 })
                 .compose(Transformers.rxNetWork())
-                .subscribe(new NetWorkSubscriber<NetWorkResponse<UnionConfigModel>>() {
+                .subscribe(new Observer<NetWorkResponse<UnionConfigModel>>() {
+
+                    @Override
+                    public void onSubscribe(Disposable d) {
+
+                    }
 
                     @Override
                     public void onNext(NetWorkResponse<UnionConfigModel> unionConfigModelNetWorkResponse) {
@@ -131,19 +137,17 @@ public class LoginPresenter implements LoginContract.Presenter {
 
                     @Override
                     public void onError(Throwable e) {
-                        super.onError(e);
                         mLoginView.hideProgress();
                         mLoginView.toastError(e.getMessage());
                     }
 
                     @Override
-                    public void onCompleted() {
-                        super.onCompleted();
+                    public void onComplete() {
                         mLoginView.hideProgress();
                         mLoginView.loginSuccess();
                     }
                 });
-        mSubscriptions.add(subscription);
+        //mCompositeDisposable.add(subscription);
 
 
     }

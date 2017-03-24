@@ -14,7 +14,8 @@ import com.zjy.myrxdemo.data.source.DataSource;
 
 import java.util.List;
 
-import rx.Observable;
+import io.reactivex.Observable;
+
 
 public class RemoteDataSource implements DataSource {
     private static RemoteDataSource instance = null;
