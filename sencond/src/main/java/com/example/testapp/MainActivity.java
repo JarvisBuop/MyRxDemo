@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.btn_traffics).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                TrafficsManager.saveMobileTraffics();
+                TrafficsManager.queryAndSetMobileTraffics();
                 traffics.setText(TrafficsManager.getMobileTraffics()+"M");
             }
         });

@@ -27,6 +27,6 @@ dependencies {
     compile project(':ToolLib:chipview')
     compile project(':ToolLib:toasty')
     compile project(':ToolLib:bottom-bar')
-    compile 'com.zhoujunyou:zlibrary:1.0.0'
+    compile project(':ToolLib:zlibrary')
     compile 'com.android.support.constraint:constraint-layout:+'
 }

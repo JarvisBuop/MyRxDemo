@@ -23,11 +23,10 @@ import com.zjy.zlibrary.rx.transform.Transformers;
 
 import io.reactivex.Observable;
 import io.reactivex.ObservableSource;
-import io.reactivex.Observer;
 import io.reactivex.annotations.NonNull;
 import io.reactivex.disposables.CompositeDisposable;
-import io.reactivex.disposables.Disposable;
 import io.reactivex.functions.Function;
+import io.reactivex.observers.DisposableObserver;
 import timber.log.Timber;
 
 ;
@@ -76,13 +75,13 @@ public class LoginPresenter implements LoginContract.Presenter {
                 + DeviceInfoUtil.getPrintType() + String.format("(%s)", android.os.Build.MODEL);
 
         mLoginView.showProgress();
-        mRepository.login(userName, ePassword, DeviceID, V, AP, HttpConstants.getbApiVersionValue())
+        DisposableObserver<NetWorkResponse<UnionConfigModel>> observer = mRepository.login(userName, ePassword, DeviceID, V, AP, HttpConstants.getbApiVersionValue())
                 .flatMap(new Function<LoginResponse, ObservableSource<ShopInfo>>() {
                     @Override
                     public ObservableSource<ShopInfo> apply(@NonNull LoginResponse loginResponse) throws Exception {
-                        if(loginResponse.errno!=0){
-                            return Observable.error(new ServiceException(loginResponse.errno,loginResponse.errmsg));
-                        }else {
+                        if (loginResponse.errno != 0) {
+                            return Observable.error(new ServiceException(loginResponse.errno, loginResponse.errmsg));
+                        } else {
                             User user = new User();
                             user.userName = userName;
                             user.password = password;
@@ -100,11 +99,11 @@ public class LoginPresenter implements LoginContract.Presenter {
                     public ObservableSource<NetWorkResponse<PayConfigModel>> apply(@NonNull ShopInfo shopInfo) throws Exception {
                         LoginConfig.getAdvUrl(mRepository).subscribe();
                         LoginConfig.getConfigQR(mRepository).subscribe();
-                        if(!shopInfo.bCashEn){
+                        if (!shopInfo.bCashEn) {
                             Timber.d("不支持收银");
                             //return Observable.error(new ServiceException(ServiceException.TRANSFORM_TO_FAILED,"不支持收银"));
                             return Observable.empty();
-                        }else {
+                        } else {
                             return mRepository.getPayConfig(shopInfo.sessionId, HttpConstants.getbApiVersionValue());
                         }
                     }
@@ -113,7 +112,7 @@ public class LoginPresenter implements LoginContract.Presenter {
                 .flatMap(new Function<NetWorkResponse<PayConfigModel>, ObservableSource<NetWorkResponse<UnionConfigModel>>>() {
                     @Override
                     public ObservableSource<NetWorkResponse<UnionConfigModel>> apply(@NonNull NetWorkResponse<PayConfigModel> payConfigModelNetWorkResponse) throws Exception {
-                        if(DeviceInfoUtil.isWizarPOS() || DeviceInfoUtil.isLianDiA8()){
+                        if (DeviceInfoUtil.isWizarPOS() || DeviceInfoUtil.isLianDiA8()) {
                             return mRepository.getUnionConfig(mRepository.getSessionId(), HttpConstants.getbApiVersionValue());
                         }
                         Timber.d("不支持银联收款");
@@ -123,12 +122,7 @@ public class LoginPresenter implements LoginContract.Presenter {
 
                 })
                 .compose(Transformers.rxNetWork())
-                .subscribe(new Observer<NetWorkResponse<UnionConfigModel>>() {
-
-                    @Override
-                    public void onSubscribe(Disposable d) {
-
-                    }
+                .subscribeWith(new DisposableObserver<NetWorkResponse<UnionConfigModel>>() {
 
                     @Override
                     public void onNext(NetWorkResponse<UnionConfigModel> unionConfigModelNetWorkResponse) {
@@ -147,7 +141,7 @@ public class LoginPresenter implements LoginContract.Presenter {
                         mLoginView.loginSuccess();
                     }
                 });
-        //mCompositeDisposable.add(subscription);
+        mCompositeDisposable.add(observer);
 
 
     }

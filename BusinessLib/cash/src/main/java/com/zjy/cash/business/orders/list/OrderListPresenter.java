@@ -5,9 +5,8 @@ import com.zjy.baselib.framework.HttpConstants;
 import com.zjy.cash.data.model.order.OrdersResponse;
 import com.zjy.cash.data.source.CashRepository;
 
-import io.reactivex.Observer;
 import io.reactivex.disposables.CompositeDisposable;
-import io.reactivex.disposables.Disposable;
+import io.reactivex.observers.DisposableObserver;
 
 
 public class OrderListPresenter implements OrderListContract.Presenter {
@@ -58,8 +57,8 @@ public class OrderListPresenter implements OrderListContract.Presenter {
     @Override
     public void loadData(final int cursor) {
         currentPage=cursor;
-        mRepository.getOrders(mRepository.getSessionId(),orderType,"1",cursor,phoneNum, HttpConstants.getbApiVersionValue())
-               .subscribe(new Observer<OrdersResponse>() {
+        mCompositeDisposable.add(mRepository.getOrders(mRepository.getSessionId(),orderType,"1",cursor,phoneNum, HttpConstants.getbApiVersionValue())
+               .subscribeWith(new DisposableObserver<OrdersResponse>() {
 
                    @Override
                    public void onError(Throwable e) {
@@ -71,10 +70,6 @@ public class OrderListPresenter implements OrderListContract.Presenter {
 
                    }
 
-                   @Override
-                   public void onSubscribe(Disposable d) {
-
-                   }
 
                    @Override
                    public void onNext(OrdersResponse response) {
@@ -82,7 +77,7 @@ public class OrderListPresenter implements OrderListContract.Presenter {
                        hasMoreOrders = nextPageIndex > 0;
                        mOrdersView.showOrders(currentPage,response.orders);
                    }
-               });
+               }));
 
     }
 
