@@ -1,18 +1,17 @@
-package com.example.testapp;
+package com.zjy.zlibrary.component.traffics.broadcast;
 
 import android.content.BroadcastReceiver;
-import android.content.Context;  
-import android.content.Intent;  
+import android.content.Context;
+import android.content.Intent;
 import android.util.Log;
 
-import com.zjy.zlibrary.component.traffics.TrafficsManager;
+import com.zjy.zlibrary.component.traffics.Traffic;
 
 /** 
  * 类名：BootBroadcastReceiver  
  * 功能描述：启动时系统发出的广播的接收器 
  * #<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" /> 
- * @author android_ls 
- */  
+ */
 public class ShutdownBroadcastReceiver extends BroadcastReceiver {
 
     private static final String TAG = "ShutdownBroadcastReceiver";
@@ -24,10 +23,9 @@ public class ShutdownBroadcastReceiver extends BroadcastReceiver {
         Log.i("shutdown", "Shut down this system, onReceive()");
 
         if (intent.getAction().equals(ACTION_SHUTDOWN)) {
-            float mobileTraffics = TrafficsManager.getMobileTraffics();
 
-            TrafficsManager.setStartMobileTraffics(mobileTraffics);
-            Log.i("shutdown", "Shut down Do thing!====>" + mobileTraffics);
+            Log.i("shutdown", "Shut down Do thing!====>" );
+            Traffic.getInstance().reboot();
         }
     }
 
