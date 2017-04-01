@@ -37,7 +37,7 @@ public class PayOrder implements Serializable {
     public double companysubsidy; // 商家补贴
     public int errno;
     public String errmsg;
-    public String lastTime; // 交易时间
+    public String LastTime; // 交易时间
     public int paytype;
     public int postype; // 1/2:商户端 4：手机端
     public int payBackNum; // 退款次数

@@ -10,7 +10,6 @@ import com.zjy.baselib.component.Injection.Injection;
 import com.zjy.cash.R;
 import com.zjy.cash.business.Constants;
 import com.zjy.cash.data.model.order.PayOrder;
-import com.zjy.zlibrary.widget.DonutProgress;
 
 import java.util.ArrayList;
 
@@ -26,7 +25,6 @@ import java.util.ArrayList;
 public class OrderListAdapter extends BaseQuickAdapter<PayOrder, BaseViewHolder> {
     protected final Context context;
     private int[] tvIds = new int[]{R.id.tv_order_id, R.id.tv_pay_time, R.id.tv_real_price, R.id.tv_pay_table, R.id.tv_fail_reason, R.id.tv_phone, R.id.tv_source_price, R.id.tv_print, R.id.tv_pay_type};
-    private float progress;
     public OrderListAdapter(ArrayList<PayOrder> items) {
         super(R.layout.smart_order_item, items);
         context = Injection.provideContext();
@@ -49,7 +47,7 @@ public class OrderListAdapter extends BaseQuickAdapter<PayOrder, BaseViewHolder>
                 .setVisible(R.id.tv_pay_type, false)
                 .setText(R.id.tv_order_id, context.getString(R.string.orderAdapter_orderNo) + item.id)
                 .setText(R.id.tv_has_eat, item.orderState)
-                .setText(R.id.tv_pay_time, context.getString(R.string.trade_time) + item.lastTime)
+                .setText(R.id.tv_pay_time, context.getString(R.string.trade_time) + item.LastTime)
                 .setText(R.id.tv_real_price, context.getString(R.string.true_cash) + String.valueOf(item.leftTotal));
         setTextsColor(helper, item.state);
         helper.setTextColor(R.id.tv_has_eat, getStateTextColor(item.state));
@@ -174,18 +172,4 @@ public class OrderListAdapter extends BaseQuickAdapter<PayOrder, BaseViewHolder>
 
     }
 
-    @Override
-    public void onBindViewHolder(BaseViewHolder holder, int positions) {
-        if (positions == 0) {
-            DonutProgress donutProgress =  holder.getView(R.id.btn_jump);
-            donutProgress.setProgress(progress);
-        } else {
-            super.onBindViewHolder(holder, positions);
-        }
-    }
-
-    public void updateProgress(float progress){
-        this.progress=progress;
-        notifyItemChanged(0,progress);
-    }
 }

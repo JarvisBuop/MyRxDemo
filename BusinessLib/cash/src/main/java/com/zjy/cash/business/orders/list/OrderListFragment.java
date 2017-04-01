@@ -3,28 +3,17 @@ package com.zjy.cash.business.orders.list;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
-import android.view.LayoutInflater;
 import android.view.View;
 
 import com.chad.library.adapter.base.BaseQuickAdapter;
-import com.zjy.baselib.component.Injection.Injection;
-import com.zjy.cash.R;
 import com.zjy.cash.component.CashInjecttion;
 import com.zjy.cash.data.model.order.PayOrder;
-import com.zjy.zlibrary.component.scrollablelayout.ScrollableHelper;
 import com.zjy.zlibrary.fragment.list.AbsListFragment;
-import com.zjy.zlibrary.rx.transform.Transformers;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.TimeUnit;
 
-import es.dmoral.toasty.Toasty;
-import io.reactivex.Observable;
-import io.reactivex.Observer;
-import io.reactivex.disposables.Disposable;
-
-public class OrderListFragment extends AbsListFragment implements OrderListContract.View,ScrollableHelper.ScrollableContainer {
+public class OrderListFragment extends AbsListFragment implements OrderListContract.View {
     public static final String ORDER_TYPE = "type";
     public static final int POS_CASH=1;
     public static final int OTHER_CASH=2;
@@ -77,39 +66,12 @@ public class OrderListFragment extends AbsListFragment implements OrderListContr
 
     @Override
     protected BaseQuickAdapter getAdapter() {
-        mListAdapter = new OrderListAdapter(((ArrayList<PayOrder>) getItems()));
-        mListAdapter.addHeaderView(LayoutInflater.from(getContext()).inflate(R.layout.layout_donut_progress,null));
-        return mListAdapter;
+       return new OrderListAdapter(((ArrayList<PayOrder>) getItems()));
     }
 
     @Override
     protected void lazyInit() {
         super.lazyInit();
-        Observable.interval(1,1, TimeUnit.SECONDS)
-                .take(20)
-                .compose(Transformers.<Long>observeForUI())
-                .subscribe(new Observer<Long>() {
-                    @Override
-                    public void onSubscribe(Disposable d) {
-
-                    }
-
-                    @Override
-                    public void onNext(Long aLong) {
-                        mListAdapter.updateProgress(aLong*5+5);
-                    }
-
-                    @Override
-                    public void onError(Throwable e) {
-
-                    }
-
-                    @Override
-                    public void onComplete() {
-
-                    }
-
-                });
     }
 
     /**
@@ -165,11 +127,4 @@ public class OrderListFragment extends AbsListFragment implements OrderListContr
     }
 
 
-    @Override
-    public View getScrollableView() {
-        if(recyclerView==null){
-            Toasty.error(Injection.provideContext(),"recyclerview is null").show();
-        }
-        return recyclerView;
-    }
 }

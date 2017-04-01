@@ -16,8 +16,6 @@ import android.view.ViewGroup;
 import com.zjy.cash.R;
 import com.zjy.cash.R2;
 import com.zjy.cash.business.orders.list.OrderListFragment;
-import com.zjy.zlibrary.component.scrollablelayout.ScrollableHelper;
-import com.zjy.zlibrary.component.scrollablelayout.ScrollableLayout;
 import com.zjy.zlibrary.fragment.fragmentation.SupportFragment;
 import com.zjy.zlibrary.widget.TitleBar;
 
@@ -32,8 +30,6 @@ public class OrdersFragment extends SupportFragment {
     TabLayout tabLayout;
     @BindView(R2.id.viewPager_order_type)
     ViewPager viewPager;
-    @BindView(R2.id.scrollableLayout)
-    ScrollableLayout scrollableLayout;
     SparseArray<Fragment> registeredFragments = new SparseArray<>();
     protected OrderTypeAdapter adapter;
 
@@ -44,22 +40,7 @@ public class OrdersFragment extends SupportFragment {
         return fragment;
     }
 
-    ViewPager.OnPageChangeListener mPageChangeListener = new ViewPager.OnPageChangeListener() {
-        @Override
-        public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
 
-        }
-
-        @Override
-        public void onPageSelected(int position) {
-            scrollableLayout.getHelper().setCurrentScrollableContainer((ScrollableHelper.ScrollableContainer) registeredFragments.get(position));
-        }
-
-        @Override
-        public void onPageScrollStateChanged(int state) {
-
-        }
-    };
 
     @Nullable
     @Override
@@ -83,13 +64,6 @@ public class OrdersFragment extends SupportFragment {
         adapter = new OrderTypeAdapter(getChildFragmentManager());
         viewPager.setAdapter(adapter);
         tabLayout.setupWithViewPager(viewPager);
-        viewPager.addOnPageChangeListener(mPageChangeListener);
-        viewPager.post(new Runnable() {
-            @Override
-            public void run() {
-                mPageChangeListener.onPageSelected(0);
-            }
-        });
     }
 
 
