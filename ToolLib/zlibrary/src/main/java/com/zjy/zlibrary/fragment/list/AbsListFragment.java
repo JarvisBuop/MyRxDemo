@@ -12,14 +12,13 @@ import android.view.ViewGroup;
 
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chad.library.adapter.base.listener.OnItemClickListener;
-
 import com.zjy.zlibrary.R;
+import com.zjy.zlibrary.dialog.Progress;
 import com.zjy.zlibrary.fragment.BaseFragment;
 import com.zjy.zlibrary.widget.StatusViewLayout;
 
 import java.util.ArrayList;
 import java.util.List;
-
 
 
 /**
@@ -41,9 +40,10 @@ public abstract class AbsListFragment extends BaseFragment implements IList {
 
     protected SwipeRefreshLayout swipeLayout;
     protected RecyclerView recyclerView;
+    protected Progress progress;
     protected boolean mRefreshEnable = true;
     protected boolean mLoadMoreEnable = true;
-    protected boolean mInit=true;
+    protected boolean mInit = true;
 
     @Nullable
     @Override
@@ -109,7 +109,7 @@ public abstract class AbsListFragment extends BaseFragment implements IList {
     }
 
     private void normalLoad(int index) {
-        if(!mInit)return;
+        if (!mInit) return;
         //ProgressManager.showProgress(this,R.string.loading);
         loadData(index);
     }
@@ -118,7 +118,7 @@ public abstract class AbsListFragment extends BaseFragment implements IList {
 
     @Override
     public void setUserVisibleHint(boolean isVisibleToUser) {
-        if (isVisibleToUser && isVisible() ) {
+        if (isVisibleToUser && isVisible()) {
             lazyInit();
         }
         super.setUserVisibleHint(isVisibleToUser);
@@ -126,6 +126,7 @@ public abstract class AbsListFragment extends BaseFragment implements IList {
     }
 
     protected void lazyInit() {
+        showProgress();
         normalLoad(getInitPageIndex());
     }
 
@@ -133,7 +134,7 @@ public abstract class AbsListFragment extends BaseFragment implements IList {
     @Override
     public void onResume() {
         super.onResume();
-        if (getUserVisibleHint() ) {
+        if (getUserVisibleHint()) {
             lazyInit();
         }
     }
@@ -165,12 +166,7 @@ public abstract class AbsListFragment extends BaseFragment implements IList {
         if (hasMoreData()) {
             loadData(++mCurrentPageIndex);
         } else {
-            recyclerView.post(new Runnable() {
-                @Override
-                public void run() {
-                    mAdapter.loadMoreEnd();
-                }
-            });
+            recyclerView.post(() -> mAdapter.loadMoreEnd());
         }
     }
 
@@ -183,12 +179,7 @@ public abstract class AbsListFragment extends BaseFragment implements IList {
         if (mCurrentPageIndex == getInitPageIndex()) {
             mStatusLayout.showError(message);
         } else {
-            recyclerView.post(new Runnable() {
-                @Override
-                public void run() {
-                    mAdapter.loadMoreFail();
-                }
-            });
+            recyclerView.post(() -> mAdapter.loadMoreFail());
         }
         swipeLayout.setRefreshing(false);
     }
@@ -206,16 +197,11 @@ public abstract class AbsListFragment extends BaseFragment implements IList {
     @Override
     public void showContent() {
         mStatusLayout.showContent();
-        recyclerView.post(new Runnable() {
-            @Override
-            public void run() {
-                swipeLayout.setRefreshing(false);
-                mAdapter.loadMoreComplete();
-            }
+        recyclerView.post(() -> {
+            swipeLayout.setRefreshing(false);
+            mAdapter.loadMoreComplete();
         });
     }
-
-
 
 
     @Override
@@ -239,7 +225,6 @@ public abstract class AbsListFragment extends BaseFragment implements IList {
             mItems.addAll(items);
         } else {//没有更多数据了
             mCurrentPageIndex--;
-            // xListView.stopLoadMore();
         }
         mAdapter.setNewData(mItems);
     }
@@ -259,4 +244,6 @@ public abstract class AbsListFragment extends BaseFragment implements IList {
     protected String getEmptyMsg() {
         return "暂无搜索结果";
     }
+
+
 }

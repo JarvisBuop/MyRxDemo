@@ -8,15 +8,18 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.alibaba.android.arouter.launcher.ARouter;
+import com.zjy.baselib.component.keyboard.KeyBoardFragment;
 import com.zjy.cash.R;
 import com.zjy.zlibrary.fragment.fragmentation.SupportFragment;
 import com.zjy.zlibrary.widget.TitleBar;
 
 import butterknife.ButterKnife;
+import es.dmoral.toasty.Toasty;
 
 public class CashFragment extends SupportFragment implements CashContract.View {
     public static final String TAG = CashFragment.class.getSimpleName();
     public TitleBar titleBar;
+
 
     public static CashFragment newInstance() {
 
@@ -27,6 +30,8 @@ public class CashFragment extends SupportFragment implements CashContract.View {
         return fragment;
     }
 
+
+
     @Override
     public void setPresenter(CashContract.Presenter presenter) {
 
@@ -36,14 +41,26 @@ public class CashFragment extends SupportFragment implements CashContract.View {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View root = inflater.inflate(R.layout.fragment_cash, container, false);
-        ButterKnife.bind(this,root);
+        ButterKnife.bind(this, root);
         return root;
     }
 
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        initView(view);
+    }
+
+    private void initView(View view) {
         setUpTitleBar(view);
+        initVirtualKeyBoard();
+    }
+
+
+    private void initVirtualKeyBoard() {
+        KeyBoardFragment keyBoardFragment = new KeyBoardFragment();
+        loadRootFragment(R.id.num_soft_keyboard, keyBoardFragment);
+        keyBoardFragment.setKeyBoardClickListener(key -> Toasty.info(getContext(), key + "").show());
     }
 
     private void setUpTitleBar(View v) {
@@ -57,14 +74,8 @@ public class CashFragment extends SupportFragment implements CashContract.View {
         });
         titleBar.setLeftImageResource(R.drawable.icon_search);
         titleBar.setTitle("体验店");
-
         titleBar.setLeftTextColor(Color.WHITE);
-        titleBar.setLeftClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
+        titleBar.setLeftClickListener(v1 -> {});
         titleBar.setTitleColor(Color.WHITE);
     }
 }

@@ -45,7 +45,7 @@ public class SupportFragment extends BaseFragment implements ISupportFragment {
     private Bundle mNewBundle;
 
     private boolean mIsRoot, mIsSharedElement;
-    private boolean mIsHidden = true;   // 用于记录Fragment show/hide 状态
+    private boolean mIsHidden = true;   // 用于记录Fragment showProgress/hideProgress 状态
 
     // SupportVisible相关
     private boolean mIsSupportVisible;

@@ -12,12 +12,12 @@ public class ProgressDegate implements Progress {
     }
 
     @Override
-    public void show() {
+    public void showProgress() {
         mDialog.show();
     }
 
     @Override
-    public void hide() {
+    public void hideProgress() {
         mDialog.hide();
     }
 }

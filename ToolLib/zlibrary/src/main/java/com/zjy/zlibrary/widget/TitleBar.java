@@ -585,7 +585,7 @@ public class TitleBar extends ViewGroup implements View.OnClickListener {
 
     /**
      * Definition of an action that could be performed, along with a icon to
-     * show.
+     * showProgress.
      */
     public interface Action {
         String getText();

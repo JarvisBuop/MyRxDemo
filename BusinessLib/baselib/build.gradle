@@ -1,5 +1,6 @@
 apply plugin: 'com.android.library'
 apply plugin: 'org.greenrobot.greendao'
+apply plugin: 'com.jakewharton.butterknife'
 apply from: '../../global_config.gradle'
 android {
 
@@ -16,13 +17,22 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 }
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile project(':ToolLib:zlibrary')
+    //吐丝框架
+    compile project(':ToolLib:toasty')
+    compile project(':ToolLib:bottom-bar')
 
     compile 'com.tencent.bugly:crashreport_upgrade:latest.release'
     compile 'com.facebook.stetho:stetho:1.4.2'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
+
 
 }

@@ -76,7 +76,7 @@ public class MainActivity extends SupportActivity {
             @Override
             public void onTabReSelected(@IdRes int tabId) {
                 TabMessage.get(tabId, true);
-                //Toast.makeText(getApplicationContext(), TabMessage.get(tabId, true), Toast.LENGTH_LONG).show();
+                //Toast.makeText(getApplicationContext(), TabMessage.get(tabId, true), Toast.LENGTH_LONG).showProgress();
             }
         });
     }

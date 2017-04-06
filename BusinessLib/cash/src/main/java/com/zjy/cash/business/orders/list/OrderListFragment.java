@@ -23,7 +23,6 @@ public class OrderListFragment extends AbsListFragment implements OrderListContr
 
 
     private OrderListContract.Presenter mPresenter;
-    protected OrderListAdapter mListAdapter;
 
     public static OrderListFragment newInstance(int type) {
         Bundle args = new Bundle();
@@ -85,6 +84,7 @@ public class OrderListFragment extends AbsListFragment implements OrderListContr
 
     @Override
     public void showOrders(int page,List<PayOrder> orders) {
+        hideProgress();
         onDataSuccessReceived(page,orders);
     }
 

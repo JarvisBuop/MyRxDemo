@@ -3,9 +3,9 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:title="http://schemas.android.com/apk/res-auto"
-    android:background="#fff"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#fff">
 
     <com.zjy.zlibrary.widget.TitleBar
         android:id="@+id/titleBar"
@@ -17,21 +17,16 @@
     </com.zjy.zlibrary.widget.TitleBar>
 
     <RelativeLayout
-        android:layout_alignParentBottom="true"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
 
-        <com.zjy.cash.component.widget.NumSoftKeyboard
+        <FrameLayout
             android:id="@+id/num_soft_keyboard"
             android:layout_width="match_parent"
-
-            android:layout_height="200dp"
+            android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            app:numBgColor="#757575"
-            app:numBgColor2="#595959"
-            app:numFontColor="@color/white_1st"
-            app:numLineColor="#535353"
-            app:numPressColor="#525252"/>
+            />
 
         <LinearLayout
             android:layout_width="fill_parent"
@@ -64,11 +59,12 @@
 
 
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/titleBar"
+        android:orientation="vertical"
         >
+
         <TextView
             android:id="@+id/tv_exception"
             android:layout_width="match_parent"
@@ -80,6 +76,7 @@
             android:textColor="#f44336"
             android:textSize="13sp"
             android:visibility="gone"/>
+
         <TextView
             android:id="@+id/tv_table_msg"
             android:layout_width="match_parent"
@@ -116,8 +113,8 @@
             android:id="@+id/rl_money"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
             android:layout_marginTop="20dp"
+            android:orientation="horizontal"
             android:paddingLeft="20dp"
             android:visibility="visible">
 
@@ -138,8 +135,8 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
-                android:layout_toRightOf="@id/tv_money_title"
                 android:layout_gravity="right"
+                android:layout_toRightOf="@id/tv_money_title"
                 android:background="@color/white_1st"
                 android:editable="false"
                 android:gravity="right|center_vertical"
@@ -182,12 +179,12 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
-                android:layout_toRightOf="@id/tv_discount_title"
                 android:layout_gravity="right"
+                android:layout_toRightOf="@id/tv_discount_title"
                 android:background="@color/white_1st"
                 android:editable="false"
-                android:paddingRight="20dp"
                 android:gravity="right|center_vertical"
+                android:paddingRight="20dp"
                 android:textColor="@color/selector_pay_edit_text"
                 android:textSize="20sp"/>
 
