@@ -2,7 +2,6 @@ package com.zjy.cash.business.cash;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
@@ -15,10 +14,10 @@ import com.zjy.baselib.component.keyboard.AppendKeyEntry;
 import com.zjy.baselib.component.keyboard.KeyEntry;
 import com.zjy.cash.R;
 import com.zjy.cash.R2;
+import com.zjy.cash.business.cash.appendrule.AbsMoneyEditAppend;
+import com.zjy.cash.business.cash.appendrule.Period0Append;
 import com.zjy.cash.component.widget.MoneyEdit;
 import com.zjy.zlibrary.fragment.fragmentation.SupportFragment;
-
-import java.text.NumberFormat;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -65,7 +64,7 @@ public class CashEditFragment extends SupportFragment implements AppendKeyEntry 
 
 
     private void init() {
-        mAppendKeyEntry = new Period2Append("");
+        mAppendKeyEntry = new Period0Append("");
         mMoneyEditHelper=new PayEditHelper(etPayTotalMoney,etDiscount,mAppendKeyEntry);
         mMoneyEditHelper.onEditSelect(getView());
         etPayTotalMoney.setText(mAppendKeyEntry.getDefaultText());
@@ -95,129 +94,6 @@ public class CashEditFragment extends SupportFragment implements AppendKeyEntry 
         return result;
     }
 
-    ///////////////////////////////////////////////////////////////////////////
-    //         EditText监听键盘拼接字符串 目前分为 1无小数点  2小数点后两位
-    ///////////////////////////////////////////////////////////////////////////
-    public static abstract class AbsMoneyEditAppend implements AppendKeyEntry {
-        protected String source;
-        protected String result;
-        public OnAppend mOnAppend;
-
-        abstract String getDefaultText();
-
-        abstract String appendNum(String keyName);
-
-        abstract String appendPeriod(String keyName);
-
-        abstract String appendDel();
-
-        public AbsMoneyEditAppend(String source) {
-            this.source = source;
-        }
-
-        public void setSource(String source) {
-            this.source = source;
-        }
-
-        @Override
-        public String appendKeyEntry(KeyEntry keyEntry) {
-            switch (keyEntry.getKeyCode()) {
-                case KeyEvent.KEYCODE_0:
-                case KeyEvent.KEYCODE_1:
-                case KeyEvent.KEYCODE_2:
-                case KeyEvent.KEYCODE_3:
-                case KeyEvent.KEYCODE_4:
-                case KeyEvent.KEYCODE_5:
-                case KeyEvent.KEYCODE_6:
-                case KeyEvent.KEYCODE_7:
-                case KeyEvent.KEYCODE_8:
-                case KeyEvent.KEYCODE_9:
-                    result = appendNum(keyEntry.getKeyName());
-                    break;
-                case KeyEvent.KEYCODE_PERIOD:
-                    result = appendPeriod(keyEntry.getKeyName());
-                    break;
-                case KeyEvent.KEYCODE_DEL:
-                    result = appendDel();
-                    break;
-            }
-            if(mOnAppend!=null&&!mOnAppend.onAppend(result)){
-                return source;
-            }
-            return result;
-        }
-
-        public interface OnAppend{
-            boolean onAppend(String result);
-        }
-
-        public void setOnAppend(OnAppend onAppend) {
-            mOnAppend = onAppend;
-        }
-    }
-
-    public static class Period2Append extends AbsMoneyEditAppend {
-        public Period2Append(String source) {
-            super(source);
-        }
-
-        protected String appendNum(String key) {
-            String cleanString = (source + key).replaceAll("[¥,.]", "");
-            double parsed = Double.parseDouble(cleanString);
-            if (parsed > 9999999999.99) {
-                return source;
-            }
-            String formatted = NumberFormat.getNumberInstance().format((parsed / 100));
-            return "¥" + formatted.replaceAll(",","");
-        }
-
-        @Override
-        String appendPeriod(String keyName) {
-            return source;
-        }
-
-        @Override
-        String appendDel() {
-            String cleanString = source.substring(0, source.length() - 1).replaceAll("[¥,.]", "");
-            double parsed = Double.parseDouble(cleanString);
-            if (parsed == 0) {
-                return getDefaultText();
-            }
-            String formatted = NumberFormat.getNumberInstance().format((parsed / 100));
-            return "¥" + formatted.replaceAll(",","");
-        }
-
-        @Override
-        public String getDefaultText() {
-            return "¥0.00";
-        }
-    }
-
-    public static class Period0Append extends AbsMoneyEditAppend {
-        @Override
-        String getDefaultText() {
-            return "¥0";
-        }
-
-        @Override
-        String appendNum(String keyName) {
-            return null;
-        }
-
-        @Override
-        String appendPeriod(String keyName) {
-            return null;
-        }
-
-        @Override
-        String appendDel() {
-            return null;
-        }
-
-        public Period0Append(String source) {
-            super(source);
-        }
-    }
 
     ///////////////////////////////////////////////////////////////////////////
     //      用与区分当前为哪个的EditText

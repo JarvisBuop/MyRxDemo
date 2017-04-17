@@ -25,15 +25,6 @@ public class CashFragment extends SupportFragment implements CashContract.View {
     public static final String TAG = CashFragment.class.getSimpleName();
     @BindView(R2.id.titleBar)
     public TitleBar titleBar;
-//    @BindView(R2.id.rl_money)
-//    RelativeLayout rlPayMoney;
-//    @BindView(R2.id.rl_discount)
-//    RelativeLayout rlDiscount;
-//    @BindView(R2.id.tv_money)
-//    MoneyEdit etPayTotalMoney;
-//    @BindView(R2.id.et_pay_discount)
-//    MoneyEdit etDiscount;
-
     protected CashContract.Presenter mPresenter;
 
 
@@ -41,23 +32,6 @@ public class CashFragment extends SupportFragment implements CashContract.View {
         CashFragment fragment = new CashFragment();
         return fragment;
     }
-
-//    @OnTouch({R2.id.rl_money, R2.id.rl_discount})
-//    public boolean submit(View v, MotionEvent event) {
-//        if (event.getAction() == MotionEvent.ACTION_DOWN) {
-//            int id = v.getId();
-//            if (id == R.id.rl_money) {
-//                rlPayMoney.setSelected(true);
-//                rlDiscount.setSelected(false);
-//                mPresenter.setSelectedEdit(CashContract.Presenter.EDIT_MONEY);
-//            } else if (id == R.id.rl_discount) {
-//                rlDiscount.setSelected(true);
-//                rlPayMoney.setSelected(false);
-//                mPresenter.setSelectedEdit(CashContract.Presenter.EDIT_DISCOUNT);
-//            }
-//        }
-//        return true;
-//    }
 
     @Override
     public void setPresenter(CashContract.Presenter presenter) {
