@@ -7,5 +7,5 @@ package com.zjy.baselib.component.keyboard;
  * Date:2017/4/6
  */
 public interface KeyBoardListener {
-    void onVirtualClick(int  key);
+    void onVirtualClick(KeyEntry  keyEntry);
 }

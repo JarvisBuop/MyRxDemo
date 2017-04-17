@@ -1,6 +1,12 @@
 package com.zjy.cash.business.cash;
 
 public class CashPresenter implements CashContract.Presenter {
+    private CashContract.View mCashView;
+    public CashPresenter(CashContract.View cashView) {
+        mCashView = cashView;
+        mCashView.setPresenter(this);
+    }
+
     @Override
     public void subscribe() {
 
@@ -10,4 +16,6 @@ public class CashPresenter implements CashContract.Presenter {
     public void unsubscribe() {
 
     }
+
+
 }

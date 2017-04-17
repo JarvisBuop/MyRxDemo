@@ -37,9 +37,9 @@ public class KeyBoardFragment extends SupportFragment {
     OnItemClickListener mOnItemClickListener = new OnItemClickListener() {
         @Override
         public void onSimpleItemClick(BaseQuickAdapter adapter, View view, int position) {
-            int code = ((KeyBoardAdapter) adapter).getData().get(position).getKeyCode();
+            KeyEntry keyEntry = ((KeyBoardAdapter) adapter).getData().get(position);
             if (keyBoardListener != null) {
-                keyBoardListener.onVirtualClick(code);
+                keyBoardListener.onVirtualClick(keyEntry);
             }
         }
     };
@@ -55,6 +55,7 @@ public class KeyBoardFragment extends SupportFragment {
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         initView(view);
         initKeyBoardItems(items);
+        adapter.notifyDataSetChanged();
     }
 
     private void initView(View view) {
@@ -81,13 +82,7 @@ public class KeyBoardFragment extends SupportFragment {
     }
 
     protected void initKeyBoardItems(List<KeyEntry> items) {
-        for (int i = 1; i <= 9; i++) {
-            items.add(new KeyEntry(i + "", i));
-        }
-        items.add(new KeyEntry(".", KeyCode.KEY_CODE_DOT));
-        items.add(new KeyEntry("0", KeyCode.KEY_CODE_0));
-        items.add(new KeyEntry("删除", KeyCode.KEY_CODE_DEL));
-        adapter.notifyDataSetChanged();
+
     }
 
     public void setKeyBoardClickListener(KeyBoardListener keyBoardListener) {

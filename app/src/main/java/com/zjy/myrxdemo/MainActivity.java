@@ -1,13 +1,10 @@
 package com.zjy.myrxdemo;
 
 import android.os.Bundle;
-import android.support.annotation.IdRes;
 import android.widget.FrameLayout;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
 import com.roughike.bottombar.BottomBar;
-import com.roughike.bottombar.OnTabReselectListener;
-import com.roughike.bottombar.OnTabSelectListener;
 import com.zjy.cash.business.cash.CashFragment;
 import com.zjy.coupon.business.check.CheckCouponFragment;
 import com.zjy.member.business.member.MemberFragment;
@@ -64,20 +61,14 @@ public class MainActivity extends SupportActivity {
     }
 
     private void initView() {
-        mBottomBar.setOnTabSelectListener(new OnTabSelectListener() {
-            @Override
-            public void onTabSelected(@IdRes int tabId) {
-                showHideFragment( mFragments[TabMessage.get(tabId,false)],hideFragment);
-                hideFragment=mFragments[TabMessage.get(tabId,false)];
-            }
+        mBottomBar.setOnTabSelectListener(tabId -> {
+            showHideFragment( mFragments[TabMessage.get(tabId,false)],hideFragment);
+            hideFragment=mFragments[TabMessage.get(tabId,false)];
         });
 
-        mBottomBar.setOnTabReselectListener(new OnTabReselectListener() {
-            @Override
-            public void onTabReSelected(@IdRes int tabId) {
-                TabMessage.get(tabId, true);
-                //Toast.makeText(getApplicationContext(), TabMessage.get(tabId, true), Toast.LENGTH_LONG).showProgress();
-            }
+        mBottomBar.setOnTabReselectListener(tabId -> {
+            TabMessage.get(tabId, true);
+            //Toast.makeText(getApplicationContext(), TabMessage.get(tabId, true), Toast.LENGTH_LONG).showProgress();
         });
     }
 }

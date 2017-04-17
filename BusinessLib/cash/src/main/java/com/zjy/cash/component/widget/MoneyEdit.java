@@ -6,7 +6,6 @@ import android.text.SpannableStringBuilder;
 import android.text.Spanned;
 import android.text.style.RelativeSizeSpan;
 import android.util.AttributeSet;
-import android.widget.EditText;
 
 /**
  * Created with android studio
@@ -16,7 +15,7 @@ import android.widget.EditText;
  * DESC:
  */
 
-public class MoneyEdit extends EditText {
+public class MoneyEdit extends android.support.v7.widget.AppCompatEditText {
     public MoneyEdit(Context context) {
         this(context, null);
     }
