@@ -2,6 +2,7 @@ package com.zjy.myrxdemo.data.source.local;
 
 import android.graphics.Bitmap;
 
+import com.blankj.utilcode.utils.ImageUtils;
 import com.google.gson.Gson;
 import com.zjy.baselib.component.Injection.Injection;
 import com.zjy.baselib.data.model.NetWorkResponse;
@@ -18,6 +19,7 @@ import com.zjy.myrxdemo.data.model.login.bean.ConfigQRModel;
 import com.zjy.myrxdemo.data.model.login.bean.LoginResponse;
 import com.zjy.myrxdemo.data.model.login.bean.PayConfigModel;
 import com.zjy.myrxdemo.data.model.login.bean.UnionConfigModel;
+import com.zjy.myrxdemo.data.source.Constants;
 import com.zjy.myrxdemo.data.source.DataSource;
 
 import org.greenrobot.greendao.query.QueryBuilder;
@@ -25,6 +27,8 @@ import org.greenrobot.greendao.query.QueryBuilder;
 import java.util.List;
 
 import io.reactivex.Observable;
+import io.reactivex.ObservableEmitter;
+import io.reactivex.ObservableOnSubscribe;
 
 
 public class LocalDataSource implements DataSource {
@@ -108,8 +112,17 @@ public class LocalDataSource implements DataSource {
     }
 
     @Override
-    public Observable<Bitmap> getAdvBitmap(String token, int businessId, String dimension, String apiVersion) {
-        return null;
+    public Observable<Bitmap> getAdvBitmap(String token,String shopId, int businessId, String dimension, String apiVersion) {
+        return Observable.create(new ObservableOnSubscribe<Bitmap>() {
+            @Override
+            public void subscribe(ObservableEmitter<Bitmap> e) throws Exception {
+                Bitmap bitmap = ImageUtils.getBitmap(Constants.Advertisement.BITMAP_FILE_PATH);
+                if(bitmap!=null){
+                    e.onNext(bitmap);
+                }
+                e.onComplete();
+            }
+        });
     }
 
     @Override

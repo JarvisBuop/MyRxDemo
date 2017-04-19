@@ -26,7 +26,7 @@ public interface DataSource {
     Observable<LoginResponse> login(String UserName,String password,String deviceId,String V,String AP,String apiVersion);
     Observable<NetWorkResponse<PayConfigModel>> getPayConfig(String token, String apiVersion);
     Observable<NetWorkResponse<UnionConfigModel>> getUnionConfig(String token, String apiVersion);
-    Observable<Bitmap> getAdvBitmap(String token, int businessId, String dimension, String apiVersion);
+    Observable<Bitmap> getAdvBitmap(String token,String shopId, int businessId, String dimension, String apiVersion);
     Observable<NetWorkResponse<List<ConfigQRModel>>> getConfigQR(String token,String apiVersion);
     Observable<NetWorkResponse<SessionModel>> refreshSessionId(String UserName,String Password,String DeviceID);
 }

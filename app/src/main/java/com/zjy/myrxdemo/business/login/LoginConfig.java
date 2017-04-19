@@ -1,5 +1,6 @@
 package com.zjy.myrxdemo.business.login;
 
+import android.graphics.Bitmap;
 import android.text.TextUtils;
 
 import com.zjy.baselib.component.util.StringUtil;
@@ -170,14 +171,13 @@ public class LoginConfig {
         return mShopInfo;
     }
 
-    public static Observable<Boolean> getAdvUrl(final Repository repository) {
-        return repository.getAdvBitmap(repository.getSessionId(), 32, "16:9", "V8")
-                .map(advModelNetWorkResponse -> true)
-                .compose(Transformers.<Boolean>rxNetWork());
+    public static Observable<Bitmap> getAdvBitmap(final Repository repository, String sessionId, String shopID) {
+        return repository.getAdvBitmap(sessionId,shopID, 32, "16:9", "V8")
+                .compose(Transformers.<Bitmap>rxNetWork());
     }
 
-    public static Observable<Boolean> getConfigQR(final Repository repository) {
-        return repository.getConfigQR(repository.getSessionId(), HttpConstants.getbApiVersionValue())
+    public static Observable<Boolean> getConfigQR(final Repository repository,String sessionId) {
+        return repository.getConfigQR(sessionId, HttpConstants.getbApiVersionValue())
                 .map(listNetWorkResponse -> true)
                 .compose(Transformers.<Boolean>rxNetWork());
     }

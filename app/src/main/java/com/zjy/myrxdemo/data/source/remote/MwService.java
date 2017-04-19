@@ -37,6 +37,7 @@ public interface MwService {
     @FormUrlEncoded
     @POST("b/api/softconfig.startupimage")
     Observable<NetWorkResponse<AdvModel>> getAdvResopnse(@Field("token")String token,
+                                                         @Field("shopId")String shopId,
                                                          @Field("businessId")int businessId,
                                                          @Field("dimension")String dimension,
                                                          @Field("apiVersion")String apiVersion);

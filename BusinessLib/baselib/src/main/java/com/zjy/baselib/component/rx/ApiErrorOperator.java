@@ -62,7 +62,7 @@ public final class ApiErrorOperator<T extends NetWorkResponse> implements Observ
 
       @Override
       public void onSubscribe(Disposable d) {
-
+        observer.onSubscribe(d);
       }
 
       @Override

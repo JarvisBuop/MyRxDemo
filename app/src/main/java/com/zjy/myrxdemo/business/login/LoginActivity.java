@@ -43,6 +43,7 @@ public class LoginActivity extends BaseActivity implements LoginContract.View {
         setContentView(R.layout.activity_login);
         ButterKnife.bind(this);
         mLoginPresenter = new LoginPresenter(AppInjection.provideRepository(), this);
+        mLoginPresenter.subscribe();
 
     }
 
@@ -53,16 +54,13 @@ public class LoginActivity extends BaseActivity implements LoginContract.View {
     }
 
     @Override
-    protected void onResume() {
-        super.onResume();
-        mLoginPresenter.subscribe();
-    }
-
-    @Override
-    protected void onPause() {
-        super.onPause();
+    protected void onDestroy() {
+        super.onDestroy();
         mLoginPresenter.unsubscribe();
     }
+
+
+
 
     @OnClick(R.id.bt_go)
     public void login(View view) {

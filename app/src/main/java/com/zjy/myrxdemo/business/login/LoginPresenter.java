@@ -94,6 +94,8 @@ public class LoginPresenter implements LoginContract.Presenter {
                             ShopInfo shopInfo = LoginConfig.buildShopInfoFromLoginResponse(loginResponse);
                             mRepository.saveShopInfo(shopInfo).subscribe();
                             mRepository.saveSessionId(shopInfo.sessionId);
+                            LoginConfig.getAdvBitmap(mRepository,shopInfo.sessionId,shopInfo.shop_id).subscribe();
+                            LoginConfig.getConfigQR(mRepository,shopInfo.sessionId).subscribe();
                             return Observable.just(shopInfo);
                         }
                     }
@@ -101,8 +103,7 @@ public class LoginPresenter implements LoginContract.Presenter {
                 .flatMap(new Function<ShopInfo, ObservableSource<NetWorkResponse<PayConfigModel>>>() {
                     @Override
                     public ObservableSource<NetWorkResponse<PayConfigModel>> apply(@NonNull ShopInfo shopInfo) throws Exception {
-                        LoginConfig.getAdvUrl(mRepository).subscribe();
-                        LoginConfig.getConfigQR(mRepository).subscribe();
+
                         if (!shopInfo.bCashEn) {
                             Timber.d("不支持收银");
                             return Observable.empty();

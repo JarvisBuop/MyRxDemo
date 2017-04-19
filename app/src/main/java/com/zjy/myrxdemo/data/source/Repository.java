@@ -89,8 +89,8 @@ public class Repository implements DataSource {
     }
 
     @Override
-    public Observable<Bitmap> getAdvBitmap(String token, int businessId, String dimension, String apiVersion) {
-        return mRemoteDataSource.getAdvBitmap(token,businessId,dimension,apiVersion)
+    public Observable<Bitmap> getAdvBitmap(String token,String shopId, int businessId, String dimension, String apiVersion) {
+        return mRemoteDataSource.getAdvBitmap(token,shopId,businessId,dimension,apiVersion)
                 .compose(Transformers.neverError());
     }
 

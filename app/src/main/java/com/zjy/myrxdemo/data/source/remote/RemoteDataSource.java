@@ -2,9 +2,9 @@ package com.zjy.myrxdemo.data.source.remote;
 
 import android.graphics.Bitmap;
 
+import com.blankj.utilcode.utils.ImageUtils;
 import com.bumptech.glide.Glide;
-import com.bumptech.glide.request.animation.GlideAnimation;
-import com.bumptech.glide.request.target.SimpleTarget;
+import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.zjy.baselib.component.Injection.Injection;
 import com.zjy.baselib.component.rx.ApiErrorOperator;
 import com.zjy.baselib.data.model.NetWorkResponse;
@@ -17,9 +17,10 @@ import com.zjy.myrxdemo.data.model.login.bean.ConfigQRModel;
 import com.zjy.myrxdemo.data.model.login.bean.LoginResponse;
 import com.zjy.myrxdemo.data.model.login.bean.PayConfigModel;
 import com.zjy.myrxdemo.data.model.login.bean.UnionConfigModel;
+import com.zjy.myrxdemo.data.source.Constants;
 import com.zjy.myrxdemo.data.source.DataSource;
 
-import java.io.File;
+import java.net.URLDecoder;
 import java.util.List;
 
 import io.reactivex.Observable;
@@ -68,8 +69,8 @@ public class RemoteDataSource implements DataSource {
     }
 
     @Override
-    public Observable<Bitmap> getAdvBitmap(String token, int businessId, String dimension, String apiVersion) {
-        return mMwService.getAdvResopnse(token, businessId, dimension, apiVersion)
+    public Observable<Bitmap> getAdvBitmap(String token,String shopId, int businessId, String dimension, String apiVersion) {
+        return mMwService.getAdvResopnse(token,shopId, businessId, dimension, apiVersion)
                 .lift(new ApiErrorOperator<>())
                 .flatMap(new Function<NetWorkResponse<AdvModel>, ObservableSource<Bitmap>>() {
                     @Override
@@ -77,14 +78,18 @@ public class RemoteDataSource implements DataSource {
                         return Observable.create(new ObservableOnSubscribe<Bitmap>() {
                             @Override
                             public void subscribe(ObservableEmitter<Bitmap> e) throws Exception {
-                                Glide.with(Injection.provideContext())
-                                        .load(advModelNetWorkResponse.data.image)
-                                        .downloadOnly(new SimpleTarget<File>() {
-                                              @Override
-                                              public void onResourceReady(File resource, GlideAnimation<? super File> glideAnimation) {
-
-                                              }
-                                          });
+                                Bitmap resource = Glide.with(Injection.provideContext())
+                                        .load(URLDecoder.decode(advModelNetWorkResponse.data.image, "GB2312"))
+                                        .asBitmap()
+                                        .skipMemoryCache(true)
+                                        .diskCacheStrategy(DiskCacheStrategy.NONE)
+                                        .into(500, 500)
+                                        .get();
+                                if (resource != null) {
+                                    ImageUtils.save(resource, Constants.Advertisement.BITMAP_FILE_PATH, Bitmap.CompressFormat.JPEG);
+                                    e.onNext(resource);
+                                }
+                                e.onComplete();
 
 
                             }
