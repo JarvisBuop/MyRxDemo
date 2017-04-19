@@ -61,5 +61,9 @@ dependencies {
     compile 'com.alibaba:arouter-api:1.0.9'
     //数据库ORM框架
     compile 'org.greenrobot:greendao:3.2.0'
+    //图片加载框架
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+
+
 }
 

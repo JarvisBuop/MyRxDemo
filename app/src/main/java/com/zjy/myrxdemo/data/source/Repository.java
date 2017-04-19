@@ -1,11 +1,12 @@
 package com.zjy.myrxdemo.data.source;
 
+import android.graphics.Bitmap;
+
 import com.zjy.baselib.component.rx.ApiErrorOperator;
 import com.zjy.baselib.data.model.NetWorkResponse;
 import com.zjy.baselib.data.model.bean.SessionModel;
 import com.zjy.baselib.data.model.bean.User;
 import com.zjy.myrxdemo.data.model.login.ShopInfo;
-import com.zjy.myrxdemo.data.model.login.bean.AdvModel;
 import com.zjy.myrxdemo.data.model.login.bean.ConfigQRModel;
 import com.zjy.myrxdemo.data.model.login.bean.LoginResponse;
 import com.zjy.myrxdemo.data.model.login.bean.PayConfigModel;
@@ -88,9 +89,8 @@ public class Repository implements DataSource {
     }
 
     @Override
-    public Observable<NetWorkResponse<AdvModel>> getAdvUrl(String token, int businessId, String dimension, String apiVersion) {
-        return mRemoteDataSource.getAdvUrl(token,businessId,dimension,apiVersion)
-                .lift(new ApiErrorOperator<>())
+    public Observable<Bitmap> getAdvBitmap(String token, int businessId, String dimension, String apiVersion) {
+        return mRemoteDataSource.getAdvBitmap(token,businessId,dimension,apiVersion)
                 .compose(Transformers.neverError());
     }
 

@@ -1,6 +1,7 @@
 package com.zjy.myrxdemo.business.login;
 
 
+import android.Manifest;
 import android.os.Build;
 import android.text.TextUtils;
 
@@ -19,12 +20,15 @@ import com.zjy.myrxdemo.data.model.login.bean.LoginResponse;
 import com.zjy.myrxdemo.data.model.login.bean.PayConfigModel;
 import com.zjy.myrxdemo.data.model.login.bean.UnionConfigModel;
 import com.zjy.myrxdemo.data.source.Repository;
+import com.zjy.zlibrary.activity.BaseActivity;
+import com.zjy.zlibrary.component.rxpemission.RxPermissions;
 import com.zjy.zlibrary.rx.transform.Transformers;
 
 import io.reactivex.Observable;
 import io.reactivex.ObservableSource;
 import io.reactivex.annotations.NonNull;
 import io.reactivex.disposables.CompositeDisposable;
+import io.reactivex.disposables.Disposable;
 import io.reactivex.functions.Function;
 import io.reactivex.observers.DisposableObserver;
 import timber.log.Timber;
@@ -101,7 +105,6 @@ public class LoginPresenter implements LoginContract.Presenter {
                         LoginConfig.getConfigQR(mRepository).subscribe();
                         if (!shopInfo.bCashEn) {
                             Timber.d("不支持收银");
-                            //return Observable.error(new ServiceException(ServiceException.TRANSFORM_TO_FAILED,"不支持收银"));
                             return Observable.empty();
                         } else {
                             return mRepository.getPayConfig(shopInfo.sessionId, HttpConstants.getbApiVersionValue());
@@ -116,7 +119,6 @@ public class LoginPresenter implements LoginContract.Presenter {
                             return mRepository.getUnionConfig(mRepository.getSessionId(), HttpConstants.getbApiVersionValue());
                         }
                         Timber.d("不支持银联收款");
-                        //return Observable.error(new ServiceException(ServiceException.TRANSFORM_TO_FAILED,"不支持银联收款"));
                         return Observable.empty();
                     }
 
@@ -146,6 +148,24 @@ public class LoginPresenter implements LoginContract.Presenter {
 
     }
 
+    @Override
+    public void requestPermission(BaseActivity activity) {
+        RxPermissions rxPermissions = new RxPermissions(activity);
+        Disposable disposable = rxPermissions.requestEach(Manifest.permission.CAMERA, Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.SYSTEM_ALERT_WINDOW)
+                .subscribe(permission -> {
+                    if (permission.granted) {
+                        // `permission.name` is granted !
+                    } else if (permission.shouldShowRequestPermissionRationale) {
+                        // Denied permission without ask never again
+                    } else {
+                        if(permission.name.contains("SYSTEM_ALERT_WINDOW")){
+
+                        }
+                    }
+                });
+        mCompositeDisposable.add(disposable);
+    }
+
     private boolean localCheckOK(String userName, String password) {
         if (userName.length() < 1) {
             mLoginView.toastError("用户名不能为空");
@@ -156,9 +176,6 @@ public class LoginPresenter implements LoginContract.Presenter {
         }
         return true;
     }
-
-
-
 
 
 }

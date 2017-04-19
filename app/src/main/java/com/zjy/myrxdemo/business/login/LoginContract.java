@@ -1,6 +1,7 @@
 package com.zjy.myrxdemo.business.login;
 
 import com.zjy.baselib.data.model.bean.User;
+import com.zjy.zlibrary.activity.BaseActivity;
 import com.zjy.zlibrary.base.BasePresenter;
 import com.zjy.zlibrary.base.BaseView;
 
@@ -15,6 +16,8 @@ public interface LoginContract {
     }
     interface Presenter extends BasePresenter{
         void login(String userName, String password);
+
+        void requestPermission(BaseActivity loginActivity);
     }
 
 

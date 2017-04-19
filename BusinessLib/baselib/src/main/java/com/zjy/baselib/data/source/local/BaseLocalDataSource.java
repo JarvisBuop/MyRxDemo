@@ -35,7 +35,7 @@ public class BaseLocalDataSource {
             public void subscribe(ObservableEmitter<User> e) throws Exception {
                 QueryBuilder<AppDB> qb = mDaoSession.getAppDBDao().queryBuilder();
                 AppDB unique = qb.where(AppDBDao.Properties.Key.eq(PersistenceContract.AppDBEntry.USER)).unique();
-                User user=null;
+                User user=new User();
                 if (unique != null) {
                     user = new Gson().fromJson(unique.getValue(), User.class);
                 }

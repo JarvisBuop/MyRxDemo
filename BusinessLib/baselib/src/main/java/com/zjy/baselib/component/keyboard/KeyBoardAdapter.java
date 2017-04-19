@@ -1,6 +1,7 @@
 package com.zjy.baselib.component.keyboard;
 
 import android.support.v4.content.ContextCompat;
+import android.support.v7.widget.RecyclerView;
 import android.text.TextUtils;
 import android.widget.TextView;
 
@@ -34,4 +35,8 @@ public class KeyBoardAdapter extends BaseQuickAdapter<KeyEntry, BaseViewHolder> 
 
     }
 
+    @Override
+    public void onAttachedToRecyclerView(RecyclerView recyclerView) {
+
+    }
 }

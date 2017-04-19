@@ -1,9 +1,14 @@
 package com.zjy.cash.business.cash;
 
+import android.support.v4.content.ContextCompat;
+import android.support.v7.widget.DividerItemDecoration;
+import android.support.v7.widget.GridLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.KeyEvent;
 
 import com.zjy.baselib.component.keyboard.KeyBoardFragment;
 import com.zjy.baselib.component.keyboard.KeyEntry;
+import com.zjy.cash.R;
 
 import java.util.List;
 
@@ -29,5 +34,17 @@ public class CashKeyBoard extends KeyBoardFragment {
         items.add(new KeyEntry(".", KeyEvent.KEYCODE_PERIOD));
         items.add(new KeyEntry("0", KeyEvent.KEYCODE_0));
         items.add(new KeyEntry("删除", KeyEvent.KEYCODE_DEL));
+    }
+
+    @Override
+    protected void layoutAndDivide(RecyclerView recyclerView) {
+        GridLayoutManager gridLayoutManager = new GridLayoutManager(getContext(), 3);
+        recyclerView.setLayoutManager(gridLayoutManager);
+        DividerItemDecoration decoration = new DividerItemDecoration(getContext(), DividerItemDecoration.VERTICAL);
+        decoration.setDrawable(ContextCompat.getDrawable(getContext(), R.drawable.keyboard_divider));
+        recyclerView.addItemDecoration(decoration);
+        DividerItemDecoration decoration2 = new DividerItemDecoration(getContext(), DividerItemDecoration.HORIZONTAL);
+        decoration2.setDrawable(ContextCompat.getDrawable(getContext(), R.drawable.keyboard_divider));
+        recyclerView.addItemDecoration(decoration2);
     }
 }

@@ -1,5 +1,7 @@
 package com.zjy.myrxdemo.data.source.local;
 
+import android.graphics.Bitmap;
+
 import com.google.gson.Gson;
 import com.zjy.baselib.component.Injection.Injection;
 import com.zjy.baselib.data.model.NetWorkResponse;
@@ -12,7 +14,6 @@ import com.zjy.baselib.data.source.local.BaseLocalDataSource;
 import com.zjy.baselib.data.source.local.DaoSession;
 import com.zjy.baselib.data.source.local.PreferencesManager;
 import com.zjy.myrxdemo.data.model.login.ShopInfo;
-import com.zjy.myrxdemo.data.model.login.bean.AdvModel;
 import com.zjy.myrxdemo.data.model.login.bean.ConfigQRModel;
 import com.zjy.myrxdemo.data.model.login.bean.LoginResponse;
 import com.zjy.myrxdemo.data.model.login.bean.PayConfigModel;
@@ -107,7 +108,7 @@ public class LocalDataSource implements DataSource {
     }
 
     @Override
-    public Observable<NetWorkResponse<AdvModel>> getAdvUrl(String token, int businessId, String dimension, String apiVersion) {
+    public Observable<Bitmap> getAdvBitmap(String token, int businessId, String dimension, String apiVersion) {
         return null;
     }
 

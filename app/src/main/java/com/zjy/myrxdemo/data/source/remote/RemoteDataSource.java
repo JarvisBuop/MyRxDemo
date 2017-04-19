@@ -1,5 +1,12 @@
 package com.zjy.myrxdemo.data.source.remote;
 
+import android.graphics.Bitmap;
+
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.animation.GlideAnimation;
+import com.bumptech.glide.request.target.SimpleTarget;
+import com.zjy.baselib.component.Injection.Injection;
+import com.zjy.baselib.component.rx.ApiErrorOperator;
 import com.zjy.baselib.data.model.NetWorkResponse;
 import com.zjy.baselib.data.model.bean.SessionModel;
 import com.zjy.baselib.data.model.bean.User;
@@ -12,14 +19,21 @@ import com.zjy.myrxdemo.data.model.login.bean.PayConfigModel;
 import com.zjy.myrxdemo.data.model.login.bean.UnionConfigModel;
 import com.zjy.myrxdemo.data.source.DataSource;
 
+import java.io.File;
 import java.util.List;
 
 import io.reactivex.Observable;
+import io.reactivex.ObservableEmitter;
+import io.reactivex.ObservableOnSubscribe;
+import io.reactivex.ObservableSource;
+import io.reactivex.annotations.NonNull;
+import io.reactivex.functions.Function;
 
 
 public class RemoteDataSource implements DataSource {
     private static RemoteDataSource instance = null;
     protected final MwService mMwService;
+
     public static RemoteDataSource getInstance() {
         synchronized (RemoteDataSource.class) {
             if (instance == null) {
@@ -29,10 +43,9 @@ public class RemoteDataSource implements DataSource {
         return instance;
     }
 
-    private RemoteDataSource(){
-        mMwService = RetrofitHelper.getInstance().getApiService (MwService.HOST,MwService.class,null);
+    private RemoteDataSource() {
+        mMwService = RetrofitHelper.getInstance().getApiService(MwService.HOST, MwService.class, null);
     }
-
 
 
     ///////////////////////////////////////////////////////////////////////////
@@ -41,27 +54,50 @@ public class RemoteDataSource implements DataSource {
 
     @Override
     public Observable<LoginResponse> login(String UserName, String password, String deviceId, String V, String AP, String apiVersion) {
-        return mMwService.getLoginResponse(UserName,password,deviceId,V,AP,apiVersion);
+        return mMwService.getLoginResponse(UserName, password, deviceId, V, AP, apiVersion);
     }
 
     @Override
     public Observable<NetWorkResponse<PayConfigModel>> getPayConfig(String token, String apiVersion) {
-        return mMwService.getPayConfigResponse(token,apiVersion);
+        return mMwService.getPayConfigResponse(token, apiVersion);
     }
 
     @Override
     public Observable<NetWorkResponse<UnionConfigModel>> getUnionConfig(String token, String apiVersion) {
-        return mMwService.getUnionConfigResponse(token,apiVersion);
+        return mMwService.getUnionConfigResponse(token, apiVersion);
     }
 
     @Override
-    public Observable<NetWorkResponse<AdvModel>> getAdvUrl(String token, int businessId, String dimension, String apiVersion) {
-        return mMwService.getAdvResopnse(token,businessId,dimension,apiVersion);
+    public Observable<Bitmap> getAdvBitmap(String token, int businessId, String dimension, String apiVersion) {
+        return mMwService.getAdvResopnse(token, businessId, dimension, apiVersion)
+                .lift(new ApiErrorOperator<>())
+                .flatMap(new Function<NetWorkResponse<AdvModel>, ObservableSource<Bitmap>>() {
+                    @Override
+                    public ObservableSource<Bitmap> apply(@NonNull NetWorkResponse<AdvModel> advModelNetWorkResponse) throws Exception {
+                        return Observable.create(new ObservableOnSubscribe<Bitmap>() {
+                            @Override
+                            public void subscribe(ObservableEmitter<Bitmap> e) throws Exception {
+                                Glide.with(Injection.provideContext())
+                                        .load(advModelNetWorkResponse.data.image)
+                                        .downloadOnly(new SimpleTarget<File>() {
+                                              @Override
+                                              public void onResourceReady(File resource, GlideAnimation<? super File> glideAnimation) {
+
+                                              }
+                                          });
+
+
+                            }
+                        });
+
+                    }
+                });
+
     }
 
     @Override
     public Observable<NetWorkResponse<List<ConfigQRModel>>> getConfigQR(String token, String apiVersion) {
-        return mMwService.getQRResponse(token,apiVersion);
+        return mMwService.getQRResponse(token, apiVersion);
     }
 
     @Override

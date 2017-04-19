@@ -85,4 +85,11 @@ public static java.lang.String TABLENAME;
  #bugly
  -dontwarn com.tencent.bugly.**
  -keep public class com.tencent.bugly.**{*;}
+ 
+ #glide
+ -keep public class * implements com.bumptech.glide.module.GlideModule
+ -keep public enum com.bumptech.glide.load.resource.bitmap.ImageHeaderParser$** {
+   **[] $VALUES;
+   public *;
+ }
 

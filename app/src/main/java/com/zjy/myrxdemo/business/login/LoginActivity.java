@@ -43,6 +43,13 @@ public class LoginActivity extends BaseActivity implements LoginContract.View {
         setContentView(R.layout.activity_login);
         ButterKnife.bind(this);
         mLoginPresenter = new LoginPresenter(AppInjection.provideRepository(), this);
+
+    }
+
+    @Override
+    public void onAttachedToWindow() {
+        super.onAttachedToWindow();
+        mLoginPresenter.requestPermission(this);
     }
 
     @Override

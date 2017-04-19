@@ -171,7 +171,7 @@ public class LoginConfig {
     }
 
     public static Observable<Boolean> getAdvUrl(final Repository repository) {
-        return repository.getAdvUrl(repository.getSessionId(), 32, "16:9", "V8")
+        return repository.getAdvBitmap(repository.getSessionId(), 32, "16:9", "V8")
                 .map(advModelNetWorkResponse -> true)
                 .compose(Transformers.<Boolean>rxNetWork());
     }
