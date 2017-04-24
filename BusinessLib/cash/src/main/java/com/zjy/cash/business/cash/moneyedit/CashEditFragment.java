@@ -1,4 +1,4 @@
-package com.zjy.cash.business.cash;
+package com.zjy.cash.business.cash.moneyedit;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -14,8 +14,6 @@ import com.zjy.baselib.component.keyboard.AppendKeyEntry;
 import com.zjy.baselib.component.keyboard.KeyEntry;
 import com.zjy.cash.R;
 import com.zjy.cash.R2;
-import com.zjy.cash.business.cash.appendrule.AbsMoneyEditAppend;
-import com.zjy.cash.business.cash.appendrule.Period0Append;
 import com.zjy.cash.component.widget.MoneyEdit;
 import com.zjy.zlibrary.fragment.fragmentation.SupportFragment;
 

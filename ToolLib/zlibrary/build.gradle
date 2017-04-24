@@ -44,6 +44,8 @@ dependencies {
     compile 'com.jakewharton.rxbinding2:rxbinding-support-v4:2.0.0'
     //rxjava 绑定 activity fragment 生命周期
     compile 'com.trello.rxlifecycle2:rxlifecycle:2.0.1'
+    compile 'com.trello.rxlifecycle2:rxlifecycle-android:2.0.1'
+
 
     compile 'com.android.support:multidex:1.0.1'
     //通用工具类框架
@@ -63,6 +65,11 @@ dependencies {
     compile 'org.greenrobot:greendao:3.2.0'
     //图片加载框架
     compile 'com.github.bumptech.glide:glide:3.7.0'
+
+    compile project(':ToolLib:qrcodereaderview')
+
+
+
 
 
 }

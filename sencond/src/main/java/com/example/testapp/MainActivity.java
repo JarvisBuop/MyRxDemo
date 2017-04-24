@@ -49,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
 
         timer = new Timer();
         timer.schedule(task, 1000, 1000);
+
     }
 
     @Override

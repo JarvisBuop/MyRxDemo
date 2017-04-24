@@ -1,7 +1,7 @@
 package com.zjy.cash.business.cash;
 
 public class CashPresenter implements CashContract.Presenter {
-    private CashContract.View mCashView;
+    protected CashContract.View mCashView;
     public CashPresenter(CashContract.View cashView) {
         mCashView = cashView;
         mCashView.setPresenter(this);

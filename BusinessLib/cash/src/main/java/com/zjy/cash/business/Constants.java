@@ -16,4 +16,8 @@ public class Constants {
         public static final int PAY_TYPE_BAIDU = 4;
         public static final int PAY_TYPE_MEMBER = 5;
     }
+
+    public static class ThirdCash{
+        public static final String MODLE_JSON ="third_cash_model_json";
+    }
 }

@@ -1,4 +1,4 @@
-package com.zjy.cash.business.cash.appendrule;
+package com.zjy.cash.business.cash.moneyedit;
 
 import java.text.NumberFormat;
 

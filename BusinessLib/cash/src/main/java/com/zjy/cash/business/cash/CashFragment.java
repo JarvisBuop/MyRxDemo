@@ -6,26 +6,37 @@ import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import com.alibaba.android.arouter.launcher.ARouter;
-import com.zjy.baselib.component.keyboard.AppendKeyEntry;
+import com.jakewharton.rxbinding2.view.RxView;
+import com.trello.rxlifecycle2.RxLifecycle;
+import com.trello.rxlifecycle2.android.FragmentEvent;
 import com.zjy.baselib.component.keyboard.KeyBoardFragment;
 import com.zjy.baselib.component.keyboard.KeyBoardListener;
 import com.zjy.baselib.component.keyboard.KeyEntry;
 import com.zjy.cash.R;
 import com.zjy.cash.R2;
+import com.zjy.cash.business.cash.moneyedit.CashEditFragment;
 import com.zjy.zlibrary.fragment.fragmentation.SupportFragment;
 import com.zjy.zlibrary.widget.TitleBar;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import es.dmoral.toasty.Toasty;
+import io.reactivex.annotations.NonNull;
+import io.reactivex.functions.Consumer;
 
 public class CashFragment extends SupportFragment implements CashContract.View {
     public static final String TAG = CashFragment.class.getSimpleName();
     @BindView(R2.id.titleBar)
     public TitleBar titleBar;
+    @BindView(R2.id.btn_scan_pay)
+    Button btnScanPay;
     protected CashContract.Presenter mPresenter;
+    protected KeyBoardFragment cashKeyBoard;
+    protected CashEditFragment mCashEditFragment;
+
 
 
     public static CashFragment newInstance() {
@@ -41,6 +52,10 @@ public class CashFragment extends SupportFragment implements CashContract.View {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        initPresenter();
+    }
+
+    protected void initPresenter() {
         new CashPresenter(this);
     }
 
@@ -58,11 +73,13 @@ public class CashFragment extends SupportFragment implements CashContract.View {
         initView(view);
     }
 
-    private void initView(View view) {
+    protected void initView(View view) {
         setUpTitleBar();
         initVirtualKeyBoard();
         initCashEdit();
+        initPayButton();
     }
+
 
 
 
@@ -82,23 +99,41 @@ public class CashFragment extends SupportFragment implements CashContract.View {
         titleBar.setTitleColor(Color.WHITE);
     }
 
-    private void initVirtualKeyBoard() {
-        KeyBoardFragment cashKeyBoard = new CashKeyBoard();
+    protected void initVirtualKeyBoard() {
+        cashKeyBoard = new CashKeyBoard();
         loadRootFragment(R.id.num_soft_keyboard, cashKeyBoard);
         cashKeyBoard.setKeyBoardClickListener(new KeyBoardListener() {
             @Override
             public void onVirtualClick(KeyEntry keyEntry) {
-                AppendKeyEntry childFragment = findChildFragment(CashEditFragment.class);
-                if(childFragment!=null){
-                    childFragment.appendKeyEntry(keyEntry);
+                if(interceptKeyBoardClick(keyEntry)){
+                    return;
+                }
+                if(mCashEditFragment!=null){
+                    mCashEditFragment.appendKeyEntry(keyEntry);
                 }
             }
         });
     }
 
+    protected boolean interceptKeyBoardClick(KeyEntry keyEntry){
+        return false;
+    }
+
+
     private void initCashEdit() {
-       CashEditFragment cashEditFragment = new CashEditFragment();
-        loadRootFragment(R.id.cash_edit,cashEditFragment);
+        mCashEditFragment = new CashEditFragment();
+        loadRootFragment(R.id.cash_edit, mCashEditFragment);
+    }
+
+    protected void initPayButton() {
+        RxView.clicks(btnScanPay)
+                .compose(RxLifecycle.bindUntilEvent(lifecycleSubject,FragmentEvent.DESTROY))
+                .subscribe(new Consumer<Object>() {
+                    @Override
+                    public void accept(@NonNull Object o) throws Exception {
+                        ARouter.getInstance().build("/basebusy/scan_activity").navigation(getContext());
+                    }
+                });
     }
 
 

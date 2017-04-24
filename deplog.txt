@@ -1,0 +1,3072 @@
+Parallel execution is an incubating feature.
+NDK is missing a "platforms" directory.
+If you are using NDK, verify the ndk.dir is set to a valid NDK directory.  It is currently set to /Users/meiweibuyondeng/Library/Android/sdk/ndk-bundle.
+If you are not using NDK, unset the NDK variable from ANDROID_NDK_HOME or local.properties to remove this warning.
+
+NDK is missing a "platforms" directory.
+If you are using NDK, verify the ndk.dir is set to a valid NDK directory.  It is currently set to /Users/meiweibuyondeng/Library/Android/sdk/ndk-bundle.
+If you are not using NDK, unset the NDK variable from ANDROID_NDK_HOME or local.properties to remove this warning.
+
+NDK is missing a "platforms" directory.
+If you are using NDK, verify the ndk.dir is set to a valid NDK directory.  It is currently set to /Users/meiweibuyondeng/Library/Android/sdk/ndk-bundle.
+If you are not using NDK, unset the NDK variable from ANDROID_NDK_HOME or local.properties to remove this warning.
+
+extractDebugAnnotations is incompatible with java 8 sources and has been disabled.
+extractReleaseAnnotations is incompatible with java 8 sources and has been disabled.
+NDK is missing a "platforms" directory.
+If you are using NDK, verify the ndk.dir is set to a valid NDK directory.  It is currently set to /Users/meiweibuyondeng/Library/Android/sdk/ndk-bundle.
+If you are not using NDK, unset the NDK variable from ANDROID_NDK_HOME or local.properties to remove this warning.
+
+extractDebugAnnotations is incompatible with java 8 sources and has been disabled.
+extractReleaseAnnotations is incompatible with java 8 sources and has been disabled.
+NDK is missing a "platforms" directory.
+If you are using NDK, verify the ndk.dir is set to a valid NDK directory.  It is currently set to /Users/meiweibuyondeng/Library/Android/sdk/ndk-bundle.
+If you are not using NDK, unset the NDK variable from ANDROID_NDK_HOME or local.properties to remove this warning.
+
+extractDebugAnnotations is incompatible with java 8 sources and has been disabled.
+extractReleaseAnnotations is incompatible with java 8 sources and has been disabled.
+extractDebugAnnotations is incompatible with java 8 sources and has been disabled.
+extractReleaseAnnotations is incompatible with java 8 sources and has been disabled.
+NDK is missing a "platforms" directory.
+If you are using NDK, verify the ndk.dir is set to a valid NDK directory.  It is currently set to /Users/meiweibuyondeng/Library/Android/sdk/ndk-bundle.
+If you are not using NDK, unset the NDK variable from ANDROID_NDK_HOME or local.properties to remove this warning.
+
+extractDebugAnnotations is incompatible with java 8 sources and has been disabled.
+extractReleaseAnnotations is incompatible with java 8 sources and has been disabled.
+NDK is missing a "platforms" directory.
+If you are using NDK, verify the ndk.dir is set to a valid NDK directory.  It is currently set to /Users/meiweibuyondeng/Library/Android/sdk/ndk-bundle.
+If you are not using NDK, unset the NDK variable from ANDROID_NDK_HOME or local.properties to remove this warning.
+
+extractDebugAnnotations is incompatible with java 8 sources and has been disabled.
+extractReleaseAnnotations is incompatible with java 8 sources and has been disabled.
+NDK is missing a "platforms" directory.
+If you are using NDK, verify the ndk.dir is set to a valid NDK directory.  It is currently set to /Users/meiweibuyondeng/Library/Android/sdk/ndk-bundle.
+If you are not using NDK, unset the NDK variable from ANDROID_NDK_HOME or local.properties to remove this warning.
+
+extractDebugAnnotations is incompatible with java 8 sources and has been disabled.
+extractReleaseAnnotations is incompatible with java 8 sources and has been disabled.
+Jack is disabled, but one of the plugins you are using supports Java 8 language features.
+Jack is disabled, but one of the plugins you are using supports Java 8 language features.
+NDK is missing a "platforms" directory.
+If you are using NDK, verify the ndk.dir is set to a valid NDK directory.  It is currently set to /Users/meiweibuyondeng/Library/Android/sdk/ndk-bundle.
+If you are not using NDK, unset the NDK variable from ANDROID_NDK_HOME or local.properties to remove this warning.
+
+NDK is missing a "platforms" directory.
+If you are using NDK, verify the ndk.dir is set to a valid NDK directory.  It is currently set to /Users/meiweibuyondeng/Library/Android/sdk/ndk-bundle.
+If you are not using NDK, unset the NDK variable from ANDROID_NDK_HOME or local.properties to remove this warning.
+
+extractDebugAnnotations is incompatible with java 8 sources and has been disabled.
+extractReleaseAnnotations is incompatible with java 8 sources and has been disabled.
+:BusinessLib:allDeps
+:ToolLib:allDeps
+
+
+------------------------------------------------------------
+Project :ToolLib
+------------------------------------------------------------
+
+------------------------------------------------------------
+Project :BusinessLib
+------------------------------------------------------------
+
+No configurations
+No configurations
+:sencond:allDeps
+:BusinessLib:baselib:allDeps
+
+
+------------------------------------------------------------
+Project :BusinessLib:baselib
+------------------------------------------------------------
+
+:app:allDeps
+_debugAndroidTestAnnotationProcessor - ## Internal use, do not manually configure ##
+
+------------------------------------------------------------
+Project :app
+------------------------------------------------------------
+
+------------------------------------------------------------
+Project :sencond
+------------------------------------------------------------
+
++--- com.jakewharton:butterknife-compiler:8.4.0
+_debugAndroidTestAnnotationProcessor - ## Internal use, do not manually configure ##
+|    +--- com.jakewharton:butterknife-annotations:8.4.0
+|    |    \--- com.android.support:support-annotations:24.1.0 -> 25.3.1
+_debugAndroidTestAnnotationProcessor - ## Internal use, do not manually configure ##
+|    +--- com.google.auto:auto-common:0.6
+|    |    \--- com.google.guava:guava:18.0
+|    +--- com.google.auto.service:auto-service:1.0-rc2
+|    |    +--- com.google.auto:auto-common:0.3 -> 0.6 (*)
+|    |    \--- com.google.guava:guava:18.0
+|    \--- com.squareup:javapoet:1.7.0
++--- project :ToolLib:zlibrary
+|    +--- com.android.support:appcompat-v7:25.3.1
+|    |    +--- com.android.support:support-annotations:25.3.1
+|    |    +--- com.android.support:support-v4:25.3.1
+|    |    |    +--- com.android.support:support-compat:25.3.1
+|    |    |    |    \--- com.android.support:support-annotations:25.3.1
+|    |    |    +--- com.android.support:support-media-compat:25.3.1
+|    |    |    |    +--- com.android.support:support-annotations:25.3.1
+|    |    |    |    \--- com.android.support:support-compat:25.3.1 (*)
+|    |    |    +--- com.android.support:support-core-utils:25.3.1
+|    |    |    |    +--- com.android.support:support-annotations:25.3.1
+|    |    |    |    \--- com.android.support:support-compat:25.3.1 (*)
+|    |    |    +--- com.android.support:support-core-ui:25.3.1
+|    |    |    |    +--- com.android.support:support-annotations:25.3.1
+|    |    |    |    \--- com.android.support:support-compat:25.3.1 (*)
+|    |    |    \--- com.android.support:support-fragment:25.3.1
+|    |    |         +--- com.android.support:support-compat:25.3.1 (*)
+|    |    |         +--- com.android.support:support-media-compat:25.3.1 (*)
+No dependencies
+
+_debugAndroidTestApk - ## Internal use, do not manually configure ##
+No dependencies
+
+_debugAndroidTestCompile - ## Internal use, do not manually configure ##
+No dependencies
+
+_debugAndroidTestJackPlugin - ## Internal use, do not manually configure ##
+|    |    |         +--- com.android.support:support-core-ui:25.3.1 (*)
+|    |    |         \--- com.android.support:support-core-utils:25.3.1 (*)
+|    |    +--- com.android.support:support-vector-drawable:25.3.1
+|    |    |    +--- com.android.support:support-annotations:25.3.1
+|    |    |    \--- com.android.support:support-compat:25.3.1 (*)
+|    |    \--- com.android.support:animated-vector-drawable:25.3.1
+|    |         \--- com.android.support:support-vector-drawable:25.3.1 (*)
+|    +--- com.android.support:design:25.3.1
+|    |    +--- com.android.support:support-v4:25.3.1 (*)
+|    |    +--- com.android.support:appcompat-v7:25.3.1 (*)
+|    |    +--- com.android.support:recyclerview-v7:25.3.1
+|    |    |    +--- com.android.support:support-annotations:25.3.1
+|    |    |    +--- com.android.support:support-compat:25.3.1 (*)
+|    |    |    \--- com.android.support:support-core-ui:25.3.1 (*)
+|    |    \--- com.android.support:transition:25.3.1
+|    |         +--- com.android.support:support-annotations:25.3.1
+|    |         \--- com.android.support:support-v4:25.3.1 (*)
+|    +--- com.android.support:cardview-v7:25.3.1
+|    |    \--- com.android.support:support-annotations:25.3.1
+|    +--- com.android.support:recyclerview-v7:25.3.1 (*)
+|    +--- com.squareup.retrofit2:retrofit:2.2.0
+|    |    \--- com.squareup.okhttp3:okhttp:3.6.0
+|    |         \--- com.squareup.okio:okio:1.11.0
+|    +--- com.squareup.retrofit2:adapter-rxjava2:2.2.0
+|    |    +--- com.squareup.retrofit2:retrofit:2.2.0 (*)
+|    |    \--- io.reactivex.rxjava2:rxjava:2.0.0 -> 2.0.7
+|    |         \--- org.reactivestreams:reactive-streams:1.0.0
+|    +--- io.reactivex.rxjava2:rxjava:2.0.7 (*)
+|    +--- io.reactivex.rxjava2:rxandroid:2.0.1
+|    |    \--- io.reactivex.rxjava2:rxjava:2.0.1 -> 2.0.7 (*)
+|    +--- com.jakewharton.rxbinding2:rxbinding-support-v4:2.0.0
+|    |    +--- com.jakewharton.rxbinding2:rxbinding:2.0.0
+|    |    |    +--- io.reactivex.rxjava2:rxjava:2.0.2 -> 2.0.7 (*)
+|    |    |    +--- io.reactivex.rxjava2:rxandroid:2.0.0 -> 2.0.1 (*)
+|    |    |    \--- com.android.support:support-annotations:25.1.1 -> 25.3.1
+|    |    \--- com.android.support:support-core-ui:25.1.1 -> 25.3.1 (*)
+|    +--- com.trello.rxlifecycle2:rxlifecycle:2.0.1
+|    |    +--- io.reactivex.rxjava2:rxjava:2.0.1 -> 2.0.7 (*)
+|    |    \--- com.google.code.findbugs:jsr305:3.0.1
+|    +--- com.android.support:multidex:1.0.1
+|    +--- com.blankj:utilcode:1.3.6
+|    +--- com.github.CymChad:BaseRecyclerViewAdapterHelper:2.8.5
+|    +--- com.jakewharton.timber:timber:4.5.1
+|    +--- com.afollestad.material-dialogs:core:0.9.4.2
+|    |    +--- com.android.support:support-v13:25.3.0
+|    |    |    +--- com.android.support:support-annotations:25.3.0 -> 25.3.1
+|    |    |    \--- com.android.support:support-v4:25.3.0 -> 25.3.1 (*)
+|    |    +--- com.android.support:appcompat-v7:25.3.0 -> 25.3.1 (*)
+|    |    +--- com.android.support:recyclerview-v7:25.3.0 -> 25.3.1 (*)
+|    |    +--- com.android.support:support-annotations:25.3.0 -> 25.3.1
+|    |    \--- me.zhanghai.android.materialprogressbar:library:1.3.0
+|    |         +--- com.android.support:appcompat-v7:25.0.0 -> 25.3.1 (*)
+|    |         \--- com.android.support:support-annotations:25.0.0 -> 25.3.1
+|    +--- com.google.code.gson:gson:2.8.0
+|    +--- com.readystatesoftware.chuck:library:1.0.1
+|    |    +--- com.google.code.gson:gson:2.7 -> 2.8.0
+|    |    +--- com.squareup.okhttp3:okhttp:3.6.0 (*)
+|    |    +--- nl.qbusict:cupboard:2.2.0
+|    |    +--- com.android.support:appcompat-v7:25.1.1 -> 25.3.1 (*)
+|    |    +--- com.android.support:support-v4:25.1.1 -> 25.3.1 (*)
+|    |    +--- com.android.support:recyclerview-v7:25.1.1 -> 25.3.1 (*)
+|    |    \--- com.android.support:design:25.1.1 -> 25.3.1 (*)
+|    +--- com.jakewharton:butterknife:8.4.0
+|    |    +--- com.jakewharton:butterknife-annotations:8.4.0 (*)
+|    |    \--- com.android.support:support-annotations:24.1.0 -> 25.3.1
+|    +--- com.alibaba:arouter-api:1.0.9
+|    |    +--- com.alibaba:arouter-annotation:1.0.3
+|    |    +--- com.alibaba:fastjson:1.2.9
+|    |    \--- com.android.support:support-v4:25.2.0 -> 25.3.1 (*)
+|    +--- org.greenrobot:greendao:3.2.0
+|    |    \--- org.greenrobot:greendao-api:3.2.0
+|    \--- com.github.bumptech.glide:glide:3.7.0
++--- project :ToolLib:toasty
+|    \--- com.android.support:appcompat-v7:25.3.1 (*)
++--- project :ToolLib:bottom-bar
+|    +--- com.android.support:appcompat-v7:25.3.1 (*)
+|    \--- com.android.support:design:25.3.1 (*)
++--- com.tencent.bugly:crashreport_upgrade:latest.release -> 1.2.5
+\--- com.facebook.stetho:stetho:1.4.2
+     +--- commons-cli:commons-cli:1.2
+     \--- com.google.code.findbugs:jsr305:2.0.1 -> 3.0.1
+
+_debugAndroidTestApk - ## Internal use, do not manually configure ##
++--- project :ToolLib:zlibrary
+|    +--- com.android.support:appcompat-v7:25.3.1
+|    |    +--- com.android.support:support-annotations:25.3.1
+|    |    +--- com.android.support:support-v4:25.3.1
+|    |    |    +--- com.android.support:support-compat:25.3.1
+|    |    |    |    \--- com.android.support:support-annotations:25.3.1
+|    |    |    +--- com.android.support:support-media-compat:25.3.1
+|    |    |    |    +--- com.android.support:support-annotations:25.3.1
+|    |    |    |    \--- com.android.support:support-compat:25.3.1 (*)
+|    |    |    +--- com.android.support:support-core-utils:25.3.1
+|    |    |    |    +--- com.android.support:support-annotations:25.3.1
+|    |    |    |    \--- com.android.support:support-compat:25.3.1 (*)
+|    |    |    +--- com.android.support:support-core-ui:25.3.1
+|    |    |    |    +--- com.android.support:support-annotations:25.3.1
+|    |    |    |    \--- com.android.support:support-compat:25.3.1 (*)
+|    |    |    \--- com.android.support:support-fragment:25.3.1
+|    |    |         +--- com.android.support:support-compat:25.3.1 (*)
+|    |    |         +--- com.android.support:support-media-compat:25.3.1 (*)
+|    |    |         +--- com.android.support:support-core-ui:25.3.1 (*)
+|    |    |         \--- com.android.support:support-core-utils:25.3.1 (*)
+|    |    +--- com.android.support:support-vector-drawable:25.3.1
+|    |    |    +--- com.android.support:support-annotations:25.3.1
+|    |    |    \--- com.android.support:support-compat:25.3.1 (*)
+|    |    \--- com.android.support:animated-vector-drawable:25.3.1
+|    |         \--- com.android.support:support-vector-drawable:25.3.1 (*)
+|    +--- com.android.support:design:25.3.1
+|    |    +--- com.android.support:support-v4:25.3.1 (*)
+|    |    +--- com.android.support:appcompat-v7:25.3.1 (*)
+|    |    +--- com.android.support:recyclerview-v7:25.3.1
+|    |    |    +--- com.android.support:support-annotations:25.3.1
+|    |    |    +--- com.android.support:support-compat:25.3.1 (*)
+|    |    |    \--- com.android.support:support-core-ui:25.3.1 (*)
+|    |    \--- com.android.support:transition:25.3.1
+|    |         +--- com.android.support:support-annotations:25.3.1
+|    |         \--- com.android.support:support-v4:25.3.1 (*)
+|    +--- com.android.support:cardview-v7:25.3.1
+|    |    \--- com.android.support:support-annotations:25.3.1
+|    +--- com.android.support:recyclerview-v7:25.3.1 (*)
+|    +--- com.squareup.retrofit2:retrofit:2.2.0
+|    |    \--- com.squareup.okhttp3:okhttp:3.6.0
+|    |         \--- com.squareup.okio:okio:1.11.0
+|    +--- com.squareup.retrofit2:adapter-rxjava2:2.2.0
+|    |    +--- com.squareup.retrofit2:retrofit:2.2.0 (*)
+|    |    \--- io.reactivex.rxjava2:rxjava:2.0.0 -> 2.0.7
+|    |         \--- org.reactivestreams:reactive-streams:1.0.0
+|    +--- io.reactivex.rxjava2:rxjava:2.0.7 (*)
+|    +--- io.reactivex.rxjava2:rxandroid:2.0.1
+|    |    \--- io.reactivex.rxjava2:rxjava:2.0.1 -> 2.0.7 (*)
+|    +--- com.jakewharton.rxbinding2:rxbinding-support-v4:2.0.0
+|    |    +--- com.jakewharton.rxbinding2:rxbinding:2.0.0
+|    |    |    +--- io.reactivex.rxjava2:rxjava:2.0.2 -> 2.0.7 (*)
+|    |    |    +--- io.reactivex.rxjava2:rxandroid:2.0.0 -> 2.0.1 (*)
+|    |    |    \--- com.android.support:support-annotations:25.1.1 -> 25.3.1
+|    |    \--- com.android.support:support-core-ui:25.1.1 -> 25.3.1 (*)
+|    +--- com.trello.rxlifecycle2:rxlifecycle:2.0.1
+|    |    +--- io.reactivex.rxjava2:rxjava:2.0.1 -> 2.0.7 (*)
+|    |    \--- com.google.code.findbugs:jsr305:3.0.1
+|    +--- com.android.support:multidex:1.0.1
+|    +--- com.blankj:utilcode:1.3.6
+|    +--- com.github.CymChad:BaseRecyclerViewAdapterHelper:2.8.5
+|    +--- com.jakewharton.timber:timber:4.5.1
+|    +--- com.afollestad.material-dialogs:core:0.9.4.2
+|    |    +--- com.android.support:support-v13:25.3.0
+|    |    |    +--- com.android.support:support-annotations:25.3.0 -> 25.3.1
+|    |    |    \--- com.android.support:support-v4:25.3.0 -> 25.3.1 (*)
+|    |    +--- com.android.support:appcompat-v7:25.3.0 -> 25.3.1 (*)
+|    |    +--- com.android.support:recyclerview-v7:25.3.0 -> 25.3.1 (*)
+|    |    +--- com.android.support:support-annotations:25.3.0 -> 25.3.1
+|    |    \--- me.zhanghai.android.materialprogressbar:library:1.3.0
+|    |         +--- com.android.support:appcompat-v7:25.0.0 -> 25.3.1 (*)
+|    |         \--- com.android.support:support-annotations:25.0.0 -> 25.3.1
+|    +--- com.google.code.gson:gson:2.8.0
+|    +--- com.readystatesoftware.chuck:library:1.0.1
+|    |    +--- com.google.code.gson:gson:2.7 -> 2.8.0
+|    |    +--- com.squareup.okhttp3:okhttp:3.6.0 (*)
+|    |    +--- nl.qbusict:cupboard:2.2.0
+|    |    +--- com.android.support:appcompat-v7:25.1.1 -> 25.3.1 (*)
+|    |    +--- com.android.support:support-v4:25.1.1 -> 25.3.1 (*)
+|    |    +--- com.android.support:recyclerview-v7:25.1.1 -> 25.3.1 (*)
+|    |    \--- com.android.support:design:25.1.1 -> 25.3.1 (*)
+|    +--- com.jakewharton:butterknife:8.4.0
+|    |    +--- com.jakewharton:butterknife-annotations:8.4.0
+|    |    |    \--- com.android.support:support-annotations:24.1.0 -> 25.3.1
+|    |    \--- com.android.support:support-annotations:24.1.0 -> 25.3.1
+|    +--- com.alibaba:arouter-api:1.0.9
+|    |    +--- com.alibaba:arouter-annotation:1.0.3
+|    |    +--- com.alibaba:fastjson:1.2.9
+|    |    \--- com.android.support:support-v4:25.2.0 -> 25.3.1 (*)
+|    +--- org.greenrobot:greendao:3.2.0
+|    |    \--- org.greenrobot:greendao-api:3.2.0
+|    \--- com.github.bumptech.glide:glide:3.7.0
++--- project :ToolLib:toasty
+|    \--- com.android.support:appcompat-v7:25.3.1 (*)
++--- project :ToolLib:bottom-bar
+|    +--- com.android.support:appcompat-v7:25.3.1 (*)
+|    \--- com.android.support:design:25.3.1 (*)
++--- com.tencent.bugly:crashreport_upgrade:latest.release -> 1.2.5
+\--- com.facebook.stetho:stetho:1.4.2
+     +--- commons-cli:commons-cli:1.2
+     \--- com.google.code.findbugs:jsr305:2.0.1 -> 3.0.1
+
+_debugAndroidTestCompile - ## Internal use, do not manually configure ##
++--- project :ToolLib:zlibrary
+|    +--- com.android.support:appcompat-v7:25.3.1
+|    |    +--- com.android.support:support-annotations:25.3.1
+|    |    +--- com.android.support:support-v4:25.3.1
+|    |    |    +--- com.android.support:support-compat:25.3.1
+|    |    |    |    \--- com.android.support:support-annotations:25.3.1
+|    |    |    +--- com.android.support:support-media-compat:25.3.1
+|    |    |    |    +--- com.android.support:support-annotations:25.3.1
+|    |    |    |    \--- com.android.support:support-compat:25.3.1 (*)
+|    |    |    +--- com.android.support:support-core-utils:25.3.1
+|    |    |    |    +--- com.android.support:support-annotations:25.3.1
+|    |    |    |    \--- com.android.support:support-compat:25.3.1 (*)
+|    |    |    +--- com.android.support:support-core-ui:25.3.1
+|    |    |    |    +--- com.android.support:support-annotations:25.3.1
+|    |    |    |    \--- com.android.support:support-compat:25.3.1 (*)
+|    |    |    \--- com.android.support:support-fragment:25.3.1
+|    |    |         +--- com.android.support:support-compat:25.3.1 (*)
+|    |    |         +--- com.android.support:support-media-compat:25.3.1 (*)
+|    |    |         +--- com.android.support:support-core-ui:25.3.1 (*)
+|    |    |         \--- com.android.support:support-core-utils:25.3.1 (*)
+|    |    +--- com.android.support:support-vector-drawable:25.3.1
+|    |    |    +--- com.android.support:support-annotations:25.3.1
+|    |    |    \--- com.android.support:support-compat:25.3.1 (*)
+|    |    \--- com.android.support:animated-vector-drawable:25.3.1
+|    |         \--- com.android.support:support-vector-drawable:25.3.1 (*)
+|    +--- com.android.support:design:25.3.1
+|    |    +--- com.android.support:support-v4:25.3.1 (*)
+|    |    +--- com.android.support:appcompat-v7:25.3.1 (*)
+No dependencies
+
+_debugAndroidTestApk - ## Internal use, do not manually configure ##
+No dependencies
+
+|    |    +--- com.android.support:recyclerview-v7:25.3.1
+No dependencies
+
+_debugAnnotationProcessor - ## Internal use, do not manually configure ##
+|    |    |    +--- com.android.support:support-annotations:25.3.1
+_debugAndroidTestCompile - ## Internal use, do not manually configure ##
+|    |    |    +--- com.android.support:support-compat:25.3.1 (*)
+|    |    |    \--- com.android.support:support-core-ui:25.3.1 (*)
+No dependencies
+|    |    \--- com.android.support:transition:25.3.1
+|    |         +--- com.android.support:support-annotations:25.3.1
+No dependencies
+
+_debugApk - ## Internal use, do not manually configure ##
++--- project :ToolLib:chipview
+|    \--- com.android.support:appcompat-v7:25.3.1
+|         +--- com.android.support:support-annotations:25.3.1
+|         +--- com.android.support:support-v4:25.3.1
+|         |    +--- com.android.support:support-compat:25.3.1
+|         |    |    \--- com.android.support:support-annotations:25.3.1
+|         |    +--- com.android.support:support-media-compat:25.3.1
+|         |    |    +--- com.android.support:support-annotations:25.3.1
+|         |    |    \--- com.android.support:support-compat:25.3.1 (*)
+|         |    +--- com.android.support:support-core-utils:25.3.1
+|         |    |    +--- com.android.support:support-annotations:25.3.1
+
+_debugAndroidTestJackPlugin - ## Internal use, do not manually configure ##
+|         |    |    \--- com.android.support:support-compat:25.3.1 (*)
+|         |    +--- com.android.support:support-core-ui:25.3.1
+|         |    |    +--- com.android.support:support-annotations:25.3.1
+|         |    |    \--- com.android.support:support-compat:25.3.1 (*)
+|         |    \--- com.android.support:support-fragment:25.3.1
+|         |         +--- com.android.support:support-compat:25.3.1 (*)
+|         |         +--- com.android.support:support-media-compat:25.3.1 (*)
+|         |         +--- com.android.support:support-core-ui:25.3.1 (*)
+|         |         \--- com.android.support:support-core-utils:25.3.1 (*)
+|         +--- com.android.support:support-vector-drawable:25.3.1
+|         |    +--- com.android.support:support-annotations:25.3.1
+|         |    \--- com.android.support:support-compat:25.3.1 (*)
+|         \--- com.android.support:animated-vector-drawable:25.3.1
+|              \--- com.android.support:support-vector-drawable:25.3.1 (*)
++--- project :ToolLib:toasty
+|    |         \--- com.android.support:support-v4:25.3.1 (*)
+|    +--- com.android.support:cardview-v7:25.3.1
+|    |    \--- com.android.support:support-annotations:25.3.1
+|    +--- com.android.support:recyclerview-v7:25.3.1 (*)
+|    +--- com.squareup.retrofit2:retrofit:2.2.0
+|    |    \--- com.squareup.okhttp3:okhttp:3.6.0
+|    |         \--- com.squareup.okio:okio:1.11.0
+|    +--- com.squareup.retrofit2:adapter-rxjava2:2.2.0
+|    |    +--- com.squareup.retrofit2:retrofit:2.2.0 (*)
+|    |    \--- io.reactivex.rxjava2:rxjava:2.0.0 -> 2.0.7
+|    |         \--- org.reactivestreams:reactive-streams:1.0.0
+|    +--- io.reactivex.rxjava2:rxjava:2.0.7 (*)
+|    +--- io.reactivex.rxjava2:rxandroid:2.0.1
+|    |    \--- io.reactivex.rxjava2:rxjava:2.0.1 -> 2.0.7 (*)
+|    +--- com.jakewharton.rxbinding2:rxbinding-support-v4:2.0.0
+|    |    +--- com.jakewharton.rxbinding2:rxbinding:2.0.0
+|    |    |    +--- io.reactivex.rxjava2:rxjava:2.0.2 -> 2.0.7 (*)
+|    |    |    +--- io.reactivex.rxjava2:rxandroid:2.0.0 -> 2.0.1 (*)
+|    |    |    \--- com.android.support:support-annotations:25.1.1 -> 25.3.1
+|    |    \--- com.android.support:support-core-ui:25.1.1 -> 25.3.1 (*)
+|    +--- com.trello.rxlifecycle2:rxlifecycle:2.0.1
+|    |    +--- io.reactivex.rxjava2:rxjava:2.0.1 -> 2.0.7 (*)
+|    |    \--- com.google.code.findbugs:jsr305:3.0.1
+|    +--- com.android.support:multidex:1.0.1
+|    +--- com.blankj:utilcode:1.3.6
+|    +--- com.github.CymChad:BaseRecyclerViewAdapterHelper:2.8.5
+|    +--- com.jakewharton.timber:timber:4.5.1
+|    +--- com.afollestad.material-dialogs:core:0.9.4.2
+|    |    +--- com.android.support:support-v13:25.3.0
+|    |    |    +--- com.android.support:support-annotations:25.3.0 -> 25.3.1
+|    |    |    \--- com.android.support:support-v4:25.3.0 -> 25.3.1 (*)
+|    |    +--- com.android.support:appcompat-v7:25.3.0 -> 25.3.1 (*)
+|    |    +--- com.android.support:recyclerview-v7:25.3.0 -> 25.3.1 (*)
+|    |    +--- com.android.support:support-annotations:25.3.0 -> 25.3.1
+|    |    \--- me.zhanghai.android.materialprogressbar:library:1.3.0
+|    |         +--- com.android.support:appcompat-v7:25.0.0 -> 25.3.1 (*)
+|    |         \--- com.android.support:support-annotations:25.0.0 -> 25.3.1
+|    +--- com.google.code.gson:gson:2.8.0
+|    +--- com.readystatesoftware.chuck:library:1.0.1
+|    |    +--- com.google.code.gson:gson:2.7 -> 2.8.0
+|    |    +--- com.squareup.okhttp3:okhttp:3.6.0 (*)
+|    |    +--- nl.qbusict:cupboard:2.2.0
+|    |    +--- com.android.support:appcompat-v7:25.1.1 -> 25.3.1 (*)
+|    |    +--- com.android.support:support-v4:25.1.1 -> 25.3.1 (*)
+|    |    +--- com.android.support:recyclerview-v7:25.1.1 -> 25.3.1 (*)
+|    |    \--- com.android.support:design:25.1.1 -> 25.3.1 (*)
+|    +--- com.jakewharton:butterknife:8.4.0
+|    |    +--- com.jakewharton:butterknife-annotations:8.4.0
+|    |    |    \--- com.android.support:support-annotations:24.1.0 -> 25.3.1
+|    |    \--- com.android.support:support-annotations:24.1.0 -> 25.3.1
+|    +--- com.alibaba:arouter-api:1.0.9
+|    |    +--- com.alibaba:arouter-annotation:1.0.3
+|    |    +--- com.alibaba:fastjson:1.2.9
+|    |    \--- com.android.support:support-v4:25.2.0 -> 25.3.1 (*)
+|    +--- org.greenrobot:greendao:3.2.0
+|    |    \--- org.greenrobot:greendao-api:3.2.0
+|    \--- com.github.bumptech.glide:glide:3.7.0
++--- project :ToolLib:toasty
+|    \--- com.android.support:appcompat-v7:25.3.1 (*)
++--- project :ToolLib:bottom-bar
+|    +--- com.android.support:appcompat-v7:25.3.1 (*)
+|    \--- com.android.support:design:25.3.1 (*)
++--- com.tencent.bugly:crashreport_upgrade:latest.release -> 1.2.5
+\--- com.facebook.stetho:stetho:1.4.2
+     +--- commons-cli:commons-cli:1.2
+     \--- com.google.code.findbugs:jsr305:2.0.1 -> 3.0.1
+
+_debugAndroidTestJackPlugin - ## Internal use, do not manually configure ##
+|    \--- com.android.support:appcompat-v7:25.3.1 (*)
++--- project :ToolLib:bottom-bar
+|    +--- com.android.support:appcompat-v7:25.3.1 (*)
+|    \--- com.android.support:design:25.3.1
+|         +--- com.android.support:support-v4:25.3.1 (*)
+|         +--- com.android.support:appcompat-v7:25.3.1 (*)
+|         +--- com.android.support:recyclerview-v7:25.3.1
+|         |    +--- com.android.support:support-annotations:25.3.1
+|         |    +--- com.android.support:support-compat:25.3.1 (*)
+|         |    \--- com.android.support:support-core-ui:25.3.1 (*)
+|         \--- com.android.support:transition:25.3.1
+|              +--- com.android.support:support-annotations:25.3.1
+|              \--- com.android.support:support-v4:25.3.1 (*)
++--- project :ToolLib:zlibrary
+|    +--- com.android.support:appcompat-v7:25.3.1 (*)
+|    +--- com.android.support:design:25.3.1 (*)
+|    +--- com.android.support:cardview-v7:25.3.1
+|    |    \--- com.android.support:support-annotations:25.3.1
+|    +--- com.android.support:recyclerview-v7:25.3.1 (*)
+|    +--- com.squareup.retrofit2:retrofit:2.2.0
+|    |    \--- com.squareup.okhttp3:okhttp:3.6.0
+|    |         \--- com.squareup.okio:okio:1.11.0
+|    +--- com.squareup.retrofit2:adapter-rxjava2:2.2.0
+|    |    +--- com.squareup.retrofit2:retrofit:2.2.0 (*)
+|    |    \--- io.reactivex.rxjava2:rxjava:2.0.0 -> 2.0.7
+|    |         \--- org.reactivestreams:reactive-streams:1.0.0
+|    +--- io.reactivex.rxjava2:rxjava:2.0.7 (*)
+|    +--- io.reactivex.rxjava2:rxandroid:2.0.1
+|    |    \--- io.reactivex.rxjava2:rxjava:2.0.1 -> 2.0.7 (*)
+|    +--- com.jakewharton.rxbinding2:rxbinding-support-v4:2.0.0
+|    |    +--- com.jakewharton.rxbinding2:rxbinding:2.0.0
+|    |    |    +--- io.reactivex.rxjava2:rxjava:2.0.2 -> 2.0.7 (*)
+|    |    |    +--- io.reactivex.rxjava2:rxandroid:2.0.0 -> 2.0.1 (*)
+|    |    |    \--- com.android.support:support-annotations:25.1.1 -> 25.3.1
+|    |    \--- com.android.support:support-core-ui:25.1.1 -> 25.3.1 (*)
+|    +--- com.trello.rxlifecycle2:rxlifecycle:2.0.1
+|    |    +--- io.reactivex.rxjava2:rxjava:2.0.1 -> 2.0.7 (*)
+|    |    \--- com.google.code.findbugs:jsr305:3.0.1
+|    +--- com.android.support:multidex:1.0.1
+|    +--- com.blankj:utilcode:1.3.6
+|    +--- com.github.CymChad:BaseRecyclerViewAdapterHelper:2.8.5
+|    +--- com.jakewharton.timber:timber:4.5.1
+|    +--- com.afollestad.material-dialogs:core:0.9.4.2
+|    |    +--- com.android.support:support-v13:25.3.0
+|    |    |    +--- com.android.support:support-annotations:25.3.0 -> 25.3.1
+|    |    |    \--- com.android.support:support-v4:25.3.0 -> 25.3.1 (*)
+|    |    +--- com.android.support:appcompat-v7:25.3.0 -> 25.3.1 (*)
+|    |    +--- com.android.support:recyclerview-v7:25.3.0 -> 25.3.1 (*)
+|    |    +--- com.android.support:support-annotations:25.3.0 -> 25.3.1
+|    |    \--- me.zhanghai.android.materialprogressbar:library:1.3.0
+|    |         +--- com.android.support:appcompat-v7:25.0.0 -> 25.3.1 (*)
+|    |         \--- com.android.support:support-annotations:25.0.0 -> 25.3.1
+|    +--- com.google.code.gson:gson:2.8.0
+|    +--- com.readystatesoftware.chuck:library:1.0.1
+|    |    +--- com.google.code.gson:gson:2.7 -> 2.8.0
+|    |    +--- com.squareup.okhttp3:okhttp:3.6.0 (*)
+|    |    +--- nl.qbusict:cupboard:2.2.0
+|    |    +--- com.android.support:appcompat-v7:25.1.1 -> 25.3.1 (*)
+|    |    +--- com.android.support:support-v4:25.1.1 -> 25.3.1 (*)
+|    |    +--- com.android.support:recyclerview-v7:25.1.1 -> 25.3.1 (*)
+|    |    \--- com.android.support:design:25.1.1 -> 25.3.1 (*)
+|    +--- com.jakewharton:butterknife:8.4.0
+|    |    +--- com.jakewharton:butterknife-annotations:8.4.0
+|    |    |    \--- com.android.support:support-annotations:24.1.0 -> 25.3.1
+|    |    \--- com.android.support:support-annotations:24.1.0 -> 25.3.1
+|    +--- com.alibaba:arouter-api:1.0.9
+|    |    +--- com.alibaba:arouter-annotation:1.0.3
+|    |    +--- com.alibaba:fastjson:1.2.9
+|    |    \--- com.android.support:support-v4:25.2.0 -> 25.3.1 (*)
+|    +--- org.greenrobot:greendao:3.2.0
+|    |    \--- org.greenrobot:greendao-api:3.2.0
+|    \--- com.github.bumptech.glide:glide:3.7.0
++--- com.facebook.stetho:stetho:1.4.2
+|    +--- commons-cli:commons-cli:1.2
+|    \--- com.google.code.findbugs:jsr305:2.0.1 -> 3.0.1
+\--- com.github.zhoujunyou:deviceInfo:1.0.3
+     +--- com.android.support:appcompat-v7:25.3.1 (*)
+     +--- com.github.CymChad:BaseRecyclerViewAdapterHelper:2.8.5
+     \--- com.android.support:recyclerview-v7:25.3.1 (*)
+
+_debugCompile - ## Internal use, do not manually configure ##
++--- project :ToolLib:chipview
+|    \--- com.android.support:appcompat-v7:25.3.1
+|         +--- com.android.support:support-annotations:25.3.1
+|         +--- com.android.support:support-v4:25.3.1
+|         |    +--- com.android.support:support-compat:25.3.1
+|         |    |    \--- com.android.support:support-annotations:25.3.1
+|         |    +--- com.android.support:support-media-compat:25.3.1
+|         |    |    +--- com.android.support:support-annotations:25.3.1
+|         |    |    \--- com.android.support:support-compat:25.3.1 (*)
+|         |    +--- com.android.support:support-core-utils:25.3.1
+|         |    |    +--- com.android.support:support-annotations:25.3.1
+|         |    |    \--- com.android.support:support-compat:25.3.1 (*)
+|         |    +--- com.android.support:support-core-ui:25.3.1
+|         |    |    +--- com.android.support:support-annotations:25.3.1
+|         |    |    \--- com.android.support:support-compat:25.3.1 (*)
+|         |    \--- com.android.support:support-fragment:25.3.1
+|         |         +--- com.android.support:support-compat:25.3.1 (*)
+|         |         +--- com.android.support:support-media-compat:25.3.1 (*)
+|         |         +--- com.android.support:support-core-ui:25.3.1 (*)
+|         |         \--- com.android.support:support-core-utils:25.3.1 (*)
+|         +--- com.android.support:support-vector-drawable:25.3.1
+|         |    +--- com.android.support:support-annotations:25.3.1
+|         |    \--- com.android.support:support-compat:25.3.1 (*)
+|         \--- com.android.support:animated-vector-drawable:25.3.1
+|              \--- com.android.support:support-vector-drawable:25.3.1 (*)
++--- project :ToolLib:toasty
+|    \--- com.android.support:appcompat-v7:25.3.1 (*)
++--- project :ToolLib:bottom-bar
+|    +--- com.android.support:appcompat-v7:25.3.1 (*)
+|    \--- com.android.support:design:25.3.1
+|         +--- com.android.support:support-v4:25.3.1 (*)
+|         +--- com.android.support:appcompat-v7:25.3.1 (*)
+|         +--- com.android.support:recyclerview-v7:25.3.1
+|         |    +--- com.android.support:support-annotations:25.3.1
+|         |    +--- com.android.support:support-compat:25.3.1 (*)
+|         |    \--- com.android.support:support-core-ui:25.3.1 (*)
+|         \--- com.android.support:transition:25.3.1
+|              +--- com.android.support:support-annotations:25.3.1
+|              \--- com.android.support:support-v4:25.3.1 (*)
++--- project :ToolLib:zlibrary
+|    +--- com.android.support:appcompat-v7:25.3.1 (*)
+|    +--- com.android.support:design:25.3.1 (*)
+|    +--- com.android.support:cardview-v7:25.3.1
+|    |    \--- com.android.support:support-annotations:25.3.1
+|    +--- com.android.support:recyclerview-v7:25.3.1 (*)
+|    +--- com.squareup.retrofit2:retrofit:2.2.0
+|    |    \--- com.squareup.okhttp3:okhttp:3.6.0
+|    |         \--- com.squareup.okio:okio:1.11.0
+|    +--- com.squareup.retrofit2:adapter-rxjava2:2.2.0
+|    |    +--- com.squareup.retrofit2:retrofit:2.2.0 (*)
+|    |    \--- io.reactivex.rxjava2:rxjava:2.0.0 -> 2.0.7
+|    |         \--- org.reactivestreams:reactive-streams:1.0.0
+|    +--- io.reactivex.rxjava2:rxjava:2.0.7 (*)
+|    +--- io.reactivex.rxjava2:rxandroid:2.0.1
+|    |    \--- io.reactivex.rxjava2:rxjava:2.0.1 -> 2.0.7 (*)
+|    +--- com.jakewharton.rxbinding2:rxbinding-support-v4:2.0.0
+|    |    +--- com.jakewharton.rxbinding2:rxbinding:2.0.0
+|    |    |    +--- io.reactivex.rxjava2:rxjava:2.0.2 -> 2.0.7 (*)
+|    |    |    +--- io.reactivex.rxjava2:rxandroid:2.0.0 -> 2.0.1 (*)
+|    |    |    \--- com.android.support:support-annotations:25.1.1 -> 25.3.1
+|    |    \--- com.android.support:support-core-ui:25.1.1 -> 25.3.1 (*)
+|    +--- com.trello.rxlifecycle2:rxlifecycle:2.0.1
+|    |    +--- io.reactivex.rxjava2:rxjava:2.0.1 -> 2.0.7 (*)
+|    |    \--- com.google.code.findbugs:jsr305:3.0.1
+|    +--- com.android.support:multidex:1.0.1
+|    +--- com.blankj:utilcode:1.3.6
+|    +--- com.github.CymChad:BaseRecyclerViewAdapterHelper:2.8.5
+|    +--- com.jakewharton.timber:timber:4.5.1
+|    +--- com.afollestad.material-dialogs:core:0.9.4.2
+|    |    +--- com.android.support:support-v13:25.3.0
+|    |    |    +--- com.android.support:support-annotations:25.3.0 -> 25.3.1
+|    |    |    \--- com.android.support:support-v4:25.3.0 -> 25.3.1 (*)
+|    |    +--- com.android.support:appcompat-v7:25.3.0 -> 25.3.1 (*)
+|    |    +--- com.android.support:recyclerview-v7:25.3.0 -> 25.3.1 (*)
+|    |    +--- com.android.support:support-annotations:25.3.0 -> 25.3.1
+|    |    \--- me.zhanghai.android.materialprogressbar:library:1.3.0
+|    |         +--- com.android.support:appcompat-v7:25.0.0 -> 25.3.1 (*)
+|    |         \--- com.android.support:support-annotations:25.0.0 -> 25.3.1
+|    +--- com.google.code.gson:gson:2.8.0
+|    +--- com.readystatesoftware.chuck:library:1.0.1
+|    |    +--- com.google.code.gson:gson:2.7 -> 2.8.0
+|    |    +--- com.squareup.okhttp3:okhttp:3.6.0 (*)
+|    |    +--- nl.qbusict:cupboard:2.2.0
+|    |    +--- com.android.support:appcompat-v7:25.1.1 -> 25.3.1 (*)
+|    |    +--- com.android.support:support-v4:25.1.1 -> 25.3.1 (*)
+|    |    +--- com.android.support:recyclerview-v7:25.1.1 -> 25.3.1 (*)
+|    |    \--- com.android.support:design:25.1.1 -> 25.3.1 (*)
+|    +--- com.jakewharton:butterknife:8.4.0
+|    |    +--- com.jakewharton:butterknife-annotations:8.4.0
+|    |    |    \--- com.android.support:support-annotations:24.1.0 -> 25.3.1
+|    |    \--- com.android.support:support-annotations:24.1.0 -> 25.3.1
+|    +--- com.alibaba:arouter-api:1.0.9
+|    |    +--- com.alibaba:arouter-annotation:1.0.3
+|    |    +--- com.alibaba:fastjson:1.2.9
+|    |    \--- com.android.support:support-v4:25.2.0 -> 25.3.1 (*)
+|    +--- org.greenrobot:greendao:3.2.0
+|    |    \--- org.greenrobot:greendao-api:3.2.0
+|    \--- com.github.bumptech.glide:glide:3.7.0
++--- com.facebook.stetho:stetho:1.4.2
+|    +--- commons-cli:commons-cli:1.2
+|    \--- com.google.code.findbugs:jsr305:2.0.1 -> 3.0.1
+\--- com.github.zhoujunyou:deviceInfo:1.0.3
+     +--- com.android.support:appcompat-v7:25.3.1 (*)
+     +--- com.github.CymChad:BaseRecyclerViewAdapterHelper:2.8.5
+     \--- com.android.support:recyclerview-v7:25.3.1 (*)
+
+_debugJackPlugin - ## Internal use, do not manually configure ##
+:BusinessLib:cash:allDeps
+No dependencies
+
+_debugAnnotationProcessor - ## Internal use, do not manually configure ##
++--- com.jakewharton:butterknife-compiler:8.4.0
+|    +--- com.jakewharton:butterknife-annotations:8.4.0
+|    |    \--- com.android.support:support-annotations:24.1.0 -> 25.3.1
+|    +--- com.google.auto:auto-common:0.6
+|    |    \--- com.google.guava:guava:18.0
+|    +--- com.google.auto.service:auto-service:1.0-rc2
+|    |    +--- com.google.auto:auto-common:0.3 -> 0.6 (*)
+|    |    \--- com.google.guava:guava:18.0
+|    \--- com.squareup:javapoet:1.7.0
++--- com.alibaba:arouter-compiler:1.0.4
+|    +--- com.alibaba:arouter-annotation:1.0.3
+|    +--- com.google.auto.service:auto-service:1.0-rc2 (*)
+|    +--- com.squareup:javapoet:1.7.0
+|    +--- org.apache.commons:commons-lang3:3.4
+|    \--- org.apache.commons:commons-collections4:4.1
++--- project :BusinessLib:baselib
+|    +--- project :ToolLib:zlibrary
+|    |    +--- com.android.support:appcompat-v7:25.3.1
+|    |    |    +--- com.android.support:support-annotations:25.3.1
+|    |    |    +--- com.android.support:support-v4:25.3.1
+|    |    |    |    +--- com.android.support:support-compat:25.3.1
+|    |    |    |    |    \--- com.android.support:support-annotations:25.3.1
+|    |    |    |    +--- com.android.support:support-media-compat:25.3.1
+|    |    |    |    |    +--- com.android.support:support-annotations:25.3.1
+|    |    |    |    |    \--- com.android.support:support-compat:25.3.1 (*)
+|    |    |    |    +--- com.android.support:support-core-utils:25.3.1
+|    |    |    |    |    +--- com.android.support:support-annotations:25.3.1
+|    |    |    |    |    \--- com.android.support:support-compat:25.3.1 (*)
+|    |    |    |    +--- com.android.support:support-core-ui:25.3.1
+|    |    |    |    |    +--- com.android.support:support-annotations:25.3.1
+|    |    |    |    |    \--- com.android.support:support-compat:25.3.1 (*)
+|    |    |    |    \--- com.android.support:support-fragment:25.3.1
+|    |    |    |         +--- com.android.support:support-compat:25.3.1 (*)
+|    |    |    |         +--- com.android.support:support-media-compat:25.3.1 (*)
+|    |    |    |         +--- com.android.support:support-core-ui:25.3.1 (*)
+|    |    |    |         \--- com.android.support:support-core-utils:25.3.1 (*)
+|    |    |    +--- com.android.support:support-vector-drawable:25.3.1
+|    |    |    |    +--- com.android.support:support-annotations:25.3.1
+|    |    |    |    \--- com.android.support:support-compat:25.3.1 (*)
+|    |    |    \--- com.android.support:animated-vector-drawable:25.3.1
+|    |    |         \--- com.android.support:support-vector-drawable:25.3.1 (*)
+|    |    +--- com.android.support:design:25.3.1
+|    |    |    +--- com.android.support:support-v4:25.3.1 (*)
+|    |    |    +--- com.android.support:appcompat-v7:25.3.1 (*)
+|    |    |    +--- com.android.support:recyclerview-v7:25.3.1
+|    |    |    |    +--- com.android.support:support-annotations:25.3.1
+|    |    |    |    +--- com.android.support:support-compat:25.3.1 (*)
+|    |    |    |    \--- com.android.support:support-core-ui:25.3.1 (*)
+|    |    |    \--- com.android.support:transition:25.3.1
+|    |    |         +--- com.android.support:support-annotations:25.3.1
+|    |    |         \--- com.android.support:support-v4:25.3.1 (*)
+|    |    +--- com.android.support:cardview-v7:25.3.1
+|    |    |    \--- com.android.support:support-annotations:25.3.1
+|    |    +--- com.android.support:recyclerview-v7:25.3.1 (*)
+|    |    +--- com.squareup.retrofit2:retrofit:2.2.0
+|    |    |    \--- com.squareup.okhttp3:okhttp:3.6.0
+|    |    |         \--- com.squareup.okio:okio:1.11.0
+|    |    +--- com.squareup.retrofit2:adapter-rxjava2:2.2.0
+|    |    |    +--- com.squareup.retrofit2:retrofit:2.2.0 (*)
+|    |    |    \--- io.reactivex.rxjava2:rxjava:2.0.0 -> 2.0.7
+|    |    |         \--- org.reactivestreams:reactive-streams:1.0.0
+|    |    +--- io.reactivex.rxjava2:rxjava:2.0.7 (*)
+|    |    +--- io.reactivex.rxjava2:rxandroid:2.0.1
+|    |    |    \--- io.reactivex.rxjava2:rxjava:2.0.1 -> 2.0.7 (*)
+|    |    +--- com.jakewharton.rxbinding2:rxbinding-support-v4:2.0.0
+|    |    |    +--- com.jakewharton.rxbinding2:rxbinding:2.0.0
+|    |    |    |    +--- io.reactivex.rxjava2:rxjava:2.0.2 -> 2.0.7 (*)
+|    |    |    |    +--- io.reactivex.rxjava2:rxandroid:2.0.0 -> 2.0.1 (*)
+|    |    |    |    \--- com.android.support:support-annotations:25.1.1 -> 25.3.1
+|    |    |    \--- com.android.support:support-core-ui:25.1.1 -> 25.3.1 (*)
+|    |    +--- com.trello.rxlifecycle2:rxlifecycle:2.0.1
+|    |    |    +--- io.reactivex.rxjava2:rxjava:2.0.1 -> 2.0.7 (*)
+|    |    |    \--- com.google.code.findbugs:jsr305:3.0.1
+|    |    +--- com.android.support:multidex:1.0.1
+|    |    +--- com.blankj:utilcode:1.3.6
+|    |    +--- com.github.CymChad:BaseRecyclerViewAdapterHelper:2.8.5
+|    |    +--- com.jakewharton.timber:timber:4.5.1
+|    |    +--- com.afollestad.material-dialogs:core:0.9.4.2
+|    |    |    +--- com.android.support:support-v13:25.3.0
+|    |    |    |    +--- com.android.support:support-annotations:25.3.0 -> 25.3.1
+|    |    |    |    \--- com.android.support:support-v4:25.3.0 -> 25.3.1 (*)
+|    |    |    +--- com.android.support:appcompat-v7:25.3.0 -> 25.3.1 (*)
+|    |    |    +--- com.android.support:recyclerview-v7:25.3.0 -> 25.3.1 (*)
+|    |    |    +--- com.android.support:support-annotations:25.3.0 -> 25.3.1
+|    |    |    \--- me.zhanghai.android.materialprogressbar:library:1.3.0
+|    |    |         +--- com.android.support:appcompat-v7:25.0.0 -> 25.3.1 (*)
+|    |    |         \--- com.android.support:support-annotations:25.0.0 -> 25.3.1
+|    |    +--- com.google.code.gson:gson:2.8.0
+|    |    +--- com.readystatesoftware.chuck:library:1.0.1
+|    |    |    +--- com.google.code.gson:gson:2.7 -> 2.8.0
+|    |    |    +--- com.squareup.okhttp3:okhttp:3.6.0 (*)
+|    |    |    +--- nl.qbusict:cupboard:2.2.0
+|    |    |    +--- com.android.support:appcompat-v7:25.1.1 -> 25.3.1 (*)
+|    |    |    +--- com.android.support:support-v4:25.1.1 -> 25.3.1 (*)
+|    |    |    +--- com.android.support:recyclerview-v7:25.1.1 -> 25.3.1 (*)
+|    |    |    \--- com.android.support:design:25.1.1 -> 25.3.1 (*)
+|    |    +--- com.jakewharton:butterknife:8.4.0
+|    |    |    +--- com.jakewharton:butterknife-annotations:8.4.0 (*)
+|    |    |    \--- com.android.support:support-annotations:24.1.0 -> 25.3.1
+|    |    +--- com.alibaba:arouter-api:1.0.9
+|    |    |    +--- com.alibaba:arouter-annotation:1.0.3
+|    |    |    +--- com.alibaba:fastjson:1.2.9
+|    |    |    \--- com.android.support:support-v4:25.2.0 -> 25.3.1 (*)
+|    |    +--- org.greenrobot:greendao:3.2.0
+|    |    |    \--- org.greenrobot:greendao-api:3.2.0
+|    |    \--- com.github.bumptech.glide:glide:3.7.0
+|    +--- project :ToolLib:toasty
+|    |    \--- com.android.support:appcompat-v7:25.3.1 (*)
+|    +--- project :ToolLib:bottom-bar
+|    |    +--- com.android.support:appcompat-v7:25.3.1 (*)
+|    |    \--- com.android.support:design:25.3.1 (*)
+|    +--- com.tencent.bugly:crashreport_upgrade:latest.release -> 1.2.5
+|    \--- com.facebook.stetho:stetho:1.4.2
+|         +--- commons-cli:commons-cli:1.2
+|         \--- com.google.code.findbugs:jsr305:2.0.1 -> 3.0.1
++--- project :BusinessLib:cash
+|    \--- project :BusinessLib:baselib (*)
++--- project :BusinessLib:member
+|    \--- project :BusinessLib:baselib (*)
+\--- project :BusinessLib:coupon
+     \--- project :BusinessLib:baselib (*)
+
+_debugApk - ## Internal use, do not manually configure ##
++--- project :BusinessLib:baselib
+|    +--- project :ToolLib:zlibrary
+|    |    +--- com.android.support:appcompat-v7:25.3.1
+|    |    |    +--- com.android.support:support-annotations:25.3.1
+|    |    |    +--- com.android.support:support-v4:25.3.1
+|    |    |    |    +--- com.android.support:support-compat:25.3.1
+|    |    |    |    |    \--- com.android.support:support-annotations:25.3.1
+|    |    |    |    +--- com.android.support:support-media-compat:25.3.1
+|    |    |    |    |    +--- com.android.support:support-annotations:25.3.1
+|    |    |    |    |    \--- com.android.support:support-compat:25.3.1 (*)
+|    |    |    |    +--- com.android.support:support-core-utils:25.3.1
+|    |    |    |    |    +--- com.android.support:support-annotations:25.3.1
+|    |    |    |    |    \--- com.android.support:support-compat:25.3.1 (*)
+|    |    |    |    +--- com.android.support:support-core-ui:25.3.1
+|    |    |    |    |    +--- com.android.support:support-annotations:25.3.1
+|    |    |    |    |    \--- com.android.support:support-compat:25.3.1 (*)
+|    |    |    |    \--- com.android.support:support-fragment:25.3.1
+|    |    |    |         +--- com.android.support:support-compat:25.3.1 (*)
+|    |    |    |         +--- com.android.support:support-media-compat:25.3.1 (*)
+|    |    |    |         +--- com.android.support:support-core-ui:25.3.1 (*)
+|    |    |    |         \--- com.android.support:support-core-utils:25.3.1 (*)
+|    |    |    +--- com.android.support:support-vector-drawable:25.3.1
+|    |    |    |    +--- com.android.support:support-annotations:25.3.1
+|    |    |    |    \--- com.android.support:support-compat:25.3.1 (*)
+|    |    |    \--- com.android.support:animated-vector-drawable:25.3.1
+|    |    |         \--- com.android.support:support-vector-drawable:25.3.1 (*)
+|    |    +--- com.android.support:design:25.3.1
+|    |    |    +--- com.android.support:support-v4:25.3.1 (*)
+|    |    |    +--- com.android.support:appcompat-v7:25.3.1 (*)
+|    |    |    +--- com.android.support:recyclerview-v7:25.3.1
+|    |    |    |    +--- com.android.support:support-annotations:25.3.1
+|    |    |    |    +--- com.android.support:support-compat:25.3.1 (*)
+|    |    |    |    \--- com.android.support:support-core-ui:25.3.1 (*)
+|    |    |    \--- com.android.support:transition:25.3.1
+|    |    |         +--- com.android.support:support-annotations:25.3.1
+|    |    |         \--- com.android.support:support-v4:25.3.1 (*)
+|    |    +--- com.android.support:cardview-v7:25.3.1
+|    |    |    \--- com.android.support:support-annotations:25.3.1
+|    |    +--- com.android.support:recyclerview-v7:25.3.1 (*)
+|    |    +--- com.squareup.retrofit2:retrofit:2.2.0
+|    |    |    \--- com.squareup.okhttp3:okhttp:3.6.0
+|    |    |         \--- com.squareup.okio:okio:1.11.0
+|    |    +--- com.squareup.retrofit2:adapter-rxjava2:2.2.0
+|    |    |    +--- com.squareup.retrofit2:retrofit:2.2.0 (*)
+|    |    |    \--- io.reactivex.rxjava2:rxjava:2.0.0 -> 2.0.7
+|    |    |         \--- org.reactivestreams:reactive-streams:1.0.0
+|    |    +--- io.reactivex.rxjava2:rxjava:2.0.7 (*)
+|    |    +--- io.reactivex.rxjava2:rxandroid:2.0.1
+|    |    |    \--- io.reactivex.rxjava2:rxjava:2.0.1 -> 2.0.7 (*)
+|    |    +--- com.jakewharton.rxbinding2:rxbinding-support-v4:2.0.0
+|    |    |    +--- com.jakewharton.rxbinding2:rxbinding:2.0.0
+|    |    |    |    +--- io.reactivex.rxjava2:rxjava:2.0.2 -> 2.0.7 (*)
+|    |    |    |    +--- io.reactivex.rxjava2:rxandroid:2.0.0 -> 2.0.1 (*)
+|    |    |    |    \--- com.android.support:support-annotations:25.1.1 -> 25.3.1
+|    |    |    \--- com.android.support:support-core-ui:25.1.1 -> 25.3.1 (*)
+|    |    +--- com.trello.rxlifecycle2:rxlifecycle:2.0.1
+|    |    |    +--- io.reactivex.rxjava2:rxjava:2.0.1 -> 2.0.7 (*)
+|    |    |    \--- com.google.code.findbugs:jsr305:3.0.1
+|    |    +--- com.android.support:multidex:1.0.1
+|    |    +--- com.blankj:utilcode:1.3.6
+|    |    +--- com.github.CymChad:BaseRecyclerViewAdapterHelper:2.8.5
+|    |    +--- com.jakewharton.timber:timber:4.5.1
+|    |    +--- com.afollestad.material-dialogs:core:0.9.4.2
+|    |    |    +--- com.android.support:support-v13:25.3.0
+|    |    |    |    +--- com.android.support:support-annotations:25.3.0 -> 25.3.1
+|    |    |    |    \--- com.android.support:support-v4:25.3.0 -> 25.3.1 (*)
+|    |    |    +--- com.android.support:appcompat-v7:25.3.0 -> 25.3.1 (*)
+|    |    |    +--- com.android.support:recyclerview-v7:25.3.0 -> 25.3.1 (*)
+|    |    |    +--- com.android.support:support-annotations:25.3.0 -> 25.3.1
+|    |    |    \--- me.zhanghai.android.materialprogressbar:library:1.3.0
+|    |    |         +--- com.android.support:appcompat-v7:25.0.0 -> 25.3.1 (*)
+|    |    |         \--- com.android.support:support-annotations:25.0.0 -> 25.3.1
+|    |    +--- com.google.code.gson:gson:2.8.0
+|    |    +--- com.readystatesoftware.chuck:library:1.0.1
+|    |    |    +--- com.google.code.gson:gson:2.7 -> 2.8.0
+|    |    |    +--- com.squareup.okhttp3:okhttp:3.6.0 (*)
+|    |    |    +--- nl.qbusict:cupboard:2.2.0
+|    |    |    +--- com.android.support:appcompat-v7:25.1.1 -> 25.3.1 (*)
+|    |    |    +--- com.android.support:support-v4:25.1.1 -> 25.3.1 (*)
+|    |    |    +--- com.android.support:recyclerview-v7:25.1.1 -> 25.3.1 (*)
+|    |    |    \--- com.android.support:design:25.1.1 -> 25.3.1 (*)
+|    |    +--- com.jakewharton:butterknife:8.4.0
+|    |    |    +--- com.jakewharton:butterknife-annotations:8.4.0
+|    |    |    |    \--- com.android.support:support-annotations:24.1.0 -> 25.3.1
+|    |    |    \--- com.android.support:support-annotations:24.1.0 -> 25.3.1
+|    |    +--- com.alibaba:arouter-api:1.0.9
+|    |    |    +--- com.alibaba:arouter-annotation:1.0.3
+|    |    |    +--- com.alibaba:fastjson:1.2.9
+|    |    |    \--- com.android.support:support-v4:25.2.0 -> 25.3.1 (*)
+|    |    +--- org.greenrobot:greendao:3.2.0
+|    |    |    \--- org.greenrobot:greendao-api:3.2.0
+|    |    \--- com.github.bumptech.glide:glide:3.7.0
+|    +--- project :ToolLib:toasty
+|    |    \--- com.android.support:appcompat-v7:25.3.1 (*)
+|    +--- project :ToolLib:bottom-bar
+|    |    +--- com.android.support:appcompat-v7:25.3.1 (*)
+|    |    \--- com.android.support:design:25.3.1 (*)
+|    +--- com.tencent.bugly:crashreport_upgrade:latest.release -> 1.2.5
+|    \--- com.facebook.stetho:stetho:1.4.2
+|         +--- commons-cli:commons-cli:1.2
+|         \--- com.google.code.findbugs:jsr305:2.0.1 -> 3.0.1
++--- project :BusinessLib:cash
+|    \--- project :BusinessLib:baselib (*)
++--- project :BusinessLib:member
+|    \--- project :BusinessLib:baselib (*)
+\--- project :BusinessLib:coupon
+     \--- project :BusinessLib:baselib (*)
+
+_debugCompile - ## Internal use, do not manually configure ##
++--- project :BusinessLib:baselib
+|    +--- project :ToolLib:zlibrary
+|    |    +--- com.android.support:appcompat-v7:25.3.1
+|    |    |    +--- com.android.support:support-annotations:25.3.1
+|    |    |    +--- com.android.support:support-v4:25.3.1
+|    |    |    |    +--- com.android.support:support-compat:25.3.1
+|    |    |    |    |    \--- com.android.support:support-annotations:25.3.1
+|    |    |    |    +--- com.android.support:support-media-compat:25.3.1
+|    |    |    |    |    +--- com.android.support:support-annotations:25.3.1
+|    |    |    |    |    \--- com.android.support:support-compat:25.3.1 (*)
+|    |    |    |    +--- com.android.support:support-core-utils:25.3.1
+|    |    |    |    |    +--- com.android.support:support-annotations:25.3.1
+|    |    |    |    |    \--- com.android.support:support-compat:25.3.1 (*)
+|    |    |    |    +--- com.android.support:support-core-ui:25.3.1
+|    |    |    |    |    +--- com.android.support:support-annotations:25.3.1
+|    |    |    |    |    \--- com.android.support:support-compat:25.3.1 (*)
+|    |    |    |    \--- com.android.support:support-fragment:25.3.1
+|    |    |    |         +--- com.android.support:support-compat:25.3.1 (*)
+|    |    |    |         +--- com.android.support:support-media-compat:25.3.1 (*)
+|    |    |    |         +--- com.android.support:support-core-ui:25.3.1 (*)
+|    |    |    |         \--- com.android.support:support-core-utils:25.3.1 (*)
+|    |    |    +--- com.android.support:support-vector-drawable:25.3.1
+|    |    |    |    +--- com.android.support:support-annotations:25.3.1
+|    |    |    |    \--- com.android.support:support-compat:25.3.1 (*)
+|    |    |    \--- com.android.support:animated-vector-drawable:25.3.1
+|    |    |         \--- com.android.support:support-vector-drawable:25.3.1 (*)
+|    |    +--- com.android.support:design:25.3.1
+|    |    |    +--- com.android.support:support-v4:25.3.1 (*)
+|    |    |    +--- com.android.support:appcompat-v7:25.3.1 (*)
+|    |    |    +--- com.android.support:recyclerview-v7:25.3.1
+|    |    |    |    +--- com.android.support:support-annotations:25.3.1
+|    |    |    |    +--- com.android.support:support-compat:25.3.1 (*)
+|    |    |    |    \--- com.android.support:support-core-ui:25.3.1 (*)
+|    |    |    \--- com.android.support:transition:25.3.1
+|    |    |         +--- com.android.support:support-annotations:25.3.1
+|    |    |         \--- com.android.support:support-v4:25.3.1 (*)
+|    |    +--- com.android.support:cardview-v7:25.3.1
+|    |    |    \--- com.android.support:support-annotations:25.3.1
+|    |    +--- com.android.support:recyclerview-v7:25.3.1 (*)
+|    |    +--- com.squareup.retrofit2:retrofit:2.2.0
+|    |    |    \--- com.squareup.okhttp3:okhttp:3.6.0
+|    |    |         \--- com.squareup.okio:okio:1.11.0
+|    |    +--- com.squareup.retrofit2:adapter-rxjava2:2.2.0
+|    |    |    +--- com.squareup.retrofit2:retrofit:2.2.0 (*)
+|    |    |    \--- io.reactivex.rxjava2:rxjava:2.0.0 -> 2.0.7
+|    |    |         \--- org.reactivestreams:reactive-streams:1.0.0
+|    |    +--- io.reactivex.rxjava2:rxjava:2.0.7 (*)
+|    |    +--- io.reactivex.rxjava2:rxandroid:2.0.1
+|    |    |    \--- io.reactivex.rxjava2:rxjava:2.0.1 -> 2.0.7 (*)
+|    |    +--- com.jakewharton.rxbinding2:rxbinding-support-v4:2.0.0
+|    |    |    +--- com.jakewharton.rxbinding2:rxbinding:2.0.0
+|    |    |    |    +--- io.reactivex.rxjava2:rxjava:2.0.2 -> 2.0.7 (*)
+|    |    |    |    +--- io.reactivex.rxjava2:rxandroid:2.0.0 -> 2.0.1 (*)
+|    |    |    |    \--- com.android.support:support-annotations:25.1.1 -> 25.3.1
+|    |    |    \--- com.android.support:support-core-ui:25.1.1 -> 25.3.1 (*)
+|    |    +--- com.trello.rxlifecycle2:rxlifecycle:2.0.1
+|    |    |    +--- io.reactivex.rxjava2:rxjava:2.0.1 -> 2.0.7 (*)
+|    |    |    \--- com.google.code.findbugs:jsr305:3.0.1
+|    |    +--- com.android.support:multidex:1.0.1
+|    |    +--- com.blankj:utilcode:1.3.6
+|    |    +--- com.github.CymChad:BaseRecyclerViewAdapterHelper:2.8.5
+|    |    +--- com.jakewharton.timber:timber:4.5.1
+|    |    +--- com.afollestad.material-dialogs:core:0.9.4.2
+|    |    |    +--- com.android.support:support-v13:25.3.0
+|    |    |    |    +--- com.android.support:support-annotations:25.3.0 -> 25.3.1
+|    |    |    |    \--- com.android.support:support-v4:25.3.0 -> 25.3.1 (*)
+|    |    |    +--- com.android.support:appcompat-v7:25.3.0 -> 25.3.1 (*)
+|    |    |    +--- com.android.support:recyclerview-v7:25.3.0 -> 25.3.1 (*)
+|    |    |    +--- com.android.support:support-annotations:25.3.0 -> 25.3.1
+|    |    |    \--- me.zhanghai.android.materialprogressbar:library:1.3.0
+|    |    |         +--- com.android.support:appcompat-v7:25.0.0 -> 25.3.1 (*)
+|    |    |         \--- com.android.support:support-annotations:25.0.0 -> 25.3.1
+|    |    +--- com.google.code.gson:gson:2.8.0
+|    |    +--- com.readystatesoftware.chuck:library:1.0.1
+|    |    |    +--- com.google.code.gson:gson:2.7 -> 2.8.0
+|    |    |    +--- com.squareup.okhttp3:okhttp:3.6.0 (*)
+|    |    |    +--- nl.qbusict:cupboard:2.2.0
+|    |    |    +--- com.android.support:appcompat-v7:25.1.1 -> 25.3.1 (*)
+|    |    |    +--- com.android.support:support-v4:25.1.1 -> 25.3.1 (*)
+|    |    |    +--- com.android.support:recyclerview-v7:25.1.1 -> 25.3.1 (*)
+|    |    |    \--- com.android.support:design:25.1.1 -> 25.3.1 (*)
+|    |    +--- com.jakewharton:butterknife:8.4.0
+|    |    |    +--- com.jakewharton:butterknife-annotations:8.4.0
+|    |    |    |    \--- com.android.support:support-annotations:24.1.0 -> 25.3.1
+|    |    |    \--- com.android.support:support-annotations:24.1.0 -> 25.3.1
+|    |    +--- com.alibaba:arouter-api:1.0.9
+|    |    |    +--- com.alibaba:arouter-annotation:1.0.3
+|    |    |    +--- com.alibaba:fastjson:1.2.9
+|    |    |    \--- com.android.support:support-v4:25.2.0 -> 25.3.1 (*)
+|    |    +--- org.greenrobot:greendao:3.2.0
+|    |    |    \--- org.greenrobot:greendao-api:3.2.0
+|    |    \--- com.github.bumptech.glide:glide:3.7.0
+|    +--- project :ToolLib:toasty
+|    |    \--- com.android.support:appcompat-v7:25.3.1 (*)
+|    +--- project :ToolLib:bottom-bar
+|    |    +--- com.android.support:appcompat-v7:25.3.1 (*)
+|    |    \--- com.android.support:design:25.3.1 (*)
+|    +--- com.tencent.bugly:crashreport_upgrade:latest.release -> 1.2.5
+|    \--- com.facebook.stetho:stetho:1.4.2
+|         +--- commons-cli:commons-cli:1.2
+|         \--- com.google.code.findbugs:jsr305:2.0.1 -> 3.0.1
++--- project :BusinessLib:cash
+|    \--- project :BusinessLib:baselib (*)
++--- project :BusinessLib:member
+|    \--- project :BusinessLib:baselib (*)
+No dependencies
+
+_debugUnitTestAnnotationProcessor - ## Internal use, do not manually configure ##
+\--- project :BusinessLib:coupon
+     \--- project :BusinessLib:baselib (*)
+
+_debugJackPlugin - ## Internal use, do not manually configure ##
+No dependencies
+
+_debugAnnotationProcessor - ## Internal use, do not manually configure ##
+No dependencies
+
+_debugUnitTestAnnotationProcessor - ## Internal use, do not manually configure ##
+No dependencies
+
+_debugUnitTestApk - ## Internal use, do not manually configure ##
+No dependencies
+
+_debugUnitTestCompile - ## Internal use, do not manually configure ##
+No dependencies
+
+_debugUnitTestJackPlugin - ## Internal use, do not manually configure ##
+No dependencies
+
+_releaseAnnotationProcessor - ## Internal use, do not manually configure ##
++--- com.jakewharton:butterknife-compiler:8.4.0
+|    +--- com.jakewharton:butterknife-annotations:8.4.0
+|    |    \--- com.android.support:support-annotations:24.1.0 -> 25.3.1
+|    +--- com.google.auto:auto-common:0.6
+|    |    \--- com.google.guava:guava:18.0
+|    +--- com.google.auto.service:auto-service:1.0-rc2
+|    |    +--- com.google.auto:auto-common:0.3 -> 0.6 (*)
+|    |    \--- com.google.guava:guava:18.0
+|    \--- com.squareup:javapoet:1.7.0
++--- com.jakewharton:butterknife-compiler:8.4.0
+|    +--- com.jakewharton:butterknife-annotations:8.4.0
+|    |    \--- com.android.support:support-annotations:24.1.0 -> 25.3.1
+|    +--- com.google.auto:auto-common:0.6
+|    |    \--- com.google.guava:guava:18.0
+|    +--- com.google.auto.service:auto-service:1.0-rc2
+|    |    +--- com.google.auto:auto-common:0.3 -> 0.6 (*)
+|    |    \--- com.google.guava:guava:18.0
+|    \--- com.squareup:javapoet:1.7.0
++--- com.alibaba:arouter-compiler:1.0.4
+|    +--- com.alibaba:arouter-annotation:1.0.3
+|    +--- com.google.auto.service:auto-service:1.0-rc2 (*)
+|    +--- com.squareup:javapoet:1.7.0
+|    +--- org.apache.commons:commons-lang3:3.4
+|    \--- org.apache.commons:commons-collections4:4.1
++--- project :BusinessLib:baselib
++--- project :ToolLib:zlibrary
+|    +--- com.android.support:appcompat-v7:25.3.1
+|    |    +--- com.android.support:support-annotations:25.3.1
+|    +--- project :ToolLib:zlibrary
+|    |    +--- com.android.support:appcompat-v7:25.3.1
+|    |    |    +--- com.android.support:support-annotations:25.3.1
+|    |    |    +--- com.android.support:support-v4:25.3.1
+|    |    |    |    +--- com.android.support:support-compat:25.3.1
+|    |    |    |    |    \--- com.android.support:support-annotations:25.3.1
+|    |    |    |    +--- com.android.support:support-media-compat:25.3.1
+|    |    |    |    |    +--- com.android.support:support-annotations:25.3.1
+|    |    |    |    |    \--- com.android.support:support-compat:25.3.1 (*)
+|    |    |    |    +--- com.android.support:support-core-utils:25.3.1
+|    |    +--- com.android.support:support-v4:25.3.1
+|    |    |    +--- com.android.support:support-compat:25.3.1
+|    |    |    |    \--- com.android.support:support-annotations:25.3.1
+|    |    |    +--- com.android.support:support-media-compat:25.3.1
+|    |    |    |    +--- com.android.support:support-annotations:25.3.1
+|    |    |    |    \--- com.android.support:support-compat:25.3.1 (*)
+|    |    |    +--- com.android.support:support-core-utils:25.3.1
+|    |    |    |    +--- com.android.support:support-annotations:25.3.1
+|    |    |    |    \--- com.android.support:support-compat:25.3.1 (*)
+|    |    |    +--- com.android.support:support-core-ui:25.3.1
+|    |    |    |    +--- com.android.support:support-annotations:25.3.1
+|    |    |    |    |    +--- com.android.support:support-annotations:25.3.1
+|    |    |    |    |    \--- com.android.support:support-compat:25.3.1 (*)
+|    |    |    |    +--- com.android.support:support-core-ui:25.3.1
+|    |    |    |    |    +--- com.android.support:support-annotations:25.3.1
+|    |    |    |    |    \--- com.android.support:support-compat:25.3.1 (*)
+|    |    |    |    \--- com.android.support:support-fragment:25.3.1
+No dependencies
+
+_debugUnitTestApk - ## Internal use, do not manually configure ##
+No dependencies
+
+_debugUnitTestCompile - ## Internal use, do not manually configure ##
+No dependencies
+
+_debugUnitTestJackPlugin - ## Internal use, do not manually configure ##
+No dependencies
+
+_releaseAnnotationProcessor - ## Internal use, do not manually configure ##
+|    |    |    |         +--- com.android.support:support-compat:25.3.1 (*)
+|    |    |    |         +--- com.android.support:support-media-compat:25.3.1 (*)
+|    |    |    |         +--- com.android.support:support-core-ui:25.3.1 (*)
+|    |    |    |         \--- com.android.support:support-core-utils:25.3.1 (*)
+|    |    |    +--- com.android.support:support-vector-drawable:25.3.1
+|    |    |    |    +--- com.android.support:support-annotations:25.3.1
+|    |    |    |    \--- com.android.support:support-compat:25.3.1 (*)
+|    |    |    \--- com.android.support:animated-vector-drawable:25.3.1
+|    |    |         \--- com.android.support:support-vector-drawable:25.3.1 (*)
+|    |    +--- com.android.support:design:25.3.1
+|    |    |    +--- com.android.support:support-v4:25.3.1 (*)
+|    |    |    +--- com.android.support:appcompat-v7:25.3.1 (*)
+|    |    |    +--- com.android.support:recyclerview-v7:25.3.1
+|    |    |    |    +--- com.android.support:support-annotations:25.3.1
+|    |    |    |    +--- com.android.support:support-compat:25.3.1 (*)
+|    |    |    |    \--- com.android.support:support-core-ui:25.3.1 (*)
+|    |    |    \--- com.android.support:transition:25.3.1
+|    |    |         +--- com.android.support:support-annotations:25.3.1
+|    |    |         \--- com.android.support:support-v4:25.3.1 (*)
+|    |    +--- com.android.support:cardview-v7:25.3.1
+|    |    |    \--- com.android.support:support-annotations:25.3.1
+|    |    |    |    \--- com.android.support:support-compat:25.3.1 (*)
+|    |    |    \--- com.android.support:support-fragment:25.3.1
+|    |    |         +--- com.android.support:support-compat:25.3.1 (*)
+|    |    |         +--- com.android.support:support-media-compat:25.3.1 (*)
+|    |    +--- com.android.support:recyclerview-v7:25.3.1 (*)
+|    |    +--- com.squareup.retrofit2:retrofit:2.2.0
+|    |    |    \--- com.squareup.okhttp3:okhttp:3.6.0
+|    |    |         \--- com.squareup.okio:okio:1.11.0
+|    |    +--- com.squareup.retrofit2:adapter-rxjava2:2.2.0
+|    |    |    +--- com.squareup.retrofit2:retrofit:2.2.0 (*)
+|    |    |    \--- io.reactivex.rxjava2:rxjava:2.0.0 -> 2.0.7
+|    |    |         \--- org.reactivestreams:reactive-streams:1.0.0
+|    |    +--- io.reactivex.rxjava2:rxjava:2.0.7 (*)
+|    |    +--- io.reactivex.rxjava2:rxandroid:2.0.1
+|    |    |    \--- io.reactivex.rxjava2:rxjava:2.0.1 -> 2.0.7 (*)
+|    |    +--- com.jakewharton.rxbinding2:rxbinding-support-v4:2.0.0
+|    |    |         +--- com.android.support:support-core-ui:25.3.1 (*)
+|    |    |         \--- com.android.support:support-core-utils:25.3.1 (*)
+|    |    +--- com.android.support:support-vector-drawable:25.3.1
+|    |    |    +--- com.android.support:support-annotations:25.3.1
+|    |    |    \--- com.android.support:support-compat:25.3.1 (*)
+|    |    \--- com.android.support:animated-vector-drawable:25.3.1
+|    |         \--- com.android.support:support-vector-drawable:25.3.1 (*)
+|    +--- com.android.support:design:25.3.1
+|    |    +--- com.android.support:support-v4:25.3.1 (*)
+|    |    +--- com.android.support:appcompat-v7:25.3.1 (*)
+|    |    +--- com.android.support:recyclerview-v7:25.3.1
+|    |    |    +--- com.android.support:support-annotations:25.3.1
+|    |    |    +--- com.android.support:support-compat:25.3.1 (*)
+|    |    |    \--- com.android.support:support-core-ui:25.3.1 (*)
+|    |    \--- com.android.support:transition:25.3.1
+|    |    |    +--- com.jakewharton.rxbinding2:rxbinding:2.0.0
+|    |    |    |    +--- io.reactivex.rxjava2:rxjava:2.0.2 -> 2.0.7 (*)
+|    |    |    |    +--- io.reactivex.rxjava2:rxandroid:2.0.0 -> 2.0.1 (*)
+|    |    |    |    \--- com.android.support:support-annotations:25.1.1 -> 25.3.1
+|    |    |    \--- com.android.support:support-core-ui:25.1.1 -> 25.3.1 (*)
+|    |    +--- com.trello.rxlifecycle2:rxlifecycle:2.0.1
+No dependencies
+
+_releaseApk - ## Internal use, do not manually configure ##
+|    |    |    +--- io.reactivex.rxjava2:rxjava:2.0.1 -> 2.0.7 (*)
+|    |    |    \--- com.google.code.findbugs:jsr305:3.0.1
+|    |         +--- com.android.support:support-annotations:25.3.1
+|    |         \--- com.android.support:support-v4:25.3.1 (*)
+|    |    +--- com.android.support:multidex:1.0.1
+|    |    +--- com.blankj:utilcode:1.3.6
+|    |    +--- com.github.CymChad:BaseRecyclerViewAdapterHelper:2.8.5
+|    |    +--- com.jakewharton.timber:timber:4.5.1
+|    |    +--- com.afollestad.material-dialogs:core:0.9.4.2
+|    |    |    +--- com.android.support:support-v13:25.3.0
+|    |    |    |    +--- com.android.support:support-annotations:25.3.0 -> 25.3.1
+|    |    |    |    \--- com.android.support:support-v4:25.3.0 -> 25.3.1 (*)
++--- project :ToolLib:chipview
+|    \--- com.android.support:appcompat-v7:25.3.1
+|         +--- com.android.support:support-annotations:25.3.1
+|         +--- com.android.support:support-v4:25.3.1
+|         |    +--- com.android.support:support-compat:25.3.1
+|         |    |    \--- com.android.support:support-annotations:25.3.1
+|         |    +--- com.android.support:support-media-compat:25.3.1
+|         |    |    +--- com.android.support:support-annotations:25.3.1
+|         |    |    \--- com.android.support:support-compat:25.3.1 (*)
+|         |    +--- com.android.support:support-core-utils:25.3.1
+|         |    |    +--- com.android.support:support-annotations:25.3.1
+|         |    |    \--- com.android.support:support-compat:25.3.1 (*)
+|         |    +--- com.android.support:support-core-ui:25.3.1
+|         |    |    +--- com.android.support:support-annotations:25.3.1
+|         |    |    \--- com.android.support:support-compat:25.3.1 (*)
+|         |    \--- com.android.support:support-fragment:25.3.1
+|         |         +--- com.android.support:support-compat:25.3.1 (*)
+|         |         +--- com.android.support:support-media-compat:25.3.1 (*)
+|         |         +--- com.android.support:support-core-ui:25.3.1 (*)
+|         |         \--- com.android.support:support-core-utils:25.3.1 (*)
+|         +--- com.android.support:support-vector-drawable:25.3.1
+|         |    +--- com.android.support:support-annotations:25.3.1
+|         |    \--- com.android.support:support-compat:25.3.1 (*)
+|    |    |    +--- com.android.support:appcompat-v7:25.3.0 -> 25.3.1 (*)
+|    |    |    +--- com.android.support:recyclerview-v7:25.3.0 -> 25.3.1 (*)
+|    +--- com.android.support:cardview-v7:25.3.1
+|    |    \--- com.android.support:support-annotations:25.3.1
+|    +--- com.android.support:recyclerview-v7:25.3.1 (*)
+|    +--- com.squareup.retrofit2:retrofit:2.2.0
+|    |    \--- com.squareup.okhttp3:okhttp:3.6.0
+|    |         \--- com.squareup.okio:okio:1.11.0
+|    +--- com.squareup.retrofit2:adapter-rxjava2:2.2.0
+|    |    +--- com.squareup.retrofit2:retrofit:2.2.0 (*)
+|    |    \--- io.reactivex.rxjava2:rxjava:2.0.0 -> 2.0.7
+|    |         \--- org.reactivestreams:reactive-streams:1.0.0
+|    +--- io.reactivex.rxjava2:rxjava:2.0.7 (*)
+|    +--- io.reactivex.rxjava2:rxandroid:2.0.1
+|    |    \--- io.reactivex.rxjava2:rxjava:2.0.1 -> 2.0.7 (*)
+|    +--- com.jakewharton.rxbinding2:rxbinding-support-v4:2.0.0
+|    |    +--- com.jakewharton.rxbinding2:rxbinding:2.0.0
+|    |    |    +--- io.reactivex.rxjava2:rxjava:2.0.2 -> 2.0.7 (*)
+|    |    |    +--- io.reactivex.rxjava2:rxandroid:2.0.0 -> 2.0.1 (*)
+|    |    |    \--- com.android.support:support-annotations:25.1.1 -> 25.3.1
+|    |    \--- com.android.support:support-core-ui:25.1.1 -> 25.3.1 (*)
+|    +--- com.trello.rxlifecycle2:rxlifecycle:2.0.1
+|    |    +--- io.reactivex.rxjava2:rxjava:2.0.1 -> 2.0.7 (*)
+|    |    \--- com.google.code.findbugs:jsr305:3.0.1
+|    +--- com.android.support:multidex:1.0.1
+|    +--- com.blankj:utilcode:1.3.6
+|    +--- com.github.CymChad:BaseRecyclerViewAdapterHelper:2.8.5
+|    +--- com.jakewharton.timber:timber:4.5.1
+|    +--- com.afollestad.material-dialogs:core:0.9.4.2
+|    |    +--- com.android.support:support-v13:25.3.0
+|    |    |    +--- com.android.support:support-annotations:25.3.0 -> 25.3.1
+|    |    |    \--- com.android.support:support-v4:25.3.0 -> 25.3.1 (*)
+|    |    +--- com.android.support:appcompat-v7:25.3.0 -> 25.3.1 (*)
+|    |    +--- com.android.support:recyclerview-v7:25.3.0 -> 25.3.1 (*)
+|    |    +--- com.android.support:support-annotations:25.3.0 -> 25.3.1
+|    |    \--- me.zhanghai.android.materialprogressbar:library:1.3.0
+|    |         +--- com.android.support:appcompat-v7:25.0.0 -> 25.3.1 (*)
+|    |         \--- com.android.support:support-annotations:25.0.0 -> 25.3.1
+|    +--- com.google.code.gson:gson:2.8.0
+|    +--- com.readystatesoftware.chuck:library:1.0.1
+|    |    +--- com.google.code.gson:gson:2.7 -> 2.8.0
+|    |    +--- com.squareup.okhttp3:okhttp:3.6.0 (*)
+|    |    +--- nl.qbusict:cupboard:2.2.0
+|    |    +--- com.android.support:appcompat-v7:25.1.1 -> 25.3.1 (*)
+|    |    +--- com.android.support:support-v4:25.1.1 -> 25.3.1 (*)
+|    |    +--- com.android.support:recyclerview-v7:25.1.1 -> 25.3.1 (*)
+|    |    \--- com.android.support:design:25.1.1 -> 25.3.1 (*)
+|    +--- com.jakewharton:butterknife:8.4.0
+|    |    +--- com.jakewharton:butterknife-annotations:8.4.0 (*)
+|    |    \--- com.android.support:support-annotations:24.1.0 -> 25.3.1
+|    +--- com.alibaba:arouter-api:1.0.9
+|    |    +--- com.alibaba:arouter-annotation:1.0.3
+|    |    +--- com.alibaba:fastjson:1.2.9
+|    |    \--- com.android.support:support-v4:25.2.0 -> 25.3.1 (*)
+|    +--- org.greenrobot:greendao:3.2.0
+|    |    \--- org.greenrobot:greendao-api:3.2.0
+|    \--- com.github.bumptech.glide:glide:3.7.0
++--- project :ToolLib:toasty
+|    \--- com.android.support:appcompat-v7:25.3.1 (*)
++--- project :ToolLib:bottom-bar
+|    +--- com.android.support:appcompat-v7:25.3.1 (*)
+|    \--- com.android.support:design:25.3.1 (*)
++--- com.tencent.bugly:crashreport_upgrade:latest.release -> 1.2.5
+\--- com.facebook.stetho:stetho:1.4.2
+     +--- commons-cli:commons-cli:1.2
+     \--- com.google.code.findbugs:jsr305:2.0.1 -> 3.0.1
+
+_debugCompile - ## Internal use, do not manually configure ##
++--- project :ToolLib:zlibrary
+|    +--- com.android.support:appcompat-v7:25.3.1
+|    |    +--- com.android.support:support-annotations:25.3.1
+|    |    +--- com.android.support:support-v4:25.3.1
+|    |    |    +--- com.android.support:support-compat:25.3.1
+|    |    |    |    \--- com.android.support:support-annotations:25.3.1
+|    |    |    +--- com.android.support:support-media-compat:25.3.1
+|    |    |    |    +--- com.android.support:support-annotations:25.3.1
+|    |    |    |    \--- com.android.support:support-compat:25.3.1 (*)
+|    |    |    +--- com.android.support:support-core-utils:25.3.1
+|    |    |    |    +--- com.android.support:support-annotations:25.3.1
+|    |    |    |    \--- com.android.support:support-compat:25.3.1 (*)
+|    |    |    +--- com.android.support:support-core-ui:25.3.1
+|    |    |    |    +--- com.android.support:support-annotations:25.3.1
+|    |    |    |    \--- com.android.support:support-compat:25.3.1 (*)
+|    |    |    \--- com.android.support:support-fragment:25.3.1
+|    |    |         +--- com.android.support:support-compat:25.3.1 (*)
+|    |    |         +--- com.android.support:support-media-compat:25.3.1 (*)
+|    |    |         +--- com.android.support:support-core-ui:25.3.1 (*)
+|    |    |         \--- com.android.support:support-core-utils:25.3.1 (*)
+|    |    +--- com.android.support:support-vector-drawable:25.3.1
+|    |    |    +--- com.android.support:support-annotations:25.3.1
+|    |    |    \--- com.android.support:support-compat:25.3.1 (*)
+|    |    \--- com.android.support:animated-vector-drawable:25.3.1
+|    |         \--- com.android.support:support-vector-drawable:25.3.1 (*)
+|    +--- com.android.support:design:25.3.1
+|    |    +--- com.android.support:support-v4:25.3.1 (*)
+|    |    +--- com.android.support:appcompat-v7:25.3.1 (*)
+|    |    +--- com.android.support:recyclerview-v7:25.3.1
+|    |    |    +--- com.android.support:support-annotations:25.3.1
+|    |    |    +--- com.android.support:support-compat:25.3.1 (*)
+|    |    |    \--- com.android.support:support-core-ui:25.3.1 (*)
+|    |    \--- com.android.support:transition:25.3.1
+|    |         +--- com.android.support:support-annotations:25.3.1
+|    |         \--- com.android.support:support-v4:25.3.1 (*)
+|    +--- com.android.support:cardview-v7:25.3.1
+|    |    \--- com.android.support:support-annotations:25.3.1
+|    +--- com.android.support:recyclerview-v7:25.3.1 (*)
+|    +--- com.squareup.retrofit2:retrofit:2.2.0
+|    |    \--- com.squareup.okhttp3:okhttp:3.6.0
+|    |         \--- com.squareup.okio:okio:1.11.0
+|    +--- com.squareup.retrofit2:adapter-rxjava2:2.2.0
+|    |    +--- com.squareup.retrofit2:retrofit:2.2.0 (*)
+|    |    \--- io.reactivex.rxjava2:rxjava:2.0.0 -> 2.0.7
+|    |         \--- org.reactivestreams:reactive-streams:1.0.0
+|    +--- io.reactivex.rxjava2:rxjava:2.0.7 (*)
+|    +--- io.reactivex.rxjava2:rxandroid:2.0.1
+|    |    \--- io.reactivex.rxjava2:rxjava:2.0.1 -> 2.0.7 (*)
+|    +--- com.jakewharton.rxbinding2:rxbinding-support-v4:2.0.0
+|    |    +--- com.jakewharton.rxbinding2:rxbinding:2.0.0
+|    |    |    +--- io.reactivex.rxjava2:rxjava:2.0.2 -> 2.0.7 (*)
+|    |    |    +--- io.reactivex.rxjava2:rxandroid:2.0.0 -> 2.0.1 (*)
+|    |    |    \--- com.android.support:support-annotations:25.1.1 -> 25.3.1
+|    |    \--- com.android.support:support-core-ui:25.1.1 -> 25.3.1 (*)
+|    +--- com.trello.rxlifecycle2:rxlifecycle:2.0.1
+|    |    +--- io.reactivex.rxjava2:rxjava:2.0.1 -> 2.0.7 (*)
+|    |    \--- com.google.code.findbugs:jsr305:3.0.1
+|    +--- com.android.support:multidex:1.0.1
+|    +--- com.blankj:utilcode:1.3.6
+|    +--- com.github.CymChad:BaseRecyclerViewAdapterHelper:2.8.5
+|    +--- com.jakewharton.timber:timber:4.5.1
+|    +--- com.afollestad.material-dialogs:core:0.9.4.2
+|    |    +--- com.android.support:support-v13:25.3.0
+|    |    |    +--- com.android.support:support-annotations:25.3.0 -> 25.3.1
+|    |    |    \--- com.android.support:support-v4:25.3.0 -> 25.3.1 (*)
+|    |    +--- com.android.support:appcompat-v7:25.3.0 -> 25.3.1 (*)
+|    |    +--- com.android.support:recyclerview-v7:25.3.0 -> 25.3.1 (*)
+|    |    +--- com.android.support:support-annotations:25.3.0 -> 25.3.1
+|    |    \--- me.zhanghai.android.materialprogressbar:library:1.3.0
+|    |         +--- com.android.support:appcompat-v7:25.0.0 -> 25.3.1 (*)
+|    |         \--- com.android.support:support-annotations:25.0.0 -> 25.3.1
+|    +--- com.google.code.gson:gson:2.8.0
+|    +--- com.readystatesoftware.chuck:library:1.0.1
+|    |    +--- com.google.code.gson:gson:2.7 -> 2.8.0
+|    |    +--- com.squareup.okhttp3:okhttp:3.6.0 (*)
+|    |    +--- nl.qbusict:cupboard:2.2.0
+|    |    +--- com.android.support:appcompat-v7:25.1.1 -> 25.3.1 (*)
+|    |    +--- com.android.support:support-v4:25.1.1 -> 25.3.1 (*)
+|    |    +--- com.android.support:recyclerview-v7:25.1.1 -> 25.3.1 (*)
+|    |    \--- com.android.support:design:25.1.1 -> 25.3.1 (*)
+|    +--- com.jakewharton:butterknife:8.4.0
+|    |    +--- com.jakewharton:butterknife-annotations:8.4.0
+|    |    |    \--- com.android.support:support-annotations:24.1.0 -> 25.3.1
+|    |    \--- com.android.support:support-annotations:24.1.0 -> 25.3.1
+|    +--- com.alibaba:arouter-api:1.0.9
+|    |    +--- com.alibaba:arouter-annotation:1.0.3
+|    |    +--- com.alibaba:fastjson:1.2.9
+|    |    \--- com.android.support:support-v4:25.2.0 -> 25.3.1 (*)
+|    +--- org.greenrobot:greendao:3.2.0
+|    |    \--- org.greenrobot:greendao-api:3.2.0
+|    \--- com.github.bumptech.glide:glide:3.7.0
++--- project :ToolLib:toasty
+|    \--- com.android.support:appcompat-v7:25.3.1 (*)
++--- project :ToolLib:bottom-bar
+|    +--- com.android.support:appcompat-v7:25.3.1 (*)
+|    \--- com.android.support:design:25.3.1 (*)
++--- com.tencent.bugly:crashreport_upgrade:latest.release -> 1.2.5
+\--- com.facebook.stetho:stetho:1.4.2
+     +--- commons-cli:commons-cli:1.2
+     \--- com.google.code.findbugs:jsr305:2.0.1 -> 3.0.1
+
+_debugJackPlugin - ## Internal use, do not manually configure ##
+No dependencies
+
+_debugPublish - ## Internal use, do not manually configure ##
++--- project :ToolLib:zlibrary
+|    +--- com.android.support:appcompat-v7:25.3.1
+|    |    +--- com.android.support:support-annotations:25.3.1
+|    |    +--- com.android.support:support-v4:25.3.1
+|    |    |    +--- com.android.support:support-compat:25.3.1
+|    |    |    |    \--- com.android.support:support-annotations:25.3.1
+|    |    |    +--- com.android.support:support-media-compat:25.3.1
+|    |    |    |    +--- com.android.support:support-annotations:25.3.1
+|    |    |    |    \--- com.android.support:support-compat:25.3.1 (*)
+|    |    |    +--- com.android.support:support-core-utils:25.3.1
+|    |    |    |    +--- com.android.support:support-annotations:25.3.1
+|    |    |    |    \--- com.android.support:support-compat:25.3.1 (*)
+|    |    |    +--- com.android.support:support-core-ui:25.3.1
+|    |    |    |    +--- com.android.support:support-annotations:25.3.1
+|    |    |    |    \--- com.android.support:support-compat:25.3.1 (*)
+|    |    |    \--- com.android.support:support-fragment:25.3.1
+|    |    |         +--- com.android.support:support-compat:25.3.1 (*)
+|    |    |         +--- com.android.support:support-media-compat:25.3.1 (*)
+|    |    |         +--- com.android.support:support-core-ui:25.3.1 (*)
+|    |    |         \--- com.android.support:support-core-utils:25.3.1 (*)
+|    |    +--- com.android.support:support-vector-drawable:25.3.1
+|    |    |    +--- com.android.support:support-annotations:25.3.1
+|    |    |    \--- com.android.support:support-compat:25.3.1 (*)
+|    |    \--- com.android.support:animated-vector-drawable:25.3.1
+|    |         \--- com.android.support:support-vector-drawable:25.3.1 (*)
+|    +--- com.android.support:design:25.3.1
+|    |    +--- com.android.support:support-v4:25.3.1 (*)
+|    |    +--- com.android.support:appcompat-v7:25.3.1 (*)
+|    |    +--- com.android.support:recyclerview-v7:25.3.1
+|    |    |    +--- com.android.support:support-annotations:25.3.1
+|    |    |    +--- com.android.support:support-compat:25.3.1 (*)
+|    |    |    \--- com.android.support:support-core-ui:25.3.1 (*)
+|    |    \--- com.android.support:transition:25.3.1
+|    |         +--- com.android.support:support-annotations:25.3.1
+|    |         \--- com.android.support:support-v4:25.3.1 (*)
+|    +--- com.android.support:cardview-v7:25.3.1
+|    |    \--- com.android.support:support-annotations:25.3.1
+|    +--- com.android.support:recyclerview-v7:25.3.1 (*)
+|    +--- com.squareup.retrofit2:retrofit:2.2.0
+|    |    \--- com.squareup.okhttp3:okhttp:3.6.0
+|    |         \--- com.squareup.okio:okio:1.11.0
+|    +--- com.squareup.retrofit2:adapter-rxjava2:2.2.0
+|    |    +--- com.squareup.retrofit2:retrofit:2.2.0 (*)
+|    |    \--- io.reactivex.rxjava2:rxjava:2.0.0 -> 2.0.7
+|    |         \--- org.reactivestreams:reactive-streams:1.0.0
+|    +--- io.reactivex.rxjava2:rxjava:2.0.7 (*)
+|    +--- io.reactivex.rxjava2:rxandroid:2.0.1
+|    |    \--- io.reactivex.rxjava2:rxjava:2.0.1 -> 2.0.7 (*)
+|    +--- com.jakewharton.rxbinding2:rxbinding-support-v4:2.0.0
+|    |    +--- com.jakewharton.rxbinding2:rxbinding:2.0.0
+|    |    |    +--- io.reactivex.rxjava2:rxjava:2.0.2 -> 2.0.7 (*)
+|    |    |    +--- io.reactivex.rxjava2:rxandroid:2.0.0 -> 2.0.1 (*)
+|    |    |    \--- com.android.support:support-annotations:25.1.1 -> 25.3.1
+|    |    \--- com.android.support:support-core-ui:25.1.1 -> 25.3.1 (*)
+|    +--- com.trello.rxlifecycle2:rxlifecycle:2.0.1
+|    |    +--- io.reactivex.rxjava2:rxjava:2.0.1 -> 2.0.7 (*)
+|    |    \--- com.google.code.findbugs:jsr305:3.0.1
+|    +--- com.android.support:multidex:1.0.1
+|    +--- com.blankj:utilcode:1.3.6
+|    +--- com.github.CymChad:BaseRecyclerViewAdapterHelper:2.8.5
+|    +--- com.jakewharton.timber:timber:4.5.1
+|    +--- com.afollestad.material-dialogs:core:0.9.4.2
+|    |    +--- com.android.support:support-v13:25.3.0
+|    |    |    +--- com.android.support:support-annotations:25.3.0 -> 25.3.1
+|    |    |    \--- com.android.support:support-v4:25.3.0 -> 25.3.1 (*)
+|    |    +--- com.android.support:appcompat-v7:25.3.0 -> 25.3.1 (*)
+|    |    +--- com.android.support:recyclerview-v7:25.3.0 -> 25.3.1 (*)
+|    |    +--- com.android.support:support-annotations:25.3.0 -> 25.3.1
+|    |    \--- me.zhanghai.android.materialprogressbar:library:1.3.0
+|    |         +--- com.android.support:appcompat-v7:25.0.0 -> 25.3.1 (*)
+|    |         \--- com.android.support:support-annotations:25.0.0 -> 25.3.1
+|    +--- com.google.code.gson:gson:2.8.0
+|    +--- com.readystatesoftware.chuck:library:1.0.1
+|    |    +--- com.google.code.gson:gson:2.7 -> 2.8.0
+|    |    +--- com.squareup.okhttp3:okhttp:3.6.0 (*)
+|    |    +--- nl.qbusict:cupboard:2.2.0
+|    |    +--- com.android.support:appcompat-v7:25.1.1 -> 25.3.1 (*)
+|    |    +--- com.android.support:support-v4:25.1.1 -> 25.3.1 (*)
+|    |    +--- com.android.support:recyclerview-v7:25.1.1 -> 25.3.1 (*)
+|    |    \--- com.android.support:design:25.1.1 -> 25.3.1 (*)
+|    +--- com.jakewharton:butterknife:8.4.0
+|    |    +--- com.jakewharton:butterknife-annotations:8.4.0
+|    |    |    \--- com.android.support:support-annotations:24.1.0 -> 25.3.1
+|    |    \--- com.android.support:support-annotations:24.1.0 -> 25.3.1
+|    +--- com.alibaba:arouter-api:1.0.9
+|    |    +--- com.alibaba:arouter-annotation:1.0.3
+|    |    +--- com.alibaba:fastjson:1.2.9
+|    |    \--- com.android.support:support-v4:25.2.0 -> 25.3.1 (*)
+|    +--- org.greenrobot:greendao:3.2.0
+|    |    \--- org.greenrobot:greendao-api:3.2.0
+|    \--- com.github.bumptech.glide:glide:3.7.0
++--- project :ToolLib:toasty
+|    \--- com.android.support:appcompat-v7:25.3.1 (*)
++--- project :ToolLib:bottom-bar
+|    +--- com.android.support:appcompat-v7:25.3.1 (*)
+|    \--- com.android.support:design:25.3.1 (*)
++--- com.tencent.bugly:crashreport_upgrade:latest.release -> 1.2.5
+\--- com.facebook.stetho:stetho:1.4.2
+     +--- commons-cli:commons-cli:1.2
+     \--- com.google.code.findbugs:jsr305:2.0.1 -> 3.0.1
+
+_debugUnitTestAnnotationProcessor - ## Internal use, do not manually configure ##
++--- com.jakewharton:butterknife-compiler:8.4.0
+|    +--- com.jakewharton:butterknife-annotations:8.4.0
+|    |    \--- com.android.support:support-annotations:24.1.0 -> 25.3.1
+|    +--- com.google.auto:auto-common:0.6
+|    |    \--- com.google.guava:guava:18.0
+|    +--- com.google.auto.service:auto-service:1.0-rc2
+|    |    +--- com.google.auto:auto-common:0.3 -> 0.6 (*)
+|    |    \--- com.google.guava:guava:18.0
+|    \--- com.squareup:javapoet:1.7.0
++--- project :ToolLib:zlibrary
+|    +--- com.android.support:appcompat-v7:25.3.1
+|    |    +--- com.android.support:support-annotations:25.3.1
+|    |    +--- com.android.support:support-v4:25.3.1
+|    |    |    +--- com.android.support:support-compat:25.3.1
+|    |    |    |    \--- com.android.support:support-annotations:25.3.1
+|    |    |    +--- com.android.support:support-media-compat:25.3.1
+|    |    |    |    +--- com.android.support:support-annotations:25.3.1
+|    |    |    |    \--- com.android.support:support-compat:25.3.1 (*)
+|    |    |    +--- com.android.support:support-core-utils:25.3.1
+|    |    |    |    +--- com.android.support:support-annotations:25.3.1
+|    |    |    |    \--- com.android.support:support-compat:25.3.1 (*)
+|    |    |    +--- com.android.support:support-core-ui:25.3.1
+|    |    |    |    +--- com.android.support:support-annotations:25.3.1
+|    |    |    |    \--- com.android.support:support-compat:25.3.1 (*)
+|    |    |    \--- com.android.support:support-fragment:25.3.1
+|    |    |         +--- com.android.support:support-compat:25.3.1 (*)
+|    |    |         +--- com.android.support:support-media-compat:25.3.1 (*)
+|    |    |         +--- com.android.support:support-core-ui:25.3.1 (*)
+|    |    |         \--- com.android.support:support-core-utils:25.3.1 (*)
+|    |    +--- com.android.support:support-vector-drawable:25.3.1
+|    |    |    +--- com.android.support:support-annotations:25.3.1
+|    |    |    \--- com.android.support:support-compat:25.3.1 (*)
+|    |    \--- com.android.support:animated-vector-drawable:25.3.1
+|    |         \--- com.android.support:support-vector-drawable:25.3.1 (*)
+|    +--- com.android.support:design:25.3.1
+|    |    +--- com.android.support:support-v4:25.3.1 (*)
+|    |    +--- com.android.support:appcompat-v7:25.3.1 (*)
+|    |    +--- com.android.support:recyclerview-v7:25.3.1
+|    |    |    +--- com.android.support:support-annotations:25.3.1
+|    |    |    +--- com.android.support:support-compat:25.3.1 (*)
+|    |    |    \--- com.android.support:support-core-ui:25.3.1 (*)
+|    |    \--- com.android.support:transition:25.3.1
+|    |         +--- com.android.support:support-annotations:25.3.1
+|    |         \--- com.android.support:support-v4:25.3.1 (*)
+|    +--- com.android.support:cardview-v7:25.3.1
+|    |    \--- com.android.support:support-annotations:25.3.1
+|    +--- com.android.support:recyclerview-v7:25.3.1 (*)
+|    +--- com.squareup.retrofit2:retrofit:2.2.0
+|    |    \--- com.squareup.okhttp3:okhttp:3.6.0
+|    |         \--- com.squareup.okio:okio:1.11.0
+|    +--- com.squareup.retrofit2:adapter-rxjava2:2.2.0
+|    |    +--- com.squareup.retrofit2:retrofit:2.2.0 (*)
+|    |    \--- io.reactivex.rxjava2:rxjava:2.0.0 -> 2.0.7
+|    |         \--- org.reactivestreams:reactive-streams:1.0.0
+|    +--- io.reactivex.rxjava2:rxjava:2.0.7 (*)
+|    +--- io.reactivex.rxjava2:rxandroid:2.0.1
+|    |    \--- io.reactivex.rxjava2:rxjava:2.0.1 -> 2.0.7 (*)
+|    +--- com.jakewharton.rxbinding2:rxbinding-support-v4:2.0.0
+|    |    +--- com.jakewharton.rxbinding2:rxbinding:2.0.0
+|    |    |    +--- io.reactivex.rxjava2:rxjava:2.0.2 -> 2.0.7 (*)
+|    |    |    +--- io.reactivex.rxjava2:rxandroid:2.0.0 -> 2.0.1 (*)
+|    |    |    \--- com.android.support:support-annotations:25.1.1 -> 25.3.1
+|    |    \--- com.android.support:support-core-ui:25.1.1 -> 25.3.1 (*)
+|    +--- com.trello.rxlifecycle2:rxlifecycle:2.0.1
+|    |    +--- io.reactivex.rxjava2:rxjava:2.0.1 -> 2.0.7 (*)
+|    |    \--- com.google.code.findbugs:jsr305:3.0.1
+|    +--- com.android.support:multidex:1.0.1
+|    +--- com.blankj:utilcode:1.3.6
+|    +--- com.github.CymChad:BaseRecyclerViewAdapterHelper:2.8.5
+|    +--- com.jakewharton.timber:timber:4.5.1
+|    +--- com.afollestad.material-dialogs:core:0.9.4.2
+|    |    +--- com.android.support:support-v13:25.3.0
+|    |    |    +--- com.android.support:support-annotations:25.3.0 -> 25.3.1
+|    |    |    \--- com.android.support:support-v4:25.3.0 -> 25.3.1 (*)
+|    |    +--- com.android.support:appcompat-v7:25.3.0 -> 25.3.1 (*)
+|    |    +--- com.android.support:recyclerview-v7:25.3.0 -> 25.3.1 (*)
+|    |    +--- com.android.support:support-annotations:25.3.0 -> 25.3.1
+|    |    \--- me.zhanghai.android.materialprogressbar:library:1.3.0
+|    |         +--- com.android.support:appcompat-v7:25.0.0 -> 25.3.1 (*)
+|    |         \--- com.android.support:support-annotations:25.0.0 -> 25.3.1
+|    +--- com.google.code.gson:gson:2.8.0
+|    +--- com.readystatesoftware.chuck:library:1.0.1
+|    |    +--- com.google.code.gson:gson:2.7 -> 2.8.0
+|    |    +--- com.squareup.okhttp3:okhttp:3.6.0 (*)
+|    |    +--- nl.qbusict:cupboard:2.2.0
+|    |    +--- com.android.support:appcompat-v7:25.1.1 -> 25.3.1 (*)
+|    |    +--- com.android.support:support-v4:25.1.1 -> 25.3.1 (*)
+|    |    +--- com.android.support:recyclerview-v7:25.1.1 -> 25.3.1 (*)
+|    |    \--- com.android.support:design:25.1.1 -> 25.3.1 (*)
+|    +--- com.jakewharton:butterknife:8.4.0
+|    |    +--- com.jakewharton:butterknife-annotations:8.4.0 (*)
+|    |    \--- com.android.support:support-annotations:24.1.0 -> 25.3.1
+|    +--- com.alibaba:arouter-api:1.0.9
+|    |    +--- com.alibaba:arouter-annotation:1.0.3
+|    |    +--- com.alibaba:fastjson:1.2.9
+|    |    \--- com.android.support:support-v4:25.2.0 -> 25.3.1 (*)
+|    +--- org.greenrobot:greendao:3.2.0
+|    |    \--- org.greenrobot:greendao-api:3.2.0
+|    \--- com.github.bumptech.glide:glide:3.7.0
++--- project :ToolLib:toasty
+|    \--- com.android.support:appcompat-v7:25.3.1 (*)
++--- project :ToolLib:bottom-bar
+|    +--- com.android.support:appcompat-v7:25.3.1 (*)
+|    \--- com.android.support:design:25.3.1 (*)
++--- com.tencent.bugly:crashreport_upgrade:latest.release -> 1.2.5
+\--- com.facebook.stetho:stetho:1.4.2
+     +--- commons-cli:commons-cli:1.2
+     \--- com.google.code.findbugs:jsr305:2.0.1 -> 3.0.1
+
+_debugUnitTestApk - ## Internal use, do not manually configure ##
++--- project :ToolLib:zlibrary
+|    +--- com.android.support:appcompat-v7:25.3.1
+|    |    +--- com.android.support:support-annotations:25.3.1
+|    |    +--- com.android.support:support-v4:25.3.1
+|    |    |    +--- com.android.support:support-compat:25.3.1
+|    |    |    |    \--- com.android.support:support-annotations:25.3.1
+|    |    |    +--- com.android.support:support-media-compat:25.3.1
+|    |    |    |    +--- com.android.support:support-annotations:25.3.1
+|    |    |    |    \--- com.android.support:support-compat:25.3.1 (*)
+|    |    |    +--- com.android.support:support-core-utils:25.3.1
+|    |    |    |    +--- com.android.support:support-annotations:25.3.1
+|    |    |    |    \--- com.android.support:support-compat:25.3.1 (*)
+|    |    |    +--- com.android.support:support-core-ui:25.3.1
+|    |    |    |    +--- com.android.support:support-annotations:25.3.1
+|    |    |    |    \--- com.android.support:support-compat:25.3.1 (*)
+|    |    |    \--- com.android.support:support-fragment:25.3.1
+|    |    |         +--- com.android.support:support-compat:25.3.1 (*)
+|    |    |         +--- com.android.support:support-media-compat:25.3.1 (*)
+|    |    |         +--- com.android.support:support-core-ui:25.3.1 (*)
+|    |    |         \--- com.android.support:support-core-utils:25.3.1 (*)
+|    |    +--- com.android.support:support-vector-drawable:25.3.1
+|    |    |    +--- com.android.support:support-annotations:25.3.1
+|    |    |    \--- com.android.support:support-compat:25.3.1 (*)
+|    |    \--- com.android.support:animated-vector-drawable:25.3.1
+|    |         \--- com.android.support:support-vector-drawable:25.3.1 (*)
+|    +--- com.android.support:design:25.3.1
+|    |    +--- com.android.support:support-v4:25.3.1 (*)
+|    |    +--- com.android.support:appcompat-v7:25.3.1 (*)
+|    |    +--- com.android.support:recyclerview-v7:25.3.1
+|    |    |    +--- com.android.support:support-annotations:25.3.1
+|    |    |    +--- com.android.support:support-compat:25.3.1 (*)
+|    |    |    \--- com.android.support:support-core-ui:25.3.1 (*)
+|    |    \--- com.android.support:transition:25.3.1
+|    |         +--- com.android.support:support-annotations:25.3.1
+|    |         \--- com.android.support:support-v4:25.3.1 (*)
+|    +--- com.android.support:cardview-v7:25.3.1
+|    |    \--- com.android.support:support-annotations:25.3.1
+|    +--- com.android.support:recyclerview-v7:25.3.1 (*)
+|    +--- com.squareup.retrofit2:retrofit:2.2.0
+|    |    \--- com.squareup.okhttp3:okhttp:3.6.0
+|    |    |    +--- com.android.support:support-annotations:25.3.0 -> 25.3.1
+|    |    |    \--- me.zhanghai.android.materialprogressbar:library:1.3.0
+|    |    |         +--- com.android.support:appcompat-v7:25.0.0 -> 25.3.1 (*)
+|         \--- com.android.support:animated-vector-drawable:25.3.1
+|    |    |         \--- com.android.support:support-annotations:25.0.0 -> 25.3.1
+|    |         \--- com.squareup.okio:okio:1.11.0
+|    |    +--- com.google.code.gson:gson:2.8.0
+|              \--- com.android.support:support-vector-drawable:25.3.1 (*)
+|    |    +--- com.readystatesoftware.chuck:library:1.0.1
+|    +--- com.squareup.retrofit2:adapter-rxjava2:2.2.0
+|    |    |    +--- com.google.code.gson:gson:2.7 -> 2.8.0
++--- project :ToolLib:toasty
+|    |    |    +--- com.squareup.okhttp3:okhttp:3.6.0 (*)
+|    |    +--- com.squareup.retrofit2:retrofit:2.2.0 (*)
+|    |    \--- io.reactivex.rxjava2:rxjava:2.0.0 -> 2.0.7
+|    |         \--- org.reactivestreams:reactive-streams:1.0.0
+|    +--- io.reactivex.rxjava2:rxjava:2.0.7 (*)
+|    +--- io.reactivex.rxjava2:rxandroid:2.0.1
+|    |    \--- io.reactivex.rxjava2:rxjava:2.0.1 -> 2.0.7 (*)
+|    +--- com.jakewharton.rxbinding2:rxbinding-support-v4:2.0.0
+|    |    +--- com.jakewharton.rxbinding2:rxbinding:2.0.0
+|    |    |    +--- io.reactivex.rxjava2:rxjava:2.0.2 -> 2.0.7 (*)
+|    |    |    +--- io.reactivex.rxjava2:rxandroid:2.0.0 -> 2.0.1 (*)
+|    |    |    \--- com.android.support:support-annotations:25.1.1 -> 25.3.1
+|    |    \--- com.android.support:support-core-ui:25.1.1 -> 25.3.1 (*)
+|    +--- com.trello.rxlifecycle2:rxlifecycle:2.0.1
+|    |    +--- io.reactivex.rxjava2:rxjava:2.0.1 -> 2.0.7 (*)
+|    |    \--- com.google.code.findbugs:jsr305:3.0.1
+|    +--- com.android.support:multidex:1.0.1
+|    +--- com.blankj:utilcode:1.3.6
+|    +--- com.github.CymChad:BaseRecyclerViewAdapterHelper:2.8.5
+|    +--- com.jakewharton.timber:timber:4.5.1
+|    +--- com.afollestad.material-dialogs:core:0.9.4.2
+|    |    +--- com.android.support:support-v13:25.3.0
+|    |    |    +--- com.android.support:support-annotations:25.3.0 -> 25.3.1
+|    |    |    \--- com.android.support:support-v4:25.3.0 -> 25.3.1 (*)
+|    |    +--- com.android.support:appcompat-v7:25.3.0 -> 25.3.1 (*)
+|    |    +--- com.android.support:recyclerview-v7:25.3.0 -> 25.3.1 (*)
+|    |    +--- com.android.support:support-annotations:25.3.0 -> 25.3.1
+|    |    \--- me.zhanghai.android.materialprogressbar:library:1.3.0
+|    |         +--- com.android.support:appcompat-v7:25.0.0 -> 25.3.1 (*)
+|    |         \--- com.android.support:support-annotations:25.0.0 -> 25.3.1
+|    +--- com.google.code.gson:gson:2.8.0
+|    +--- com.readystatesoftware.chuck:library:1.0.1
+|    |    +--- com.google.code.gson:gson:2.7 -> 2.8.0
+|    |    +--- com.squareup.okhttp3:okhttp:3.6.0 (*)
+|    |    +--- nl.qbusict:cupboard:2.2.0
+|    |    +--- com.android.support:appcompat-v7:25.1.1 -> 25.3.1 (*)
+|    |    +--- com.android.support:support-v4:25.1.1 -> 25.3.1 (*)
+|    |    +--- com.android.support:recyclerview-v7:25.1.1 -> 25.3.1 (*)
+|    |    \--- com.android.support:design:25.1.1 -> 25.3.1 (*)
+|    +--- com.jakewharton:butterknife:8.4.0
+|    |    +--- com.jakewharton:butterknife-annotations:8.4.0
+|    |    |    \--- com.android.support:support-annotations:24.1.0 -> 25.3.1
+|    |    \--- com.android.support:support-annotations:24.1.0 -> 25.3.1
+|    +--- com.alibaba:arouter-api:1.0.9
+|    |    +--- com.alibaba:arouter-annotation:1.0.3
+|    |    +--- com.alibaba:fastjson:1.2.9
+|    |    \--- com.android.support:support-v4:25.2.0 -> 25.3.1 (*)
+|    +--- org.greenrobot:greendao:3.2.0
+|    |    \--- org.greenrobot:greendao-api:3.2.0
+|    \--- com.github.bumptech.glide:glide:3.7.0
++--- project :ToolLib:toasty
+|    \--- com.android.support:appcompat-v7:25.3.1 (*)
++--- project :ToolLib:bottom-bar
+|    +--- com.android.support:appcompat-v7:25.3.1 (*)
+|    \--- com.android.support:design:25.3.1 (*)
++--- com.tencent.bugly:crashreport_upgrade:latest.release -> 1.2.5
+\--- com.facebook.stetho:stetho:1.4.2
+     +--- commons-cli:commons-cli:1.2
+     \--- com.google.code.findbugs:jsr305:2.0.1 -> 3.0.1
+
+_debugUnitTestCompile - ## Internal use, do not manually configure ##
+|    |    |    +--- nl.qbusict:cupboard:2.2.0
++--- project :ToolLib:zlibrary
+|    \--- com.android.support:appcompat-v7:25.3.1 (*)
++--- project :ToolLib:bottom-bar
+|    +--- com.android.support:appcompat-v7:25.3.1 (*)
+|    \--- com.android.support:design:25.3.1
+|         +--- com.android.support:support-v4:25.3.1 (*)
+|         +--- com.android.support:appcompat-v7:25.3.1 (*)
+|         +--- com.android.support:recyclerview-v7:25.3.1
+|         |    +--- com.android.support:support-annotations:25.3.1
+|         |    +--- com.android.support:support-compat:25.3.1 (*)
+|         |    \--- com.android.support:support-core-ui:25.3.1 (*)
+|         \--- com.android.support:transition:25.3.1
+|              +--- com.android.support:support-annotations:25.3.1
+|              \--- com.android.support:support-v4:25.3.1 (*)
++--- project :ToolLib:zlibrary
+|    +--- com.android.support:appcompat-v7:25.3.1 (*)
+|    +--- com.android.support:design:25.3.1 (*)
+|    +--- com.android.support:cardview-v7:25.3.1
+|    |    \--- com.android.support:support-annotations:25.3.1
+|    +--- com.android.support:recyclerview-v7:25.3.1 (*)
+|    +--- com.squareup.retrofit2:retrofit:2.2.0
+|    |    \--- com.squareup.okhttp3:okhttp:3.6.0
+|    |         \--- com.squareup.okio:okio:1.11.0
+|    +--- com.squareup.retrofit2:adapter-rxjava2:2.2.0
+|    |    +--- com.squareup.retrofit2:retrofit:2.2.0 (*)
+|    |    \--- io.reactivex.rxjava2:rxjava:2.0.0 -> 2.0.7
+|    |         \--- org.reactivestreams:reactive-streams:1.0.0
+|    +--- io.reactivex.rxjava2:rxjava:2.0.7 (*)
+|    +--- io.reactivex.rxjava2:rxandroid:2.0.1
+|    |    \--- io.reactivex.rxjava2:rxjava:2.0.1 -> 2.0.7 (*)
+|    +--- com.jakewharton.rxbinding2:rxbinding-support-v4:2.0.0
+|    |    +--- com.jakewharton.rxbinding2:rxbinding:2.0.0
+|    |    |    +--- io.reactivex.rxjava2:rxjava:2.0.2 -> 2.0.7 (*)
+|    |    |    +--- io.reactivex.rxjava2:rxandroid:2.0.0 -> 2.0.1 (*)
+|    |    |    \--- com.android.support:support-annotations:25.1.1 -> 25.3.1
+|    |    \--- com.android.support:support-core-ui:25.1.1 -> 25.3.1 (*)
+|    +--- com.trello.rxlifecycle2:rxlifecycle:2.0.1
+|    |    +--- io.reactivex.rxjava2:rxjava:2.0.1 -> 2.0.7 (*)
+|    |    \--- com.google.code.findbugs:jsr305:3.0.1
+|    +--- com.android.support:multidex:1.0.1
+|    +--- com.blankj:utilcode:1.3.6
+|    +--- com.github.CymChad:BaseRecyclerViewAdapterHelper:2.8.5
+|    +--- com.jakewharton.timber:timber:4.5.1
+|    +--- com.afollestad.material-dialogs:core:0.9.4.2
+|    |    +--- com.android.support:support-v13:25.3.0
+|    |    |    +--- com.android.support:support-annotations:25.3.0 -> 25.3.1
+|    |    |    \--- com.android.support:support-v4:25.3.0 -> 25.3.1 (*)
+|    |    +--- com.android.support:appcompat-v7:25.3.0 -> 25.3.1 (*)
+|    |    +--- com.android.support:recyclerview-v7:25.3.0 -> 25.3.1 (*)
+|    |    +--- com.android.support:support-annotations:25.3.0 -> 25.3.1
+|    |    \--- me.zhanghai.android.materialprogressbar:library:1.3.0
+|    |         +--- com.android.support:appcompat-v7:25.0.0 -> 25.3.1 (*)
+|    |         \--- com.android.support:support-annotations:25.0.0 -> 25.3.1
+|    +--- com.google.code.gson:gson:2.8.0
+|    +--- com.readystatesoftware.chuck:library:1.0.1
+|    |    +--- com.google.code.gson:gson:2.7 -> 2.8.0
+|    |    +--- com.squareup.okhttp3:okhttp:3.6.0 (*)
+|    |    +--- nl.qbusict:cupboard:2.2.0
+|    +--- com.android.support:appcompat-v7:25.3.1
+|    |    |    +--- com.android.support:appcompat-v7:25.1.1 -> 25.3.1 (*)
+|    |    +--- com.android.support:support-annotations:25.3.1
+|    |    +--- com.android.support:support-v4:25.3.1
+|    |    |    +--- com.android.support:support-compat:25.3.1
+|    |    |    |    \--- com.android.support:support-annotations:25.3.1
+|    |    +--- com.android.support:appcompat-v7:25.1.1 -> 25.3.1 (*)
+|    |    |    +--- com.android.support:support-media-compat:25.3.1
+|    |    |    +--- com.android.support:support-v4:25.1.1 -> 25.3.1 (*)
+|    |    |    |    +--- com.android.support:support-annotations:25.3.1
+|    |    +--- com.android.support:support-v4:25.1.1 -> 25.3.1 (*)
+|    |    |    |    \--- com.android.support:support-compat:25.3.1 (*)
+|    |    |    +--- com.android.support:recyclerview-v7:25.1.1 -> 25.3.1 (*)
+|    |    |    +--- com.android.support:support-core-utils:25.3.1
+|    |    +--- com.android.support:recyclerview-v7:25.1.1 -> 25.3.1 (*)
+|    |    |    |    +--- com.android.support:support-annotations:25.3.1
+|    |    |    \--- com.android.support:design:25.1.1 -> 25.3.1 (*)
+|    |    +--- com.jakewharton:butterknife:8.4.0
+|    |    |    |    \--- com.android.support:support-compat:25.3.1 (*)
+|    |    \--- com.android.support:design:25.1.1 -> 25.3.1 (*)
+|    +--- com.jakewharton:butterknife:8.4.0
+|    |    +--- com.jakewharton:butterknife-annotations:8.4.0
+|    |    |    \--- com.android.support:support-annotations:24.1.0 -> 25.3.1
+|    |    \--- com.android.support:support-annotations:24.1.0 -> 25.3.1
+|    |    |    +--- com.android.support:support-core-ui:25.3.1
+|    |    |    |    +--- com.android.support:support-annotations:25.3.1
+|    |    |    +--- com.jakewharton:butterknife-annotations:8.4.0 (*)
+|    |    |    \--- com.android.support:support-annotations:24.1.0 -> 25.3.1
+|    |    +--- com.alibaba:arouter-api:1.0.9
+|    |    |    +--- com.alibaba:arouter-annotation:1.0.3
+|    |    |    +--- com.alibaba:fastjson:1.2.9
+|    |    |    \--- com.android.support:support-v4:25.2.0 -> 25.3.1 (*)
+|    |    +--- org.greenrobot:greendao:3.2.0
+|    |    |    \--- org.greenrobot:greendao-api:3.2.0
+|    |    \--- com.github.bumptech.glide:glide:3.7.0
+|    |    |    |    \--- com.android.support:support-compat:25.3.1 (*)
+|    +--- com.alibaba:arouter-api:1.0.9
+|    |    |    \--- com.android.support:support-fragment:25.3.1
+|    +--- project :ToolLib:toasty
+|    |    |         +--- com.android.support:support-compat:25.3.1 (*)
+|    |    +--- com.alibaba:arouter-annotation:1.0.3
+|    |    |         +--- com.android.support:support-media-compat:25.3.1 (*)
+|    |    \--- com.android.support:appcompat-v7:25.3.1 (*)
+|    |    |         +--- com.android.support:support-core-ui:25.3.1 (*)
+|    |    +--- com.alibaba:fastjson:1.2.9
+|    |    |         \--- com.android.support:support-core-utils:25.3.1 (*)
+|    +--- project :ToolLib:bottom-bar
+|    |    +--- com.android.support:support-vector-drawable:25.3.1
+|    |    \--- com.android.support:support-v4:25.2.0 -> 25.3.1 (*)
+|    |    |    +--- com.android.support:support-annotations:25.3.1
+|    |    +--- com.android.support:appcompat-v7:25.3.1 (*)
+|    |    |    \--- com.android.support:support-compat:25.3.1 (*)
+|    +--- org.greenrobot:greendao:3.2.0
+|    |    \--- com.android.support:animated-vector-drawable:25.3.1
+|    |    \--- com.android.support:design:25.3.1 (*)
+|    |         \--- com.android.support:support-vector-drawable:25.3.1 (*)
+|    |    \--- org.greenrobot:greendao-api:3.2.0
+|    +--- com.android.support:design:25.3.1
+|    +--- com.tencent.bugly:crashreport_upgrade:latest.release -> 1.2.5
+|    |    +--- com.android.support:support-v4:25.3.1 (*)
+|    \--- com.github.bumptech.glide:glide:3.7.0
+|    |    +--- com.android.support:appcompat-v7:25.3.1 (*)
+|    \--- com.facebook.stetho:stetho:1.4.2
+|    |    +--- com.android.support:recyclerview-v7:25.3.1
++--- com.facebook.stetho:stetho:1.4.2
+|    |    |    +--- com.android.support:support-annotations:25.3.1
+|         +--- commons-cli:commons-cli:1.2
+|    |    |    +--- com.android.support:support-compat:25.3.1 (*)
+|    +--- commons-cli:commons-cli:1.2
+|    |    |    \--- com.android.support:support-core-ui:25.3.1 (*)
+|         \--- com.google.code.findbugs:jsr305:2.0.1 -> 3.0.1
++--- project :BusinessLib:cash
+|    |    \--- com.android.support:transition:25.3.1
+|    \--- com.google.code.findbugs:jsr305:2.0.1 -> 3.0.1
+|    |         +--- com.android.support:support-annotations:25.3.1
+|    \--- project :BusinessLib:baselib (*)
+|    |         \--- com.android.support:support-v4:25.3.1 (*)
+\--- com.github.zhoujunyou:deviceInfo:1.0.3
+|    +--- com.android.support:cardview-v7:25.3.1
++--- project :BusinessLib:member
+|    |    \--- com.android.support:support-annotations:25.3.1
+     +--- com.android.support:appcompat-v7:25.3.1 (*)
+|    +--- com.android.support:recyclerview-v7:25.3.1 (*)
+|    \--- project :BusinessLib:baselib (*)
+|    +--- com.squareup.retrofit2:retrofit:2.2.0
+     +--- com.github.CymChad:BaseRecyclerViewAdapterHelper:2.8.5
+|    |    \--- com.squareup.okhttp3:okhttp:3.6.0
+\--- project :BusinessLib:coupon
+|    |         \--- com.squareup.okio:okio:1.11.0
+     \--- com.android.support:recyclerview-v7:25.3.1 (*)
+|    +--- com.squareup.retrofit2:adapter-rxjava2:2.2.0
+|    |    +--- com.squareup.retrofit2:retrofit:2.2.0 (*)
+     \--- project :BusinessLib:baselib (*)
+
+_releaseApk - ## Internal use, do not manually configure ##
+|    |    \--- io.reactivex.rxjava2:rxjava:2.0.0 -> 2.0.7
+
+_releaseCompile - ## Internal use, do not manually configure ##
+|    |         \--- org.reactivestreams:reactive-streams:1.0.0
++--- project :BusinessLib:baselib
+|    +--- io.reactivex.rxjava2:rxjava:2.0.7 (*)
++--- project :ToolLib:chipview
+|    +--- io.reactivex.rxjava2:rxandroid:2.0.1
+|    +--- project :ToolLib:zlibrary
+|    |    \--- io.reactivex.rxjava2:rxjava:2.0.1 -> 2.0.7 (*)
+|    \--- com.android.support:appcompat-v7:25.3.1
+|    +--- com.jakewharton.rxbinding2:rxbinding-support-v4:2.0.0
+|    |    +--- com.android.support:appcompat-v7:25.3.1
+|    |    +--- com.jakewharton.rxbinding2:rxbinding:2.0.0
+|         +--- com.android.support:support-annotations:25.3.1
+|    |    |    +--- io.reactivex.rxjava2:rxjava:2.0.2 -> 2.0.7 (*)
+|    |    |    +--- com.android.support:support-annotations:25.3.1
+|    |    |    +--- com.android.support:support-v4:25.3.1
+|    |    |    +--- io.reactivex.rxjava2:rxandroid:2.0.0 -> 2.0.1 (*)
+|    |    |    \--- com.android.support:support-annotations:25.1.1 -> 25.3.1
+|         +--- com.android.support:support-v4:25.3.1
+|         |    +--- com.android.support:support-compat:25.3.1
+|         |    |    \--- com.android.support:support-annotations:25.3.1
+|         |    +--- com.android.support:support-media-compat:25.3.1
+|    |    \--- com.android.support:support-core-ui:25.1.1 -> 25.3.1 (*)
+|    +--- com.trello.rxlifecycle2:rxlifecycle:2.0.1
+|    |    +--- io.reactivex.rxjava2:rxjava:2.0.1 -> 2.0.7 (*)
+|    |    \--- com.google.code.findbugs:jsr305:3.0.1
+|    +--- com.android.support:multidex:1.0.1
+|    +--- com.blankj:utilcode:1.3.6
+|    |    |    |    +--- com.android.support:support-compat:25.3.1
+|    +--- com.github.CymChad:BaseRecyclerViewAdapterHelper:2.8.5
+|    +--- com.jakewharton.timber:timber:4.5.1
+|         |    |    +--- com.android.support:support-annotations:25.3.1
+|    +--- com.afollestad.material-dialogs:core:0.9.4.2
+|    |    |    |    |    \--- com.android.support:support-annotations:25.3.1
+|    |    |    |    +--- com.android.support:support-media-compat:25.3.1
+|    |    +--- com.android.support:support-v13:25.3.0
+|         |    |    \--- com.android.support:support-compat:25.3.1 (*)
+|    |    |    +--- com.android.support:support-annotations:25.3.0 -> 25.3.1
+|    |    |    |    |    +--- com.android.support:support-annotations:25.3.1
+|    |    |    \--- com.android.support:support-v4:25.3.0 -> 25.3.1 (*)
+|    |    +--- com.android.support:appcompat-v7:25.3.0 -> 25.3.1 (*)
+
+|         |    +--- com.android.support:support-core-utils:25.3.1
+|         |    |    +--- com.android.support:support-annotations:25.3.1
+------------------------------------------------------------
+|    |    +--- com.android.support:recyclerview-v7:25.3.0 -> 25.3.1 (*)
+|    |    |    |    |    \--- com.android.support:support-compat:25.3.1 (*)
+|    |    +--- com.android.support:support-annotations:25.3.0 -> 25.3.1
+Project :BusinessLib:cash
+|         |    |    \--- com.android.support:support-compat:25.3.1 (*)
+------------------------------------------------------------
+
+|         |    +--- com.android.support:support-core-ui:25.3.1
+|    |    \--- me.zhanghai.android.materialprogressbar:library:1.3.0
+|    |    |    |    +--- com.android.support:support-core-utils:25.3.1
+|    |         +--- com.android.support:appcompat-v7:25.0.0 -> 25.3.1 (*)
+|         |    |    +--- com.android.support:support-annotations:25.3.1
+|    |         \--- com.android.support:support-annotations:25.0.0 -> 25.3.1
+|    |    |    |    |    +--- com.android.support:support-annotations:25.3.1
+|    +--- com.google.code.gson:gson:2.8.0
+|         |    |    \--- com.android.support:support-compat:25.3.1 (*)
+|    +--- com.readystatesoftware.chuck:library:1.0.1
+|    |    |    |    |    \--- com.android.support:support-compat:25.3.1 (*)
+|    |    +--- com.google.code.gson:gson:2.7 -> 2.8.0
+|         |    \--- com.android.support:support-fragment:25.3.1
+|    |    +--- com.squareup.okhttp3:okhttp:3.6.0 (*)
+|    |    |    |    +--- com.android.support:support-core-ui:25.3.1
+|    |    +--- nl.qbusict:cupboard:2.2.0
+|         |         +--- com.android.support:support-compat:25.3.1 (*)
+|    |    +--- com.android.support:appcompat-v7:25.1.1 -> 25.3.1 (*)
+|    |    +--- com.android.support:support-v4:25.1.1 -> 25.3.1 (*)
+_debugAndroidTestAnnotationProcessor - ## Internal use, do not manually configure ##
+|    |    |    |    |    +--- com.android.support:support-annotations:25.3.1
+|    |    +--- com.android.support:recyclerview-v7:25.1.1 -> 25.3.1 (*)
+|         |         +--- com.android.support:support-media-compat:25.3.1 (*)
+|    |    \--- com.android.support:design:25.1.1 -> 25.3.1 (*)
+|    +--- com.jakewharton:butterknife:8.4.0
+|    |    +--- com.jakewharton:butterknife-annotations:8.4.0
+|    |    |    |    |    \--- com.android.support:support-compat:25.3.1 (*)
+|    |    |    \--- com.android.support:support-annotations:24.1.0 -> 25.3.1
+|         |         +--- com.android.support:support-core-ui:25.3.1 (*)
+|    |    \--- com.android.support:support-annotations:24.1.0 -> 25.3.1
+|    |    |    |    \--- com.android.support:support-fragment:25.3.1
+|    +--- com.alibaba:arouter-api:1.0.9
+|         |         \--- com.android.support:support-core-utils:25.3.1 (*)
+|    |    +--- com.alibaba:arouter-annotation:1.0.3
+|    |    |    |         +--- com.android.support:support-compat:25.3.1 (*)
+|    |    +--- com.alibaba:fastjson:1.2.9
+|         +--- com.android.support:support-vector-drawable:25.3.1
+|         |    +--- com.android.support:support-annotations:25.3.1
+|    |    \--- com.android.support:support-v4:25.2.0 -> 25.3.1 (*)
+|    |    |    |         +--- com.android.support:support-media-compat:25.3.1 (*)
+|    +--- org.greenrobot:greendao:3.2.0
+|         |    \--- com.android.support:support-compat:25.3.1 (*)
+|    |    \--- org.greenrobot:greendao-api:3.2.0
+|    |    |    |         +--- com.android.support:support-core-ui:25.3.1 (*)
+|    \--- com.github.bumptech.glide:glide:3.7.0
++--- project :ToolLib:toasty
+|    \--- com.android.support:appcompat-v7:25.3.1 (*)
+|         \--- com.android.support:animated-vector-drawable:25.3.1
++--- project :ToolLib:bottom-bar
+|    |    |    |         \--- com.android.support:support-core-utils:25.3.1 (*)
+|    +--- com.android.support:appcompat-v7:25.3.1 (*)
+|              \--- com.android.support:support-vector-drawable:25.3.1 (*)
+|    \--- com.android.support:design:25.3.1 (*)
+|    |    |    +--- com.android.support:support-vector-drawable:25.3.1
++--- com.tencent.bugly:crashreport_upgrade:latest.release -> 1.2.5
++--- project :ToolLib:toasty
+\--- com.facebook.stetho:stetho:1.4.2
+|    |    |    |    +--- com.android.support:support-annotations:25.3.1
+     +--- commons-cli:commons-cli:1.2
+|    \--- com.android.support:appcompat-v7:25.3.1 (*)
+     \--- com.google.code.findbugs:jsr305:2.0.1 -> 3.0.1
+|    |    |    |    \--- com.android.support:support-compat:25.3.1 (*)
+
+_debugUnitTestJackPlugin - ## Internal use, do not manually configure ##
++--- project :ToolLib:bottom-bar
+|    +--- com.android.support:appcompat-v7:25.3.1 (*)
+|    |    |    \--- com.android.support:animated-vector-drawable:25.3.1
+|    \--- com.android.support:design:25.3.1
+|         +--- com.android.support:support-v4:25.3.1 (*)
+|    |    |         \--- com.android.support:support-vector-drawable:25.3.1 (*)
+|         +--- com.android.support:appcompat-v7:25.3.1 (*)
+No dependencies
+
+_releaseAnnotationProcessor - ## Internal use, do not manually configure ##
+|         +--- com.android.support:recyclerview-v7:25.3.1
+|         |    +--- com.android.support:support-annotations:25.3.1
+|         |    +--- com.android.support:support-compat:25.3.1 (*)
+|    |    +--- com.android.support:design:25.3.1
+|    |    |    +--- com.android.support:support-v4:25.3.1 (*)
+|    |    |    +--- com.android.support:appcompat-v7:25.3.1 (*)
+|    |    |    +--- com.android.support:recyclerview-v7:25.3.1
+|    |    |    |    +--- com.android.support:support-annotations:25.3.1
+|    |    |    |    +--- com.android.support:support-compat:25.3.1 (*)
+|         |    \--- com.android.support:support-core-ui:25.3.1 (*)
+|         \--- com.android.support:transition:25.3.1
++--- com.jakewharton:butterknife-compiler:8.4.0
+|    |    |    |    \--- com.android.support:support-core-ui:25.3.1 (*)
+|    +--- com.jakewharton:butterknife-annotations:8.4.0
+|              +--- com.android.support:support-annotations:25.3.1
+|    |    \--- com.android.support:support-annotations:24.1.0 -> 25.3.1
+|    |    |    \--- com.android.support:transition:25.3.1
+|    +--- com.google.auto:auto-common:0.6
+|              \--- com.android.support:support-v4:25.3.1 (*)
+|    |    \--- com.google.guava:guava:18.0
+|    |    |         +--- com.android.support:support-annotations:25.3.1
+|    +--- com.google.auto.service:auto-service:1.0-rc2
++--- project :ToolLib:zlibrary
+|    |    +--- com.google.auto:auto-common:0.3 -> 0.6 (*)
+|    |    |         \--- com.android.support:support-v4:25.3.1 (*)
+|    |    \--- com.google.guava:guava:18.0
+|    +--- com.android.support:appcompat-v7:25.3.1 (*)
+|    \--- com.squareup:javapoet:1.7.0
+|    |    +--- com.android.support:cardview-v7:25.3.1
+|    |    |    \--- com.android.support:support-annotations:25.3.1
+|    |    +--- com.android.support:recyclerview-v7:25.3.1 (*)
++--- com.jakewharton:butterknife-compiler:8.4.0
++--- project :ToolLib:zlibrary
+|    +--- com.jakewharton:butterknife-annotations:8.4.0
+|    +--- com.android.support:design:25.3.1 (*)
+|    |    \--- com.android.support:support-annotations:24.1.0 -> 25.3.1
+|    +--- com.android.support:cardview-v7:25.3.1
+|    +--- com.google.auto:auto-common:0.6
+|    +--- com.android.support:appcompat-v7:25.3.1
+|    |    +--- com.squareup.retrofit2:retrofit:2.2.0
+|    |    +--- com.android.support:support-annotations:25.3.1
+|    |    \--- com.android.support:support-annotations:25.3.1
+|    +--- com.android.support:recyclerview-v7:25.3.1 (*)
+|    |    \--- com.google.guava:guava:18.0
+|    |    +--- com.android.support:support-v4:25.3.1
+|    |    |    \--- com.squareup.okhttp3:okhttp:3.6.0
+|    |    |    +--- com.android.support:support-compat:25.3.1
+|    |    |    |    \--- com.android.support:support-annotations:25.3.1
+|    |    |    +--- com.android.support:support-media-compat:25.3.1
+|    |    |    |    +--- com.android.support:support-annotations:25.3.1
+|    |    |    |    \--- com.android.support:support-compat:25.3.1 (*)
+|    +--- com.google.auto.service:auto-service:1.0-rc2
+|    +--- com.squareup.retrofit2:retrofit:2.2.0
+|    |    \--- com.squareup.okhttp3:okhttp:3.6.0
+|    |    +--- com.google.auto:auto-common:0.3 -> 0.6 (*)
+|    |    |    +--- com.android.support:support-core-utils:25.3.1
+|    |    |         \--- com.squareup.okio:okio:1.11.0
+|    |    +--- com.squareup.retrofit2:adapter-rxjava2:2.2.0
+|    |    |    +--- com.squareup.retrofit2:retrofit:2.2.0 (*)
+|    |    |    |    +--- com.android.support:support-annotations:25.3.1
+|    |    |    |    \--- com.android.support:support-compat:25.3.1 (*)
+|    |    |    +--- com.android.support:support-core-ui:25.3.1
+|    |    \--- com.google.guava:guava:18.0
+|    |         \--- com.squareup.okio:okio:1.11.0
+|    \--- com.squareup:javapoet:1.7.0
+|    |    |    |    +--- com.android.support:support-annotations:25.3.1
+|    |    |    \--- io.reactivex.rxjava2:rxjava:2.0.0 -> 2.0.7
+|    |    |    |    \--- com.android.support:support-compat:25.3.1 (*)
+|    +--- com.squareup.retrofit2:adapter-rxjava2:2.2.0
+|    |    |    \--- com.android.support:support-fragment:25.3.1
+|    |    |         +--- com.android.support:support-compat:25.3.1 (*)
+|    |    |         +--- com.android.support:support-media-compat:25.3.1 (*)
++--- com.alibaba:arouter-compiler:1.0.4
+|    |    |         \--- org.reactivestreams:reactive-streams:1.0.0
+|    +--- com.alibaba:arouter-annotation:1.0.3
+|    |    +--- io.reactivex.rxjava2:rxjava:2.0.7 (*)
+|    +--- com.google.auto.service:auto-service:1.0-rc2 (*)
+|    |    |         +--- com.android.support:support-core-ui:25.3.1 (*)
+|    |    +--- com.squareup.retrofit2:retrofit:2.2.0 (*)
+|    |    |         \--- com.android.support:support-core-utils:25.3.1 (*)
+|    |    +--- com.android.support:support-vector-drawable:25.3.1
+|    |    |    +--- com.android.support:support-annotations:25.3.1
+|    |    |    \--- com.android.support:support-compat:25.3.1 (*)
+|    +--- com.squareup:javapoet:1.7.0
+|    |    +--- io.reactivex.rxjava2:rxandroid:2.0.1
+|    |    \--- com.android.support:animated-vector-drawable:25.3.1
+|    |         \--- com.android.support:support-vector-drawable:25.3.1 (*)
+|    |    \--- io.reactivex.rxjava2:rxjava:2.0.0 -> 2.0.7
+|    +--- com.android.support:design:25.3.1
+|    |    +--- com.android.support:support-v4:25.3.1 (*)
+|    +--- org.apache.commons:commons-lang3:3.4
+|    |    |    \--- io.reactivex.rxjava2:rxjava:2.0.1 -> 2.0.7 (*)
+|    |    +--- com.jakewharton.rxbinding2:rxbinding-support-v4:2.0.0
+|    |    |    +--- com.jakewharton.rxbinding2:rxbinding:2.0.0
+|    \--- org.apache.commons:commons-collections4:4.1
+|    |    +--- com.android.support:appcompat-v7:25.3.1 (*)
+|    |         \--- org.reactivestreams:reactive-streams:1.0.0
+|    |    +--- com.android.support:recyclerview-v7:25.3.1
+|    |    |    +--- com.android.support:support-annotations:25.3.1
+|    |    |    +--- com.android.support:support-compat:25.3.1 (*)
+\--- project :BusinessLib:baselib
+|    |    |    |    +--- io.reactivex.rxjava2:rxjava:2.0.2 -> 2.0.7 (*)
+|    |    |    \--- com.android.support:support-core-ui:25.3.1 (*)
+|    +--- io.reactivex.rxjava2:rxjava:2.0.7 (*)
+|    |    \--- com.android.support:transition:25.3.1
+|    |         +--- com.android.support:support-annotations:25.3.1
+     +--- project :ToolLib:zlibrary
+|    |    |    |    +--- io.reactivex.rxjava2:rxandroid:2.0.0 -> 2.0.1 (*)
+|    |    |    |    \--- com.android.support:support-annotations:25.1.1 -> 25.3.1
+|    |    |    \--- com.android.support:support-core-ui:25.1.1 -> 25.3.1 (*)
+|    |    +--- com.trello.rxlifecycle2:rxlifecycle:2.0.1
+|    |    |    +--- io.reactivex.rxjava2:rxjava:2.0.1 -> 2.0.7 (*)
+     |    +--- com.android.support:appcompat-v7:25.3.1
+|    |         \--- com.android.support:support-v4:25.3.1 (*)
+     |    |    +--- com.android.support:support-annotations:25.3.1
+|    +--- io.reactivex.rxjava2:rxandroid:2.0.1
+|    |    \--- io.reactivex.rxjava2:rxjava:2.0.1 -> 2.0.7 (*)
+|    +--- com.jakewharton.rxbinding2:rxbinding-support-v4:2.0.0
+|    |    +--- com.jakewharton.rxbinding2:rxbinding:2.0.0
+|    |    |    +--- io.reactivex.rxjava2:rxjava:2.0.2 -> 2.0.7 (*)
+     |    |    +--- com.android.support:support-v4:25.3.1
+|    +--- com.android.support:cardview-v7:25.3.1
+|    |    |    \--- com.google.code.findbugs:jsr305:3.0.1
+|    |    \--- com.android.support:support-annotations:25.3.1
+|    +--- com.android.support:recyclerview-v7:25.3.1 (*)
+|    +--- com.squareup.retrofit2:retrofit:2.2.0
+|    |    \--- com.squareup.okhttp3:okhttp:3.6.0
+|    |         \--- com.squareup.okio:okio:1.11.0
+|    +--- com.squareup.retrofit2:adapter-rxjava2:2.2.0
+     |    |    |    +--- com.android.support:support-compat:25.3.1
+|    |    |    +--- io.reactivex.rxjava2:rxandroid:2.0.0 -> 2.0.1 (*)
+|    |    |    \--- com.android.support:support-annotations:25.1.1 -> 25.3.1
+|    |    \--- com.android.support:support-core-ui:25.1.1 -> 25.3.1 (*)
+|    +--- com.trello.rxlifecycle2:rxlifecycle:2.0.1
+|    |    +--- io.reactivex.rxjava2:rxjava:2.0.1 -> 2.0.7 (*)
+     |    |    |    |    \--- com.android.support:support-annotations:25.3.1
+|    |    +--- com.squareup.retrofit2:retrofit:2.2.0 (*)
+     |    |    |    +--- com.android.support:support-media-compat:25.3.1
+|    |    +--- com.android.support:multidex:1.0.1
+|    |    \--- io.reactivex.rxjava2:rxjava:2.0.0 -> 2.0.7
+|    |         \--- org.reactivestreams:reactive-streams:1.0.0
+|    |    \--- com.google.code.findbugs:jsr305:3.0.1
+|    +--- io.reactivex.rxjava2:rxjava:2.0.7 (*)
+|    +--- io.reactivex.rxjava2:rxandroid:2.0.1
+|    |    \--- io.reactivex.rxjava2:rxjava:2.0.1 -> 2.0.7 (*)
+     |    |    |    |    +--- com.android.support:support-annotations:25.3.1
+|    |    +--- com.blankj:utilcode:1.3.6
+|    |    +--- com.github.CymChad:BaseRecyclerViewAdapterHelper:2.8.5
+|    |    +--- com.jakewharton.timber:timber:4.5.1
+|    |    +--- com.afollestad.material-dialogs:core:0.9.4.2
+|    |    |    +--- com.android.support:support-v13:25.3.0
+|    |    |    |    +--- com.android.support:support-annotations:25.3.0 -> 25.3.1
+|    |    |    |    \--- com.android.support:support-v4:25.3.0 -> 25.3.1 (*)
+|    |    |    +--- com.android.support:appcompat-v7:25.3.0 -> 25.3.1 (*)
+     |    |    |    |    \--- com.android.support:support-compat:25.3.1 (*)
+|    +--- com.jakewharton.rxbinding2:rxbinding-support-v4:2.0.0
+|    +--- com.android.support:multidex:1.0.1
+|    |    +--- com.jakewharton.rxbinding2:rxbinding:2.0.0
+|    |    |    +--- io.reactivex.rxjava2:rxjava:2.0.2 -> 2.0.7 (*)
+     |    |    |    +--- com.android.support:support-core-utils:25.3.1
+|    |    |    +--- com.android.support:recyclerview-v7:25.3.0 -> 25.3.1 (*)
+|    |    |    +--- com.android.support:support-annotations:25.3.0 -> 25.3.1
+|    |    |    \--- me.zhanghai.android.materialprogressbar:library:1.3.0
+|    |    |         +--- com.android.support:appcompat-v7:25.0.0 -> 25.3.1 (*)
+|    |    |         \--- com.android.support:support-annotations:25.0.0 -> 25.3.1
+|    |    +--- com.google.code.gson:gson:2.8.0
+|    |    +--- com.readystatesoftware.chuck:library:1.0.1
+|    |    |    +--- com.google.code.gson:gson:2.7 -> 2.8.0
+|    |    |    +--- com.squareup.okhttp3:okhttp:3.6.0 (*)
+|    |    |    +--- nl.qbusict:cupboard:2.2.0
+     |    |    |    |    +--- com.android.support:support-annotations:25.3.1
+|    |    |    +--- io.reactivex.rxjava2:rxandroid:2.0.0 -> 2.0.1 (*)
+|    +--- com.blankj:utilcode:1.3.6
+|    |    |    \--- com.android.support:support-annotations:25.1.1 -> 25.3.1
+|    |    \--- com.android.support:support-core-ui:25.1.1 -> 25.3.1 (*)
+     |    |    |    |    \--- com.android.support:support-compat:25.3.1 (*)
+|    |    |    +--- com.android.support:appcompat-v7:25.1.1 -> 25.3.1 (*)
+|    |    |    +--- com.android.support:support-v4:25.1.1 -> 25.3.1 (*)
+     |    |    |    +--- com.android.support:support-core-ui:25.3.1
+|    +--- com.trello.rxlifecycle2:rxlifecycle:2.0.1
+|    +--- com.github.CymChad:BaseRecyclerViewAdapterHelper:2.8.5
+|    |    +--- io.reactivex.rxjava2:rxjava:2.0.1 -> 2.0.7 (*)
+|    |    \--- com.google.code.findbugs:jsr305:3.0.1
+|    +--- com.android.support:multidex:1.0.1
+|    +--- com.blankj:utilcode:1.3.6
+|    +--- com.github.CymChad:BaseRecyclerViewAdapterHelper:2.8.5
+     |    |    |    |    +--- com.android.support:support-annotations:25.3.1
+|    |    |    +--- com.android.support:recyclerview-v7:25.1.1 -> 25.3.1 (*)
+|    |    |    \--- com.android.support:design:25.1.1 -> 25.3.1 (*)
+|    |    +--- com.jakewharton:butterknife:8.4.0
+|    |    |    +--- com.jakewharton:butterknife-annotations:8.4.0
+     |    |    |    |    \--- com.android.support:support-compat:25.3.1 (*)
+|    +--- com.jakewharton.timber:timber:4.5.1
+|    +--- com.jakewharton.timber:timber:4.5.1
+|    +--- com.afollestad.material-dialogs:core:0.9.4.2
+|    |    |    |    \--- com.android.support:support-annotations:24.1.0 -> 25.3.1
+|    |    +--- com.android.support:support-v13:25.3.0
+     |    |    |    \--- com.android.support:support-fragment:25.3.1
+|    +--- com.afollestad.material-dialogs:core:0.9.4.2
+|    |    +--- com.android.support:support-v13:25.3.0
+     |    |    |         +--- com.android.support:support-compat:25.3.1 (*)
+|    |    |    +--- com.android.support:support-annotations:25.3.0 -> 25.3.1
+|    |    |    \--- com.android.support:support-annotations:24.1.0 -> 25.3.1
+|    |    |    \--- com.android.support:support-v4:25.3.0 -> 25.3.1 (*)
+|    |    +--- com.android.support:appcompat-v7:25.3.0 -> 25.3.1 (*)
+     |    |    |         +--- com.android.support:support-media-compat:25.3.1 (*)
+|    |    |    +--- com.android.support:support-annotations:25.3.0 -> 25.3.1
+|    |    |    \--- com.android.support:support-v4:25.3.0 -> 25.3.1 (*)
+|    |    +--- com.android.support:appcompat-v7:25.3.0 -> 25.3.1 (*)
+     |    |    |         +--- com.android.support:support-core-ui:25.3.1 (*)
+|    |    +--- com.android.support:recyclerview-v7:25.3.0 -> 25.3.1 (*)
+|    |    +--- com.alibaba:arouter-api:1.0.9
+|    |    +--- com.android.support:support-annotations:25.3.0 -> 25.3.1
+|    |    \--- me.zhanghai.android.materialprogressbar:library:1.3.0
+     |    |    |         \--- com.android.support:support-core-utils:25.3.1 (*)
+|    |    +--- com.android.support:recyclerview-v7:25.3.0 -> 25.3.1 (*)
+|    |         +--- com.android.support:appcompat-v7:25.0.0 -> 25.3.1 (*)
+|    |    |    +--- com.alibaba:arouter-annotation:1.0.3
+|    |         \--- com.android.support:support-annotations:25.0.0 -> 25.3.1
+|    +--- com.google.code.gson:gson:2.8.0
+     |    |    +--- com.android.support:support-vector-drawable:25.3.1
+|    |    +--- com.android.support:support-annotations:25.3.0 -> 25.3.1
+|    +--- com.readystatesoftware.chuck:library:1.0.1
+|    |    |    +--- com.alibaba:fastjson:1.2.9
+|    |    +--- com.google.code.gson:gson:2.7 -> 2.8.0
+|    |    +--- com.squareup.okhttp3:okhttp:3.6.0 (*)
+|    |    +--- nl.qbusict:cupboard:2.2.0
+|    |    +--- com.android.support:appcompat-v7:25.1.1 -> 25.3.1 (*)
+     |    |    |    +--- com.android.support:support-annotations:25.3.1
+|    |    \--- me.zhanghai.android.materialprogressbar:library:1.3.0
+|    |         +--- com.android.support:appcompat-v7:25.0.0 -> 25.3.1 (*)
+     |    |    |    \--- com.android.support:support-compat:25.3.1 (*)
+|    |    +--- com.android.support:support-v4:25.1.1 -> 25.3.1 (*)
+|    |    |    \--- com.android.support:support-v4:25.2.0 -> 25.3.1 (*)
+|    |    +--- org.greenrobot:greendao:3.2.0
+|    |    |    \--- org.greenrobot:greendao-api:3.2.0
+|    |    \--- com.github.bumptech.glide:glide:3.7.0
+|    +--- project :ToolLib:toasty
+     |    |    \--- com.android.support:animated-vector-drawable:25.3.1
+|    |    +--- com.android.support:recyclerview-v7:25.1.1 -> 25.3.1 (*)
+|    |         \--- com.android.support:support-annotations:25.0.0 -> 25.3.1
+|    |    \--- com.android.support:design:25.1.1 -> 25.3.1 (*)
+|    +--- com.jakewharton:butterknife:8.4.0
+|    |    +--- com.jakewharton:butterknife-annotations:8.4.0 (*)
+     |    |         \--- com.android.support:support-vector-drawable:25.3.1 (*)
+|    |    \--- com.android.support:appcompat-v7:25.3.1 (*)
+|    +--- project :ToolLib:bottom-bar
+     |    +--- com.android.support:design:25.3.1
+|    |    \--- com.android.support:support-annotations:24.1.0 -> 25.3.1
+|    +--- com.google.code.gson:gson:2.8.0
+|    +--- com.alibaba:arouter-api:1.0.9
+|    |    +--- com.alibaba:arouter-annotation:1.0.3
+|    |    +--- com.alibaba:fastjson:1.2.9
+|    |    \--- com.android.support:support-v4:25.2.0 -> 25.3.1 (*)
+|    +--- org.greenrobot:greendao:3.2.0
+|    |    \--- org.greenrobot:greendao-api:3.2.0
+|    \--- com.github.bumptech.glide:glide:3.7.0
++--- project :ToolLib:toasty
+     |    |    +--- com.android.support:support-v4:25.3.1 (*)
+|    |    +--- com.android.support:appcompat-v7:25.3.1 (*)
+|    |    \--- com.android.support:design:25.3.1 (*)
+|    +--- com.tencent.bugly:crashreport_upgrade:latest.release -> 1.2.5
+     |    |    +--- com.android.support:appcompat-v7:25.3.1 (*)
+|    \--- com.android.support:appcompat-v7:25.3.1 (*)
+|    +--- com.readystatesoftware.chuck:library:1.0.1
++--- project :ToolLib:bottom-bar
+|    +--- com.android.support:appcompat-v7:25.3.1 (*)
+|    \--- com.android.support:design:25.3.1 (*)
++--- com.tencent.bugly:crashreport_upgrade:latest.release -> 1.2.5
+     |    |    +--- com.android.support:recyclerview-v7:25.3.1
+|    \--- com.facebook.stetho:stetho:1.4.2
+|         +--- commons-cli:commons-cli:1.2
+|         \--- com.google.code.findbugs:jsr305:2.0.1 -> 3.0.1
++--- project :BusinessLib:cash
+|    \--- project :BusinessLib:baselib (*)
++--- project :BusinessLib:member
+     |    |    |    +--- com.android.support:support-annotations:25.3.1
+\--- com.facebook.stetho:stetho:1.4.2
+|    |    +--- com.google.code.gson:gson:2.7 -> 2.8.0
+     +--- commons-cli:commons-cli:1.2
+     \--- com.google.code.findbugs:jsr305:2.0.1 -> 3.0.1
+
+_releaseCompile - ## Internal use, do not manually configure ##
+     |    |    |    +--- com.android.support:support-compat:25.3.1 (*)
++--- project :ToolLib:zlibrary
+|    +--- com.android.support:appcompat-v7:25.3.1
+     |    |    |    \--- com.android.support:support-core-ui:25.3.1 (*)
+|    \--- project :BusinessLib:baselib (*)
+\--- project :BusinessLib:coupon
+     \--- project :BusinessLib:baselib (*)
+
+_releaseCompile - ## Internal use, do not manually configure ##
+     |    |    \--- com.android.support:transition:25.3.1
+|    |    +--- com.android.support:support-annotations:25.3.1
+|    |    +--- com.squareup.okhttp3:okhttp:3.6.0 (*)
+|    |    +--- com.android.support:support-v4:25.3.1
+|    |    |    +--- com.android.support:support-compat:25.3.1
+|    |    |    |    \--- com.android.support:support-annotations:25.3.1
+|    |    |    +--- com.android.support:support-media-compat:25.3.1
+|    |    |    |    +--- com.android.support:support-annotations:25.3.1
+     |    |         +--- com.android.support:support-annotations:25.3.1
++--- project :BusinessLib:baselib
+     |    |         \--- com.android.support:support-v4:25.3.1 (*)
+|    |    |    |    \--- com.android.support:support-compat:25.3.1 (*)
+|    |    +--- nl.qbusict:cupboard:2.2.0
+|    |    |    +--- com.android.support:support-core-utils:25.3.1
+|    |    |    |    +--- com.android.support:support-annotations:25.3.1
+|    |    |    |    \--- com.android.support:support-compat:25.3.1 (*)
+     |    +--- com.android.support:cardview-v7:25.3.1
+|    +--- project :ToolLib:zlibrary
+|    |    +--- com.android.support:appcompat-v7:25.3.1
+|    |    |    +--- com.android.support:support-annotations:25.3.1
+|    |    |    +--- com.android.support:support-v4:25.3.1
+|    |    |    |    +--- com.android.support:support-compat:25.3.1
+     |    |    \--- com.android.support:support-annotations:25.3.1
+|    |    |    +--- com.android.support:support-core-ui:25.3.1
+|    |    +--- com.android.support:appcompat-v7:25.1.1 -> 25.3.1 (*)
+|    |    |    |    +--- com.android.support:support-annotations:25.3.1
+|    |    |    |    \--- com.android.support:support-compat:25.3.1 (*)
+|    |    |    \--- com.android.support:support-fragment:25.3.1
+|    |    |         +--- com.android.support:support-compat:25.3.1 (*)
+|    |    |         +--- com.android.support:support-media-compat:25.3.1 (*)
+|    |    |         +--- com.android.support:support-core-ui:25.3.1 (*)
+|    |    |         \--- com.android.support:support-core-utils:25.3.1 (*)
+|    |    +--- com.android.support:support-vector-drawable:25.3.1
+|    |    |    +--- com.android.support:support-annotations:25.3.1
+|    |    |    \--- com.android.support:support-compat:25.3.1 (*)
+|    |    \--- com.android.support:animated-vector-drawable:25.3.1
+|    |         \--- com.android.support:support-vector-drawable:25.3.1 (*)
+|    +--- com.android.support:design:25.3.1
+|    |    +--- com.android.support:support-v4:25.3.1 (*)
+|    |    +--- com.android.support:appcompat-v7:25.3.1 (*)
+|    |    +--- com.android.support:recyclerview-v7:25.3.1
+|    |    |    +--- com.android.support:support-annotations:25.3.1
+|    |    |    +--- com.android.support:support-compat:25.3.1 (*)
+|    |    |    \--- com.android.support:support-core-ui:25.3.1 (*)
+|    |    \--- com.android.support:transition:25.3.1
+     |    +--- com.android.support:recyclerview-v7:25.3.1 (*)
+|    |    |    |    |    \--- com.android.support:support-annotations:25.3.1
+|    |    |    |    +--- com.android.support:support-media-compat:25.3.1
+|    |    |    |    |    +--- com.android.support:support-annotations:25.3.1
+     |    +--- com.squareup.retrofit2:retrofit:2.2.0
+|    |         +--- com.android.support:support-annotations:25.3.1
+|    |    +--- com.android.support:support-v4:25.1.1 -> 25.3.1 (*)
+|    |         \--- com.android.support:support-v4:25.3.1 (*)
+|    +--- com.android.support:cardview-v7:25.3.1
+|    |    \--- com.android.support:support-annotations:25.3.1
+     |    |    \--- com.squareup.okhttp3:okhttp:3.6.0
+|    |    |    |    |    \--- com.android.support:support-compat:25.3.1 (*)
+|    |    |    |    +--- com.android.support:support-core-utils:25.3.1
+     |    |         \--- com.squareup.okio:okio:1.11.0
+|    +--- com.android.support:recyclerview-v7:25.3.1 (*)
+|    |    +--- com.android.support:recyclerview-v7:25.1.1 -> 25.3.1 (*)
+|    +--- com.squareup.retrofit2:retrofit:2.2.0
+|    |    \--- com.squareup.okhttp3:okhttp:3.6.0
+|    |         \--- com.squareup.okio:okio:1.11.0
+|    +--- com.squareup.retrofit2:adapter-rxjava2:2.2.0
+|    |    +--- com.squareup.retrofit2:retrofit:2.2.0 (*)
+|    |    \--- io.reactivex.rxjava2:rxjava:2.0.0 -> 2.0.7
+|    |         \--- org.reactivestreams:reactive-streams:1.0.0
+|    +--- io.reactivex.rxjava2:rxjava:2.0.7 (*)
+|    +--- io.reactivex.rxjava2:rxandroid:2.0.1
+|    |    \--- io.reactivex.rxjava2:rxjava:2.0.1 -> 2.0.7 (*)
+|    +--- com.jakewharton.rxbinding2:rxbinding-support-v4:2.0.0
+     |    +--- com.squareup.retrofit2:adapter-rxjava2:2.2.0
+|    |    |    |    |    +--- com.android.support:support-annotations:25.3.1
+|    |    |    |    |    \--- com.android.support:support-compat:25.3.1 (*)
+|    |    |    |    +--- com.android.support:support-core-ui:25.3.1
+|    |    |    |    |    +--- com.android.support:support-annotations:25.3.1
+|    |    |    |    |    \--- com.android.support:support-compat:25.3.1 (*)
+|    |    |    |    \--- com.android.support:support-fragment:25.3.1
+|    |    |    |         +--- com.android.support:support-compat:25.3.1 (*)
+|    |    |    |         +--- com.android.support:support-media-compat:25.3.1 (*)
+|    |    |    |         +--- com.android.support:support-core-ui:25.3.1 (*)
+|    |    |    |         \--- com.android.support:support-core-utils:25.3.1 (*)
+|    |    |    +--- com.android.support:support-vector-drawable:25.3.1
+|    |    |    |    +--- com.android.support:support-annotations:25.3.1
+|    |    |    |    \--- com.android.support:support-compat:25.3.1 (*)
+|    |    |    \--- com.android.support:animated-vector-drawable:25.3.1
+|    |    |         \--- com.android.support:support-vector-drawable:25.3.1 (*)
+|    |    +--- com.android.support:design:25.3.1
+|    |    |    +--- com.android.support:support-v4:25.3.1 (*)
+|    |    |    +--- com.android.support:appcompat-v7:25.3.1 (*)
+|    |    |    +--- com.android.support:recyclerview-v7:25.3.1
+|    |    |    |    +--- com.android.support:support-annotations:25.3.1
+|    |    |    |    +--- com.android.support:support-compat:25.3.1 (*)
+|    |    |    |    \--- com.android.support:support-core-ui:25.3.1 (*)
+|    |    |    \--- com.android.support:transition:25.3.1
+|    |    |         +--- com.android.support:support-annotations:25.3.1
+|    |    |         \--- com.android.support:support-v4:25.3.1 (*)
+|    |    +--- com.android.support:cardview-v7:25.3.1
+|    |    |    \--- com.android.support:support-annotations:25.3.1
+|    |    +--- com.android.support:recyclerview-v7:25.3.1 (*)
+|    |    +--- com.squareup.retrofit2:retrofit:2.2.0
+|    |    |    \--- com.squareup.okhttp3:okhttp:3.6.0
+|    |    |         \--- com.squareup.okio:okio:1.11.0
+|    |    +--- com.squareup.retrofit2:adapter-rxjava2:2.2.0
+|    |    |    +--- com.squareup.retrofit2:retrofit:2.2.0 (*)
+|    |    |    \--- io.reactivex.rxjava2:rxjava:2.0.0 -> 2.0.7
+|    |    |         \--- org.reactivestreams:reactive-streams:1.0.0
+|    |    +--- io.reactivex.rxjava2:rxjava:2.0.7 (*)
+|    |    +--- io.reactivex.rxjava2:rxandroid:2.0.1
+|    |    |    \--- io.reactivex.rxjava2:rxjava:2.0.1 -> 2.0.7 (*)
+|    |    +--- com.jakewharton.rxbinding2:rxbinding-support-v4:2.0.0
+|    |    |    +--- com.jakewharton.rxbinding2:rxbinding:2.0.0
+|    |    |    |    +--- io.reactivex.rxjava2:rxjava:2.0.2 -> 2.0.7 (*)
+|    |    |    |    +--- io.reactivex.rxjava2:rxandroid:2.0.0 -> 2.0.1 (*)
+|    |    |    |    \--- com.android.support:support-annotations:25.1.1 -> 25.3.1
+     |    |    +--- com.squareup.retrofit2:retrofit:2.2.0 (*)
+|    |    +--- com.jakewharton.rxbinding2:rxbinding:2.0.0
+|    |    \--- com.android.support:design:25.1.1 -> 25.3.1 (*)
+|    |    |    +--- io.reactivex.rxjava2:rxjava:2.0.2 -> 2.0.7 (*)
+|    |    |    +--- io.reactivex.rxjava2:rxandroid:2.0.0 -> 2.0.1 (*)
+|    |    |    \--- com.android.support:support-annotations:25.1.1 -> 25.3.1
+|    |    \--- com.android.support:support-core-ui:25.1.1 -> 25.3.1 (*)
+|    +--- com.trello.rxlifecycle2:rxlifecycle:2.0.1
+     |    |    \--- io.reactivex.rxjava2:rxjava:2.0.0 -> 2.0.7
+|    |    |    \--- com.android.support:support-core-ui:25.1.1 -> 25.3.1 (*)
+|    |    +--- com.trello.rxlifecycle2:rxlifecycle:2.0.1
+|    |    |    +--- io.reactivex.rxjava2:rxjava:2.0.1 -> 2.0.7 (*)
+|    |    |    \--- com.google.code.findbugs:jsr305:3.0.1
+     |    |         \--- org.reactivestreams:reactive-streams:1.0.0
+|    |    +--- io.reactivex.rxjava2:rxjava:2.0.1 -> 2.0.7 (*)
+|    +--- com.jakewharton:butterknife:8.4.0
+|    |    \--- com.google.code.findbugs:jsr305:3.0.1
+|    +--- com.android.support:multidex:1.0.1
+|    +--- com.blankj:utilcode:1.3.6
+     |    +--- io.reactivex.rxjava2:rxjava:2.0.7 (*)
+|    |    +--- com.android.support:multidex:1.0.1
+     |    +--- io.reactivex.rxjava2:rxandroid:2.0.1
+|    +--- com.github.CymChad:BaseRecyclerViewAdapterHelper:2.8.5
+|    +--- com.jakewharton.timber:timber:4.5.1
+|    |    +--- com.jakewharton:butterknife-annotations:8.4.0
+|    +--- com.afollestad.material-dialogs:core:0.9.4.2
+|    |    +--- com.android.support:support-v13:25.3.0
+|    |    |    +--- com.android.support:support-annotations:25.3.0 -> 25.3.1
+|    |    |    \--- com.android.support:support-v4:25.3.0 -> 25.3.1 (*)
+|    |    +--- com.android.support:appcompat-v7:25.3.0 -> 25.3.1 (*)
+|    |    +--- com.android.support:recyclerview-v7:25.3.0 -> 25.3.1 (*)
+|    |    +--- com.android.support:support-annotations:25.3.0 -> 25.3.1
+     |    |    \--- io.reactivex.rxjava2:rxjava:2.0.1 -> 2.0.7 (*)
+|    |    +--- com.blankj:utilcode:1.3.6
+|    |    +--- com.github.CymChad:BaseRecyclerViewAdapterHelper:2.8.5
+|    |    +--- com.jakewharton.timber:timber:4.5.1
+     |    +--- com.jakewharton.rxbinding2:rxbinding-support-v4:2.0.0
+     |    |    +--- com.jakewharton.rxbinding2:rxbinding:2.0.0
+     |    |    |    +--- io.reactivex.rxjava2:rxjava:2.0.2 -> 2.0.7 (*)
+|    |    \--- me.zhanghai.android.materialprogressbar:library:1.3.0
+|    |    |    \--- com.android.support:support-annotations:24.1.0 -> 25.3.1
+|    |         +--- com.android.support:appcompat-v7:25.0.0 -> 25.3.1 (*)
+     |    |    |    +--- io.reactivex.rxjava2:rxandroid:2.0.0 -> 2.0.1 (*)
+|    |    +--- com.afollestad.material-dialogs:core:0.9.4.2
+|    |    |    +--- com.android.support:support-v13:25.3.0
+|    |    |    |    +--- com.android.support:support-annotations:25.3.0 -> 25.3.1
+|    |    |    |    \--- com.android.support:support-v4:25.3.0 -> 25.3.1 (*)
+|    |    |    +--- com.android.support:appcompat-v7:25.3.0 -> 25.3.1 (*)
+|    |    |    +--- com.android.support:recyclerview-v7:25.3.0 -> 25.3.1 (*)
+|    |    |    +--- com.android.support:support-annotations:25.3.0 -> 25.3.1
+|    |    |    \--- me.zhanghai.android.materialprogressbar:library:1.3.0
+|    |    |         +--- com.android.support:appcompat-v7:25.0.0 -> 25.3.1 (*)
+|    |    |         \--- com.android.support:support-annotations:25.0.0 -> 25.3.1
+|    |    +--- com.google.code.gson:gson:2.8.0
+|    |    +--- com.readystatesoftware.chuck:library:1.0.1
+|    |    |    +--- com.google.code.gson:gson:2.7 -> 2.8.0
+|    |    |    +--- com.squareup.okhttp3:okhttp:3.6.0 (*)
+|    |    |    +--- nl.qbusict:cupboard:2.2.0
+     |    |    |    \--- com.android.support:support-annotations:25.1.1 -> 25.3.1
+|    |         \--- com.android.support:support-annotations:25.0.0 -> 25.3.1
+|    |    \--- com.android.support:support-annotations:24.1.0 -> 25.3.1
+|    +--- com.alibaba:arouter-api:1.0.9
+|    |    +--- com.alibaba:arouter-annotation:1.0.3
+|    |    +--- com.alibaba:fastjson:1.2.9
+|    +--- com.google.code.gson:gson:2.8.0
+     |    |    \--- com.android.support:support-core-ui:25.1.1 -> 25.3.1 (*)
+|    |    |    +--- com.android.support:appcompat-v7:25.1.1 -> 25.3.1 (*)
+|    |    |    +--- com.android.support:support-v4:25.1.1 -> 25.3.1 (*)
+|    |    |    +--- com.android.support:recyclerview-v7:25.1.1 -> 25.3.1 (*)
+|    |    |    \--- com.android.support:design:25.1.1 -> 25.3.1 (*)
+|    |    +--- com.jakewharton:butterknife:8.4.0
+|    |    |    +--- com.jakewharton:butterknife-annotations:8.4.0
+     |    +--- com.trello.rxlifecycle2:rxlifecycle:2.0.1
+|    +--- com.readystatesoftware.chuck:library:1.0.1
+|    |    \--- com.android.support:support-v4:25.2.0 -> 25.3.1 (*)
+|    |    +--- com.google.code.gson:gson:2.7 -> 2.8.0
+     |    |    +--- io.reactivex.rxjava2:rxjava:2.0.1 -> 2.0.7 (*)
+|    |    |    |    \--- com.android.support:support-annotations:24.1.0 -> 25.3.1
+|    |    |    \--- com.android.support:support-annotations:24.1.0 -> 25.3.1
+     |    |    \--- com.google.code.findbugs:jsr305:3.0.1
+|    |    +--- com.squareup.okhttp3:okhttp:3.6.0 (*)
+|    |    +--- nl.qbusict:cupboard:2.2.0
+|    +--- org.greenrobot:greendao:3.2.0
+|    |    +--- com.android.support:appcompat-v7:25.1.1 -> 25.3.1 (*)
+|    |    +--- com.android.support:support-v4:25.1.1 -> 25.3.1 (*)
+|    |    +--- com.android.support:recyclerview-v7:25.1.1 -> 25.3.1 (*)
+|    |    \--- com.android.support:design:25.1.1 -> 25.3.1 (*)
+|    +--- com.jakewharton:butterknife:8.4.0
+|    |    +--- com.jakewharton:butterknife-annotations:8.4.0
+|    |    |    \--- com.android.support:support-annotations:24.1.0 -> 25.3.1
+|    |    \--- com.android.support:support-annotations:24.1.0 -> 25.3.1
+     |    +--- com.android.support:multidex:1.0.1
+|    |    +--- com.alibaba:arouter-api:1.0.9
+     |    +--- com.blankj:utilcode:1.3.6
+|    +--- com.alibaba:arouter-api:1.0.9
+|    |    +--- com.alibaba:arouter-annotation:1.0.3
+|    |    +--- com.alibaba:fastjson:1.2.9
+|    |    \--- org.greenrobot:greendao-api:3.2.0
+|    |    \--- com.android.support:support-v4:25.2.0 -> 25.3.1 (*)
+|    +--- org.greenrobot:greendao:3.2.0
+|    |    \--- org.greenrobot:greendao-api:3.2.0
+|    \--- com.github.bumptech.glide:glide:3.7.0
++--- project :ToolLib:toasty
+     |    +--- com.github.CymChad:BaseRecyclerViewAdapterHelper:2.8.5
+|    |    |    +--- com.alibaba:arouter-annotation:1.0.3
+|    |    |    +--- com.alibaba:fastjson:1.2.9
+     |    +--- com.jakewharton.timber:timber:4.5.1
+|    \--- com.android.support:appcompat-v7:25.3.1 (*)
+|    \--- com.github.bumptech.glide:glide:3.7.0
++--- project :ToolLib:bottom-bar
+|    +--- com.android.support:appcompat-v7:25.3.1 (*)
+|    \--- com.android.support:design:25.3.1 (*)
++--- com.tencent.bugly:crashreport_upgrade:latest.release -> 1.2.5
+     |    +--- com.afollestad.material-dialogs:core:0.9.4.2
+|    |    |    \--- com.android.support:support-v4:25.2.0 -> 25.3.1 (*)
+|    |    +--- org.greenrobot:greendao:3.2.0
+|    |    |    \--- org.greenrobot:greendao-api:3.2.0
+|    |    \--- com.github.bumptech.glide:glide:3.7.0
+     |    |    +--- com.android.support:support-v13:25.3.0
+\--- com.facebook.stetho:stetho:1.4.2
++--- com.facebook.stetho:stetho:1.4.2
+     +--- commons-cli:commons-cli:1.2
+     \--- com.google.code.findbugs:jsr305:2.0.1 -> 3.0.1
+     |    |    |    +--- com.android.support:support-annotations:25.3.0 -> 25.3.1
+|    +--- project :ToolLib:toasty
+|    |    \--- com.android.support:appcompat-v7:25.3.1 (*)
+|    +--- project :ToolLib:bottom-bar
+     |    |    |    \--- com.android.support:support-v4:25.3.0 -> 25.3.1 (*)
+
+|    +--- commons-cli:commons-cli:1.2
+_releaseJackPlugin - ## Internal use, do not manually configure ##
+     |    |    +--- com.android.support:appcompat-v7:25.3.0 -> 25.3.1 (*)
+|    |    +--- com.android.support:appcompat-v7:25.3.1 (*)
+|    |    \--- com.android.support:design:25.3.1 (*)
+|    +--- com.tencent.bugly:crashreport_upgrade:latest.release -> 1.2.5
+     |    |    +--- com.android.support:recyclerview-v7:25.3.0 -> 25.3.1 (*)
+     |    |    +--- com.android.support:support-annotations:25.3.0 -> 25.3.1
+|    \--- com.google.code.findbugs:jsr305:2.0.1 -> 3.0.1
+\--- com.github.zhoujunyou:deviceInfo:1.0.3
+     |    |    \--- me.zhanghai.android.materialprogressbar:library:1.3.0
+No dependencies
+|    \--- com.facebook.stetho:stetho:1.4.2
+
+_releasePublish - ## Internal use, do not manually configure ##
+     |    |         +--- com.android.support:appcompat-v7:25.0.0 -> 25.3.1 (*)
+     +--- com.android.support:appcompat-v7:25.3.1 (*)
+     +--- com.github.CymChad:BaseRecyclerViewAdapterHelper:2.8.5
+     \--- com.android.support:recyclerview-v7:25.3.1 (*)
+
+_releaseJackPlugin - ## Internal use, do not manually configure ##
+     |    |         \--- com.android.support:support-annotations:25.0.0 -> 25.3.1
++--- project :ToolLib:zlibrary
+|         +--- commons-cli:commons-cli:1.2
+|    +--- com.android.support:appcompat-v7:25.3.1
+|    |    +--- com.android.support:support-annotations:25.3.1
+     |    +--- com.google.code.gson:gson:2.8.0
+     |    +--- com.readystatesoftware.chuck:library:1.0.1
+No dependencies
+|    |    +--- com.android.support:support-v4:25.3.1
+|         \--- com.google.code.findbugs:jsr305:2.0.1 -> 3.0.1
+|    |    |    +--- com.android.support:support-compat:25.3.1
+
+_releaseUnitTestAnnotationProcessor - ## Internal use, do not manually configure ##
+No dependencies
+
+_releaseUnitTestApk - ## Internal use, do not manually configure ##
+No dependencies
+
+_releaseUnitTestCompile - ## Internal use, do not manually configure ##
+No dependencies
+
+_releaseUnitTestJackPlugin - ## Internal use, do not manually configure ##
+     |    |    +--- com.google.code.gson:gson:2.7 -> 2.8.0
+     |    |    +--- com.squareup.okhttp3:okhttp:3.6.0 (*)
+|    |    |    |    \--- com.android.support:support-annotations:25.3.1
++--- project :BusinessLib:cash
+|    |    |    +--- com.android.support:support-media-compat:25.3.1
+|    |    |    |    +--- com.android.support:support-annotations:25.3.1
+     |    |    +--- nl.qbusict:cupboard:2.2.0
+     |    |    +--- com.android.support:appcompat-v7:25.1.1 -> 25.3.1 (*)
+|    |    |    |    \--- com.android.support:support-compat:25.3.1 (*)
+|    \--- project :BusinessLib:baselib (*)
+|    |    |    +--- com.android.support:support-core-utils:25.3.1
+|    |    |    |    +--- com.android.support:support-annotations:25.3.1
+     |    |    +--- com.android.support:support-v4:25.1.1 -> 25.3.1 (*)
+No dependencies
+
+androidJacocoAgent - The Jacoco agent to use to get coverage data.
+     |    |    +--- com.android.support:recyclerview-v7:25.1.1 -> 25.3.1 (*)
+|    |    |    |    \--- com.android.support:support-compat:25.3.1 (*)
++--- project :BusinessLib:member
+|    |    |    +--- com.android.support:support-core-ui:25.3.1
+|    |    |    |    +--- com.android.support:support-annotations:25.3.1
+|    |    |    |    \--- com.android.support:support-compat:25.3.1 (*)
+|    |    |    \--- com.android.support:support-fragment:25.3.1
+|    |    |         +--- com.android.support:support-compat:25.3.1 (*)
+|    |    |         +--- com.android.support:support-media-compat:25.3.1 (*)
+|    |    |         +--- com.android.support:support-core-ui:25.3.1 (*)
+|    |    |         \--- com.android.support:support-core-utils:25.3.1 (*)
+     |    |    \--- com.android.support:design:25.1.1 -> 25.3.1 (*)
+     |    +--- com.jakewharton:butterknife:8.4.0
+     |    |    +--- com.jakewharton:butterknife-annotations:8.4.0 (*)
+     |    |    \--- com.android.support:support-annotations:24.1.0 -> 25.3.1
+|    |    +--- com.android.support:support-vector-drawable:25.3.1
+     |    +--- com.alibaba:arouter-api:1.0.9
+|    \--- project :BusinessLib:baselib (*)
+\--- project :BusinessLib:coupon
+     \--- project :BusinessLib:baselib (*)
+
+_releaseJackPlugin - ## Internal use, do not manually configure ##
+No dependencies
+
+_releaseUnitTestAnnotationProcessor - ## Internal use, do not manually configure ##
+No dependencies
+
+     |    |    +--- com.alibaba:arouter-annotation:1.0.3
+|    |    |    +--- com.android.support:support-annotations:25.3.1
+|    |    |    \--- com.android.support:support-compat:25.3.1 (*)
+|    |    \--- com.android.support:animated-vector-drawable:25.3.1
+     |    |    +--- com.alibaba:fastjson:1.2.9
+_releaseUnitTestApk - ## Internal use, do not manually configure ##
+No dependencies
+
+_releaseUnitTestCompile - ## Internal use, do not manually configure ##
+No dependencies
+
+_releaseUnitTestJackPlugin - ## Internal use, do not manually configure ##
+     |    |    \--- com.android.support:support-v4:25.2.0 -> 25.3.1 (*)
+|    |         \--- com.android.support:support-vector-drawable:25.3.1 (*)
+|    +--- com.android.support:design:25.3.1
+|    |    +--- com.android.support:support-v4:25.3.1 (*)
+|    |    +--- com.android.support:appcompat-v7:25.3.1 (*)
+|    |    +--- com.android.support:recyclerview-v7:25.3.1
+|    |    |    +--- com.android.support:support-annotations:25.3.1
+     |    +--- org.greenrobot:greendao:3.2.0
+     |    |    \--- org.greenrobot:greendao-api:3.2.0
+     |    \--- com.github.bumptech.glide:glide:3.7.0
+|    |    |    +--- com.android.support:support-compat:25.3.1 (*)
+|    |    |    \--- com.android.support:support-core-ui:25.3.1 (*)
+|    |    \--- com.android.support:transition:25.3.1
+|    |         +--- com.android.support:support-annotations:25.3.1
+|    |         \--- com.android.support:support-v4:25.3.1 (*)
+|    +--- com.android.support:cardview-v7:25.3.1
+|    |    \--- com.android.support:support-annotations:25.3.1
+     +--- project :ToolLib:toasty
+No dependencies
+
+androidJacocoAgent - The Jacoco agent to use to get coverage data.
+     |    \--- com.android.support:appcompat-v7:25.3.1 (*)
+|    +--- com.android.support:recyclerview-v7:25.3.1 (*)
+|    +--- com.squareup.retrofit2:retrofit:2.2.0
+|    |    \--- com.squareup.okhttp3:okhttp:3.6.0
+|    |         \--- com.squareup.okio:okio:1.11.0
+|    +--- com.squareup.retrofit2:adapter-rxjava2:2.2.0
+|    |    +--- com.squareup.retrofit2:retrofit:2.2.0 (*)
+|    |    \--- io.reactivex.rxjava2:rxjava:2.0.0 -> 2.0.7
+|    |         \--- org.reactivestreams:reactive-streams:1.0.0
+|    +--- io.reactivex.rxjava2:rxjava:2.0.7 (*)
+|    +--- io.reactivex.rxjava2:rxandroid:2.0.1
+|    |    \--- io.reactivex.rxjava2:rxjava:2.0.1 -> 2.0.7 (*)
+|    +--- com.jakewharton.rxbinding2:rxbinding-support-v4:2.0.0
+|    |    +--- com.jakewharton.rxbinding2:rxbinding:2.0.0
+|    |    |    +--- io.reactivex.rxjava2:rxjava:2.0.2 -> 2.0.7 (*)
+|    |    |    +--- io.reactivex.rxjava2:rxandroid:2.0.0 -> 2.0.1 (*)
+|    |    |    \--- com.android.support:support-annotations:25.1.1 -> 25.3.1
+|    |    \--- com.android.support:support-core-ui:25.1.1 -> 25.3.1 (*)
+     +--- project :ToolLib:bottom-bar
+|    +--- com.trello.rxlifecycle2:rxlifecycle:2.0.1
+|    |    +--- io.reactivex.rxjava2:rxjava:2.0.1 -> 2.0.7 (*)
+|    |    \--- com.google.code.findbugs:jsr305:3.0.1
+|    +--- com.android.support:multidex:1.0.1
+|    +--- com.blankj:utilcode:1.3.6
+|    +--- com.github.CymChad:BaseRecyclerViewAdapterHelper:2.8.5
+|    +--- com.jakewharton.timber:timber:4.5.1
+|    +--- com.afollestad.material-dialogs:core:0.9.4.2
+     |    +--- com.android.support:appcompat-v7:25.3.1 (*)
+|    |    +--- com.android.support:support-v13:25.3.0
+|    |    |    +--- com.android.support:support-annotations:25.3.0 -> 25.3.1
+|    |    |    \--- com.android.support:support-v4:25.3.0 -> 25.3.1 (*)
+|    |    +--- com.android.support:appcompat-v7:25.3.0 -> 25.3.1 (*)
+|    |    +--- com.android.support:recyclerview-v7:25.3.0 -> 25.3.1 (*)
+|    |    +--- com.android.support:support-annotations:25.3.0 -> 25.3.1
+|    |    \--- me.zhanghai.android.materialprogressbar:library:1.3.0
+|    |         +--- com.android.support:appcompat-v7:25.0.0 -> 25.3.1 (*)
+|    |         \--- com.android.support:support-annotations:25.0.0 -> 25.3.1
+|    +--- com.google.code.gson:gson:2.8.0
+|    +--- com.readystatesoftware.chuck:library:1.0.1
+|    |    +--- com.google.code.gson:gson:2.7 -> 2.8.0
+|    |    +--- com.squareup.okhttp3:okhttp:3.6.0 (*)
+     |    \--- com.android.support:design:25.3.1 (*)
+|    |    +--- nl.qbusict:cupboard:2.2.0
+\--- org.jacoco:org.jacoco.agent:0.7.5.201505241946
+|    |    +--- com.android.support:appcompat-v7:25.1.1 -> 25.3.1 (*)
+|    |    +--- com.android.support:support-v4:25.1.1 -> 25.3.1 (*)
+|    |    +--- com.android.support:recyclerview-v7:25.1.1 -> 25.3.1 (*)
+     +--- com.tencent.bugly:crashreport_upgrade:latest.release -> 1.2.5
+|    |    \--- com.android.support:design:25.1.1 -> 25.3.1 (*)
+
+androidJacocoAnt - The Jacoco ant tasks to use to get execute Gradle tasks.
+|    +--- com.jakewharton:butterknife:8.4.0
+|    |    +--- com.jakewharton:butterknife-annotations:8.4.0
+     \--- com.facebook.stetho:stetho:1.4.2
+|    |    |    \--- com.android.support:support-annotations:24.1.0 -> 25.3.1
+|    |    \--- com.android.support:support-annotations:24.1.0 -> 25.3.1
+|    +--- com.alibaba:arouter-api:1.0.9
+|    |    +--- com.alibaba:arouter-annotation:1.0.3
+|    |    +--- com.alibaba:fastjson:1.2.9
+|    |    \--- com.android.support:support-v4:25.2.0 -> 25.3.1 (*)
+|    +--- org.greenrobot:greendao:3.2.0
+|    |    \--- org.greenrobot:greendao-api:3.2.0
+|    \--- com.github.bumptech.glide:glide:3.7.0
++--- project :ToolLib:toasty
+|    \--- com.android.support:appcompat-v7:25.3.1 (*)
++--- project :ToolLib:bottom-bar
+|    +--- com.android.support:appcompat-v7:25.3.1 (*)
+|    \--- com.android.support:design:25.3.1 (*)
++--- com.tencent.bugly:crashreport_upgrade:latest.release -> 1.2.5
+          +--- commons-cli:commons-cli:1.2
+\--- com.facebook.stetho:stetho:1.4.2
+\--- org.jacoco:org.jacoco.agent:0.7.5.201505241946
+
+androidJacocoAnt - The Jacoco ant tasks to use to get execute Gradle tasks.
+          \--- com.google.code.findbugs:jsr305:2.0.1 -> 3.0.1
+     +--- commons-cli:commons-cli:1.2
+     \--- com.google.code.findbugs:jsr305:2.0.1 -> 3.0.1
+
+
+_releaseUnitTestAnnotationProcessor - ## Internal use, do not manually configure ##
+_debugAndroidTestApk - ## Internal use, do not manually configure ##
+\--- project :BusinessLib:baselib
+     +--- project :ToolLib:zlibrary
+     |    +--- com.android.support:appcompat-v7:25.3.1
+     |    |    +--- com.android.support:support-annotations:25.3.1
++--- com.jakewharton:butterknife-compiler:8.4.0
+|    +--- com.jakewharton:butterknife-annotations:8.4.0
+|    |    \--- com.android.support:support-annotations:24.1.0 -> 25.3.1
+|    +--- com.google.auto:auto-common:0.6
+|    |    \--- com.google.guava:guava:18.0
+|    +--- com.google.auto.service:auto-service:1.0-rc2
+|    |    +--- com.google.auto:auto-common:0.3 -> 0.6 (*)
+|    |    \--- com.google.guava:guava:18.0
+|    \--- com.squareup:javapoet:1.7.0
++--- project :ToolLib:zlibrary
+     |    |    +--- com.android.support:support-v4:25.3.1
+|    +--- com.android.support:appcompat-v7:25.3.1
+|    |    +--- com.android.support:support-annotations:25.3.1
+|    |    +--- com.android.support:support-v4:25.3.1
+|    |    |    +--- com.android.support:support-compat:25.3.1
+|    |    |    |    \--- com.android.support:support-annotations:25.3.1
+|    |    |    +--- com.android.support:support-media-compat:25.3.1
+|    |    |    |    +--- com.android.support:support-annotations:25.3.1
+     |    |    |    +--- com.android.support:support-compat:25.3.1
+|    |    |    |    \--- com.android.support:support-compat:25.3.1 (*)
+|    |    |    +--- com.android.support:support-core-utils:25.3.1
+|    |    |    |    +--- com.android.support:support-annotations:25.3.1
+|    |    |    |    \--- com.android.support:support-compat:25.3.1 (*)
+     |    |    |    |    \--- com.android.support:support-annotations:25.3.1
+|    |    |    +--- com.android.support:support-core-ui:25.3.1
+|    |    |    |    +--- com.android.support:support-annotations:25.3.1
+|    |    |    |    \--- com.android.support:support-compat:25.3.1 (*)
+|    |    |    \--- com.android.support:support-fragment:25.3.1
+|    |    |         +--- com.android.support:support-compat:25.3.1 (*)
+     |    |    |    +--- com.android.support:support-media-compat:25.3.1
+|    |    |         +--- com.android.support:support-media-compat:25.3.1 (*)
+|    |    |         +--- com.android.support:support-core-ui:25.3.1 (*)
+|    |    |         \--- com.android.support:support-core-utils:25.3.1 (*)
+|    |    +--- com.android.support:support-vector-drawable:25.3.1
+|    |    |    +--- com.android.support:support-annotations:25.3.1
+\--- org.jacoco:org.jacoco.ant:0.7.5.201505241946
+     +--- org.jacoco:org.jacoco.core:0.7.5.201505241946
+     |    |    |    |    +--- com.android.support:support-annotations:25.3.1
+|    |    |    \--- com.android.support:support-compat:25.3.1 (*)
+|    |    \--- com.android.support:animated-vector-drawable:25.3.1
+     |    |    |    |    \--- com.android.support:support-compat:25.3.1 (*)
+     |    |    |    +--- com.android.support:support-core-utils:25.3.1
+     |    \--- org.ow2.asm:asm-debug-all:5.0.1
+     +--- org.jacoco:org.jacoco.report:0.7.5.201505241946
+     |    +--- org.jacoco:org.jacoco.core:0.7.5.201505241946 (*)
+     |    \--- org.ow2.asm:asm-debug-all:5.0.1
+     \--- org.jacoco:org.jacoco.agent:0.7.5.201505241946
+
+androidTestAnnotationProcessor - Classpath for the annotation processor for 'androidTest'.
+No dependencies
+
+androidTestApk - Classpath packaged with the compiled 'androidTest' classes.
+No dependencies
+
+androidTestCompile - Classpath for compiling the androidTest sources.
+     |    |    |    |    +--- com.android.support:support-annotations:25.3.1
+|    |         \--- com.android.support:support-vector-drawable:25.3.1 (*)
+\--- org.jacoco:org.jacoco.ant:0.7.5.201505241946
+     +--- org.jacoco:org.jacoco.core:0.7.5.201505241946
+     |    |    |    |    \--- com.android.support:support-compat:25.3.1 (*)
+     |    |    |    +--- com.android.support:support-core-ui:25.3.1
+No dependencies
+
+     |    \--- org.ow2.asm:asm-debug-all:5.0.1
+|    +--- com.android.support:design:25.3.1
+     +--- org.jacoco:org.jacoco.report:0.7.5.201505241946
+androidTestJackPlugin - Classpath for the 'androidTest' Jack plugins.
+     |    |    |    |    +--- com.android.support:support-annotations:25.3.1
+     |    |    |    |    \--- com.android.support:support-compat:25.3.1 (*)
+     |    +--- org.jacoco:org.jacoco.core:0.7.5.201505241946 (*)
+|    |    +--- com.android.support:support-v4:25.3.1 (*)
+     |    \--- org.ow2.asm:asm-debug-all:5.0.1
+     \--- org.jacoco:org.jacoco.agent:0.7.5.201505241946
+     |    |    |    \--- com.android.support:support-fragment:25.3.1
+     |    |    |         +--- com.android.support:support-compat:25.3.1 (*)
+No dependencies
+
+|    |    +--- com.android.support:appcompat-v7:25.3.1 (*)
+androidTestAnnotationProcessor - Classpath for the annotation processor for 'androidTest'.
+
+androidTestProvided - Classpath for only compiling the androidTest sources.
+     |    |    |         +--- com.android.support:support-media-compat:25.3.1 (*)
+     |    |    |         +--- com.android.support:support-core-ui:25.3.1 (*)
+|    |    +--- com.android.support:recyclerview-v7:25.3.1
+     |    |    |         \--- com.android.support:support-core-utils:25.3.1 (*)
+     |    |    +--- com.android.support:support-vector-drawable:25.3.1
+     |    |    |    +--- com.android.support:support-annotations:25.3.1
+No dependencies
+|    |    |    +--- com.android.support:support-annotations:25.3.1
+
+androidTestApk - Classpath packaged with the compiled 'androidTest' classes.
+     |    |    |    \--- com.android.support:support-compat:25.3.1 (*)
+     |    |    \--- com.android.support:animated-vector-drawable:25.3.1
+|    |    |    +--- com.android.support:support-compat:25.3.1 (*)
+|    |    |    \--- com.android.support:support-core-ui:25.3.1 (*)
+|    |    \--- com.android.support:transition:25.3.1
+|    |         +--- com.android.support:support-annotations:25.3.1
+|    |         \--- com.android.support:support-v4:25.3.1 (*)
+|    +--- com.android.support:cardview-v7:25.3.1
+|    |    \--- com.android.support:support-annotations:25.3.1
+|    +--- com.android.support:recyclerview-v7:25.3.1 (*)
+|    +--- com.squareup.retrofit2:retrofit:2.2.0
+|    |    \--- com.squareup.okhttp3:okhttp:3.6.0
+     |    |         \--- com.android.support:support-vector-drawable:25.3.1 (*)
+     |    +--- com.android.support:design:25.3.1
+No dependencies
+     |    |    +--- com.android.support:support-v4:25.3.1 (*)
+     |    |    +--- com.android.support:appcompat-v7:25.3.1 (*)
+|    |         \--- com.squareup.okio:okio:1.11.0
+|    +--- com.squareup.retrofit2:adapter-rxjava2:2.2.0
+|    |    +--- com.squareup.retrofit2:retrofit:2.2.0 (*)
+|    |    \--- io.reactivex.rxjava2:rxjava:2.0.0 -> 2.0.7
+|    |         \--- org.reactivestreams:reactive-streams:1.0.0
+     |    |    +--- com.android.support:recyclerview-v7:25.3.1
+No dependencies
+
+
+androidTestCompile - Classpath for compiling the androidTest sources.
+No dependencies
+
+androidTestJackPlugin - Classpath for the 'androidTest' Jack plugins.
+     |    |    |    +--- com.android.support:support-annotations:25.3.1
+|    +--- io.reactivex.rxjava2:rxjava:2.0.7 (*)
+|    +--- io.reactivex.rxjava2:rxandroid:2.0.1
+     |    |    |    +--- com.android.support:support-compat:25.3.1 (*)
+No dependencies
+
+androidTestProvided - Classpath for only compiling the androidTest sources.
+androidTestWearApp - Link to a wear app to embed for object 'androidTest'.
+No dependencies
+
+androidTestWearApp - Link to a wear app to embed for object 'androidTest'.
+     |    |    |    \--- com.android.support:support-core-ui:25.3.1 (*)
+|    |    \--- io.reactivex.rxjava2:rxjava:2.0.1 -> 2.0.7 (*)
+|    +--- com.jakewharton.rxbinding2:rxbinding-support-v4:2.0.0
+     |    |    \--- com.android.support:transition:25.3.1
+     |    |         +--- com.android.support:support-annotations:25.3.1
+     |    |         \--- com.android.support:support-v4:25.3.1 (*)
+|    |    +--- com.jakewharton.rxbinding2:rxbinding:2.0.0
+|    |    |    +--- io.reactivex.rxjava2:rxjava:2.0.2 -> 2.0.7 (*)
+|    |    |    +--- io.reactivex.rxjava2:rxandroid:2.0.0 -> 2.0.1 (*)
+     |    +--- com.android.support:cardview-v7:25.3.1
+     |    |    \--- com.android.support:support-annotations:25.3.1
+     |    +--- com.android.support:recyclerview-v7:25.3.1 (*)
+No dependencies
+
+annotationProcessor - Classpath for the annotation processor for 'main'.
+|    |    |    \--- com.android.support:support-annotations:25.1.1 -> 25.3.1
+|    |    \--- com.android.support:support-core-ui:25.1.1 -> 25.3.1 (*)
+|    +--- com.trello.rxlifecycle2:rxlifecycle:2.0.1
+|    |    +--- io.reactivex.rxjava2:rxjava:2.0.1 -> 2.0.7 (*)
+|    |    \--- com.google.code.findbugs:jsr305:3.0.1
+|    +--- com.android.support:multidex:1.0.1
+|    +--- com.blankj:utilcode:1.3.6
+|    +--- com.github.CymChad:BaseRecyclerViewAdapterHelper:2.8.5
+|    +--- com.jakewharton.timber:timber:4.5.1
+|    +--- com.afollestad.material-dialogs:core:0.9.4.2
+|    |    +--- com.android.support:support-v13:25.3.0
+     |    +--- com.squareup.retrofit2:retrofit:2.2.0
+No dependencies
+     |    |    \--- com.squareup.okhttp3:okhttp:3.6.0
+|    |    |    +--- com.android.support:support-annotations:25.3.0 -> 25.3.1
+|    |    |    \--- com.android.support:support-v4:25.3.0 -> 25.3.1 (*)
+     |    |         \--- com.squareup.okio:okio:1.11.0
+
+annotationProcessor - Classpath for the annotation processor for 'main'.
+     |    +--- com.squareup.retrofit2:adapter-rxjava2:2.2.0
+|    |    +--- com.android.support:appcompat-v7:25.3.0 -> 25.3.1 (*)
+No dependencies
+     |    |    +--- com.squareup.retrofit2:retrofit:2.2.0 (*)
+|    |    +--- com.android.support:recyclerview-v7:25.3.0 -> 25.3.1 (*)
+
+|    |    +--- com.android.support:support-annotations:25.3.0 -> 25.3.1
+|    |    \--- me.zhanghai.android.materialprogressbar:library:1.3.0
+|    |         +--- com.android.support:appcompat-v7:25.0.0 -> 25.3.1 (*)
+|    |         \--- com.android.support:support-annotations:25.0.0 -> 25.3.1
+|    +--- com.google.code.gson:gson:2.8.0
+|    +--- com.readystatesoftware.chuck:library:1.0.1
+     |    |    \--- io.reactivex.rxjava2:rxjava:2.0.0 -> 2.0.7
+apk - Classpath packaged with the compiled 'main' classes.
+No dependencies
+     |    |         \--- org.reactivestreams:reactive-streams:1.0.0
+|    |    +--- com.google.code.gson:gson:2.7 -> 2.8.0
+|    |    +--- com.squareup.okhttp3:okhttp:3.6.0 (*)
+|    |    +--- nl.qbusict:cupboard:2.2.0
+|    |    +--- com.android.support:appcompat-v7:25.1.1 -> 25.3.1 (*)
+|    |    +--- com.android.support:support-v4:25.1.1 -> 25.3.1 (*)
+|    |    +--- com.android.support:recyclerview-v7:25.1.1 -> 25.3.1 (*)
+|    |    \--- com.android.support:design:25.1.1 -> 25.3.1 (*)
+|    +--- com.jakewharton:butterknife:8.4.0
+|    |    +--- com.jakewharton:butterknife-annotations:8.4.0 (*)
+|    |    \--- com.android.support:support-annotations:24.1.0 -> 25.3.1
+|    +--- com.alibaba:arouter-api:1.0.9
+     |    +--- io.reactivex.rxjava2:rxjava:2.0.7 (*)
+
+archives - Configuration for archive artifacts.
+No dependencies
+
+compile - Classpath for compiling the main sources.
+     |    +--- io.reactivex.rxjava2:rxandroid:2.0.1
+|    |    +--- com.alibaba:arouter-annotation:1.0.3
+|    |    +--- com.alibaba:fastjson:1.2.9
++--- com.jakewharton:butterknife-compiler:8.4.0
+|    +--- com.jakewharton:butterknife-annotations:8.4.0
+|    |    \--- com.android.support:support-v4:25.2.0 -> 25.3.1 (*)
+|    |    \--- com.android.support:support-annotations:24.1.0
+|    +--- com.google.auto:auto-common:0.6
+|    |    \--- com.google.guava:guava:18.0
+|    +--- com.google.auto.service:auto-service:1.0-rc2
+|    |    +--- com.google.auto:auto-common:0.3 -> 0.6 (*)
+     |    |    \--- io.reactivex.rxjava2:rxjava:2.0.1 -> 2.0.7 (*)
+|    |    \--- com.google.guava:guava:18.0
+|    +--- org.greenrobot:greendao:3.2.0
+|    |    \--- org.greenrobot:greendao-api:3.2.0
+|    \--- com.github.bumptech.glide:glide:3.7.0
++--- project :ToolLib:toasty
+|    \--- com.android.support:appcompat-v7:25.3.1 (*)
+     |    +--- com.jakewharton.rxbinding2:rxbinding-support-v4:2.0.0
+|    \--- com.squareup:javapoet:1.7.0
+     |    |    +--- com.jakewharton.rxbinding2:rxbinding:2.0.0
++--- project :ToolLib:bottom-bar
+|    +--- com.android.support:appcompat-v7:25.3.1 (*)
+|    \--- com.android.support:design:25.3.1 (*)
++--- com.tencent.bugly:crashreport_upgrade:latest.release -> 1.2.5
+\--- com.facebook.stetho:stetho:1.4.2
+     +--- commons-cli:commons-cli:1.2
+     \--- com.google.code.findbugs:jsr305:2.0.1 -> 3.0.1
+     |    |    |    +--- io.reactivex.rxjava2:rxjava:2.0.2 -> 2.0.7 (*)
+\--- com.alibaba:arouter-compiler:1.0.4
+     +--- com.alibaba:arouter-annotation:1.0.3
+     |    |    |    +--- io.reactivex.rxjava2:rxandroid:2.0.0 -> 2.0.1 (*)
+
+_releaseUnitTestApk - ## Internal use, do not manually configure ##
+     |    |    |    \--- com.android.support:support-annotations:25.1.1 -> 25.3.1
++--- project :ToolLib:zlibrary
+     +--- com.google.auto.service:auto-service:1.0-rc2 (*)
+|    +--- com.android.support:appcompat-v7:25.3.1
+|    |    +--- com.android.support:support-annotations:25.3.1
+     |    |    \--- com.android.support:support-core-ui:25.1.1 -> 25.3.1 (*)
+|    |    +--- com.android.support:support-v4:25.3.1
+     +--- com.squareup:javapoet:1.7.0
+|    |    |    +--- com.android.support:support-compat:25.3.1
+     |    +--- com.trello.rxlifecycle2:rxlifecycle:2.0.1
+|    |    |    |    \--- com.android.support:support-annotations:25.3.1
+     +--- org.apache.commons:commons-lang3:3.4
+|    |    |    +--- com.android.support:support-media-compat:25.3.1
+|    |    |    |    +--- com.android.support:support-annotations:25.3.1
+     |    |    +--- io.reactivex.rxjava2:rxjava:2.0.1 -> 2.0.7 (*)
+|    |    |    |    \--- com.android.support:support-compat:25.3.1 (*)
+     \--- org.apache.commons:commons-collections4:4.1
+|    |    |    +--- com.android.support:support-core-utils:25.3.1
+|    |    |    |    +--- com.android.support:support-annotations:25.3.1
+|    |    |    |    \--- com.android.support:support-compat:25.3.1 (*)
+|    |    |    +--- com.android.support:support-core-ui:25.3.1
+|    |    |    |    +--- com.android.support:support-annotations:25.3.1
+|    |    |    |    \--- com.android.support:support-compat:25.3.1 (*)
+     |    |    \--- com.google.code.findbugs:jsr305:3.0.1
+|    |    |    \--- com.android.support:support-fragment:25.3.1
+
+apk - Classpath packaged with the compiled 'main' classes.
+|    |    |         +--- com.android.support:support-compat:25.3.1 (*)
+|    |    |         +--- com.android.support:support-media-compat:25.3.1 (*)
+     |    +--- com.android.support:multidex:1.0.1
+|    |    |         +--- com.android.support:support-core-ui:25.3.1 (*)
+|    |    |         \--- com.android.support:support-core-utils:25.3.1 (*)
+|    |    +--- com.android.support:support-vector-drawable:25.3.1
+|    |    |    +--- com.android.support:support-annotations:25.3.1
+|    |    |    \--- com.android.support:support-compat:25.3.1 (*)
+|    |    \--- com.android.support:animated-vector-drawable:25.3.1
+|    |         \--- com.android.support:support-vector-drawable:25.3.1 (*)
+|    +--- com.android.support:design:25.3.1
+|    |    +--- com.android.support:support-v4:25.3.1 (*)
+|    |    +--- com.android.support:appcompat-v7:25.3.1 (*)
+|    |    +--- com.android.support:recyclerview-v7:25.3.1
+|    |    |    +--- com.android.support:support-annotations:25.3.1
+|    |    |    +--- com.android.support:support-compat:25.3.1 (*)
+|    |    |    \--- com.android.support:support-core-ui:25.3.1 (*)
+|    |    \--- com.android.support:transition:25.3.1
++--- project :ToolLib:chipview
+|    \--- com.android.support:appcompat-v7:25.3.1
+|         +--- com.android.support:support-annotations:25.3.1
+|         +--- com.android.support:support-v4:25.3.1
+|         |    +--- com.android.support:support-compat:25.3.1
+|         |    |    \--- com.android.support:support-annotations:25.3.1
+|         |    +--- com.android.support:support-media-compat:25.3.1
+|         |    |    +--- com.android.support:support-annotations:25.3.1
+|         |    |    \--- com.android.support:support-compat:25.3.1 (*)
+|         |    +--- com.android.support:support-core-utils:25.3.1
+|         |    |    +--- com.android.support:support-annotations:25.3.1
+|         |    |    \--- com.android.support:support-compat:25.3.1 (*)
+|         |    +--- com.android.support:support-core-ui:25.3.1
+     |    +--- com.blankj:utilcode:1.3.6
+|         |    |    +--- com.android.support:support-annotations:25.3.1
+|    |         +--- com.android.support:support-annotations:25.3.1
+No dependencies
+|    |         \--- com.android.support:support-v4:25.3.1 (*)
+|         |    |    \--- com.android.support:support-compat:25.3.1 (*)
+|         |    \--- com.android.support:support-fragment:25.3.1
+|         |         +--- com.android.support:support-compat:25.3.1 (*)
+|         |         +--- com.android.support:support-media-compat:25.3.1 (*)
+|         |         +--- com.android.support:support-core-ui:25.3.1 (*)
+|         |         \--- com.android.support:support-core-utils:25.3.1 (*)
+|         +--- com.android.support:support-vector-drawable:25.3.1
+|         |    +--- com.android.support:support-annotations:25.3.1
+     |    +--- com.github.CymChad:BaseRecyclerViewAdapterHelper:2.8.5
+|         |    \--- com.android.support:support-compat:25.3.1 (*)
+|    +--- com.android.support:cardview-v7:25.3.1
+
+|    |    \--- com.android.support:support-annotations:25.3.1
+|         \--- com.android.support:animated-vector-drawable:25.3.1
+|              \--- com.android.support:support-vector-drawable:25.3.1 (*)
++--- project :ToolLib:toasty
+|    \--- com.android.support:appcompat-v7:25.3.1 (*)
++--- project :ToolLib:bottom-bar
+     |    +--- com.jakewharton.timber:timber:4.5.1
+|    +--- com.android.support:appcompat-v7:25.3.1 (*)
+|    +--- com.android.support:recyclerview-v7:25.3.1 (*)
+archives - Configuration for archive artifacts.
+|    +--- com.squareup.retrofit2:retrofit:2.2.0
+|    \--- com.android.support:design:25.3.1
+|         +--- com.android.support:support-v4:25.3.1 (*)
+|         +--- com.android.support:appcompat-v7:25.3.1 (*)
+|         +--- com.android.support:recyclerview-v7:25.3.1
+|         |    +--- com.android.support:support-annotations:25.3.1
+     |    +--- com.afollestad.material-dialogs:core:0.9.4.2
+|         |    +--- com.android.support:support-compat:25.3.1 (*)
+|         |    \--- com.android.support:support-core-ui:25.3.1 (*)
+|    |    \--- com.squareup.okhttp3:okhttp:3.6.0
+|    |         \--- com.squareup.okio:okio:1.11.0
+|    +--- com.squareup.retrofit2:adapter-rxjava2:2.2.0
+|         \--- com.android.support:transition:25.3.1
+     |    |    +--- com.android.support:support-v13:25.3.0
+|              +--- com.android.support:support-annotations:25.3.1
+|    |    +--- com.squareup.retrofit2:retrofit:2.2.0 (*)
+No dependencies
+
+|    |    \--- io.reactivex.rxjava2:rxjava:2.0.0 -> 2.0.7
+|              \--- com.android.support:support-v4:25.3.1 (*)
++--- project :ToolLib:zlibrary
+|    +--- com.android.support:appcompat-v7:25.3.1 (*)
+|    +--- com.android.support:design:25.3.1 (*)
+|    +--- com.android.support:cardview-v7:25.3.1
+|    |    \--- com.android.support:support-annotations:25.3.1
+     |    |    |    +--- com.android.support:support-annotations:25.3.0 -> 25.3.1
+|    +--- com.android.support:recyclerview-v7:25.3.1 (*)
+|    |         \--- org.reactivestreams:reactive-streams:1.0.0
+compile - Classpath for compiling the main sources.
+|    +--- io.reactivex.rxjava2:rxjava:2.0.7 (*)
+|    +--- com.squareup.retrofit2:retrofit:2.2.0
+     |    |    |    \--- com.android.support:support-v4:25.3.0 -> 25.3.1 (*)
+|    |    \--- com.squareup.okhttp3:okhttp:3.6.0
+|    +--- io.reactivex.rxjava2:rxandroid:2.0.1
+|    |    \--- io.reactivex.rxjava2:rxjava:2.0.1 -> 2.0.7 (*)
+|    |         \--- com.squareup.okio:okio:1.11.0
+|    +--- com.squareup.retrofit2:adapter-rxjava2:2.2.0
+|    |    +--- com.squareup.retrofit2:retrofit:2.2.0 (*)
+     |    |    +--- com.android.support:appcompat-v7:25.3.0 -> 25.3.1 (*)
+|    |    \--- io.reactivex.rxjava2:rxjava:2.0.0 -> 2.0.7
+|    +--- com.jakewharton.rxbinding2:rxbinding-support-v4:2.0.0
+|    |    +--- com.jakewharton.rxbinding2:rxbinding:2.0.0
+|    |    |    +--- io.reactivex.rxjava2:rxjava:2.0.2 -> 2.0.7 (*)
+|    |         \--- org.reactivestreams:reactive-streams:1.0.0
+|    +--- io.reactivex.rxjava2:rxjava:2.0.7 (*)
+|    +--- io.reactivex.rxjava2:rxandroid:2.0.1
+|    |    \--- io.reactivex.rxjava2:rxjava:2.0.1 -> 2.0.7 (*)
+|    +--- com.jakewharton.rxbinding2:rxbinding-support-v4:2.0.0
+|    |    +--- com.jakewharton.rxbinding2:rxbinding:2.0.0
+|    |    |    +--- io.reactivex.rxjava2:rxjava:2.0.2 -> 2.0.7 (*)
+|    |    |    +--- io.reactivex.rxjava2:rxandroid:2.0.0 -> 2.0.1 (*)
+     |    |    +--- com.android.support:recyclerview-v7:25.3.0 -> 25.3.1 (*)
+|    |    |    \--- com.android.support:support-annotations:25.1.1 -> 25.3.1
+|    |    |    +--- io.reactivex.rxjava2:rxandroid:2.0.0 -> 2.0.1 (*)
+|    |    |    \--- com.android.support:support-annotations:25.1.1 -> 25.3.1
+|    |    \--- com.android.support:support-core-ui:25.1.1 -> 25.3.1 (*)
+|    +--- com.trello.rxlifecycle2:rxlifecycle:2.0.1
+|    |    +--- io.reactivex.rxjava2:rxjava:2.0.1 -> 2.0.7
