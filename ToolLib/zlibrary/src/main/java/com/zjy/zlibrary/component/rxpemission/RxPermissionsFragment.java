@@ -16,46 +16,45 @@ import java.util.Map;
 import io.reactivex.subjects.PublishSubject;
 
 public class RxPermissionsFragment extends Fragment {
- 
+
     private static final int PERMISSIONS_REQUEST_CODE = 42;
 
 
     // Contains all the current permission requests. 
     // Once granted or denied, they are removed from it. 
     private Map<String, PublishSubject<Permission>> mSubjects = new HashMap<>();
-    private RxSettingPermission mSettingPermission = new RxSettingPermission();
+
+    private RxSpecialPermission mSpecialPermission;
     private boolean mLogging;
- 
-    public RxPermissionsFragment() { 
-    } 
- 
-    @Override 
+
+    public RxPermissionsFragment() {
+    }
+
+    @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setRetainInstance(true);
-    } 
- 
+    }
+
     @TargetApi(Build.VERSION_CODES.M)
     void requestPermissions(@NonNull String[] permissions) {
         requestPermissions(permissions, PERMISSIONS_REQUEST_CODE);
-        mSettingPermission.requestPermissions(permissions,this);
 
     }
-
 
 
     @TargetApi(Build.VERSION_CODES.M)
     public void onRequestPermissionsResult(int requestCode, @NonNull String permissions[], @NonNull int[] grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
- 
+
         if (requestCode != PERMISSIONS_REQUEST_CODE) return;
- 
+
         boolean[] shouldShowRequestPermissionRationale = new boolean[permissions.length];
- 
+
         for (int i = 0; i < permissions.length; i++) {
             shouldShowRequestPermissionRationale[i] = shouldShowRequestPermissionRationale(permissions[i]);
-        } 
- 
+        }
+
         onRequestPermissionsResult(permissions, grantResults, shouldShowRequestPermissionRationale);
     }
 
@@ -64,57 +63,63 @@ public class RxPermissionsFragment extends Fragment {
             log("onRequestPermissionsResult  " + permissions[i]);
             // Find the corresponding subject 
             PublishSubject<Permission> subject = mSubjects.get(permissions[i]);
-            if (subject == null) { 
+            if (subject == null) {
                 // No subject found 
                 Log.e(RxPermissions.TAG, "RxPermissions.onRequestPermissionsResult invoked but didn't find the corresponding permission request.");
-                return; 
-            } 
+                return;
+            }
+
             mSubjects.remove(permissions[i]);
             boolean granted = grantResults[i] == PackageManager.PERMISSION_GRANTED;
             subject.onNext(new Permission(permissions[i], granted, shouldShowRequestPermissionRationale[i]));
-            subject.onComplete(); 
-        } 
+            subject.onComplete();
+        }
     }
-
 
 
     @RequiresApi(api = Build.VERSION_CODES.M)
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        mSettingPermission.onRequestPermissionResult(requestCode,mSubjects,this);
+        if (mSpecialPermission != null) {
+            mSpecialPermission.onRequestPermissionResult(requestCode, getContext());
+        }
     }
 
     @TargetApi(Build.VERSION_CODES.M)
     boolean isGranted(String permission) {
         return getActivity().checkSelfPermission(permission) == PackageManager.PERMISSION_GRANTED;
-    } 
- 
+    }
+
+    public void setSpecialPermission(RxSpecialPermission specialPermission) {
+        mSpecialPermission = specialPermission;
+    }
+
     @TargetApi(Build.VERSION_CODES.M)
     boolean isRevoked(String permission) {
         return getActivity().getPackageManager().isPermissionRevokedByPolicy(permission, getActivity().getPackageName());
-    } 
- 
+    }
+
     public void setLogging(boolean logging) {
         mLogging = logging;
-    } 
- 
+    }
+
     public PublishSubject<Permission> getSubjectByPermission(@NonNull String permission) {
         return mSubjects.get(permission);
-    } 
- 
+    }
+
     public boolean containsByPermission(@NonNull String permission) {
         return mSubjects.containsKey(permission);
-    } 
- 
+    }
+
     public PublishSubject<Permission> setSubjectForPermission(@NonNull String permission, @NonNull PublishSubject<Permission> subject) {
         return mSubjects.put(permission, subject);
-    } 
- 
+    }
+
     void log(String message) {
         if (mLogging) {
             Log.d(RxPermissions.TAG, message);
-        } 
-    } 
- 
+        }
+    }
+
 }

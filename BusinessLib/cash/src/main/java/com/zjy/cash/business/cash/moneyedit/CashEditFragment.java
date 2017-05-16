@@ -9,7 +9,9 @@ import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.RelativeLayout;
 
-import com.zjy.baselib.component.Injection.Injection;
+import com.jakewharton.rxbinding2.widget.RxTextView;
+import com.trello.rxlifecycle2.RxLifecycle;
+import com.trello.rxlifecycle2.android.FragmentEvent;
 import com.zjy.baselib.component.keyboard.AppendKeyEntry;
 import com.zjy.baselib.component.keyboard.KeyEntry;
 import com.zjy.cash.R;
@@ -21,6 +23,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnTouch;
 import es.dmoral.toasty.Toasty;
+import io.reactivex.Observable;
 
 /**
  * Description:
@@ -40,6 +43,8 @@ public class CashEditFragment extends SupportFragment implements AppendKeyEntry 
     MoneyEdit etDiscount;
     private AbsMoneyEditAppend mAppendKeyEntry;
     private MoneyEditHelper mMoneyEditHelper;
+    private boolean resetMoneyAble;
+
 
     @Nullable
     @Override
@@ -51,23 +56,47 @@ public class CashEditFragment extends SupportFragment implements AppendKeyEntry 
 
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
         init();
     }
 
     @Override
     public void onResume() {
         super.onResume();
-        // mAppendKeyEntry = new Period2Append(etPayTotalMoney.getText().toString());
     }
 
 
     private void init() {
-        mAppendKeyEntry = new Period0Append("");
-        mMoneyEditHelper=new PayEditHelper(etPayTotalMoney,etDiscount,mAppendKeyEntry);
+        mAppendKeyEntry = new Period2Append("");
+        mMoneyEditHelper = new PayEditHelper(etPayTotalMoney);
         mMoneyEditHelper.onEditSelect(getView());
         etPayTotalMoney.setText(mAppendKeyEntry.getDefaultText());
         etDiscount.setText(mAppendKeyEntry.getDefaultText());
+        Observable.combineLatest(
+                RxTextView.textChanges(etPayTotalMoney),
+                RxTextView.textChanges(etDiscount),
+                (payMoney, discountMoney) -> {
+                    Double newPayMoney = Double.parseDouble(payMoney.toString().replace("¥", ""));
+                    Double newDiscountMoney = Double.parseDouble(discountMoney.toString().replace("¥", ""));
+                    if(newDiscountMoney>newPayMoney){
+                        Toasty.warning(getContext(),"打折金额不能大于总金额").show();
+                        showDiscountMoney(newPayMoney);
+                    }
+                    return newPayMoney == 0 && newDiscountMoney == 0;
+                }
+        ).compose(RxLifecycle.bindUntilEvent(lifecycleSubject, FragmentEvent.DESTROY))
+                .subscribe(a -> resetMoneyAble = !a);
     }
+
+    public void showPayMoney(double payMoney) {
+        etPayTotalMoney.setText(mAppendKeyEntry.replaceText(payMoney));
+    }
+
+    public void showDiscountMoney(double discountMoney){
+        etDiscount.setText(mAppendKeyEntry.replaceText(discountMoney));
+    }
+
+
 
 
     @OnTouch({R2.id.rl_money, R2.id.rl_discount})
@@ -75,13 +104,24 @@ public class CashEditFragment extends SupportFragment implements AppendKeyEntry 
         if (event.getAction() == MotionEvent.ACTION_DOWN) {
             int id = v.getId();
             if (id == R.id.rl_money) {
-                mMoneyEditHelper=new PayEditHelper(etPayTotalMoney,etDiscount,mAppendKeyEntry);
+                mMoneyEditHelper = new PayEditHelper(etPayTotalMoney);
             } else if (id == R.id.rl_discount) {
-                mMoneyEditHelper=new DiscountEditHelper(etDiscount,etPayTotalMoney,mAppendKeyEntry);
+                mMoneyEditHelper = new DiscountEditHelper(etDiscount);
             }
             mMoneyEditHelper.onEditSelect(getView());
         }
         return true;
+    }
+
+    @Override
+    public boolean onBackPressedSupport() {
+        if (resetMoneyAble) {
+            etPayTotalMoney.setText(mAppendKeyEntry.getDefaultText());
+            etDiscount.setText(mAppendKeyEntry.getDefaultText());
+            return true;
+        }
+        return false;
+
     }
 
     @Override
@@ -105,15 +145,18 @@ public class CashEditFragment extends SupportFragment implements AppendKeyEntry 
 
     }
 
-    public static abstract class AbsMoneyEditHelper implements MoneyEditHelper{
-        protected EditText mEditText;
-        protected AbsMoneyEditAppend mAbsMoneyEditAppend;
 
-        public AbsMoneyEditHelper(EditText editText, AbsMoneyEditAppend absMoneyEditAppend) {
-            mEditText = editText;
-            mAbsMoneyEditAppend = absMoneyEditAppend;
+    public static class PayEditHelper implements MoneyEditHelper {
+        protected EditText mEditText;
+        public PayEditHelper(EditText editText) {
+            mEditText=editText;
         }
 
+        @Override
+        public void onEditSelect(View view) {
+            view.findViewById(R.id.rl_money).setSelected(true);
+            view.findViewById(R.id.rl_discount).setSelected(false);
+        }
 
         @Override
         public String getText() {
@@ -124,53 +167,32 @@ public class CashEditFragment extends SupportFragment implements AppendKeyEntry 
         public void setText(String text) {
             mEditText.setText(text);
         }
-    }
-
-    public static  class PayEditHelper extends AbsMoneyEditHelper{
-        protected final EditText discountEdit;
-
-        public PayEditHelper(EditText editText, EditText discountEdit, AbsMoneyEditAppend absMoneyEditAppend) {
-            super(editText, absMoneyEditAppend);
-            this.discountEdit = discountEdit;
-        }
-
-        @Override
-        public void onEditSelect(View view) {
-            view.findViewById(R.id.rl_money).setSelected(true);
-            view.findViewById(R.id.rl_discount).setSelected(false);
-            mAbsMoneyEditAppend.setOnAppend(result -> {
-                if(Double.parseDouble(discountEdit.getText().toString().replace("¥",""))>Double.parseDouble(result.replace("¥",""))){
-                    discountEdit.setText(result);
-                }
-                return true;
-            });
-        }
 
 
     }
 
-    public static class DiscountEditHelper extends AbsMoneyEditHelper{
+    public static class DiscountEditHelper implements MoneyEditHelper {
+        protected EditText mEditText;
 
-        protected final EditText payEdit;
-
-        public DiscountEditHelper(EditText editText, EditText payEdit, AbsMoneyEditAppend absMoneyEditAppend) {
-            super(editText, absMoneyEditAppend);
-            this.payEdit = payEdit;
+        public DiscountEditHelper(EditText editText) {
+            mEditText=editText;
         }
 
         @Override
         public void onEditSelect(View view) {
             view.findViewById(R.id.rl_money).setSelected(false);
             view.findViewById(R.id.rl_discount).setSelected(true);
-            mAbsMoneyEditAppend.setOnAppend(result -> {
-                if(Double.parseDouble(payEdit.getText().toString().replace("¥",""))>=Double.parseDouble(result.replace("¥",""))){
-                    return true;
-                }
-                Toasty.info(Injection.provideContext(),"打折金额不能大于总金额").show();
-                return false;
-            });
         }
 
+        @Override
+        public String getText() {
+            return mEditText.getText().toString();
+        }
+
+        @Override
+        public void setText(String text) {
+            mEditText.setText(text);
+        }
 
 
     }

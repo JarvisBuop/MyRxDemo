@@ -14,7 +14,7 @@ import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chad.library.adapter.base.listener.OnItemClickListener;
 import com.zjy.zlibrary.R;
 import com.zjy.zlibrary.dialog.Progress;
-import com.zjy.zlibrary.fragment.BaseFragment;
+import com.zjy.zlibrary.fragment.fragmentation.SupportFragment;
 import com.zjy.zlibrary.widget.StatusViewLayout;
 
 import java.util.ArrayList;
@@ -28,7 +28,7 @@ import java.util.List;
  * TIME:上午11:01 * DESC:
  */
 
-public abstract class AbsListFragment extends BaseFragment implements IList {
+public abstract class AbsListFragment extends SupportFragment implements IList {
     public static final String TAG = AbsListFragment.class.getSimpleName();
     protected View mContentView;
     protected StatusViewLayout mStatusLayout;
@@ -65,8 +65,13 @@ public abstract class AbsListFragment extends BaseFragment implements IList {
                 refreshData();
             }
         });
-        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+        setUpLayoutManager(recyclerView);
+
         init();
+    }
+
+    protected void setUpLayoutManager(RecyclerView recyclerView) {
+        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
     }
 
     private void init() {

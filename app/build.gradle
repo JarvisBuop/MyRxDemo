@@ -1,5 +1,5 @@
 apply plugin: 'com.android.application'
-apply from: '../global_config.gradle'
+apply from: rootProject.file('global_config.gradle')
 android {
     defaultConfig {
         applicationId "com.zjy.myrxdemo"
@@ -58,6 +58,8 @@ dependencies {
     compile project(':BusinessLib:cash')
     compile project(':BusinessLib:member')
     compile project(':BusinessLib:coupon')
+    compile project(':BusinessLib:table')
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
-    annotationProcessor 'com.alibaba:arouter-compiler:1.0.4'
+    annotationProcessor 'com.alibaba:arouter-compiler:'+rootProject.ext.arouterCompilerVersion
+
 }

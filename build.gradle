@@ -11,6 +11,7 @@ buildscript {
         classpath 'me.tatarka:gradle-retrolambda:3.3.0'
         classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.6'
         classpath "com.github.dcendents:android-maven-gradle-plugin:1.4.1"
+
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }
@@ -40,6 +41,7 @@ subprojects {
 ext {
     supportLibraryVersion = "25.3.0"
     retrofitLibraryVersion = "2.2.0"
+    arouterCompilerVersion="1.1.0"
     GROUP = 'com.zhoujunyou'
     VERSION_NAME = "${VERSION_NAME_PREFIX}${VERSION_NAME_SUFFIX}"
 

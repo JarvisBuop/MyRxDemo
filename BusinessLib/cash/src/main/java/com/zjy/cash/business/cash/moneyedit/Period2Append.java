@@ -1,21 +1,28 @@
 package com.zjy.cash.business.cash.moneyedit;
 
-import java.text.NumberFormat;
+import java.text.DecimalFormat;
 
 public  class Period2Append extends AbsMoneyEditAppend {
         public Period2Append(String source) {
             super(source);
         }
 
-        public String appendNum(String keyName) {
+    @Override
+    public String replaceText(double money) {
+        money=money*100;
+        return super.replaceText(money);
+    }
+
+    public String appendNum(String keyName) {
 
             String cleanString = (source + keyName).replaceAll("[¥,.]", "");
             double parsed = Double.parseDouble(cleanString);
             if (parsed > 9999999999.99) {
                 return source;
             }
-            String formatted = NumberFormat.getNumberInstance().format((parsed / 100));
-            return "¥" + formatted.replaceAll(",","");
+
+            String formatted = new DecimalFormat("0.00").format((parsed / 100));
+            return "¥" + formatted;
         }
 
         @Override
@@ -30,8 +37,8 @@ public  class Period2Append extends AbsMoneyEditAppend {
             if (parsed == 0) {
                 return getDefaultText();
             }
-            String formatted = NumberFormat.getNumberInstance().format((parsed / 100));
-            return "¥" + formatted.replaceAll(",","");
+            String formatted = new DecimalFormat("0.00").format((parsed / 100));
+            return "¥" + formatted;
         }
 
         @Override

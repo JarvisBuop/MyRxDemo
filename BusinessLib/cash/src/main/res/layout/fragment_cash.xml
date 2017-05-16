@@ -75,37 +75,14 @@
             android:textSize="13sp"
             android:visibility="gone"/>
 
-        <TextView
-            android:id="@+id/tv_table_msg"
+        <FrameLayout
+            android:id="@+id/layout_table_bill"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:gravity="right|center_vertical"
-            android:paddingRight="10dp"
-            android:textColor="@color/yellow_1st"
-            android:textSize="20sp"
-            android:visibility="gone"/>
+            android:layout_height="wrap_content">
+        </FrameLayout>
 
-        <TextView
-            android:id="@+id/tv_card_title"
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:gravity="right|center_vertical"
-            android:paddingRight="10dp"
-            android:text="银行卡号:"
-            android:textColor="@color/gray_1st"
-            android:textSize="20sp"
-            android:visibility="gone"/>
 
-        <TextView
-            android:id="@+id/tv_card"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:gravity="right|center_vertical"
-            android:paddingRight="10dp"
-            android:text="**** **** **** ****"
-            android:textColor="@color/gray_2nd"
-            android:textSize="30sp"
-            android:visibility="gone"/>
+        <include layout="@layout/layout_cash_union_card"/>
 
         <FrameLayout
             android:id="@+id/cash_edit"

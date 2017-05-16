@@ -1,5 +1,14 @@
-include ':app', ':ToolLib:zlibrary', ':BusinessLib:baselib', ':BusinessLib:cash', ':BusinessLib:coupon', ':BusinessLib:member', ":ToolLib:toasty", ":ToolLib:bottom-bar"
+include ':app'
+//include ':sencond'
+include ':BusinessLib:baselib'
+include ':BusinessLib:cash'
+include ':BusinessLib:coupon'
+include ':BusinessLib:member'
+include ':BusinessLib:table'
+
 include ':ToolLib:chipview'
-include ':sencond'
+include ":ToolLib:bottom-bar"
+include ":ToolLib:toasty"
+include ':ToolLib:zlibrary'
 include ':ToolLib:qrcodereaderview'
 

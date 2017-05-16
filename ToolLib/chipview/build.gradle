@@ -1,5 +1,5 @@
 apply plugin: 'com.android.library'
-apply from: '../../global_config.gradle'
+apply from: rootProject.file('global_config.gradle')
 
 android {
     defaultConfig {

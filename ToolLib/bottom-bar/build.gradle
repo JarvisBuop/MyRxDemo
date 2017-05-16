@@ -1,5 +1,6 @@
 apply plugin: 'com.android.library'
-apply from: '../../global_config.gradle'
+apply plugin: 'maven'
+apply from: rootProject.file('global_config.gradle')
 
 
 android {
@@ -25,6 +26,18 @@ dependencies {
     compile 'com.android.support:design:' + rootProject.ext.supportLibraryVersion
 }
 
-                              // Maven Group ID for the artifact
+task installLocal(type: Upload) {
+    description "Installs the artifacts to the local Maven repository."
+    configuration = configurations['archives']
+    repositories {
+        mavenDeployer {
+            pom.version = "0.0.1-SNAPSHOT"
+            pom.artifactId = "bottombar"
+            pom.groupId = "com.github.zhoujunyou"
+            repository url: "file://${System.properties['user.home']}/.m2/repository"
+        }
+    }
+}
+
 
 

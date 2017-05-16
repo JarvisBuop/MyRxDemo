@@ -77,9 +77,10 @@ public static java.lang.String TABLENAME;
 }
 -keep class **$Properties
 -keep class com.zjy.baselib.data.source.local.AppDB { *; }
-
+-keep @org.greenrobot.greendao.annotation.Entity class * {
+     <fields>;}
 #ARouter
--keep public class com.alibaba.android.arouter.routes.**{*;}
+-keep  class com.alibaba.android.arouter.routes.**{*;}
  -keep class * implements com.alibaba.android.arouter.facade.template.ISyringe{*;}
 
  #bugly
@@ -92,4 +93,9 @@ public static java.lang.String TABLENAME;
    **[] $VALUES;
    public *;
  }
+
+  -dontwarn  org.greenrobot.greendao.**
+  -dontwarn com.alibaba.fastjson.**
+  -dontwarn com.alibaba.android.arouter.**
+
 

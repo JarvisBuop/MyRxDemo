@@ -1,5 +1,6 @@
 apply plugin: 'com.android.library'
-apply from: '../../global_config.gradle'
+apply from: rootProject.file('global_config.gradle')
+apply plugin: 'maven'
 android {
     defaultConfig {
         versionCode 1
@@ -16,6 +17,18 @@ android {
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
-    compile 'com.android.support:appcompat-v7:'+rootProject.ext.supportLibraryVersion
+    compile 'com.android.support:appcompat-v7:' + rootProject.ext.supportLibraryVersion
+}
+task installLocal(type: Upload) {
+    description "Installs the artifacts to the local Maven repository."
+    configuration = configurations['archives']
+    repositories {
+        mavenDeployer {
+            pom.version = "0.0.1-SNAPSHOT"
+            pom.artifactId = "toasty"
+            pom.groupId = "com.github.zhoujunyou"
+            repository url: "file://${System.properties['user.home']}/.m2/repository"
+        }
+    }
 }
 

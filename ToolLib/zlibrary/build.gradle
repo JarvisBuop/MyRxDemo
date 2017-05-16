@@ -1,6 +1,6 @@
 apply plugin: 'com.android.library'
 apply plugin: 'org.greenrobot.greendao'
-apply from: '../../global_config.gradle'
+apply from: rootProject.file('global_config.gradle')
 apply from: rootProject.file('gradle/gradle-mvn-push.gradle')
 
 
@@ -60,15 +60,15 @@ dependencies {
     compile 'com.google.code.gson:gson:2.8.0'
     compile 'com.readystatesoftware.chuck:library:1.0.1'
     compile 'com.jakewharton:butterknife:8.4.0'
-    compile 'com.alibaba:arouter-api:1.0.9'
+    compile 'com.alibaba:arouter-api:1.1.0'
     //数据库ORM框架
     compile 'org.greenrobot:greendao:3.2.0'
     //图片加载框架
     compile 'com.github.bumptech.glide:glide:3.7.0'
 
-    compile project(':ToolLib:qrcodereaderview')
+    //compile  'com.github.zhoujunyou:qrcodereadrview:0.0.1-SNAPSHOT'
 
-
+    compile project (':ToolLib:qrcodereaderview')
 
 
 

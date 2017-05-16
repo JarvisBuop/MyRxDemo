@@ -4,10 +4,12 @@ package com.zjy.myrxdemo.business.login;
 import android.Manifest;
 import android.os.Build;
 import android.text.TextUtils;
+import android.widget.Toast;
 
 import com.blankj.utilcode.utils.AppUtils;
 import com.blankj.utilcode.utils.DeviceUtils;
 import com.zjy.baselib.component.Injection.Injection;
+import com.zjy.baselib.component.MyRxSpecialPermission;
 import com.zjy.baselib.component.rx.ServiceException;
 import com.zjy.baselib.component.util.DeviceInfoUtil;
 import com.zjy.baselib.component.util.MD5Utility;
@@ -94,9 +96,8 @@ public class LoginPresenter implements LoginContract.Presenter {
                             ShopInfo shopInfo = LoginConfig.buildShopInfoFromLoginResponse(loginResponse);
                             mRepository.saveShopInfo(shopInfo).subscribe();
                             mRepository.saveSessionId(shopInfo.sessionId);
-                            LoginConfig.getAdvBitmap(mRepository,shopInfo.sessionId,shopInfo.shop_id).subscribe();
-                            LoginConfig.getConfigQR(mRepository,shopInfo.sessionId).subscribe();
-                            return Observable.just(shopInfo);
+                            return Observable.zip(LoginConfig.getAdvBitmap(mRepository, shopInfo.sessionId, shopInfo.shop_id)
+                                    , LoginConfig.getConfigQR(mRepository, shopInfo.sessionId), (bitmap, aBoolean) -> shopInfo);
                         }
                     }
                 })
@@ -151,17 +152,12 @@ public class LoginPresenter implements LoginContract.Presenter {
 
     @Override
     public void requestPermission(BaseActivity activity) {
-        RxPermissions rxPermissions = new RxPermissions(activity);
-        Disposable disposable = rxPermissions.requestEach(Manifest.permission.CAMERA, Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.SYSTEM_ALERT_WINDOW)
-                .subscribe(permission -> {
-                    if (permission.granted) {
-                        // `permission.name` is granted !
-                    } else if (permission.shouldShowRequestPermissionRationale) {
-                        // Denied permission without ask never again
-                    } else {
-                        if(permission.name.contains("SYSTEM_ALERT_WINDOW")){
-
-                        }
+        Disposable disposable = RxPermissions.withActivity(activity)
+                .withRxSpecialPermission(new MyRxSpecialPermission())
+                .request(Manifest.permission.CAMERA, Manifest.permission.WRITE_EXTERNAL_STORAGE)
+                .subscribe(granted -> {
+                    if (!granted) {
+                        Toast.makeText(activity, "应用权限拒绝", Toast.LENGTH_SHORT).show();
                     }
                 });
         mCompositeDisposable.add(disposable);

@@ -10,7 +10,7 @@ import io.reactivex.ObservableTransformer;
 
 public final class NeverErrorTransformer<T> implements ObservableTransformer<T, T> {
   private final @Nullable
-  Consumer errorAction;
+  Consumer<Throwable> errorAction;
 
   protected NeverErrorTransformer() {
     this.errorAction = null;

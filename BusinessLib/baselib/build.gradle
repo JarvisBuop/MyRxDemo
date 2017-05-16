@@ -1,7 +1,7 @@
 apply plugin: 'com.android.library'
 apply plugin: 'org.greenrobot.greendao'
 apply plugin: 'com.jakewharton.butterknife'
-apply from: '../../global_config.gradle'
+apply from: rootProject.file('global_config.gradle')
 
 
 android {
@@ -33,14 +33,16 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile project(':ToolLib:zlibrary')
-    //吐丝框架
-    compile project(':ToolLib:toasty')
     compile project(':ToolLib:bottom-bar')
+    compile project(':ToolLib:toasty')
 
     compile 'com.tencent.bugly:crashreport_upgrade:latest.release'
     compile 'com.facebook.stetho:stetho:1.4.2'
+    //compile  'com.github.zhoujunyou:bottombar:0.0.1-SNAPSHOT'
+   //compile  'com.github.zhoujunyou:toasty:0.0.1-SNAPSHOT'
+
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
-    annotationProcessor 'com.alibaba:arouter-compiler:1.0.4'
+    annotationProcessor 'com.alibaba:arouter-compiler:'+rootProject.ext.arouterCompilerVersion
 
 
 

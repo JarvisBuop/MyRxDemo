@@ -8,11 +8,14 @@ public interface CashContract {
 
 
         void showToast(String msg);
+
+        void showPayMoney(Double fee);
     }
 
     interface Presenter extends BasePresenter {
-        int EDIT_MONEY = 0;
-        int EDIT_DISCOUNT = 1;
 
+        void setOrderid(String orderid);
+
+        void setThirdId(String thirdId);
     }
 }

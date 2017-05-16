@@ -16,6 +16,7 @@ import io.reactivex.ObservableSource;
 import io.reactivex.ObservableTransformer;
 import io.reactivex.functions.Function;
 import io.reactivex.subjects.PublishSubject;
+import io.reactivex.subjects.ReplaySubject;
 
 public class RxPermissions {
 
@@ -24,8 +25,19 @@ public class RxPermissions {
 
     RxPermissionsFragment mRxPermissionsFragment;
 
+    RxSpecialPermission mRxSpecialPermission;
+
+    public static RxPermissions withActivity(AppCompatActivity activity) {
+        return new RxPermissions(activity);
+    }
+
     public RxPermissions(@NonNull AppCompatActivity activity) {
         mRxPermissionsFragment = getRxPermissionsFragment(activity);
+    }
+
+    public RxPermissions withRxSpecialPermission(RxSpecialPermission rxSpecialPermission) {
+        mRxSpecialPermission = rxSpecialPermission;
+        return this;
     }
 
     private RxPermissionsFragment getRxPermissionsFragment(AppCompatActivity activity) {
@@ -133,8 +145,29 @@ public class RxPermissions {
                     public Observable<Permission> apply(Object o) throws Exception {
                         return requestImplementation(permissions);
                     }
+                })
+                .flatMap(new Function<Permission, ObservableSource<Permission>>() {
+                    @TargetApi(Build.VERSION_CODES.M)
+                    @Override
+                    public ObservableSource<Permission> apply(@io.reactivex.annotations.NonNull Permission permission) throws Exception {
+                        if (mRxSpecialPermission != null && mRxSpecialPermission.includePermission(permission.name) && !permission.granted) {
+                            mRxPermissionsFragment.setSpecialPermission(mRxSpecialPermission);
+                            ReplaySubject<Permission> subject = mRxSpecialPermission.getSpecialSubject(permission.name);
+                            if (subject == null) {
+                                subject = ReplaySubject.create();
+                                mRxSpecialPermission.setSpecialSubject(permission.name, subject);
+                            }
+                            mRxSpecialPermission.requestSpecialPermission(mRxPermissionsFragment, permission);
+                            return subject;
+                        }
+                        return Observable.just(permission);
+
+                    }
                 });
+
+
     }
+
 
     private Observable<?> pending(final String... permissions) {
         for (String p : permissions) {
@@ -188,6 +221,7 @@ public class RxPermissions {
         if (!unrequestedPermissions.isEmpty()) {
             String[] unrequestedPermissionsArray = unrequestedPermissions.toArray(new String[unrequestedPermissions.size()]);
             requestPermissionsFromFragment(unrequestedPermissionsArray);
+
         }
         return Observable.concat(Observable.fromIterable(list));
     }
@@ -255,5 +289,6 @@ public class RxPermissions {
     void onRequestPermissionsResult(String permissions[], int[] grantResults) {
         mRxPermissionsFragment.onRequestPermissionsResult(permissions, grantResults, new boolean[permissions.length]);
     }
+
 
 }

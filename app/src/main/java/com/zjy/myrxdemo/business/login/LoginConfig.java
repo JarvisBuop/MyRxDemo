@@ -8,7 +8,6 @@ import com.zjy.baselib.framework.HttpConstants;
 import com.zjy.myrxdemo.data.model.login.ShopInfo;
 import com.zjy.myrxdemo.data.model.login.bean.LoginResponse;
 import com.zjy.myrxdemo.data.source.Repository;
-import com.zjy.zlibrary.rx.transform.Transformers;
 
 import org.jivesoftware.smack.util.Base64;
 
@@ -172,13 +171,11 @@ public class LoginConfig {
     }
 
     public static Observable<Bitmap> getAdvBitmap(final Repository repository, String sessionId, String shopID) {
-        return repository.getAdvBitmap(sessionId,shopID, 32, "16:9", "V8")
-                .compose(Transformers.<Bitmap>rxNetWork());
+        return repository.getAdvBitmap(sessionId,shopID, 32, "16:9", "V8");
     }
 
     public static Observable<Boolean> getConfigQR(final Repository repository,String sessionId) {
         return repository.getConfigQR(sessionId, HttpConstants.getbApiVersionValue())
-                .map(listNetWorkResponse -> true)
-                .compose(Transformers.<Boolean>rxNetWork());
+                .map(listNetWorkResponse -> true);
     }
 }

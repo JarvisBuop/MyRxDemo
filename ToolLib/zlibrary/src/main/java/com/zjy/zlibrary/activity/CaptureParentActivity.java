@@ -34,7 +34,7 @@ public abstract class CaptureParentActivity extends BaseActivity implements QRCo
     }
 
     private void requestCameraPermission() {
-        RxPermissions rxPermissions = new RxPermissions(this);
+        RxPermissions rxPermissions = RxPermissions.withActivity(this);
         rxPermissions.request(Manifest.permission.CAMERA)
                 .compose(RxLifecycle.bindUntilEvent(lifecycleSubject, ActivityEvent.DESTROY))
                 .subscribe(new Consumer<Boolean>() {

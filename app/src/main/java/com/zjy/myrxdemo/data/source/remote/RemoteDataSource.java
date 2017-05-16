@@ -90,8 +90,6 @@ public class RemoteDataSource implements DataSource {
                                     e.onNext(resource);
                                 }
                                 e.onComplete();
-
-
                             }
                         });
 

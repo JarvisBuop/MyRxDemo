@@ -1,4 +1,3 @@
-Starting a Gradle Daemon, 1 busy and 1 incompatible Daemons could not be reused, use --status for details
 Parallel execution is an incubating feature.
 NDK is missing a "platforms" directory.
 If you are using NDK, verify the ndk.dir is set to a valid NDK directory.  It is currently set to /Users/meiweibuyondeng/Library/Android/sdk/ndk-bundle.
@@ -18,12 +17,18 @@ If you are not using NDK, unset the NDK variable from ANDROID_NDK_HOME or local.
 
 extractDebugAnnotations is incompatible with java 8 sources and has been disabled.
 extractReleaseAnnotations is incompatible with java 8 sources and has been disabled.
+extractDebugAnnotations is incompatible with java 8 sources and has been disabled.
+extractReleaseAnnotations is incompatible with java 8 sources and has been disabled.
 NDK is missing a "platforms" directory.
 If you are using NDK, verify the ndk.dir is set to a valid NDK directory.  It is currently set to /Users/meiweibuyondeng/Library/Android/sdk/ndk-bundle.
 If you are not using NDK, unset the NDK variable from ANDROID_NDK_HOME or local.properties to remove this warning.
 
 extractDebugAnnotations is incompatible with java 8 sources and has been disabled.
 extractReleaseAnnotations is incompatible with java 8 sources and has been disabled.
+NDK is missing a "platforms" directory.
+If you are using NDK, verify the ndk.dir is set to a valid NDK directory.  It is currently set to /Users/meiweibuyondeng/Library/Android/sdk/ndk-bundle.
+If you are not using NDK, unset the NDK variable from ANDROID_NDK_HOME or local.properties to remove this warning.
+
 extractDebugAnnotations is incompatible with java 8 sources and has been disabled.
 extractReleaseAnnotations is incompatible with java 8 sources and has been disabled.
 extractDebugAnnotations is incompatible with java 8 sources and has been disabled.
@@ -54,499 +59,534 @@ If you are not using NDK, unset the NDK variable from ANDROID_NDK_HOME or local.
 
 extractDebugAnnotations is incompatible with java 8 sources and has been disabled.
 extractReleaseAnnotations is incompatible with java 8 sources and has been disabled.
-:app:preBuild
-:ToolLib:toasty:preBuild
-:BusinessLib:baselib:preBuild
-:ToolLib:bottom-bar:preBuild
-:ToolLib:toasty:preBuild UP-TO-DATE
+NDK is missing a "platforms" directory.
+If you are using NDK, verify the ndk.dir is set to a valid NDK directory.  It is currently set to /Users/meiweibuyondeng/Library/Android/sdk/ndk-bundle.
+If you are not using NDK, unset the NDK variable from ANDROID_NDK_HOME or local.properties to remove this warning.
+
+extractDebugAnnotations is incompatible with java 8 sources and has been disabled.
+extractReleaseAnnotations is incompatible with java 8 sources and has been disabled.
 :app:preBuild UP-TO-DATE
-:ToolLib:toasty:preReleaseBuild UP-TO-DATE
-:ToolLib:toasty:checkReleaseManifest
 :app:extractProguardFiles
-:ToolLib:bottom-bar:preBuild UP-TO-DATE
-:BusinessLib:baselib:preBuild UP-TO-DATE
 :app:preReleaseBuild
-:ToolLib:bottom-bar:preReleaseBuild UP-TO-DATE
-:BusinessLib:baselib:preReleaseBuild
 :app:checkReleaseManifest
-:BusinessLib:baselib:preReleaseBuild UP-TO-DATE
-:ToolLib:bottom-bar:checkReleaseManifest
-:app:preDebugBuild
-:BusinessLib:baselib:checkReleaseManifest
 :app:preDebugBuild UP-TO-DATE
-:app:prepareComAfollestadMaterialDialogsCommons0923Library
-:ToolLib:bottom-bar:preDebugAndroidTestBuild UP-TO-DATE
+:app:prepareComAfollestadMaterialDialogsCore0942Library
+:app:prepareComAlibabaArouterApi109Library
+:app:prepareComAndroidSupportAnimatedVectorDrawable2530Library
+:app:prepareComAndroidSupportAppcompatV72530Library
+:app:prepareComAndroidSupportCardviewV72530Library
+:app:prepareComAndroidSupportDesign2530Library
+:app:prepareComAndroidSupportMultidex101Library
+:app:prepareComAndroidSupportRecyclerviewV72530Library
+:app:prepareComAndroidSupportSupportCompat2530Library
+:app:prepareComAndroidSupportSupportCoreUi2530Library
+:app:prepareComAndroidSupportSupportCoreUtils2530Library
+:app:prepareComAndroidSupportSupportFragment2530Library
+:app:prepareComAndroidSupportSupportMediaCompat2530Library
+:BusinessLib:baselib:preBuild UP-TO-DATE
+:app:prepareComAndroidSupportSupportV132530Library
+:BusinessLib:baselib:preReleaseBuild UP-TO-DATE
+:BusinessLib:baselib:checkReleaseManifest
 :BusinessLib:baselib:preDebugAndroidTestBuild UP-TO-DATE
-:ToolLib:bottom-bar:preDebugBuild UP-TO-DATE
 :BusinessLib:baselib:preDebugBuild UP-TO-DATE
 :BusinessLib:baselib:preDebugUnitTestBuild UP-TO-DATE
-:ToolLib:toasty:preDebugAndroidTestBuild
-:ToolLib:bottom-bar:preDebugUnitTestBuild
+:app:prepareComAndroidSupportSupportV42530Library
 :BusinessLib:baselib:preReleaseUnitTestBuild UP-TO-DATE
-:BusinessLib:baselib:prepareComAfollestadMaterialDialogsCommons0923Library
-:ToolLib:toasty:preDebugAndroidTestBuild UP-TO-DATE
+:BusinessLib:baselib:prepareComAfollestadMaterialDialogsCore0942Library
+:BusinessLib:baselib:prepareComAlibabaArouterApi109Library
+:app:prepareComAndroidSupportSupportVectorDrawable2530Library
+:BusinessLib:baselib:prepareComAndroidSupportAnimatedVectorDrawable2530Library
+:BusinessLib:baselib:prepareComAndroidSupportAppcompatV72530Library
+:app:prepareComAndroidSupportTransition2530Library
+:BusinessLib:baselib:prepareComAndroidSupportCardviewV72530Library
+:BusinessLib:baselib:prepareComAndroidSupportDesign2530Library
+:app:prepareComBlankjUtilcode136Library
+:BusinessLib:baselib:prepareComAndroidSupportMultidex101Library
+:app:prepareComFacebookStethoStetho142Library
+:BusinessLib:baselib:prepareComAndroidSupportRecyclerviewV72530Library
+:BusinessLib:baselib:prepareComAndroidSupportSupportCompat2530Library
+:app:prepareComGithubCymChadBaseRecyclerViewAdapterHelper285Library
+:BusinessLib:baselib:prepareComAndroidSupportSupportCoreUi2530Library
+:BusinessLib:baselib:prepareComAndroidSupportSupportCoreUtils2530Library
+:app:prepareComJakewhartonButterknife840Library
+:BusinessLib:baselib:prepareComAndroidSupportSupportFragment2530Library
+:app:prepareComJakewhartonRxbinding2Rxbinding200Library
+:BusinessLib:baselib:prepareComAndroidSupportSupportMediaCompat2530Library
+:BusinessLib:baselib:prepareComAndroidSupportSupportV132530Library
+:app:prepareComJakewhartonRxbinding2RxbindingSupportV4200Library
+:BusinessLib:baselib:prepareComAndroidSupportSupportV42530Library
+:app:prepareComJakewhartonTimberTimber451Library
+:BusinessLib:baselib:prepareComAndroidSupportSupportVectorDrawable2530Library
+:BusinessLib:baselib:prepareComAndroidSupportTransition2530Library
+:app:prepareComReadystatesoftwareChuckLibrary101Library
+:BusinessLib:baselib:prepareComBlankjUtilcode136Library
+:BusinessLib:baselib:prepareComFacebookStethoStetho142Library
+:app:prepareComTencentBuglyCrashreport_upgrade125Library
+:BusinessLib:baselib:prepareComGithubCymChadBaseRecyclerViewAdapterHelper285Library
+:app:prepareComTrelloRxlifecycle2RxlifecycleAndroid201Library
+:BusinessLib:baselib:prepareComJakewhartonButterknife840Library
+:app:prepareIoReactivexRxjava2Rxandroid201Library
+:BusinessLib:baselib:prepareComJakewhartonRxbinding2Rxbinding200Library
+:BusinessLib:baselib:prepareComJakewhartonRxbinding2RxbindingSupportV4200Library
+:app:prepareMeZhanghaiAndroidMaterialprogressbarLibrary130Library
+:BusinessLib:baselib:prepareComJakewhartonTimberTimber451Library
+:BusinessLib:baselib:prepareComReadystatesoftwareChuckLibrary101Library
+:ToolLib:bottom-bar:preBuild UP-TO-DATE
+:ToolLib:bottom-bar:preReleaseBuild UP-TO-DATE
+:ToolLib:bottom-bar:checkReleaseManifest
+:BusinessLib:baselib:prepareComTencentBuglyCrashreport_upgrade125Library
+:ToolLib:bottom-bar:preDebugAndroidTestBuild UP-TO-DATE
+:ToolLib:bottom-bar:preDebugBuild UP-TO-DATE
 :ToolLib:bottom-bar:preDebugUnitTestBuild UP-TO-DATE
-:ToolLib:toasty:preDebugBuild
+:ToolLib:bottom-bar:preReleaseUnitTestBuild
+:BusinessLib:baselib:prepareComTrelloRxlifecycle2RxlifecycleAndroid201Library
 :ToolLib:bottom-bar:preReleaseUnitTestBuild UP-TO-DATE
-:ToolLib:bottom-bar:prepareComAndroidSupportAnimatedVectorDrawable2520Library
+:ToolLib:bottom-bar:prepareComAndroidSupportAnimatedVectorDrawable2530Library
+:BusinessLib:baselib:prepareIoReactivexRxjava2Rxandroid201Library
+:ToolLib:bottom-bar:prepareComAndroidSupportAppcompatV72530Library
+:BusinessLib:baselib:prepareMeZhanghaiAndroidMaterialprogressbarLibrary130Library
+:ToolLib:bottom-bar:prepareComAndroidSupportDesign2530Library
+:ToolLib:bottom-bar:prepareComAndroidSupportRecyclerviewV72530Library
+:ToolLib:qrcodereaderview:preBuild UP-TO-DATE
+:ToolLib:qrcodereaderview:preReleaseBuild UP-TO-DATE
+:ToolLib:qrcodereaderview:checkReleaseManifest
+:ToolLib:qrcodereaderview:preDebugAndroidTestBuild
+:ToolLib:bottom-bar:prepareComAndroidSupportSupportCompat2530Library
+:ToolLib:qrcodereaderview:preDebugAndroidTestBuild UP-TO-DATE
+:ToolLib:qrcodereaderview:preDebugBuild UP-TO-DATE
+:ToolLib:qrcodereaderview:preDebugUnitTestBuild UP-TO-DATE
+:ToolLib:qrcodereaderview:preReleaseUnitTestBuild UP-TO-DATE
+:ToolLib:qrcodereaderview:prepareComAndroidSupportAnimatedVectorDrawable2530Library
+:ToolLib:bottom-bar:prepareComAndroidSupportSupportCoreUi2530Library
+:ToolLib:qrcodereaderview:prepareComAndroidSupportAppcompatV72530Library
+:ToolLib:qrcodereaderview:prepareComAndroidSupportSupportCompat2530Library
+:ToolLib:bottom-bar:prepareComAndroidSupportSupportCoreUtils2530Library
+:ToolLib:bottom-bar:prepareComAndroidSupportSupportFragment2530Library
+:ToolLib:qrcodereaderview:prepareComAndroidSupportSupportCoreUi2530Library
+:ToolLib:bottom-bar:prepareComAndroidSupportSupportMediaCompat2530Library
+:ToolLib:qrcodereaderview:prepareComAndroidSupportSupportCoreUtils2530Library
+:ToolLib:bottom-bar:prepareComAndroidSupportSupportV42530Library
+:ToolLib:qrcodereaderview:prepareComAndroidSupportSupportFragment2530Library
+:ToolLib:bottom-bar:prepareComAndroidSupportSupportVectorDrawable2530Library
+:ToolLib:qrcodereaderview:prepareComAndroidSupportSupportMediaCompat2530Library
+:ToolLib:bottom-bar:prepareComAndroidSupportTransition2530Library
+:ToolLib:qrcodereaderview:prepareComAndroidSupportSupportV42530Library
+:ToolLib:qrcodereaderview:prepareComAndroidSupportSupportVectorDrawable2530Library
+:ToolLib:bottom-bar:prepareReleaseDependencies
+:ToolLib:bottom-bar:compileReleaseAidl
+:ToolLib:qrcodereaderview:prepareReleaseDependencies
+:ToolLib:qrcodereaderview:compileReleaseAidl
+:ToolLib:toasty:preBuild UP-TO-DATE
+:ToolLib:toasty:preReleaseBuild UP-TO-DATE
+:ToolLib:toasty:checkReleaseManifest
+:ToolLib:toasty:preDebugAndroidTestBuild UP-TO-DATE
 :ToolLib:toasty:preDebugBuild UP-TO-DATE
 :ToolLib:toasty:preDebugUnitTestBuild UP-TO-DATE
 :ToolLib:toasty:preReleaseUnitTestBuild UP-TO-DATE
-:ToolLib:toasty:prepareComAndroidSupportAnimatedVectorDrawable2520Library
-:ToolLib:bottom-bar:prepareComAndroidSupportAppcompatV72520Library
-:BusinessLib:baselib:prepareComAfollestadMaterialDialogsCore0923Library
-:app:prepareComAfollestadMaterialDialogsCore0923Library
-:ToolLib:bottom-bar:prepareComAndroidSupportDesign2520Library
-:BusinessLib:baselib:prepareComAndroidSupportAnimatedVectorDrawable2520Library
-:app:prepareComAndroidSupportAnimatedVectorDrawable2520Library
-:ToolLib:bottom-bar:prepareComAndroidSupportRecyclerviewV72520Library
-:BusinessLib:baselib:prepareComAndroidSupportAppcompatV72520Library
-:app:prepareComAndroidSupportAppcompatV72520Library
-:ToolLib:toasty:prepareComAndroidSupportAppcompatV72520Library
-:ToolLib:toasty:prepareComAndroidSupportSupportCompat2520Library
-:app:prepareComAndroidSupportCardviewV72520Library
-:BusinessLib:baselib:prepareComAndroidSupportCardviewV72520Library
-:ToolLib:toasty:prepareComAndroidSupportSupportCoreUi2520Library
-:ToolLib:toasty:prepareComAndroidSupportSupportCoreUtils2520Library
-:BusinessLib:baselib:prepareComAndroidSupportDesign2520Library
-:ToolLib:bottom-bar:prepareComAndroidSupportSupportCompat2520Library
-:app:prepareComAndroidSupportDesign2520Library
-:BusinessLib:baselib:prepareComAndroidSupportMultidex101Library
-:ToolLib:toasty:prepareComAndroidSupportSupportFragment2520Library
-:ToolLib:toasty:prepareComAndroidSupportSupportMediaCompat2520Library
-:app:prepareComAndroidSupportMultidex101Library
-:BusinessLib:baselib:prepareComAndroidSupportRecyclerviewV72520Library
-:ToolLib:bottom-bar:prepareComAndroidSupportSupportCoreUi2520Library
-:BusinessLib:baselib:prepareComAndroidSupportSupportCompat2520Library
-:ToolLib:toasty:prepareComAndroidSupportSupportV42520Library
-:app:prepareComAndroidSupportRecyclerviewV72520Library
-:app:prepareComAndroidSupportSupportCompat2520Library
-:BusinessLib:baselib:prepareComAndroidSupportSupportCoreUi2520Library
-:ToolLib:toasty:prepareComAndroidSupportSupportVectorDrawable2520Library
-:app:prepareComAndroidSupportSupportCoreUi2520Library
-:ToolLib:toasty:prepareReleaseDependencies
-:BusinessLib:baselib:prepareComAndroidSupportSupportCoreUtils2520Library
-:app:prepareComAndroidSupportSupportCoreUtils2520Library
-:ToolLib:toasty:compileReleaseAidl
-:BusinessLib:baselib:prepareComAndroidSupportSupportFragment2520Library
-:BusinessLib:baselib:prepareComAndroidSupportSupportMediaCompat2520Library
-:app:prepareComAndroidSupportSupportFragment2520Library
-:ToolLib:bottom-bar:prepareComAndroidSupportSupportCoreUtils2520Library
-:BusinessLib:baselib:prepareComAndroidSupportSupportV132510Library
-:app:prepareComAndroidSupportSupportMediaCompat2520Library
-:app:prepareComAndroidSupportSupportV132510Library
-:BusinessLib:baselib:prepareComAndroidSupportSupportV42520Library
-:BusinessLib:baselib:prepareComAndroidSupportSupportVectorDrawable2520Library
-:app:prepareComAndroidSupportSupportV42520Library
-:BusinessLib:baselib:prepareComAndroidSupportTransition2520Library
-:BusinessLib:baselib:prepareComBlankjUtilcode136Library
-:app:prepareComAndroidSupportSupportVectorDrawable2520Library
-:app:prepareComAndroidSupportTransition2520Library
-:BusinessLib:baselib:prepareComGithubCymChadBaseRecyclerViewAdapterHelper285Library
-:BusinessLib:baselib:prepareComJakewhartonButterknife840Library
-:app:prepareComBlankjUtilcode136Library
-:ToolLib:bottom-bar:prepareComAndroidSupportSupportFragment2520Library
-:BusinessLib:baselib:prepareComJakewhartonRxbindingRxbinding100Library
-:app:prepareComGithubCymChadBaseRecyclerViewAdapterHelper285Library
-:BusinessLib:baselib:prepareComJakewhartonRxbindingRxbindingSupportV4100Library
-:app:prepareComJakewhartonButterknife840Library
-:BusinessLib:baselib:prepareComJakewhartonTimberTimber451Library
-:app:prepareComJakewhartonRxbindingRxbinding100Library
-:BusinessLib:baselib:prepareComReadystatesoftwareChuckLibrary101Library
-:ToolLib:bottom-bar:prepareComAndroidSupportSupportMediaCompat2520Library
-:ToolLib:bottom-bar:prepareComAndroidSupportSupportV42520Library
-:app:prepareComJakewhartonRxbindingRxbindingSupportV4100Library
-:BusinessLib:baselib:prepareComTrelloRxlifecycleAndroid10Library
-:app:prepareComJakewhartonTimberTimber451Library
-:ToolLib:bottom-bar:prepareComAndroidSupportSupportVectorDrawable2520Library
-:app:prepareComReadystatesoftwareChuckLibrary101Library
-:BusinessLib:baselib:prepareIoReactivexRxandroid121Library
-:app:prepareComTrelloRxlifecycleAndroid10Library
-:BusinessLib:baselib:prepareMeZhanghaiAndroidMaterialprogressbarLibrary130Library
-:ToolLib:bottom-bar:prepareComAndroidSupportTransition2520Library
-:app:prepareIoReactivexRxandroid121Library
+:ToolLib:toasty:prepareComAndroidSupportAnimatedVectorDrawable2530Library
+:ToolLib:toasty:prepareComAndroidSupportAppcompatV72530Library
+:ToolLib:toasty:prepareComAndroidSupportSupportCompat2530Library
+:ToolLib:toasty:prepareComAndroidSupportSupportCoreUi2530Library
+:ToolLib:zlibrary:preBuild
+:ToolLib:toasty:prepareComAndroidSupportSupportCoreUtils2530Library
 :ToolLib:zlibrary:preBuild UP-TO-DATE
+:ToolLib:toasty:prepareComAndroidSupportSupportFragment2530Library
+:ToolLib:toasty:prepareComAndroidSupportSupportMediaCompat2530Library
+:ToolLib:toasty:prepareComAndroidSupportSupportV42530Library
+:ToolLib:toasty:prepareComAndroidSupportSupportVectorDrawable2530Library
+:ToolLib:zlibrary:preReleaseBuild
+:ToolLib:toasty:prepareReleaseDependencies
 :ToolLib:zlibrary:preReleaseBuild UP-TO-DATE
+:ToolLib:toasty:compileReleaseAidl
 :ToolLib:zlibrary:checkReleaseManifest
 :ToolLib:zlibrary:preDebugAndroidTestBuild UP-TO-DATE
 :ToolLib:zlibrary:preDebugBuild UP-TO-DATE
+:ToolLib:bottom-bar:compileReleaseNdk
+:ToolLib:qrcodereaderview:compileReleaseNdk
 :ToolLib:zlibrary:preDebugUnitTestBuild UP-TO-DATE
 :ToolLib:zlibrary:preReleaseUnitTestBuild UP-TO-DATE
-:ToolLib:zlibrary:prepareComAfollestadMaterialDialogsCommons0923Library
-:app:prepareMeZhanghaiAndroidMaterialprogressbarLibrary130Library
-:ToolLib:zlibrary:prepareComAfollestadMaterialDialogsCore0923Library
-:ToolLib:bottom-bar:prepareReleaseDependencies
-:BusinessLib:baselib:compileReleaseNdk
-:ToolLib:zlibrary:prepareComAndroidSupportAnimatedVectorDrawable2520Library
-:ToolLib:bottom-bar:compileReleaseAidl
-:BusinessLib:baselib:compileReleaseNdk UP-TO-DATE
-:BusinessLib:baselib:compileLint
-:ToolLib:zlibrary:prepareComAndroidSupportAppcompatV72520Library
-:ToolLib:zlibrary:prepareComAndroidSupportCardviewV72520Library
-:ToolLib:zlibrary:prepareComAndroidSupportDesign2520Library
-:ToolLib:zlibrary:prepareComAndroidSupportMultidex101Library
-:ToolLib:zlibrary:prepareComAndroidSupportRecyclerviewV72520Library
-:ToolLib:zlibrary:prepareComAndroidSupportSupportCompat2520Library
-:ToolLib:zlibrary:prepareComAndroidSupportSupportCoreUi2520Library
-:ToolLib:zlibrary:prepareComAndroidSupportSupportCoreUtils2520Library
-:BusinessLib:baselib:compileLint UP-TO-DATE
-:BusinessLib:baselib:copyReleaseLint
-:ToolLib:zlibrary:prepareComAndroidSupportSupportFragment2520Library
-:BusinessLib:baselib:copyReleaseLint UP-TO-DATE
-:BusinessLib:baselib:generateReleaseBuildConfig
-:ToolLib:toasty:compileReleaseAidl UP-TO-DATE
-:ToolLib:zlibrary:prepareComAndroidSupportSupportMediaCompat2520Library
-:ToolLib:toasty:compileReleaseNdk
-:ToolLib:zlibrary:prepareComAndroidSupportSupportV132510Library
-:ToolLib:toasty:compileReleaseNdk UP-TO-DATE
-:ToolLib:toasty:compileLint
-:ToolLib:zlibrary:prepareComAndroidSupportSupportV42520Library
-:ToolLib:zlibrary:prepareComAndroidSupportSupportVectorDrawable2520Library
-:ToolLib:zlibrary:prepareComAndroidSupportTransition2520Library
-:ToolLib:toasty:compileLint UP-TO-DATE
-:ToolLib:toasty:copyReleaseLint
-:ToolLib:zlibrary:prepareComBlankjUtilcode136Library
-:ToolLib:toasty:copyReleaseLint UP-TO-DATE
-:ToolLib:toasty:compileReleaseRenderscript
-:ToolLib:zlibrary:prepareComGithubCymChadBaseRecyclerViewAdapterHelper285Library
-:ToolLib:zlibrary:prepareComJakewhartonButterknife840Library
-:BusinessLib:baselib:generateReleaseBuildConfig UP-TO-DATE
-:ToolLib:zlibrary:prepareComJakewhartonRxbindingRxbinding100Library
-:BusinessLib:baselib:greendaoPrepare
-:ToolLib:zlibrary:prepareComJakewhartonRxbindingRxbindingSupportV4100Library
-:ToolLib:zlibrary:prepareComJakewhartonTimberTimber451Library
-:ToolLib:zlibrary:prepareComReadystatesoftwareChuckLibrary101Library
-:ToolLib:bottom-bar:compileReleaseAidl UP-TO-DATE
-:ToolLib:bottom-bar:compileReleaseNdk
-:ToolLib:zlibrary:prepareComTrelloRxlifecycleAndroid10Library
-:ToolLib:toasty:compileReleaseRenderscript UP-TO-DATE
+:ToolLib:zlibrary:prepareComAfollestadMaterialDialogsCore0942Library
+:ToolLib:zlibrary:prepareComAlibabaArouterApi109Library
+:ToolLib:zlibrary:prepareComAndroidSupportAnimatedVectorDrawable2530Library
+:ToolLib:zlibrary:prepareComAndroidSupportAppcompatV72530Library
 :ToolLib:bottom-bar:compileReleaseNdk UP-TO-DATE
-:ToolLib:toasty:generateReleaseBuildConfig
+:ToolLib:qrcodereaderview:compileReleaseNdk UP-TO-DATE
 :ToolLib:bottom-bar:compileLint
-:ToolLib:zlibrary:prepareIoReactivexRxandroid121Library
-:ToolLib:zlibrary:prepareMeZhanghaiAndroidMaterialprogressbarLibrary130Library
-:ToolLib:zlibrary:compileReleaseNdk UP-TO-DATE
-:ToolLib:bottom-bar:compileLint UP-TO-DATE
-:ToolLib:zlibrary:compileLint
+:ToolLib:qrcodereaderview:compileLint
+:ToolLib:zlibrary:prepareComAndroidSupportCardviewV72530Library
+:ToolLib:toasty:compileReleaseNdk
+:ToolLib:qrcodereaderview:copyReleaseLint
 :ToolLib:bottom-bar:copyReleaseLint
-:ToolLib:toasty:generateReleaseBuildConfig UP-TO-DATE
-:ToolLib:toasty:generateReleaseResValues
+:ToolLib:zlibrary:prepareComAndroidSupportDesign2530Library
+:ToolLib:zlibrary:prepareComAndroidSupportMultidex101Library
+:ToolLib:zlibrary:prepareComAndroidSupportRecyclerviewV72530Library
+:ToolLib:zlibrary:prepareComAndroidSupportSupportCompat2530Library
+:ToolLib:toasty:compileReleaseNdk UP-TO-DATE
+:ToolLib:qrcodereaderview:copyReleaseLint UP-TO-DATE
+:ToolLib:toasty:compileLint
+:ToolLib:qrcodereaderview:compileReleaseRenderscript
 :ToolLib:bottom-bar:copyReleaseLint UP-TO-DATE
 :ToolLib:bottom-bar:compileReleaseRenderscript
-:ToolLib:toasty:generateReleaseResValues UP-TO-DATE
-:ToolLib:toasty:generateReleaseResources UP-TO-DATE
-:ToolLib:toasty:mergeReleaseResources
-:ToolLib:zlibrary:compileLint UP-TO-DATE
-:ToolLib:zlibrary:copyReleaseLint UP-TO-DATE
-:ToolLib:zlibrary:generateReleaseBuildConfig
-:ToolLib:bottom-bar:compileReleaseRenderscript UP-TO-DATE
+:ToolLib:toasty:copyReleaseLint UP-TO-DATE
+:ToolLib:toasty:compileReleaseRenderscript
+:ToolLib:zlibrary:prepareComAndroidSupportSupportCoreUi2530Library
+:ToolLib:qrcodereaderview:generateReleaseBuildConfig
+:ToolLib:zlibrary:prepareComAndroidSupportSupportCoreUtils2530Library
+:ToolLib:zlibrary:prepareComAndroidSupportSupportFragment2530Library
+:ToolLib:zlibrary:prepareComAndroidSupportSupportMediaCompat2530Library
+:ToolLib:zlibrary:prepareComAndroidSupportSupportV132530Library
+:ToolLib:zlibrary:prepareComAndroidSupportSupportV42530Library
 :ToolLib:bottom-bar:generateReleaseBuildConfig
-:ToolLib:zlibrary:generateReleaseBuildConfig UP-TO-DATE
+:ToolLib:zlibrary:prepareComAndroidSupportSupportVectorDrawable2530Library
+:ToolLib:zlibrary:prepareComAndroidSupportTransition2530Library
+:ToolLib:zlibrary:prepareComBlankjUtilcode136Library
+:ToolLib:toasty:generateReleaseBuildConfig
+:ToolLib:zlibrary:prepareComGithubCymChadBaseRecyclerViewAdapterHelper285Library
+:ToolLib:zlibrary:prepareComJakewhartonButterknife840Library
+:ToolLib:zlibrary:prepareComJakewhartonRxbinding2Rxbinding200Library
+:ToolLib:zlibrary:prepareComJakewhartonRxbinding2RxbindingSupportV4200Library
+:ToolLib:qrcodereaderview:generateReleaseBuildConfig UP-TO-DATE
+:ToolLib:qrcodereaderview:generateReleaseResValues
 :ToolLib:bottom-bar:generateReleaseBuildConfig UP-TO-DATE
-:ToolLib:zlibrary:generateReleaseResValues
 :ToolLib:bottom-bar:generateReleaseResValues
-:ToolLib:zlibrary:generateReleaseResValues UP-TO-DATE
-:ToolLib:bottom-bar:generateReleaseResValues UP-TO-DATE
-:ToolLib:zlibrary:incrementalReleaseJavaCompilationSafeguard
-:ToolLib:bottom-bar:generateReleaseResources UP-TO-DATE
-:BusinessLib:baselib:greendaoPrepare UP-TO-DATE
+:ToolLib:toasty:generateReleaseBuildConfig UP-TO-DATE
+:ToolLib:qrcodereaderview:generateReleaseResources
+:ToolLib:toasty:generateReleaseResValues
+:ToolLib:qrcodereaderview:mergeReleaseResources
+:ToolLib:bottom-bar:generateReleaseResources
 :ToolLib:bottom-bar:mergeReleaseResources
-:BusinessLib:baselib:greendao UP-TO-DATE
-:BusinessLib:baselib:generateReleaseResValues UP-TO-DATE
-:BusinessLib:baselib:incrementalReleaseJavaCompilationSafeguard
+:ToolLib:toasty:generateReleaseResources
+:ToolLib:toasty:mergeReleaseResources
+:ToolLib:zlibrary:prepareComJakewhartonTimberTimber451Library
+:ToolLib:zlibrary:prepareComReadystatesoftwareChuckLibrary101Library
+:ToolLib:zlibrary:prepareComTrelloRxlifecycle2RxlifecycleAndroid201Library
+:ToolLib:zlibrary:prepareIoReactivexRxjava2Rxandroid201Library
+:ToolLib:zlibrary:prepareMeZhanghaiAndroidMaterialprogressbarLibrary130Library
+:ToolLib:zlibrary:compileReleaseNdk UP-TO-DATE
+:ToolLib:zlibrary:compileLint
+:ToolLib:zlibrary:copyReleaseLint UP-TO-DATE
+:ToolLib:zlibrary:generateReleaseBuildConfig UP-TO-DATE
+:ToolLib:zlibrary:greendaoPrepare
+:ToolLib:zlibrary:greendao
+:ToolLib:qrcodereaderview:mergeReleaseResources UP-TO-DATE
+:ToolLib:qrcodereaderview:processReleaseManifest
+:ToolLib:zlibrary:generateReleaseResValues
+:ToolLib:zlibrary:incrementalReleaseJavaCompilationSafeguard
+:ToolLib:qrcodereaderview:processReleaseResources
+:ToolLib:toasty:mergeReleaseResources UP-TO-DATE
+:ToolLib:toasty:processReleaseManifest
+:ToolLib:toasty:processReleaseResources
 :ToolLib:zlibrary:incrementalReleaseJavaCompilationSafeguard UP-TO-DATE
 :ToolLib:zlibrary:javaPreCompileRelease
 :ToolLib:zlibrary:mergeReleaseShaders
-:BusinessLib:baselib:incrementalReleaseJavaCompilationSafeguard UP-TO-DATE
-:BusinessLib:baselib:javaPreCompileRelease
-:BusinessLib:baselib:mergeReleaseShaders UP-TO-DATE
-:BusinessLib:baselib:compileReleaseShaders
-:ToolLib:zlibrary:mergeReleaseShaders UP-TO-DATE
 :ToolLib:zlibrary:compileReleaseShaders
-:BusinessLib:baselib:compileReleaseShaders UP-TO-DATE
-:BusinessLib:baselib:generateReleaseAssets UP-TO-DATE
-:ToolLib:zlibrary:compileReleaseShaders UP-TO-DATE
-:BusinessLib:baselib:mergeReleaseProguardFiles
-:ToolLib:zlibrary:generateReleaseAssets UP-TO-DATE
+:ToolLib:qrcodereaderview:processReleaseResources UP-TO-DATE
+:ToolLib:qrcodereaderview:generateReleaseSources
+:ToolLib:qrcodereaderview:incrementalReleaseJavaCompilationSafeguard
+:ToolLib:zlibrary:generateReleaseAssets
 :ToolLib:zlibrary:mergeReleaseProguardFiles
-:BusinessLib:baselib:mergeReleaseProguardFiles UP-TO-DATE
-:BusinessLib:baselib:packageReleaseRenderscript
-:ToolLib:zlibrary:mergeReleaseProguardFiles UP-TO-DATE
-:BusinessLib:baselib:packageReleaseRenderscript UP-TO-DATE
-:ToolLib:zlibrary:packageReleaseRenderscript
-:BusinessLib:baselib:processReleaseJavaRes
+:ToolLib:qrcodereaderview:incrementalReleaseJavaCompilationSafeguard UP-TO-DATE
+:ToolLib:qrcodereaderview:javaPreCompileRelease
+:ToolLib:qrcodereaderview:compileReleaseJavaWithJavac
 :ToolLib:zlibrary:packageReleaseRenderscript UP-TO-DATE
-:BusinessLib:baselib:processReleaseJavaRes UP-TO-DATE
-:ToolLib:zlibrary:processReleaseJavaRes
-:BusinessLib:baselib:transformResourcesWithMergeJavaResForRelease
 :ToolLib:zlibrary:processReleaseJavaRes UP-TO-DATE
+:ToolLib:zlibrary:transformResourcesWithMergeJavaResForRelease
+:ToolLib:bottom-bar:mergeReleaseResources UP-TO-DATE
+:ToolLib:bottom-bar:processReleaseManifest
 :ToolLib:zlibrary:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
-:BusinessLib:baselib:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:BusinessLib:baselib:compileReleaseNdk UP-TO-DATE
+:BusinessLib:baselib:compileLint
+:BusinessLib:baselib:copyReleaseLint UP-TO-DATE
+:BusinessLib:baselib:generateReleaseBuildConfig
+:ToolLib:bottom-bar:processReleaseResources
+:ToolLib:toasty:processReleaseResources UP-TO-DATE
+:ToolLib:toasty:generateReleaseSources
+:ToolLib:toasty:incrementalReleaseJavaCompilationSafeguard
+:BusinessLib:baselib:generateReleaseBuildConfig UP-TO-DATE
+:BusinessLib:baselib:greendaoPrepare
+:ToolLib:toasty:incrementalReleaseJavaCompilationSafeguard UP-TO-DATE
+:ToolLib:toasty:javaPreCompileRelease
+:ToolLib:toasty:compileReleaseJavaWithJavac
+:ToolLib:qrcodereaderview:compileReleaseJavaWithJavac UP-TO-DATE
+:ToolLib:qrcodereaderview:extractReleaseAnnotations UP-TO-DATE
+:ToolLib:qrcodereaderview:mergeReleaseShaders
+:ToolLib:qrcodereaderview:compileReleaseShaders
+:ToolLib:qrcodereaderview:generateReleaseAssets
+:ToolLib:qrcodereaderview:mergeReleaseAssets
+:ToolLib:qrcodereaderview:mergeReleaseProguardFiles
+:ToolLib:toasty:compileReleaseJavaWithJavac UP-TO-DATE
+:ToolLib:toasty:extractReleaseAnnotations
+:ToolLib:qrcodereaderview:packageReleaseRenderscript
+:ToolLib:toasty:extractReleaseAnnotations UP-TO-DATE
+:ToolLib:toasty:mergeReleaseShaders
+:ToolLib:qrcodereaderview:packageReleaseRenderscript UP-TO-DATE
+:ToolLib:qrcodereaderview:packageReleaseResources
+:ToolLib:bottom-bar:processReleaseResources UP-TO-DATE
+:ToolLib:bottom-bar:generateReleaseSources
+:ToolLib:bottom-bar:incrementalReleaseJavaCompilationSafeguard
+:ToolLib:toasty:compileReleaseShaders
+:ToolLib:bottom-bar:incrementalReleaseJavaCompilationSafeguard UP-TO-DATE
+:ToolLib:bottom-bar:javaPreCompileRelease
+:ToolLib:bottom-bar:compileReleaseJavaWithJavac
+:ToolLib:toasty:generateReleaseAssets
+:ToolLib:toasty:mergeReleaseAssets
+:ToolLib:qrcodereaderview:transformClassesWithRetrolambdaForRelease
+:ToolLib:toasty:mergeReleaseProguardFiles
+:ToolLib:toasty:packageReleaseRenderscript
+:BusinessLib:baselib:greendao
+:ToolLib:toasty:packageReleaseRenderscript UP-TO-DATE
+:ToolLib:toasty:packageReleaseResources
+:ToolLib:qrcodereaderview:transformClassesWithRetrolambdaForRelease UP-TO-DATE
+:ToolLib:qrcodereaderview:processReleaseJavaRes UP-TO-DATE
+:ToolLib:qrcodereaderview:transformResourcesWithMergeJavaResForRelease
+:ToolLib:bottom-bar:compileReleaseJavaWithJavac UP-TO-DATE
+:ToolLib:qrcodereaderview:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:ToolLib:bottom-bar:extractReleaseAnnotations UP-TO-DATE
+:ToolLib:qrcodereaderview:transformClassesAndResourcesWithSyncLibJarsForRelease
+:ToolLib:bottom-bar:mergeReleaseShaders
+:ToolLib:bottom-bar:compileReleaseShaders
+:ToolLib:qrcodereaderview:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:ToolLib:qrcodereaderview:mergeReleaseJniLibFolders
+:ToolLib:bottom-bar:generateReleaseAssets
+:ToolLib:bottom-bar:mergeReleaseAssets
+:ToolLib:qrcodereaderview:mergeReleaseJniLibFolders UP-TO-DATE
+:ToolLib:qrcodereaderview:transformNativeLibsWithMergeJniLibsForRelease
+:ToolLib:bottom-bar:mergeReleaseProguardFiles
+:ToolLib:toasty:transformClassesWithRetrolambdaForRelease
+:ToolLib:bottom-bar:packageReleaseRenderscript UP-TO-DATE
+:ToolLib:bottom-bar:packageReleaseResources
+:ToolLib:qrcodereaderview:transformNativeLibsWithMergeJniLibsForRelease UP-TO-DATE
+:ToolLib:qrcodereaderview:transformNativeLibsWithSyncJniLibsForRelease UP-TO-DATE
+:ToolLib:qrcodereaderview:bundleRelease UP-TO-DATE
+:ToolLib:zlibrary:prepareReleaseDependencies
+:ToolLib:zlibrary:compileReleaseAidl
+:ToolLib:toasty:transformClassesWithRetrolambdaForRelease UP-TO-DATE
+:ToolLib:toasty:processReleaseJavaRes UP-TO-DATE
+:ToolLib:toasty:transformResourcesWithMergeJavaResForRelease
+:ToolLib:zlibrary:compileReleaseRenderscript
+:ToolLib:toasty:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:ToolLib:toasty:transformClassesAndResourcesWithSyncLibJarsForRelease
+:ToolLib:bottom-bar:transformClassesWithRetrolambdaForRelease
+:ToolLib:zlibrary:generateReleaseResources
+:ToolLib:zlibrary:mergeReleaseResources
+:ToolLib:toasty:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:ToolLib:toasty:mergeReleaseJniLibFolders UP-TO-DATE
+:ToolLib:toasty:transformNativeLibsWithMergeJniLibsForRelease UP-TO-DATE
+:ToolLib:toasty:transformNativeLibsWithSyncJniLibsForRelease UP-TO-DATE
+:ToolLib:toasty:bundleRelease UP-TO-DATE
 :BusinessLib:cash:preBuild UP-TO-DATE
-:BusinessLib:coupon:preBuild UP-TO-DATE
-:BusinessLib:coupon:preReleaseBuild UP-TO-DATE
-:BusinessLib:cash:preReleaseBuild
-:BusinessLib:coupon:checkReleaseManifest
 :BusinessLib:cash:preReleaseBuild UP-TO-DATE
 :BusinessLib:cash:checkReleaseManifest
-:BusinessLib:coupon:preDebugAndroidTestBuild UP-TO-DATE
-:BusinessLib:coupon:preDebugBuild UP-TO-DATE
 :BusinessLib:cash:preDebugAndroidTestBuild UP-TO-DATE
-:BusinessLib:coupon:preDebugUnitTestBuild UP-TO-DATE
 :BusinessLib:cash:preDebugBuild UP-TO-DATE
-:BusinessLib:coupon:preReleaseUnitTestBuild UP-TO-DATE
-:BusinessLib:cash:preDebugUnitTestBuild
-:BusinessLib:coupon:prepareComAfollestadMaterialDialogsCommons0923Library
 :BusinessLib:cash:preDebugUnitTestBuild UP-TO-DATE
 :BusinessLib:cash:preReleaseUnitTestBuild UP-TO-DATE
-:BusinessLib:coupon:prepareComAfollestadMaterialDialogsCore0923Library
-:BusinessLib:cash:prepareComAfollestadMaterialDialogsCommons0923Library
-:BusinessLib:coupon:prepareComAndroidSupportAnimatedVectorDrawable2520Library
-:BusinessLib:cash:prepareComAfollestadMaterialDialogsCore0923Library
-:BusinessLib:cash:prepareComAndroidSupportAnimatedVectorDrawable2520Library
-:BusinessLib:coupon:prepareComAndroidSupportAppcompatV72520Library
-:BusinessLib:coupon:prepareComAndroidSupportCardviewV72520Library
-:BusinessLib:cash:prepareComAndroidSupportAppcompatV72520Library
-:BusinessLib:coupon:prepareComAndroidSupportDesign2520Library
-:BusinessLib:cash:prepareComAndroidSupportCardviewV72520Library
-:BusinessLib:coupon:prepareComAndroidSupportMultidex101Library
-:BusinessLib:coupon:prepareComAndroidSupportRecyclerviewV72520Library
-:BusinessLib:cash:prepareComAndroidSupportDesign2520Library
-:BusinessLib:coupon:prepareComAndroidSupportSupportCompat2520Library
-:BusinessLib:coupon:prepareComAndroidSupportSupportCoreUi2520Library
+:BusinessLib:cash:prepareComAfollestadMaterialDialogsCore0942Library
+:BusinessLib:baselib:generateReleaseResValues
+:BusinessLib:cash:prepareComAlibabaArouterApi109Library
+:BusinessLib:cash:prepareComAndroidSupportAnimatedVectorDrawable2530Library
+:BusinessLib:cash:prepareComAndroidSupportAppcompatV72530Library
+:BusinessLib:cash:prepareComAndroidSupportCardviewV72530Library
+:BusinessLib:cash:prepareComAndroidSupportDesign2530Library
+:BusinessLib:baselib:incrementalReleaseJavaCompilationSafeguard
 :BusinessLib:cash:prepareComAndroidSupportMultidex101Library
-:BusinessLib:coupon:prepareComAndroidSupportSupportCoreUtils2520Library
-:BusinessLib:cash:prepareComAndroidSupportRecyclerviewV72520Library
-:BusinessLib:cash:prepareComAndroidSupportSupportCompat2520Library
-:BusinessLib:cash:prepareComAndroidSupportSupportCoreUi2520Library
-:BusinessLib:cash:prepareComAndroidSupportSupportCoreUtils2520Library
-:BusinessLib:cash:prepareComAndroidSupportSupportFragment2520Library
-:BusinessLib:cash:prepareComAndroidSupportSupportMediaCompat2520Library
-:BusinessLib:cash:prepareComAndroidSupportSupportV132510Library
-:BusinessLib:cash:prepareComAndroidSupportSupportV42520Library
-:BusinessLib:cash:prepareComAndroidSupportSupportVectorDrawable2520Library
-:BusinessLib:coupon:prepareComAndroidSupportSupportFragment2520Library
-:BusinessLib:cash:prepareComAndroidSupportTransition2520Library
-:BusinessLib:coupon:prepareComAndroidSupportSupportMediaCompat2520Library
+:BusinessLib:cash:prepareComAndroidSupportRecyclerviewV72530Library
+:BusinessLib:cash:prepareComAndroidSupportSupportCompat2530Library
+:BusinessLib:cash:prepareComAndroidSupportSupportCoreUi2530Library
+:BusinessLib:cash:prepareComAndroidSupportSupportCoreUtils2530Library
+:BusinessLib:cash:prepareComAndroidSupportSupportFragment2530Library
+:BusinessLib:cash:prepareComAndroidSupportSupportMediaCompat2530Library
+:ToolLib:bottom-bar:transformClassesWithRetrolambdaForRelease UP-TO-DATE
+:ToolLib:bottom-bar:processReleaseJavaRes
+:BusinessLib:cash:prepareComAndroidSupportSupportV132530Library
+:ToolLib:bottom-bar:processReleaseJavaRes UP-TO-DATE
+:ToolLib:bottom-bar:transformResourcesWithMergeJavaResForRelease
+:BusinessLib:cash:prepareComAndroidSupportSupportV42530Library
+:BusinessLib:cash:prepareComAndroidSupportSupportVectorDrawable2530Library
+:BusinessLib:cash:prepareComAndroidSupportTransition2530Library
 :BusinessLib:cash:prepareComBlankjUtilcode136Library
-:BusinessLib:coupon:prepareComAndroidSupportSupportV132510Library
-:BusinessLib:coupon:prepareComAndroidSupportSupportV42520Library
-:BusinessLib:coupon:prepareComAndroidSupportSupportVectorDrawable2520Library
-:BusinessLib:coupon:prepareComAndroidSupportTransition2520Library
-:BusinessLib:coupon:prepareComBlankjUtilcode136Library
+:BusinessLib:cash:prepareComFacebookStethoStetho142Library
+:ToolLib:bottom-bar:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:ToolLib:bottom-bar:transformClassesAndResourcesWithSyncLibJarsForRelease
 :BusinessLib:cash:prepareComGithubCymChadBaseRecyclerViewAdapterHelper285Library
-:BusinessLib:coupon:prepareComGithubCymChadBaseRecyclerViewAdapterHelper285Library
 :BusinessLib:cash:prepareComJakewhartonButterknife840Library
-:BusinessLib:coupon:prepareComJakewhartonButterknife840Library
-:BusinessLib:coupon:prepareComJakewhartonRxbindingRxbinding100Library
-:BusinessLib:cash:prepareComJakewhartonRxbindingRxbinding100Library
-:BusinessLib:coupon:prepareComJakewhartonRxbindingRxbindingSupportV4100Library
-:BusinessLib:cash:prepareComJakewhartonRxbindingRxbindingSupportV4100Library
-:BusinessLib:coupon:prepareComJakewhartonTimberTimber451Library
+:BusinessLib:cash:prepareComJakewhartonRxbinding2Rxbinding200Library
+:BusinessLib:cash:prepareComJakewhartonRxbinding2RxbindingSupportV4200Library
 :BusinessLib:cash:prepareComJakewhartonTimberTimber451Library
-:BusinessLib:coupon:prepareComReadystatesoftwareChuckLibrary101Library
-:BusinessLib:coupon:prepareComTrelloRxlifecycleAndroid10Library
 :BusinessLib:cash:prepareComReadystatesoftwareChuckLibrary101Library
-:BusinessLib:coupon:prepareIoReactivexRxandroid121Library
-:BusinessLib:coupon:prepareMeZhanghaiAndroidMaterialprogressbarLibrary130Library
-:BusinessLib:cash:prepareComTrelloRxlifecycleAndroid10Library
-:BusinessLib:cash:prepareIoReactivexRxandroid121Library
-:BusinessLib:coupon:compileReleaseNdk
+:BusinessLib:cash:prepareComTencentBuglyCrashreport_upgrade125Library
+:BusinessLib:cash:prepareComTrelloRxlifecycle2RxlifecycleAndroid201Library
+:BusinessLib:cash:prepareIoReactivexRxjava2Rxandroid201Library
+:ToolLib:bottom-bar:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:ToolLib:bottom-bar:mergeReleaseJniLibFolders
 :BusinessLib:cash:prepareMeZhanghaiAndroidMaterialprogressbarLibrary130Library
-:BusinessLib:coupon:compileReleaseNdk UP-TO-DATE
-:BusinessLib:cash:compileReleaseNdk
-:BusinessLib:coupon:compileLint
 :BusinessLib:cash:compileReleaseNdk UP-TO-DATE
 :BusinessLib:cash:compileLint
-:BusinessLib:coupon:compileLint UP-TO-DATE
-:BusinessLib:coupon:copyReleaseLint UP-TO-DATE
-:BusinessLib:coupon:generateReleaseBuildConfig
-:BusinessLib:cash:compileLint UP-TO-DATE
-:BusinessLib:cash:copyReleaseLint
-:BusinessLib:coupon:generateReleaseBuildConfig UP-TO-DATE
-:BusinessLib:coupon:generateReleaseResValues
+:ToolLib:bottom-bar:mergeReleaseJniLibFolders UP-TO-DATE
+:ToolLib:bottom-bar:transformNativeLibsWithMergeJniLibsForRelease
 :BusinessLib:cash:copyReleaseLint UP-TO-DATE
 :BusinessLib:cash:generateReleaseBuildConfig
-:BusinessLib:coupon:generateReleaseResValues UP-TO-DATE
-:BusinessLib:coupon:incrementalReleaseJavaCompilationSafeguard
+:ToolLib:bottom-bar:transformNativeLibsWithMergeJniLibsForRelease UP-TO-DATE
 :BusinessLib:cash:generateReleaseBuildConfig UP-TO-DATE
-:BusinessLib:cash:generateReleaseResValues UP-TO-DATE
+:ToolLib:bottom-bar:transformNativeLibsWithSyncJniLibsForRelease
+:BusinessLib:cash:generateReleaseResValues
 :BusinessLib:cash:incrementalReleaseJavaCompilationSafeguard
-:BusinessLib:coupon:incrementalReleaseJavaCompilationSafeguard UP-TO-DATE
-:BusinessLib:coupon:javaPreCompileRelease
-:BusinessLib:coupon:mergeReleaseShaders UP-TO-DATE
-:BusinessLib:coupon:compileReleaseShaders UP-TO-DATE
-:BusinessLib:coupon:generateReleaseAssets UP-TO-DATE
-:BusinessLib:coupon:mergeReleaseProguardFiles UP-TO-DATE
-:BusinessLib:coupon:packageReleaseRenderscript UP-TO-DATE
+:ToolLib:bottom-bar:transformNativeLibsWithSyncJniLibsForRelease UP-TO-DATE
+:ToolLib:bottom-bar:bundleRelease
+:BusinessLib:baselib:incrementalReleaseJavaCompilationSafeguard UP-TO-DATE
+:BusinessLib:baselib:javaPreCompileRelease
+:BusinessLib:baselib:mergeReleaseShaders
+:ToolLib:bottom-bar:bundleRelease UP-TO-DATE
+:BusinessLib:coupon:preBuild UP-TO-DATE
+:BusinessLib:coupon:preReleaseBuild UP-TO-DATE
+:BusinessLib:coupon:checkReleaseManifest
+:BusinessLib:coupon:preDebugAndroidTestBuild UP-TO-DATE
+:BusinessLib:coupon:preDebugBuild UP-TO-DATE
+:BusinessLib:coupon:preDebugUnitTestBuild UP-TO-DATE
+:BusinessLib:coupon:preReleaseUnitTestBuild UP-TO-DATE
+:BusinessLib:coupon:prepareComAfollestadMaterialDialogsCore0942Library
+:BusinessLib:coupon:prepareComAlibabaArouterApi109Library
+:BusinessLib:coupon:prepareComAndroidSupportAnimatedVectorDrawable2530Library
+:BusinessLib:baselib:compileReleaseShaders
+:BusinessLib:coupon:prepareComAndroidSupportAppcompatV72530Library
+:BusinessLib:coupon:prepareComAndroidSupportCardviewV72530Library
+:BusinessLib:coupon:prepareComAndroidSupportDesign2530Library
+:BusinessLib:coupon:prepareComAndroidSupportMultidex101Library
+:BusinessLib:coupon:prepareComAndroidSupportRecyclerviewV72530Library
+:BusinessLib:coupon:prepareComAndroidSupportSupportCompat2530Library
+:BusinessLib:baselib:generateReleaseAssets
+:BusinessLib:coupon:prepareComAndroidSupportSupportCoreUi2530Library
+:BusinessLib:baselib:mergeReleaseProguardFiles
+:BusinessLib:coupon:prepareComAndroidSupportSupportCoreUtils2530Library
+:BusinessLib:coupon:prepareComAndroidSupportSupportFragment2530Library
+:BusinessLib:coupon:prepareComAndroidSupportSupportMediaCompat2530Library
+:BusinessLib:coupon:prepareComAndroidSupportSupportV132530Library
+:BusinessLib:baselib:packageReleaseRenderscript
+:BusinessLib:coupon:prepareComAndroidSupportSupportV42530Library
+:BusinessLib:coupon:prepareComAndroidSupportSupportVectorDrawable2530Library
+:BusinessLib:coupon:prepareComAndroidSupportTransition2530Library
+:BusinessLib:coupon:prepareComBlankjUtilcode136Library
 :BusinessLib:cash:incrementalReleaseJavaCompilationSafeguard UP-TO-DATE
-:BusinessLib:coupon:processReleaseJavaRes
 :BusinessLib:cash:javaPreCompileRelease
+:BusinessLib:coupon:prepareComFacebookStethoStetho142Library
 :BusinessLib:cash:mergeReleaseShaders
-:BusinessLib:coupon:processReleaseJavaRes UP-TO-DATE
-:BusinessLib:coupon:transformResourcesWithMergeJavaResForRelease
-:BusinessLib:cash:mergeReleaseShaders UP-TO-DATE
+:BusinessLib:coupon:prepareComGithubCymChadBaseRecyclerViewAdapterHelper285Library
+:BusinessLib:coupon:prepareComJakewhartonButterknife840Library
+:BusinessLib:coupon:prepareComJakewhartonRxbinding2Rxbinding200Library
+:BusinessLib:coupon:prepareComJakewhartonRxbinding2RxbindingSupportV4200Library
+:BusinessLib:coupon:prepareComJakewhartonTimberTimber451Library
+:BusinessLib:coupon:prepareComReadystatesoftwareChuckLibrary101Library
+:BusinessLib:coupon:prepareComTencentBuglyCrashreport_upgrade125Library
+:BusinessLib:coupon:prepareComTrelloRxlifecycle2RxlifecycleAndroid201Library
+:BusinessLib:coupon:prepareIoReactivexRxjava2Rxandroid201Library
+:BusinessLib:coupon:prepareMeZhanghaiAndroidMaterialprogressbarLibrary130Library
+:BusinessLib:coupon:compileReleaseNdk
+:BusinessLib:baselib:packageReleaseRenderscript UP-TO-DATE
 :BusinessLib:cash:compileReleaseShaders
-:BusinessLib:coupon:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:BusinessLib:baselib:processReleaseJavaRes
+:BusinessLib:coupon:compileReleaseNdk UP-TO-DATE
+:BusinessLib:coupon:compileLint
+:BusinessLib:baselib:processReleaseJavaRes UP-TO-DATE
+:BusinessLib:baselib:transformResourcesWithMergeJavaResForRelease
+:BusinessLib:cash:generateReleaseAssets
+:BusinessLib:coupon:copyReleaseLint
+:BusinessLib:cash:mergeReleaseProguardFiles
+:BusinessLib:coupon:copyReleaseLint UP-TO-DATE
+:BusinessLib:coupon:generateReleaseBuildConfig
+:BusinessLib:cash:packageReleaseRenderscript UP-TO-DATE
+:BusinessLib:coupon:generateReleaseBuildConfig UP-TO-DATE
+:BusinessLib:cash:processReleaseJavaRes
+:BusinessLib:coupon:generateReleaseResValues
+:BusinessLib:cash:processReleaseJavaRes UP-TO-DATE
+:BusinessLib:cash:transformResourcesWithMergeJavaResForRelease
+:BusinessLib:coupon:incrementalReleaseJavaCompilationSafeguard
+:BusinessLib:baselib:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
 :BusinessLib:member:preBuild UP-TO-DATE
 :BusinessLib:member:preReleaseBuild UP-TO-DATE
 :BusinessLib:member:checkReleaseManifest
 :BusinessLib:member:preDebugAndroidTestBuild UP-TO-DATE
 :BusinessLib:member:preDebugBuild UP-TO-DATE
 :BusinessLib:member:preDebugUnitTestBuild UP-TO-DATE
-:BusinessLib:member:preReleaseUnitTestBuild UP-TO-DATE
-:BusinessLib:member:prepareComAfollestadMaterialDialogsCommons0923Library
-:BusinessLib:cash:compileReleaseShaders UP-TO-DATE
-:BusinessLib:cash:generateReleaseAssets UP-TO-DATE
-:BusinessLib:cash:mergeReleaseProguardFiles
-:BusinessLib:member:prepareComAfollestadMaterialDialogsCore0923Library
-:BusinessLib:member:prepareComAndroidSupportAnimatedVectorDrawable2520Library
-:BusinessLib:cash:mergeReleaseProguardFiles UP-TO-DATE
-:BusinessLib:member:prepareComAndroidSupportAppcompatV72520Library
-:BusinessLib:cash:packageReleaseRenderscript UP-TO-DATE
-:BusinessLib:cash:processReleaseJavaRes
-:BusinessLib:member:prepareComAndroidSupportCardviewV72520Library
-:BusinessLib:cash:processReleaseJavaRes UP-TO-DATE
-:BusinessLib:cash:transformResourcesWithMergeJavaResForRelease
-:BusinessLib:member:prepareComAndroidSupportDesign2520Library
-:BusinessLib:member:prepareComAndroidSupportMultidex101Library
-:BusinessLib:member:prepareComAndroidSupportRecyclerviewV72520Library
+:BusinessLib:member:preReleaseUnitTestBuild
 :BusinessLib:cash:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
-:BusinessLib:member:prepareComAndroidSupportSupportCompat2520Library
 :app:generateReleaseBuildConfig
-:BusinessLib:member:prepareComAndroidSupportSupportCoreUi2520Library
-:BusinessLib:member:prepareComAndroidSupportSupportCoreUtils2520Library
-:BusinessLib:member:prepareComAndroidSupportSupportFragment2520Library
-:BusinessLib:member:prepareComAndroidSupportSupportMediaCompat2520Library
-:BusinessLib:member:prepareComAndroidSupportSupportV132510Library
-:BusinessLib:member:prepareComAndroidSupportSupportV42520Library
+:BusinessLib:member:preReleaseUnitTestBuild UP-TO-DATE
+:BusinessLib:member:prepareComAfollestadMaterialDialogsCore0942Library
+:BusinessLib:member:prepareComAlibabaArouterApi109Library
+:BusinessLib:member:prepareComAndroidSupportAnimatedVectorDrawable2530Library
 :app:generateReleaseBuildConfig UP-TO-DATE
 :app:generateReleaseResValues
-:BusinessLib:member:prepareComAndroidSupportSupportVectorDrawable2520Library
+:BusinessLib:member:prepareComAndroidSupportAppcompatV72530Library
+:BusinessLib:member:prepareComAndroidSupportCardviewV72530Library
+:BusinessLib:member:prepareComAndroidSupportDesign2530Library
 :app:generateReleaseResValues UP-TO-DATE
-:BusinessLib:member:prepareComAndroidSupportTransition2520Library
+:BusinessLib:coupon:incrementalReleaseJavaCompilationSafeguard UP-TO-DATE
 :app:incrementalReleaseJavaCompilationSafeguard
+:BusinessLib:coupon:javaPreCompileRelease
+:BusinessLib:member:prepareComAndroidSupportMultidex101Library
+:BusinessLib:coupon:mergeReleaseShaders
+:BusinessLib:member:prepareComAndroidSupportRecyclerviewV72530Library
+:BusinessLib:member:prepareComAndroidSupportSupportCompat2530Library
+:BusinessLib:member:prepareComAndroidSupportSupportCoreUi2530Library
+:BusinessLib:coupon:compileReleaseShaders
+:BusinessLib:member:prepareComAndroidSupportSupportCoreUtils2530Library
+:BusinessLib:member:prepareComAndroidSupportSupportFragment2530Library
+:BusinessLib:member:prepareComAndroidSupportSupportMediaCompat2530Library
+:BusinessLib:member:prepareComAndroidSupportSupportV132530Library
+:BusinessLib:member:prepareComAndroidSupportSupportV42530Library
+:BusinessLib:member:prepareComAndroidSupportSupportVectorDrawable2530Library
+:BusinessLib:member:prepareComAndroidSupportTransition2530Library
 :BusinessLib:member:prepareComBlankjUtilcode136Library
+:BusinessLib:coupon:generateReleaseAssets
+:BusinessLib:coupon:mergeReleaseProguardFiles
+:BusinessLib:member:prepareComFacebookStethoStetho142Library
 :BusinessLib:member:prepareComGithubCymChadBaseRecyclerViewAdapterHelper285Library
+:BusinessLib:coupon:packageReleaseRenderscript
 :BusinessLib:member:prepareComJakewhartonButterknife840Library
-:BusinessLib:member:prepareComJakewhartonRxbindingRxbinding100Library
-:BusinessLib:member:prepareComJakewhartonRxbindingRxbindingSupportV4100Library
+:BusinessLib:member:prepareComJakewhartonRxbinding2Rxbinding200Library
+:BusinessLib:coupon:packageReleaseRenderscript UP-TO-DATE
+:BusinessLib:coupon:processReleaseJavaRes
+:BusinessLib:member:prepareComJakewhartonRxbinding2RxbindingSupportV4200Library
+:BusinessLib:coupon:processReleaseJavaRes UP-TO-DATE
+:BusinessLib:coupon:transformResourcesWithMergeJavaResForRelease
 :BusinessLib:member:prepareComJakewhartonTimberTimber451Library
 :BusinessLib:member:prepareComReadystatesoftwareChuckLibrary101Library
-:BusinessLib:member:prepareComTrelloRxlifecycleAndroid10Library
-:BusinessLib:member:prepareIoReactivexRxandroid121Library
+:BusinessLib:member:prepareComTencentBuglyCrashreport_upgrade125Library
+:BusinessLib:member:prepareComTrelloRxlifecycle2RxlifecycleAndroid201Library
+:BusinessLib:member:prepareIoReactivexRxjava2Rxandroid201Library
 :BusinessLib:member:prepareMeZhanghaiAndroidMaterialprogressbarLibrary130Library
-:BusinessLib:member:compileReleaseNdk
-:app:incrementalReleaseJavaCompilationSafeguard UP-TO-DATE
-:app:javaPreCompileRelease
 :BusinessLib:member:compileReleaseNdk UP-TO-DATE
-:app:compileReleaseNdk
 :BusinessLib:member:compileLint
-:app:compileReleaseNdk UP-TO-DATE
-:app:mergeReleaseShaders UP-TO-DATE
-:BusinessLib:member:compileLint UP-TO-DATE
-:app:compileReleaseShaders
+:BusinessLib:coupon:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
 :BusinessLib:member:copyReleaseLint UP-TO-DATE
-:BusinessLib:member:generateReleaseBuildConfig
+:BusinessLib:member:generateReleaseBuildConfig UP-TO-DATE
+:BusinessLib:member:generateReleaseResValues
+:BusinessLib:member:incrementalReleaseJavaCompilationSafeguard
+:app:javaPreCompileRelease
+:app:compileReleaseNdk UP-TO-DATE
+:app:mergeReleaseShaders
+:BusinessLib:member:incrementalReleaseJavaCompilationSafeguard UP-TO-DATE
+:BusinessLib:member:javaPreCompileRelease
+:app:mergeReleaseShaders UP-TO-DATE
+:BusinessLib:member:mergeReleaseShaders
 :app:compileReleaseShaders UP-TO-DATE
 :app:generateReleaseAssets UP-TO-DATE
 :app:processReleaseJavaRes UP-TO-DATE
 :app:validateSigningRelease
-:BusinessLib:member:generateReleaseBuildConfig UP-TO-DATE
-:BusinessLib:member:generateReleaseResValues UP-TO-DATE
-:BusinessLib:member:incrementalReleaseJavaCompilationSafeguard UP-TO-DATE
-:BusinessLib:member:javaPreCompileRelease
-:BusinessLib:member:mergeReleaseShaders UP-TO-DATE
-:BusinessLib:member:compileReleaseShaders UP-TO-DATE
-:BusinessLib:member:generateReleaseAssets UP-TO-DATE
-:BusinessLib:member:mergeReleaseProguardFiles UP-TO-DATE
+:BusinessLib:member:compileReleaseShaders
+:BusinessLib:member:generateReleaseAssets
+:BusinessLib:member:mergeReleaseProguardFiles
 :BusinessLib:member:packageReleaseRenderscript UP-TO-DATE
 :BusinessLib:member:processReleaseJavaRes UP-TO-DATE
 :BusinessLib:member:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
-:ToolLib:toasty:mergeReleaseResources UP-TO-DATE
-:ToolLib:toasty:processReleaseManifest
-:ToolLib:bottom-bar:mergeReleaseResources UP-TO-DATE
-:ToolLib:bottom-bar:processReleaseManifest
-:ToolLib:toasty:processReleaseManifest UP-TO-DATE
-:ToolLib:toasty:processReleaseResources
-:ToolLib:bottom-bar:processReleaseManifest UP-TO-DATE
-:ToolLib:bottom-bar:processReleaseResources
-:ToolLib:toasty:processReleaseResources UP-TO-DATE
-:ToolLib:toasty:generateReleaseSources UP-TO-DATE
-:ToolLib:toasty:incrementalReleaseJavaCompilationSafeguard
-:ToolLib:bottom-bar:processReleaseResources UP-TO-DATE
-:ToolLib:bottom-bar:generateReleaseSources UP-TO-DATE
-:ToolLib:bottom-bar:incrementalReleaseJavaCompilationSafeguard
-:ToolLib:toasty:incrementalReleaseJavaCompilationSafeguard UP-TO-DATE
-:ToolLib:toasty:javaPreCompileRelease
-:ToolLib:bottom-bar:incrementalReleaseJavaCompilationSafeguard UP-TO-DATE
-:ToolLib:bottom-bar:javaPreCompileRelease
-:ToolLib:bottom-bar:compileReleaseJavaWithJavac
-:ToolLib:toasty:compileReleaseJavaWithJavac UP-TO-DATE
-:ToolLib:bottom-bar:compileReleaseJavaWithJavac UP-TO-DATE
-:ToolLib:toasty:extractReleaseAnnotations UP-TO-DATE
-:ToolLib:bottom-bar:extractReleaseAnnotations UP-TO-DATE
-:ToolLib:toasty:mergeReleaseShaders
-:ToolLib:bottom-bar:mergeReleaseShaders UP-TO-DATE
-:ToolLib:bottom-bar:compileReleaseShaders
-:ToolLib:toasty:mergeReleaseShaders UP-TO-DATE
-:ToolLib:toasty:compileReleaseShaders
-:ToolLib:bottom-bar:compileReleaseShaders UP-TO-DATE
-:ToolLib:bottom-bar:generateReleaseAssets UP-TO-DATE
-:ToolLib:bottom-bar:mergeReleaseAssets
-:ToolLib:toasty:compileReleaseShaders UP-TO-DATE
-:ToolLib:toasty:generateReleaseAssets UP-TO-DATE
-:ToolLib:toasty:mergeReleaseAssets
-:ToolLib:bottom-bar:mergeReleaseAssets UP-TO-DATE
-:ToolLib:bottom-bar:mergeReleaseProguardFiles UP-TO-DATE
-:ToolLib:bottom-bar:packageReleaseRenderscript UP-TO-DATE
-:ToolLib:bottom-bar:packageReleaseResources
-:ToolLib:toasty:mergeReleaseAssets UP-TO-DATE
-:ToolLib:toasty:mergeReleaseProguardFiles UP-TO-DATE
-:ToolLib:toasty:packageReleaseRenderscript UP-TO-DATE
-:ToolLib:toasty:packageReleaseResources
-:ToolLib:bottom-bar:packageReleaseResources UP-TO-DATE
-:ToolLib:bottom-bar:transformClassesWithRetrolambdaForRelease
-:ToolLib:toasty:packageReleaseResources UP-TO-DATE
-:ToolLib:toasty:transformClassesWithRetrolambdaForRelease UP-TO-DATE
-:ToolLib:toasty:processReleaseJavaRes UP-TO-DATE
-:ToolLib:toasty:transformResourcesWithMergeJavaResForRelease
-:ToolLib:bottom-bar:transformClassesWithRetrolambdaForRelease UP-TO-DATE
-:ToolLib:bottom-bar:processReleaseJavaRes UP-TO-DATE
-:ToolLib:toasty:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
-:ToolLib:bottom-bar:transformResourcesWithMergeJavaResForRelease
-:ToolLib:toasty:transformClassesAndResourcesWithSyncLibJarsForRelease
-:ToolLib:bottom-bar:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
-:ToolLib:bottom-bar:transformClassesAndResourcesWithSyncLibJarsForRelease
-:ToolLib:toasty:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
-:ToolLib:toasty:mergeReleaseJniLibFolders
-:ToolLib:bottom-bar:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
-:ToolLib:bottom-bar:mergeReleaseJniLibFolders
-:ToolLib:toasty:mergeReleaseJniLibFolders UP-TO-DATE
-:ToolLib:bottom-bar:mergeReleaseJniLibFolders UP-TO-DATE
-:ToolLib:toasty:transformNativeLibsWithMergeJniLibsForRelease
-:ToolLib:bottom-bar:transformNativeLibsWithMergeJniLibsForRelease UP-TO-DATE
-:ToolLib:bottom-bar:transformNativeLibsWithSyncJniLibsForRelease
-:ToolLib:toasty:transformNativeLibsWithMergeJniLibsForRelease UP-TO-DATE
-:ToolLib:toasty:transformNativeLibsWithSyncJniLibsForRelease
-:ToolLib:bottom-bar:transformNativeLibsWithSyncJniLibsForRelease UP-TO-DATE
-:ToolLib:toasty:transformNativeLibsWithSyncJniLibsForRelease UP-TO-DATE
-:ToolLib:bottom-bar:bundleRelease
-:ToolLib:toasty:bundleRelease
-:ToolLib:bottom-bar:bundleRelease UP-TO-DATE
-:ToolLib:toasty:bundleRelease UP-TO-DATE
-:ToolLib:zlibrary:prepareReleaseDependencies
-:ToolLib:zlibrary:compileReleaseAidl UP-TO-DATE
-:ToolLib:zlibrary:compileReleaseRenderscript UP-TO-DATE
-:ToolLib:zlibrary:generateReleaseResources UP-TO-DATE
 :ToolLib:zlibrary:mergeReleaseResources UP-TO-DATE
-:ToolLib:zlibrary:processReleaseManifest UP-TO-DATE
+:ToolLib:zlibrary:processReleaseManifest
 :ToolLib:zlibrary:processReleaseResources UP-TO-DATE
-:ToolLib:zlibrary:generateReleaseSources UP-TO-DATE
+:ToolLib:zlibrary:generateReleaseSources
 :ToolLib:zlibrary:compileReleaseJavaWithJavac UP-TO-DATE
 :ToolLib:zlibrary:extractReleaseAnnotations UP-TO-DATE
-:ToolLib:zlibrary:mergeReleaseAssets UP-TO-DATE
-:ToolLib:zlibrary:packageReleaseResources UP-TO-DATE
+:ToolLib:zlibrary:mergeReleaseAssets
+:ToolLib:zlibrary:packageReleaseResources
 :ToolLib:zlibrary:transformClassesWithRetrolambdaForRelease UP-TO-DATE
 :ToolLib:zlibrary:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
 :ToolLib:zlibrary:mergeReleaseJniLibFolders UP-TO-DATE
@@ -554,17 +594,17 @@ extractReleaseAnnotations is incompatible with java 8 sources and has been disab
 :ToolLib:zlibrary:transformNativeLibsWithSyncJniLibsForRelease UP-TO-DATE
 :ToolLib:zlibrary:bundleRelease UP-TO-DATE
 :BusinessLib:baselib:prepareReleaseDependencies
-:BusinessLib:baselib:compileReleaseAidl UP-TO-DATE
-:BusinessLib:baselib:compileReleaseRenderscript UP-TO-DATE
-:BusinessLib:baselib:generateReleaseResources UP-TO-DATE
+:BusinessLib:baselib:compileReleaseAidl
+:BusinessLib:baselib:compileReleaseRenderscript
+:BusinessLib:baselib:generateReleaseResources
 :BusinessLib:baselib:mergeReleaseResources UP-TO-DATE
-:BusinessLib:baselib:processReleaseManifest UP-TO-DATE
+:BusinessLib:baselib:processReleaseManifest
 :BusinessLib:baselib:processReleaseResources UP-TO-DATE
-:BusinessLib:baselib:generateReleaseSources UP-TO-DATE
+:BusinessLib:baselib:generateReleaseSources
 :BusinessLib:baselib:compileReleaseJavaWithJavac UP-TO-DATE
 :BusinessLib:baselib:extractReleaseAnnotations UP-TO-DATE
-:BusinessLib:baselib:mergeReleaseAssets UP-TO-DATE
-:BusinessLib:baselib:packageReleaseResources UP-TO-DATE
+:BusinessLib:baselib:mergeReleaseAssets
+:BusinessLib:baselib:packageReleaseResources
 :BusinessLib:baselib:transformClassesWithRetrolambdaForRelease UP-TO-DATE
 :BusinessLib:baselib:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
 :BusinessLib:baselib:mergeReleaseJniLibFolders UP-TO-DATE
@@ -572,86 +612,67 @@ extractReleaseAnnotations is incompatible with java 8 sources and has been disab
 :BusinessLib:baselib:transformNativeLibsWithSyncJniLibsForRelease UP-TO-DATE
 :BusinessLib:baselib:bundleRelease UP-TO-DATE
 :BusinessLib:cash:prepareReleaseDependencies
-:BusinessLib:coupon:prepareReleaseDependencies
-:BusinessLib:member:prepareReleaseDependencies
-:BusinessLib:coupon:compileReleaseAidl
 :BusinessLib:cash:compileReleaseAidl
+:BusinessLib:coupon:prepareReleaseDependencies
+:BusinessLib:coupon:compileReleaseAidl
+:BusinessLib:member:prepareReleaseDependencies
 :BusinessLib:member:compileReleaseAidl
-:BusinessLib:cash:compileReleaseAidl UP-TO-DATE
 :BusinessLib:cash:compileReleaseRenderscript
-:BusinessLib:coupon:compileReleaseAidl UP-TO-DATE
 :BusinessLib:coupon:compileReleaseRenderscript
-:BusinessLib:member:compileReleaseAidl UP-TO-DATE
 :BusinessLib:member:compileReleaseRenderscript
-:BusinessLib:cash:compileReleaseRenderscript UP-TO-DATE
-:BusinessLib:coupon:compileReleaseRenderscript UP-TO-DATE
-:BusinessLib:cash:generateReleaseResources UP-TO-DATE
-:BusinessLib:coupon:generateReleaseResources UP-TO-DATE
-:BusinessLib:member:compileReleaseRenderscript UP-TO-DATE
+:BusinessLib:cash:generateReleaseResources
 :BusinessLib:cash:mergeReleaseResources
+:BusinessLib:coupon:generateReleaseResources
 :BusinessLib:coupon:mergeReleaseResources
-:BusinessLib:member:generateReleaseResources UP-TO-DATE
+:BusinessLib:member:generateReleaseResources
 :BusinessLib:member:mergeReleaseResources
+:BusinessLib:coupon:mergeReleaseResources UP-TO-DATE
+:BusinessLib:coupon:processReleaseManifest
 :BusinessLib:cash:mergeReleaseResources UP-TO-DATE
 :BusinessLib:cash:processReleaseManifest
-:BusinessLib:coupon:mergeReleaseResources UP-TO-DATE
-:BusinessLib:cash:processReleaseManifest UP-TO-DATE
-:BusinessLib:coupon:processReleaseManifest
-:BusinessLib:cash:processReleaseResources
 :BusinessLib:member:mergeReleaseResources UP-TO-DATE
-:BusinessLib:coupon:processReleaseManifest UP-TO-DATE
 :BusinessLib:member:processReleaseManifest
 :BusinessLib:coupon:processReleaseResources
-:BusinessLib:member:processReleaseManifest UP-TO-DATE
-:BusinessLib:member:processReleaseResources
-:BusinessLib:cash:processReleaseResources UP-TO-DATE
-:BusinessLib:cash:generateReleaseSources UP-TO-DATE
-:BusinessLib:cash:compileReleaseJavaWithJavac
-:BusinessLib:coupon:processReleaseResources UP-TO-DATE
-:BusinessLib:coupon:generateReleaseSources UP-TO-DATE
-:BusinessLib:coupon:compileReleaseJavaWithJavac
+:BusinessLib:cash:processReleaseResources
 :BusinessLib:member:processReleaseResources UP-TO-DATE
-:BusinessLib:member:generateReleaseSources UP-TO-DATE
+:BusinessLib:member:generateReleaseSources
+:BusinessLib:coupon:processReleaseResources UP-TO-DATE
 :BusinessLib:member:compileReleaseJavaWithJavac
+:BusinessLib:coupon:generateReleaseSources
+:BusinessLib:coupon:compileReleaseJavaWithJavac
+:BusinessLib:cash:processReleaseResources UP-TO-DATE
+:BusinessLib:cash:generateReleaseSources
+:BusinessLib:cash:compileReleaseJavaWithJavac
 :BusinessLib:coupon:compileReleaseJavaWithJavac UP-TO-DATE
-:BusinessLib:member:compileReleaseJavaWithJavac UP-TO-DATE
-:BusinessLib:coupon:extractReleaseAnnotations
-:BusinessLib:member:extractReleaseAnnotations
 :BusinessLib:coupon:extractReleaseAnnotations UP-TO-DATE
 :BusinessLib:coupon:mergeReleaseAssets
+:BusinessLib:member:compileReleaseJavaWithJavac UP-TO-DATE
 :BusinessLib:member:extractReleaseAnnotations UP-TO-DATE
 :BusinessLib:member:mergeReleaseAssets
-:BusinessLib:cash:compileReleaseJavaWithJavac UP-TO-DATE
-:BusinessLib:cash:extractReleaseAnnotations UP-TO-DATE
-:BusinessLib:coupon:mergeReleaseAssets UP-TO-DATE
-:BusinessLib:cash:mergeReleaseAssets
-:BusinessLib:member:mergeReleaseAssets UP-TO-DATE
 :BusinessLib:coupon:packageReleaseResources
 :BusinessLib:member:packageReleaseResources
-:BusinessLib:cash:mergeReleaseAssets UP-TO-DATE
-:BusinessLib:member:packageReleaseResources UP-TO-DATE
+:BusinessLib:cash:compileReleaseJavaWithJavac UP-TO-DATE
+:BusinessLib:cash:extractReleaseAnnotations UP-TO-DATE
+:BusinessLib:cash:mergeReleaseAssets
 :BusinessLib:cash:packageReleaseResources
-:BusinessLib:member:transformClassesWithRetrolambdaForRelease
-:BusinessLib:coupon:packageReleaseResources UP-TO-DATE
 :BusinessLib:coupon:transformClassesWithRetrolambdaForRelease
-:BusinessLib:cash:packageReleaseResources UP-TO-DATE
+:BusinessLib:member:transformClassesWithRetrolambdaForRelease
 :BusinessLib:cash:transformClassesWithRetrolambdaForRelease
-:BusinessLib:member:transformClassesWithRetrolambdaForRelease UP-TO-DATE
-:BusinessLib:member:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
-:BusinessLib:member:mergeReleaseJniLibFolders UP-TO-DATE
-:BusinessLib:member:transformNativeLibsWithMergeJniLibsForRelease
 :BusinessLib:coupon:transformClassesWithRetrolambdaForRelease UP-TO-DATE
-:BusinessLib:member:transformNativeLibsWithMergeJniLibsForRelease UP-TO-DATE
-:BusinessLib:coupon:transformClassesAndResourcesWithSyncLibJarsForRelease
-:BusinessLib:member:transformNativeLibsWithSyncJniLibsForRelease UP-TO-DATE
-:BusinessLib:member:bundleRelease
 :BusinessLib:coupon:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
-:BusinessLib:member:bundleRelease UP-TO-DATE
 :BusinessLib:coupon:mergeReleaseJniLibFolders UP-TO-DATE
 :BusinessLib:coupon:transformNativeLibsWithMergeJniLibsForRelease UP-TO-DATE
 :BusinessLib:coupon:transformNativeLibsWithSyncJniLibsForRelease UP-TO-DATE
 :BusinessLib:coupon:bundleRelease UP-TO-DATE
+:BusinessLib:member:transformClassesWithRetrolambdaForRelease UP-TO-DATE
+:BusinessLib:member:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:BusinessLib:member:mergeReleaseJniLibFolders UP-TO-DATE
+:BusinessLib:member:transformNativeLibsWithMergeJniLibsForRelease UP-TO-DATE
+:BusinessLib:member:transformNativeLibsWithSyncJniLibsForRelease UP-TO-DATE
+:BusinessLib:member:bundleRelease
 :BusinessLib:cash:transformClassesWithRetrolambdaForRelease UP-TO-DATE
+:BusinessLib:cash:transformClassesAndResourcesWithSyncLibJarsForRelease
+:BusinessLib:member:bundleRelease UP-TO-DATE
 :BusinessLib:cash:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
 :BusinessLib:cash:mergeReleaseJniLibFolders UP-TO-DATE
 :BusinessLib:cash:transformNativeLibsWithMergeJniLibsForRelease UP-TO-DATE
@@ -665,684 +686,16 @@ extractReleaseAnnotations is incompatible with java 8 sources and has been disab
 :app:processReleaseManifest UP-TO-DATE
 :app:processReleaseResources UP-TO-DATE
 :app:generateReleaseSources UP-TO-DATE
-:app:compileReleaseJavaWithJavac UP-TO-DATE
-:app:compileReleaseSources UP-TO-DATE
+:app:compileReleaseJavaWithJavac
+:app:compileReleaseSources
 :app:lintVitalRelease
 :app:mergeReleaseAssets UP-TO-DATE
 :app:transformClassesWithRetrolambdaForRelease UP-TO-DATE
 :app:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
 :app:transformClassesAndResourcesWithProguardForRelease
-ProGuard, version 5.3.2
-Reading input...
-Reading program jar [/Users/meiweibuyondeng/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.1/f7be08ec23c21485b9b5a1cf1654c2ec8c58168d/jsr305-3.0.1.jar] (filtered)
-Reading program jar [/Users/meiweibuyondeng/.android/build-cache/c58ea22871f68e27dcca34b62505e64ab52fd843/output/jars/classes.jar] (filtered)
-Reading program jar [/Users/meiweibuyondeng/.android/build-cache/141bb1b437e58336c85caadfabf7e7fb185e1200/output/jars/classes.jar] (filtered)
-Reading program jar [/Users/meiweibuyondeng/.android/build-cache/55ab6dcb8117da0c802e853f92ee3a0422bd93dd/output/jars/classes.jar] (filtered)
-Reading program jar [/Users/meiweibuyondeng/.android/build-cache/5b171f5169d2b86dc6d9c1025753fbafd8e8b226/output/jars/classes.jar] (filtered)
-Reading program jar [/Users/meiweibuyondeng/.android/build-cache/b5072299552c42ba57ba75c6a3de6a7d4751d264/output/jars/classes.jar] (filtered)
-Reading program jar [/Users/meiweibuyondeng/.android/build-cache/7de81487690ef2ef371ca31ad4fd32848b5d81e6/output/jars/classes.jar] (filtered)
-Reading program jar [/Users/meiweibuyondeng/.android/build-cache/c070f7b215c77126f7f6db3c9bb62a5e85d3e576/output/jars/classes.jar] (filtered)
-Reading program jar [/Users/meiweibuyondeng/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.2.0/support-annotations-25.2.0.jar] (filtered)
-Reading program jar [/Users/meiweibuyondeng/.android/build-cache/d1e9d86f2d5922da5351600d1fa4eb861773c5e2/output/jars/classes.jar] (filtered)
-Reading program jar [/Users/meiweibuyondeng/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.11.0/840897fcd7223a8143f1d9b6f69714e7be34fd50/okio-1.11.0.jar] (filtered)
-Reading program jar [/Users/meiweibuyondeng/.gradle/caches/modules-2/files-2.1/com.trello/rxlifecycle/1.0/6a38e2cd80f46ecaf6553b2eb5a05eee6d472fdb/rxlifecycle-1.0.jar] (filtered)
-Reading program jar [/Users/meiweibuyondeng/.android/build-cache/282e3912e1e834dacb8fb37e5e3ede0bf6446a19/output/jars/classes.jar] (filtered)
-Reading program jar [/Users/meiweibuyondeng/.android/build-cache/a89e763ac7bd4656adbe0142d72e12e0268b5cec/output/jars/classes.jar] (filtered)
-Reading program jar [/Users/meiweibuyondeng/.android/build-cache/3eaa5d2975591a719bcc369252669b92688639c8/output/jars/classes.jar] (filtered)
-Reading program jar [/Users/meiweibuyondeng/.android/build-cache/5594a35b5065c92d2613032081a0508949187221/output/jars/classes.jar] (filtered)
-Reading program jar [/Users/meiweibuyondeng/.gradle/caches/modules-2/files-2.1/io.reactivex/rxjava/1.2.3/7fe1a94c1aeb958acc876fe616922cc191f3222c/rxjava-1.2.3.jar] (filtered)
-Reading program jar [/Users/meiweibuyondeng/.android/build-cache/d1e1fe7f71889891fb13784fdd3615efac289fa3/output/jars/classes.jar] (filtered)
-Reading program jar [/Users/meiweibuyondeng/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/adapter-rxjava/2.1.0/693eddc23e87ab13f9cf5001707ce8e7e1d1ff01/adapter-rxjava-2.1.0.jar] (filtered)
-Reading program jar [/Users/meiweibuyondeng/.gradle/caches/modules-2/files-2.1/nl.qbusict/cupboard/2.2.0/dc6f78fc951c5bdeec92c14c6dd6adc9ce6195d0/cupboard-2.2.0.jar] (filtered)
-Reading program jar [/Users/meiweibuyondeng/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.6.0/69edde9fc4b01c9fd51d25b83428837478c27254/okhttp-3.6.0.jar] (filtered)
-Reading program jar [/Users/meiweibuyondeng/.android/build-cache/b628974e79d626fdd938204e968df1649c14fbb5/output/jars/classes.jar] (filtered)
-Reading program jar [/Users/meiweibuyondeng/.android/build-cache/132ad6024eb159ae7e65636313318a35cdd723bf/output/jars/classes.jar] (filtered)
-Reading program jar [/Users/meiweibuyondeng/.android/build-cache/ed98924d3b0314da8db9e33f4ea921bfceb8bef9/output/jars/classes.jar] (filtered)
-Reading program jar [/Users/meiweibuyondeng/.android/build-cache/4457b244413d4aa418e06eedcfa0f780974d8f96/output/jars/classes.jar] (filtered)
-Reading program jar [/Users/meiweibuyondeng/.android/build-cache/5e0861e20fb794e02baceca42acb27b458c03db3/output/jars/classes.jar] (filtered)
-Reading program jar [/Users/meiweibuyondeng/.android/build-cache/99b4f22524c59f04f910e8d9493485847c291a9b/output/jars/classes.jar] (filtered)
-Reading program jar [/Users/meiweibuyondeng/.android/build-cache/7da2cf9487547c45dc974bfe201ab12a446eda66/output/jars/classes.jar] (filtered)
-Reading program jar [/Users/meiweibuyondeng/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/retrofit/2.1.0/2de7cd8b95b7021b1d597f049bcb422055119f2c/retrofit-2.1.0.jar] (filtered)
-Reading program jar [/Users/meiweibuyondeng/.android/build-cache/b1d8c472f067e54f38b0e2bdae885e491358df85/output/jars/classes.jar] (filtered)
-Reading program jar [/Users/meiweibuyondeng/.android/build-cache/e4a4228dbb4dbd8cefeb3cf1e301b8076097dfe8/output/jars/classes.jar] (filtered)
-Reading program jar [/Users/meiweibuyondeng/.android/build-cache/83c33c1f81bc751c1152cb5616f35960424bca8b/output/jars/classes.jar] (filtered)
-Reading program jar [/Users/meiweibuyondeng/.android/build-cache/5ce693ae8c37d01149583844e52a76d62a545095/output/jars/classes.jar] (filtered)
-Reading program jar [/Users/meiweibuyondeng/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.8.0/c4ba5371a29ac9b2ad6129b1d39ea38750043eff/gson-2.8.0.jar] (filtered)
-Reading program jar [/Users/meiweibuyondeng/.gradle/caches/modules-2/files-2.1/org.greenrobot/greendao/3.2.0/e70040568b2929b8e5869ad1ffca8e4386dc53bc/greendao-3.2.0.jar] (filtered)
-Reading program jar [/Users/meiweibuyondeng/.gradle/caches/modules-2/files-2.1/org.greenrobot/greendao-api/3.2.0/c6d610abe1d75d758431c9234917a349abc0a0ac/greendao-api-3.2.0.jar] (filtered)
-Reading program jar [/Users/meiweibuyondeng/.android/build-cache/cc08ccf6dc81a222bd594b3bb1b02c5351383797/output/jars/classes.jar] (filtered)
-Reading program jar [/Users/meiweibuyondeng/.android/build-cache/543fb52fbd4757d85819b60113054eda9564d5c6/output/jars/classes.jar] (filtered)
-Reading program jar [/Users/meiweibuyondeng/.android/build-cache/208e74f74bacc49750d95d7759eaac13166a6fa6/output/jars/classes.jar] (filtered)
-Reading program jar [/Users/meiweibuyondeng/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife-annotations/8.4.0/ea392375cf9ff59234a82e7928a204215ccc98cd/butterknife-annotations-8.4.0.jar] (filtered)
-Reading program jar [/Users/meiweibuyongdeng/AndroidStudioProjects/MyRxDemo/BusinessLib/cash/build/intermediates/bundles/default/classes.jar] (filtered)
-Reading program jar [/Users/meiweibuyongdeng/AndroidStudioProjects/MyRxDemo/BusinessLib/member/build/intermediates/bundles/default/classes.jar] (filtered)
-Reading program jar [/Users/meiweibuyongdeng/AndroidStudioProjects/MyRxDemo/BusinessLib/coupon/build/intermediates/bundles/default/classes.jar] (filtered)
-Reading program jar [/Users/meiweibuyongdeng/AndroidStudioProjects/MyRxDemo/BusinessLib/baselib/build/intermediates/bundles/default/classes.jar] (filtered)
-Reading program jar [/Users/meiweibuyongdeng/AndroidStudioProjects/MyRxDemo/ToolLib/zlibrary/build/intermediates/bundles/default/classes.jar] (filtered)
-Reading program jar [/Users/meiweibuyongdeng/AndroidStudioProjects/MyRxDemo/ToolLib/toasty/build/intermediates/bundles/default/classes.jar] (filtered)
-Reading program jar [/Users/meiweibuyongdeng/AndroidStudioProjects/MyRxDemo/ToolLib/bottom-bar/build/intermediates/bundles/default/classes.jar] (filtered)
-Reading program jar [/Users/meiweibuyongdeng/AndroidStudioProjects/MyRxDemo/BusinessLib/baselib/build/intermediates/bundles/default/libs/asmack.jar] (filtered)
-Reading program jar [/Users/meiweibuyongdeng/AndroidStudioProjects/MyRxDemo/app/build/intermediates/transforms/mergeJavaRes/release/jars/2/1f/main.jar] (filtered)
-Reading program directory [/Users/meiweibuyongdeng/AndroidStudioProjects/MyRxDemo/app/build/intermediates/transforms/retrolambda/release/folders/1/1/retrolambda] (filtered)
-Reading library jar [/Users/meiweibuyondeng/Library/Android/sdk/platforms/android-25/android.jar]
-Reading library jar [/Users/meiweibuyondeng/Library/Android/sdk/platforms/android-25/optional/org.apache.http.legacy.jar]
-Note: duplicate definition of library class [android.net.http.HttpResponseCache]
-Note: duplicate definition of library class [android.net.http.SslCertificate$DName]
-Note: duplicate definition of library class [android.net.http.SslError]
-Note: duplicate definition of library class [android.net.http.SslCertificate]
-Note: duplicate definition of library class [org.apache.http.params.CoreConnectionPNames]
-Note: duplicate definition of library class [org.apache.http.params.HttpConnectionParams]
-Note: duplicate definition of library class [org.apache.http.params.HttpParams]
-Note: duplicate definition of library class [org.apache.http.conn.scheme.SocketFactory]
-Note: duplicate definition of library class [org.apache.http.conn.scheme.LayeredSocketFactory]
-Note: duplicate definition of library class [org.apache.http.conn.scheme.HostNameResolver]
-Note: duplicate definition of library class [org.apache.http.conn.ConnectTimeoutException]
-Initializing...
-Note: retrofit2.Platform$IOS$MainThreadExecutor: can't find dynamically referenced class org.robovm.apple.foundation.NSOperationQueue
-Note: rx.internal.util.PlatformDependent accesses a field 'SDK_INT' dynamically
-      Maybe this is library field 'android.os.Build$VERSION { int SDK_INT; }'
-Note: the configuration keeps the entry point 'com.zjy.cash.component.widget.NumSoftKeyboard { void setNumClick(com.zjy.cash.component.widget.NumSoftKeyboard$NumClick); }', but not the descriptor class 'com.zjy.cash.component.widget.NumSoftKeyboard$NumClick'
-Note: the configuration keeps the entry point 'com.zjy.zlibrary.component.scrollablelayout.ScrollableLayout { void setOnScrollListener(com.zjy.zlibrary.component.scrollablelayout.ScrollableLayout$OnScrollListener); }', but not the descriptor class 'com.zjy.zlibrary.component.scrollablelayout.ScrollableLayout$OnScrollListener'
-Note: the configuration keeps the entry point 'com.zjy.zlibrary.util.SoundManager$SoundManagerNotConfiguredException { SoundManager$SoundManagerNotConfiguredException(com.zjy.zlibrary.util.SoundManager,java.lang.String); }', but not the descriptor class 'com.zjy.zlibrary.util.SoundManager'
-Note: the configuration keeps the entry point 'com.zjy.zlibrary.widget.AlignTextView { void setAlign(com.zjy.zlibrary.widget.AlignTextView$Align); }', but not the descriptor class 'com.zjy.zlibrary.widget.AlignTextView$Align'
-Note: the configuration keeps the entry point 'com.zjy.zlibrary.widget.TitleBar { void setTitleParamBundle(com.zjy.zlibrary.widget.TitleBar$TitleParamBundle); }', but not the descriptor class 'com.zjy.zlibrary.widget.TitleBar$TitleParamBundle'
-Note: the configuration keeps the entry point 'org.greenrobot.greendao.async.AsyncDaoException { AsyncDaoException(org.greenrobot.greendao.async.AsyncOperation,java.lang.Throwable); }', but not the descriptor class 'org.greenrobot.greendao.async.AsyncOperation'
-Note: the configuration keeps the entry point 'org.xbill.DNS.A6Record { A6Record(org.xbill.DNS.Name,int,long,int,java.net.InetAddress,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.A6Record { A6Record(org.xbill.DNS.Name,int,long,int,java.net.InetAddress,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.A6Record { void rrFromWire(org.xbill.DNS.DNSInput); }', but not the descriptor class 'org.xbill.DNS.DNSInput'
-Note: the configuration keeps the entry point 'org.xbill.DNS.A6Record { void rdataFromString(org.xbill.DNS.Tokenizer,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Tokenizer'
-Note: the configuration keeps the entry point 'org.xbill.DNS.A6Record { void rdataFromString(org.xbill.DNS.Tokenizer,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.A6Record { void rrToWire(org.xbill.DNS.DNSOutput,org.xbill.DNS.Compression,boolean); }', but not the descriptor class 'org.xbill.DNS.DNSOutput'
-Note: the configuration keeps the entry point 'org.xbill.DNS.A6Record { void rrToWire(org.xbill.DNS.DNSOutput,org.xbill.DNS.Compression,boolean); }', but not the descriptor class 'org.xbill.DNS.Compression'
-Note: the configuration keeps the entry point 'org.xbill.DNS.AAAARecord { AAAARecord(org.xbill.DNS.Name,int,long,java.net.InetAddress); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.AAAARecord { void rrFromWire(org.xbill.DNS.DNSInput); }', but not the descriptor class 'org.xbill.DNS.DNSInput'
-Note: the configuration keeps the entry point 'org.xbill.DNS.AAAARecord { void rdataFromString(org.xbill.DNS.Tokenizer,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Tokenizer'
-Note: the configuration keeps the entry point 'org.xbill.DNS.AAAARecord { void rdataFromString(org.xbill.DNS.Tokenizer,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.AAAARecord { void rrToWire(org.xbill.DNS.DNSOutput,org.xbill.DNS.Compression,boolean); }', but not the descriptor class 'org.xbill.DNS.DNSOutput'
-Note: the configuration keeps the entry point 'org.xbill.DNS.AAAARecord { void rrToWire(org.xbill.DNS.DNSOutput,org.xbill.DNS.Compression,boolean); }', but not the descriptor class 'org.xbill.DNS.Compression'
-Note: the configuration keeps the entry point 'org.xbill.DNS.AFSDBRecord { AFSDBRecord(org.xbill.DNS.Name,int,long,int,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.AFSDBRecord { AFSDBRecord(org.xbill.DNS.Name,int,long,int,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.APLRecord { APLRecord(org.xbill.DNS.Name,int,long,java.util.List); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.APLRecord { void rrFromWire(org.xbill.DNS.DNSInput); }', but not the descriptor class 'org.xbill.DNS.DNSInput'
-Note: the configuration keeps the entry point 'org.xbill.DNS.APLRecord { void rdataFromString(org.xbill.DNS.Tokenizer,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Tokenizer'
-Note: the configuration keeps the entry point 'org.xbill.DNS.APLRecord { void rdataFromString(org.xbill.DNS.Tokenizer,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.APLRecord { void rrToWire(org.xbill.DNS.DNSOutput,org.xbill.DNS.Compression,boolean); }', but not the descriptor class 'org.xbill.DNS.DNSOutput'
-Note: the configuration keeps the entry point 'org.xbill.DNS.APLRecord { void rrToWire(org.xbill.DNS.DNSOutput,org.xbill.DNS.Compression,boolean); }', but not the descriptor class 'org.xbill.DNS.Compression'
-Note: the configuration keeps the entry point 'org.xbill.DNS.ARecord { ARecord(org.xbill.DNS.Name,int,long,java.net.InetAddress); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.ARecord { void rrFromWire(org.xbill.DNS.DNSInput); }', but not the descriptor class 'org.xbill.DNS.DNSInput'
-Note: the configuration keeps the entry point 'org.xbill.DNS.ARecord { void rdataFromString(org.xbill.DNS.Tokenizer,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Tokenizer'
-Note: the configuration keeps the entry point 'org.xbill.DNS.ARecord { void rdataFromString(org.xbill.DNS.Tokenizer,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.ARecord { void rrToWire(org.xbill.DNS.DNSOutput,org.xbill.DNS.Compression,boolean); }', but not the descriptor class 'org.xbill.DNS.DNSOutput'
-Note: the configuration keeps the entry point 'org.xbill.DNS.ARecord { void rrToWire(org.xbill.DNS.DNSOutput,org.xbill.DNS.Compression,boolean); }', but not the descriptor class 'org.xbill.DNS.Compression'
-Note: the configuration keeps the entry point 'org.xbill.DNS.CERTRecord { CERTRecord(org.xbill.DNS.Name,int,long,int,int,int,byte[]); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.CERTRecord { void rrFromWire(org.xbill.DNS.DNSInput); }', but not the descriptor class 'org.xbill.DNS.DNSInput'
-Note: the configuration keeps the entry point 'org.xbill.DNS.CERTRecord { void rdataFromString(org.xbill.DNS.Tokenizer,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Tokenizer'
-Note: the configuration keeps the entry point 'org.xbill.DNS.CERTRecord { void rdataFromString(org.xbill.DNS.Tokenizer,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.CERTRecord { void rrToWire(org.xbill.DNS.DNSOutput,org.xbill.DNS.Compression,boolean); }', but not the descriptor class 'org.xbill.DNS.DNSOutput'
-Note: the configuration keeps the entry point 'org.xbill.DNS.CERTRecord { void rrToWire(org.xbill.DNS.DNSOutput,org.xbill.DNS.Compression,boolean); }', but not the descriptor class 'org.xbill.DNS.Compression'
-Note: the configuration keeps the entry point 'org.xbill.DNS.CNAMERecord { CNAMERecord(org.xbill.DNS.Name,int,long,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.CNAMERecord { CNAMERecord(org.xbill.DNS.Name,int,long,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.Cache$CacheRRset { Cache$CacheRRset(org.xbill.DNS.Record,int,long); }', but not the descriptor class 'org.xbill.DNS.Record'
-Note: the configuration keeps the entry point 'org.xbill.DNS.Cache$CacheRRset { Cache$CacheRRset(org.xbill.DNS.RRset,int,long); }', but not the descriptor class 'org.xbill.DNS.RRset'
-Note: the configuration keeps the entry point 'org.xbill.DNS.DHCIDRecord { DHCIDRecord(org.xbill.DNS.Name,int,long,byte[]); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.DHCIDRecord { void rrFromWire(org.xbill.DNS.DNSInput); }', but not the descriptor class 'org.xbill.DNS.DNSInput'
-Note: the configuration keeps the entry point 'org.xbill.DNS.DHCIDRecord { void rdataFromString(org.xbill.DNS.Tokenizer,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Tokenizer'
-Note: the configuration keeps the entry point 'org.xbill.DNS.DHCIDRecord { void rdataFromString(org.xbill.DNS.Tokenizer,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.DHCIDRecord { void rrToWire(org.xbill.DNS.DNSOutput,org.xbill.DNS.Compression,boolean); }', but not the descriptor class 'org.xbill.DNS.DNSOutput'
-Note: the configuration keeps the entry point 'org.xbill.DNS.DHCIDRecord { void rrToWire(org.xbill.DNS.DNSOutput,org.xbill.DNS.Compression,boolean); }', but not the descriptor class 'org.xbill.DNS.Compression'
-Note: the configuration keeps the entry point 'org.xbill.DNS.DLVRecord { DLVRecord(org.xbill.DNS.Name,int,long,int,int,int,byte[]); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.DLVRecord { void rrFromWire(org.xbill.DNS.DNSInput); }', but not the descriptor class 'org.xbill.DNS.DNSInput'
-Note: the configuration keeps the entry point 'org.xbill.DNS.DLVRecord { void rdataFromString(org.xbill.DNS.Tokenizer,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Tokenizer'
-Note: the configuration keeps the entry point 'org.xbill.DNS.DLVRecord { void rdataFromString(org.xbill.DNS.Tokenizer,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.DLVRecord { void rrToWire(org.xbill.DNS.DNSOutput,org.xbill.DNS.Compression,boolean); }', but not the descriptor class 'org.xbill.DNS.DNSOutput'
-Note: the configuration keeps the entry point 'org.xbill.DNS.DLVRecord { void rrToWire(org.xbill.DNS.DNSOutput,org.xbill.DNS.Compression,boolean); }', but not the descriptor class 'org.xbill.DNS.Compression'
-Note: the configuration keeps the entry point 'org.xbill.DNS.DNAMERecord { DNAMERecord(org.xbill.DNS.Name,int,long,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.DNAMERecord { DNAMERecord(org.xbill.DNS.Name,int,long,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.DNSKEYRecord { DNSKEYRecord(org.xbill.DNS.Name,int,long,int,int,int,byte[]); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.DNSKEYRecord { DNSKEYRecord(org.xbill.DNS.Name,int,long,int,int,int,java.security.PublicKey); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.DNSKEYRecord { void rdataFromString(org.xbill.DNS.Tokenizer,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Tokenizer'
-Note: the configuration keeps the entry point 'org.xbill.DNS.DNSKEYRecord { void rdataFromString(org.xbill.DNS.Tokenizer,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.DNSSEC$KeyMismatchException { DNSSEC$KeyMismatchException(org.xbill.DNS.KEYBase,org.xbill.DNS.SIGBase); }', but not the descriptor class 'org.xbill.DNS.KEYBase'
-Note: the configuration keeps the entry point 'org.xbill.DNS.DNSSEC$KeyMismatchException { DNSSEC$KeyMismatchException(org.xbill.DNS.KEYBase,org.xbill.DNS.SIGBase); }', but not the descriptor class 'org.xbill.DNS.SIGBase'
-Note: the configuration keeps the entry point 'org.xbill.DNS.DNSSEC$MalformedKeyException { DNSSEC$MalformedKeyException(org.xbill.DNS.KEYBase); }', but not the descriptor class 'org.xbill.DNS.KEYBase'
-Note: the configuration keeps the entry point 'org.xbill.DNS.DSRecord { DSRecord(org.xbill.DNS.Name,int,long,int,int,int,byte[]); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.DSRecord { DSRecord(org.xbill.DNS.Name,int,long,int,int,org.xbill.DNS.DNSKEYRecord); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.DSRecord { DSRecord(org.xbill.DNS.Name,int,long,int,int,org.xbill.DNS.DNSKEYRecord); }', but not the descriptor class 'org.xbill.DNS.DNSKEYRecord'
-Note: the configuration keeps the entry point 'org.xbill.DNS.DSRecord { void rrFromWire(org.xbill.DNS.DNSInput); }', but not the descriptor class 'org.xbill.DNS.DNSInput'
-Note: the configuration keeps the entry point 'org.xbill.DNS.DSRecord { void rdataFromString(org.xbill.DNS.Tokenizer,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Tokenizer'
-Note: the configuration keeps the entry point 'org.xbill.DNS.DSRecord { void rdataFromString(org.xbill.DNS.Tokenizer,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.DSRecord { void rrToWire(org.xbill.DNS.DNSOutput,org.xbill.DNS.Compression,boolean); }', but not the descriptor class 'org.xbill.DNS.DNSOutput'
-Note: the configuration keeps the entry point 'org.xbill.DNS.DSRecord { void rrToWire(org.xbill.DNS.DNSOutput,org.xbill.DNS.Compression,boolean); }', but not the descriptor class 'org.xbill.DNS.Compression'
-Note: the configuration keeps the entry point 'org.xbill.DNS.EmptyRecord { void rrFromWire(org.xbill.DNS.DNSInput); }', but not the descriptor class 'org.xbill.DNS.DNSInput'
-Note: the configuration keeps the entry point 'org.xbill.DNS.EmptyRecord { void rdataFromString(org.xbill.DNS.Tokenizer,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Tokenizer'
-Note: the configuration keeps the entry point 'org.xbill.DNS.EmptyRecord { void rdataFromString(org.xbill.DNS.Tokenizer,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.EmptyRecord { void rrToWire(org.xbill.DNS.DNSOutput,org.xbill.DNS.Compression,boolean); }', but not the descriptor class 'org.xbill.DNS.DNSOutput'
-Note: the configuration keeps the entry point 'org.xbill.DNS.EmptyRecord { void rrToWire(org.xbill.DNS.DNSOutput,org.xbill.DNS.Compression,boolean); }', but not the descriptor class 'org.xbill.DNS.Compression'
-Note: the configuration keeps the entry point 'org.xbill.DNS.GPOSRecord { GPOSRecord(org.xbill.DNS.Name,int,long,double,double,double); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.GPOSRecord { GPOSRecord(org.xbill.DNS.Name,int,long,java.lang.String,java.lang.String,java.lang.String); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.GPOSRecord { void rrFromWire(org.xbill.DNS.DNSInput); }', but not the descriptor class 'org.xbill.DNS.DNSInput'
-Note: the configuration keeps the entry point 'org.xbill.DNS.GPOSRecord { void rdataFromString(org.xbill.DNS.Tokenizer,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Tokenizer'
-Note: the configuration keeps the entry point 'org.xbill.DNS.GPOSRecord { void rdataFromString(org.xbill.DNS.Tokenizer,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.GPOSRecord { void rrToWire(org.xbill.DNS.DNSOutput,org.xbill.DNS.Compression,boolean); }', but not the descriptor class 'org.xbill.DNS.DNSOutput'
-Note: the configuration keeps the entry point 'org.xbill.DNS.GPOSRecord { void rrToWire(org.xbill.DNS.DNSOutput,org.xbill.DNS.Compression,boolean); }', but not the descriptor class 'org.xbill.DNS.Compression'
-Note: the configuration keeps the entry point 'org.xbill.DNS.HINFORecord { HINFORecord(org.xbill.DNS.Name,int,long,java.lang.String,java.lang.String); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.HINFORecord { void rrFromWire(org.xbill.DNS.DNSInput); }', but not the descriptor class 'org.xbill.DNS.DNSInput'
-Note: the configuration keeps the entry point 'org.xbill.DNS.HINFORecord { void rdataFromString(org.xbill.DNS.Tokenizer,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Tokenizer'
-Note: the configuration keeps the entry point 'org.xbill.DNS.HINFORecord { void rdataFromString(org.xbill.DNS.Tokenizer,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.HINFORecord { void rrToWire(org.xbill.DNS.DNSOutput,org.xbill.DNS.Compression,boolean); }', but not the descriptor class 'org.xbill.DNS.DNSOutput'
-Note: the configuration keeps the entry point 'org.xbill.DNS.HINFORecord { void rrToWire(org.xbill.DNS.DNSOutput,org.xbill.DNS.Compression,boolean); }', but not the descriptor class 'org.xbill.DNS.Compression'
-Note: the configuration keeps the entry point 'org.xbill.DNS.IPSECKEYRecord { IPSECKEYRecord(org.xbill.DNS.Name,int,long,int,int,int,java.lang.Object,byte[]); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.IPSECKEYRecord { void rrFromWire(org.xbill.DNS.DNSInput); }', but not the descriptor class 'org.xbill.DNS.DNSInput'
-Note: the configuration keeps the entry point 'org.xbill.DNS.IPSECKEYRecord { void rdataFromString(org.xbill.DNS.Tokenizer,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Tokenizer'
-Note: the configuration keeps the entry point 'org.xbill.DNS.IPSECKEYRecord { void rdataFromString(org.xbill.DNS.Tokenizer,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.IPSECKEYRecord { void rrToWire(org.xbill.DNS.DNSOutput,org.xbill.DNS.Compression,boolean); }', but not the descriptor class 'org.xbill.DNS.DNSOutput'
-Note: the configuration keeps the entry point 'org.xbill.DNS.IPSECKEYRecord { void rrToWire(org.xbill.DNS.DNSOutput,org.xbill.DNS.Compression,boolean); }', but not the descriptor class 'org.xbill.DNS.Compression'
-Note: the configuration keeps the entry point 'org.xbill.DNS.ISDNRecord { ISDNRecord(org.xbill.DNS.Name,int,long,java.lang.String,java.lang.String); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.ISDNRecord { void rrFromWire(org.xbill.DNS.DNSInput); }', but not the descriptor class 'org.xbill.DNS.DNSInput'
-Note: the configuration keeps the entry point 'org.xbill.DNS.ISDNRecord { void rdataFromString(org.xbill.DNS.Tokenizer,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Tokenizer'
-Note: the configuration keeps the entry point 'org.xbill.DNS.ISDNRecord { void rdataFromString(org.xbill.DNS.Tokenizer,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.ISDNRecord { void rrToWire(org.xbill.DNS.DNSOutput,org.xbill.DNS.Compression,boolean); }', but not the descriptor class 'org.xbill.DNS.DNSOutput'
-Note: the configuration keeps the entry point 'org.xbill.DNS.ISDNRecord { void rrToWire(org.xbill.DNS.DNSOutput,org.xbill.DNS.Compression,boolean); }', but not the descriptor class 'org.xbill.DNS.Compression'
-Note: the configuration keeps the entry point 'org.xbill.DNS.KEYBase { KEYBase(org.xbill.DNS.Name,int,int,long,int,int,int,byte[]); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.KEYBase { void rrFromWire(org.xbill.DNS.DNSInput); }', but not the descriptor class 'org.xbill.DNS.DNSInput'
-Note: the configuration keeps the entry point 'org.xbill.DNS.KEYBase { void rrToWire(org.xbill.DNS.DNSOutput,org.xbill.DNS.Compression,boolean); }', but not the descriptor class 'org.xbill.DNS.DNSOutput'
-Note: the configuration keeps the entry point 'org.xbill.DNS.KEYBase { void rrToWire(org.xbill.DNS.DNSOutput,org.xbill.DNS.Compression,boolean); }', but not the descriptor class 'org.xbill.DNS.Compression'
-Note: the configuration keeps the entry point 'org.xbill.DNS.KEYRecord { KEYRecord(org.xbill.DNS.Name,int,long,int,int,int,byte[]); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.KEYRecord { KEYRecord(org.xbill.DNS.Name,int,long,int,int,int,java.security.PublicKey); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.KEYRecord { void rdataFromString(org.xbill.DNS.Tokenizer,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Tokenizer'
-Note: the configuration keeps the entry point 'org.xbill.DNS.KEYRecord { void rdataFromString(org.xbill.DNS.Tokenizer,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.KXRecord { KXRecord(org.xbill.DNS.Name,int,long,int,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.KXRecord { KXRecord(org.xbill.DNS.Name,int,long,int,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.LOCRecord { LOCRecord(org.xbill.DNS.Name,int,long,double,double,double,double,double,double); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.LOCRecord { void rrFromWire(org.xbill.DNS.DNSInput); }', but not the descriptor class 'org.xbill.DNS.DNSInput'
-Note: the configuration keeps the entry point 'org.xbill.DNS.LOCRecord { void rdataFromString(org.xbill.DNS.Tokenizer,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Tokenizer'
-Note: the configuration keeps the entry point 'org.xbill.DNS.LOCRecord { void rdataFromString(org.xbill.DNS.Tokenizer,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.LOCRecord { void rrToWire(org.xbill.DNS.DNSOutput,org.xbill.DNS.Compression,boolean); }', but not the descriptor class 'org.xbill.DNS.DNSOutput'
-Note: the configuration keeps the entry point 'org.xbill.DNS.LOCRecord { void rrToWire(org.xbill.DNS.DNSOutput,org.xbill.DNS.Compression,boolean); }', but not the descriptor class 'org.xbill.DNS.Compression'
-Note: the configuration keeps the entry point 'org.xbill.DNS.MBRecord { MBRecord(org.xbill.DNS.Name,int,long,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.MBRecord { MBRecord(org.xbill.DNS.Name,int,long,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.MDRecord { MDRecord(org.xbill.DNS.Name,int,long,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.MDRecord { MDRecord(org.xbill.DNS.Name,int,long,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.MFRecord { MFRecord(org.xbill.DNS.Name,int,long,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.MFRecord { MFRecord(org.xbill.DNS.Name,int,long,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.MGRecord { MGRecord(org.xbill.DNS.Name,int,long,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.MGRecord { MGRecord(org.xbill.DNS.Name,int,long,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.MINFORecord { MINFORecord(org.xbill.DNS.Name,int,long,org.xbill.DNS.Name,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.MINFORecord { MINFORecord(org.xbill.DNS.Name,int,long,org.xbill.DNS.Name,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.MINFORecord { MINFORecord(org.xbill.DNS.Name,int,long,org.xbill.DNS.Name,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.MINFORecord { void rrFromWire(org.xbill.DNS.DNSInput); }', but not the descriptor class 'org.xbill.DNS.DNSInput'
-Note: the configuration keeps the entry point 'org.xbill.DNS.MINFORecord { void rdataFromString(org.xbill.DNS.Tokenizer,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Tokenizer'
-Note: the configuration keeps the entry point 'org.xbill.DNS.MINFORecord { void rdataFromString(org.xbill.DNS.Tokenizer,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.MINFORecord { void rrToWire(org.xbill.DNS.DNSOutput,org.xbill.DNS.Compression,boolean); }', but not the descriptor class 'org.xbill.DNS.DNSOutput'
-Note: the configuration keeps the entry point 'org.xbill.DNS.MINFORecord { void rrToWire(org.xbill.DNS.DNSOutput,org.xbill.DNS.Compression,boolean); }', but not the descriptor class 'org.xbill.DNS.Compression'
-Note: the configuration keeps the entry point 'org.xbill.DNS.MRRecord { MRRecord(org.xbill.DNS.Name,int,long,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.MRRecord { MRRecord(org.xbill.DNS.Name,int,long,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.MXRecord { MXRecord(org.xbill.DNS.Name,int,long,int,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.MXRecord { MXRecord(org.xbill.DNS.Name,int,long,int,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.MXRecord { void rrToWire(org.xbill.DNS.DNSOutput,org.xbill.DNS.Compression,boolean); }', but not the descriptor class 'org.xbill.DNS.DNSOutput'
-Note: the configuration keeps the entry point 'org.xbill.DNS.MXRecord { void rrToWire(org.xbill.DNS.DNSOutput,org.xbill.DNS.Compression,boolean); }', but not the descriptor class 'org.xbill.DNS.Compression'
-Note: the configuration keeps the entry point 'org.xbill.DNS.NAPTRRecord { NAPTRRecord(org.xbill.DNS.Name,int,long,int,int,java.lang.String,java.lang.String,java.lang.String,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.NAPTRRecord { NAPTRRecord(org.xbill.DNS.Name,int,long,int,int,java.lang.String,java.lang.String,java.lang.String,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.NAPTRRecord { void rrFromWire(org.xbill.DNS.DNSInput); }', but not the descriptor class 'org.xbill.DNS.DNSInput'
-Note: the configuration keeps the entry point 'org.xbill.DNS.NAPTRRecord { void rdataFromString(org.xbill.DNS.Tokenizer,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Tokenizer'
-Note: the configuration keeps the entry point 'org.xbill.DNS.NAPTRRecord { void rdataFromString(org.xbill.DNS.Tokenizer,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.NAPTRRecord { void rrToWire(org.xbill.DNS.DNSOutput,org.xbill.DNS.Compression,boolean); }', but not the descriptor class 'org.xbill.DNS.DNSOutput'
-Note: the configuration keeps the entry point 'org.xbill.DNS.NAPTRRecord { void rrToWire(org.xbill.DNS.DNSOutput,org.xbill.DNS.Compression,boolean); }', but not the descriptor class 'org.xbill.DNS.Compression'
-Note: the configuration keeps the entry point 'org.xbill.DNS.NSAPRecord { NSAPRecord(org.xbill.DNS.Name,int,long,java.lang.String); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.NSAPRecord { void rrFromWire(org.xbill.DNS.DNSInput); }', but not the descriptor class 'org.xbill.DNS.DNSInput'
-Note: the configuration keeps the entry point 'org.xbill.DNS.NSAPRecord { void rdataFromString(org.xbill.DNS.Tokenizer,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Tokenizer'
-Note: the configuration keeps the entry point 'org.xbill.DNS.NSAPRecord { void rdataFromString(org.xbill.DNS.Tokenizer,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.NSAPRecord { void rrToWire(org.xbill.DNS.DNSOutput,org.xbill.DNS.Compression,boolean); }', but not the descriptor class 'org.xbill.DNS.DNSOutput'
-Note: the configuration keeps the entry point 'org.xbill.DNS.NSAPRecord { void rrToWire(org.xbill.DNS.DNSOutput,org.xbill.DNS.Compression,boolean); }', but not the descriptor class 'org.xbill.DNS.Compression'
-Note: the configuration keeps the entry point 'org.xbill.DNS.NSAP_PTRRecord { NSAP_PTRRecord(org.xbill.DNS.Name,int,long,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.NSAP_PTRRecord { NSAP_PTRRecord(org.xbill.DNS.Name,int,long,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.NSEC3PARAMRecord { NSEC3PARAMRecord(org.xbill.DNS.Name,int,long,int,int,int,byte[]); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.NSEC3PARAMRecord { void rrFromWire(org.xbill.DNS.DNSInput); }', but not the descriptor class 'org.xbill.DNS.DNSInput'
-Note: the configuration keeps the entry point 'org.xbill.DNS.NSEC3PARAMRecord { void rrToWire(org.xbill.DNS.DNSOutput,org.xbill.DNS.Compression,boolean); }', but not the descriptor class 'org.xbill.DNS.DNSOutput'
-Note: the configuration keeps the entry point 'org.xbill.DNS.NSEC3PARAMRecord { void rrToWire(org.xbill.DNS.DNSOutput,org.xbill.DNS.Compression,boolean); }', but not the descriptor class 'org.xbill.DNS.Compression'
-Note: the configuration keeps the entry point 'org.xbill.DNS.NSEC3PARAMRecord { void rdataFromString(org.xbill.DNS.Tokenizer,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Tokenizer'
-Note: the configuration keeps the entry point 'org.xbill.DNS.NSEC3PARAMRecord { void rdataFromString(org.xbill.DNS.Tokenizer,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.NSEC3PARAMRecord { byte[] hashName(org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.NSEC3Record { NSEC3Record(org.xbill.DNS.Name,int,long,int,int,int,byte[],byte[],int[]); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.NSEC3Record { void rrFromWire(org.xbill.DNS.DNSInput); }', but not the descriptor class 'org.xbill.DNS.DNSInput'
-Note: the configuration keeps the entry point 'org.xbill.DNS.NSEC3Record { void rrToWire(org.xbill.DNS.DNSOutput,org.xbill.DNS.Compression,boolean); }', but not the descriptor class 'org.xbill.DNS.DNSOutput'
-Note: the configuration keeps the entry point 'org.xbill.DNS.NSEC3Record { void rrToWire(org.xbill.DNS.DNSOutput,org.xbill.DNS.Compression,boolean); }', but not the descriptor class 'org.xbill.DNS.Compression'
-Note: the configuration keeps the entry point 'org.xbill.DNS.NSEC3Record { void rdataFromString(org.xbill.DNS.Tokenizer,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Tokenizer'
-Note: the configuration keeps the entry point 'org.xbill.DNS.NSEC3Record { void rdataFromString(org.xbill.DNS.Tokenizer,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.NSEC3Record { byte[] hashName(org.xbill.DNS.Name,int,int,byte[]); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.NSEC3Record { byte[] hashName(org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.NSECRecord { NSECRecord(org.xbill.DNS.Name,int,long,org.xbill.DNS.Name,int[]); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.NSECRecord { NSECRecord(org.xbill.DNS.Name,int,long,org.xbill.DNS.Name,int[]); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.NSECRecord { void rrFromWire(org.xbill.DNS.DNSInput); }', but not the descriptor class 'org.xbill.DNS.DNSInput'
-Note: the configuration keeps the entry point 'org.xbill.DNS.NSECRecord { void rrToWire(org.xbill.DNS.DNSOutput,org.xbill.DNS.Compression,boolean); }', but not the descriptor class 'org.xbill.DNS.DNSOutput'
-Note: the configuration keeps the entry point 'org.xbill.DNS.NSECRecord { void rrToWire(org.xbill.DNS.DNSOutput,org.xbill.DNS.Compression,boolean); }', but not the descriptor class 'org.xbill.DNS.Compression'
-Note: the configuration keeps the entry point 'org.xbill.DNS.NSECRecord { void rdataFromString(org.xbill.DNS.Tokenizer,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Tokenizer'
-Note: the configuration keeps the entry point 'org.xbill.DNS.NSECRecord { void rdataFromString(org.xbill.DNS.Tokenizer,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.NSRecord { NSRecord(org.xbill.DNS.Name,int,long,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.NSRecord { NSRecord(org.xbill.DNS.Name,int,long,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.NULLRecord { NULLRecord(org.xbill.DNS.Name,int,long,byte[]); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.NULLRecord { void rrFromWire(org.xbill.DNS.DNSInput); }', but not the descriptor class 'org.xbill.DNS.DNSInput'
-Note: the configuration keeps the entry point 'org.xbill.DNS.NULLRecord { void rdataFromString(org.xbill.DNS.Tokenizer,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Tokenizer'
-Note: the configuration keeps the entry point 'org.xbill.DNS.NULLRecord { void rdataFromString(org.xbill.DNS.Tokenizer,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.NULLRecord { void rrToWire(org.xbill.DNS.DNSOutput,org.xbill.DNS.Compression,boolean); }', but not the descriptor class 'org.xbill.DNS.DNSOutput'
-Note: the configuration keeps the entry point 'org.xbill.DNS.NULLRecord { void rrToWire(org.xbill.DNS.DNSOutput,org.xbill.DNS.Compression,boolean); }', but not the descriptor class 'org.xbill.DNS.Compression'
-Note: the configuration keeps the entry point 'org.xbill.DNS.NXTRecord { NXTRecord(org.xbill.DNS.Name,int,long,org.xbill.DNS.Name,java.util.BitSet); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.NXTRecord { NXTRecord(org.xbill.DNS.Name,int,long,org.xbill.DNS.Name,java.util.BitSet); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.NXTRecord { void rrFromWire(org.xbill.DNS.DNSInput); }', but not the descriptor class 'org.xbill.DNS.DNSInput'
-Note: the configuration keeps the entry point 'org.xbill.DNS.NXTRecord { void rdataFromString(org.xbill.DNS.Tokenizer,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Tokenizer'
-Note: the configuration keeps the entry point 'org.xbill.DNS.NXTRecord { void rdataFromString(org.xbill.DNS.Tokenizer,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.NXTRecord { void rrToWire(org.xbill.DNS.DNSOutput,org.xbill.DNS.Compression,boolean); }', but not the descriptor class 'org.xbill.DNS.DNSOutput'
-Note: the configuration keeps the entry point 'org.xbill.DNS.NXTRecord { void rrToWire(org.xbill.DNS.DNSOutput,org.xbill.DNS.Compression,boolean); }', but not the descriptor class 'org.xbill.DNS.Compression'
-Note: the configuration keeps the entry point 'org.xbill.DNS.Name { Name(java.lang.String,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.Name { org.xbill.DNS.Name fromString(java.lang.String,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.Name { Name(org.xbill.DNS.DNSInput); }', but not the descriptor class 'org.xbill.DNS.DNSInput'
-Note: the configuration keeps the entry point 'org.xbill.DNS.Name { Name(org.xbill.DNS.Name,int); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.Name { org.xbill.DNS.Name concatenate(org.xbill.DNS.Name,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.Name { org.xbill.DNS.Name concatenate(org.xbill.DNS.Name,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.Name { org.xbill.DNS.Name relativize(org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.Name { org.xbill.DNS.Name fromDNAME(org.xbill.DNS.DNAMERecord); }', but not the descriptor class 'org.xbill.DNS.DNAMERecord'
-Note: the configuration keeps the entry point 'org.xbill.DNS.Name { boolean subdomain(org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.Name { void toWire(org.xbill.DNS.DNSOutput,org.xbill.DNS.Compression); }', but not the descriptor class 'org.xbill.DNS.DNSOutput'
-Note: the configuration keeps the entry point 'org.xbill.DNS.Name { void toWire(org.xbill.DNS.DNSOutput,org.xbill.DNS.Compression); }', but not the descriptor class 'org.xbill.DNS.Compression'
-Note: the configuration keeps the entry point 'org.xbill.DNS.Name { void toWireCanonical(org.xbill.DNS.DNSOutput); }', but not the descriptor class 'org.xbill.DNS.DNSOutput'
-Note: the configuration keeps the entry point 'org.xbill.DNS.Name { void toWire(org.xbill.DNS.DNSOutput,org.xbill.DNS.Compression,boolean); }', but not the descriptor class 'org.xbill.DNS.DNSOutput'
-Note: the configuration keeps the entry point 'org.xbill.DNS.Name { void toWire(org.xbill.DNS.DNSOutput,org.xbill.DNS.Compression,boolean); }', but not the descriptor class 'org.xbill.DNS.Compression'
-Note: the configuration keeps the entry point 'org.xbill.DNS.OPTRecord { void rrFromWire(org.xbill.DNS.DNSInput); }', but not the descriptor class 'org.xbill.DNS.DNSInput'
-Note: the configuration keeps the entry point 'org.xbill.DNS.OPTRecord { void rdataFromString(org.xbill.DNS.Tokenizer,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Tokenizer'
-Note: the configuration keeps the entry point 'org.xbill.DNS.OPTRecord { void rdataFromString(org.xbill.DNS.Tokenizer,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.OPTRecord { void rrToWire(org.xbill.DNS.DNSOutput,org.xbill.DNS.Compression,boolean); }', but not the descriptor class 'org.xbill.DNS.DNSOutput'
-Note: the configuration keeps the entry point 'org.xbill.DNS.OPTRecord { void rrToWire(org.xbill.DNS.DNSOutput,org.xbill.DNS.Compression,boolean); }', but not the descriptor class 'org.xbill.DNS.Compression'
-Note: the configuration keeps the entry point 'org.xbill.DNS.PTRRecord { PTRRecord(org.xbill.DNS.Name,int,long,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.PTRRecord { PTRRecord(org.xbill.DNS.Name,int,long,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.PXRecord { PXRecord(org.xbill.DNS.Name,int,long,int,org.xbill.DNS.Name,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.PXRecord { PXRecord(org.xbill.DNS.Name,int,long,int,org.xbill.DNS.Name,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.PXRecord { PXRecord(org.xbill.DNS.Name,int,long,int,org.xbill.DNS.Name,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.PXRecord { void rrFromWire(org.xbill.DNS.DNSInput); }', but not the descriptor class 'org.xbill.DNS.DNSInput'
-Note: the configuration keeps the entry point 'org.xbill.DNS.PXRecord { void rdataFromString(org.xbill.DNS.Tokenizer,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Tokenizer'
-Note: the configuration keeps the entry point 'org.xbill.DNS.PXRecord { void rdataFromString(org.xbill.DNS.Tokenizer,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.PXRecord { void rrToWire(org.xbill.DNS.DNSOutput,org.xbill.DNS.Compression,boolean); }', but not the descriptor class 'org.xbill.DNS.DNSOutput'
-Note: the configuration keeps the entry point 'org.xbill.DNS.PXRecord { void rrToWire(org.xbill.DNS.DNSOutput,org.xbill.DNS.Compression,boolean); }', but not the descriptor class 'org.xbill.DNS.Compression'
-Note: the configuration keeps the entry point 'org.xbill.DNS.RPRecord { RPRecord(org.xbill.DNS.Name,int,long,org.xbill.DNS.Name,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.RPRecord { RPRecord(org.xbill.DNS.Name,int,long,org.xbill.DNS.Name,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.RPRecord { RPRecord(org.xbill.DNS.Name,int,long,org.xbill.DNS.Name,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.RPRecord { void rrFromWire(org.xbill.DNS.DNSInput); }', but not the descriptor class 'org.xbill.DNS.DNSInput'
-Note: the configuration keeps the entry point 'org.xbill.DNS.RPRecord { void rdataFromString(org.xbill.DNS.Tokenizer,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Tokenizer'
-Note: the configuration keeps the entry point 'org.xbill.DNS.RPRecord { void rdataFromString(org.xbill.DNS.Tokenizer,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.RPRecord { void rrToWire(org.xbill.DNS.DNSOutput,org.xbill.DNS.Compression,boolean); }', but not the descriptor class 'org.xbill.DNS.DNSOutput'
-Note: the configuration keeps the entry point 'org.xbill.DNS.RPRecord { void rrToWire(org.xbill.DNS.DNSOutput,org.xbill.DNS.Compression,boolean); }', but not the descriptor class 'org.xbill.DNS.Compression'
-Note: the configuration keeps the entry point 'org.xbill.DNS.RRSIGRecord { RRSIGRecord(org.xbill.DNS.Name,int,long,int,int,long,java.util.Date,java.util.Date,int,org.xbill.DNS.Name,byte[]); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.RRSIGRecord { RRSIGRecord(org.xbill.DNS.Name,int,long,int,int,long,java.util.Date,java.util.Date,int,org.xbill.DNS.Name,byte[]); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.RRset { RRset(org.xbill.DNS.Record); }', but not the descriptor class 'org.xbill.DNS.Record'
-Note: the configuration keeps the entry point 'org.xbill.DNS.RRset { RRset(org.xbill.DNS.RRset); }', but not the descriptor class 'org.xbill.DNS.RRset'
-Note: the configuration keeps the entry point 'org.xbill.DNS.RRset { void addRR(org.xbill.DNS.Record); }', but not the descriptor class 'org.xbill.DNS.Record'
-Note: the configuration keeps the entry point 'org.xbill.DNS.RRset { void deleteRR(org.xbill.DNS.Record); }', but not the descriptor class 'org.xbill.DNS.Record'
-Note: the configuration keeps the entry point 'org.xbill.DNS.RTRecord { RTRecord(org.xbill.DNS.Name,int,long,int,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.RTRecord { RTRecord(org.xbill.DNS.Name,int,long,int,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.Record { Record(org.xbill.DNS.Name,int,int,long); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.Record { void rrFromWire(org.xbill.DNS.DNSInput); }', but not the descriptor class 'org.xbill.DNS.DNSInput'
-Note: the configuration keeps the entry point 'org.xbill.DNS.Record { org.xbill.DNS.Record newRecord(org.xbill.DNS.Name,int,int,long,int,byte[]); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.Record { org.xbill.DNS.Record newRecord(org.xbill.DNS.Name,int,int,long,byte[]); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.Record { org.xbill.DNS.Record newRecord(org.xbill.DNS.Name,int,int,long); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.Record { org.xbill.DNS.Record newRecord(org.xbill.DNS.Name,int,int); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.Record { org.xbill.DNS.Record fromWire(org.xbill.DNS.DNSInput,int,boolean); }', but not the descriptor class 'org.xbill.DNS.DNSInput'
-Note: the configuration keeps the entry point 'org.xbill.DNS.Record { org.xbill.DNS.Record fromWire(org.xbill.DNS.DNSInput,int); }', but not the descriptor class 'org.xbill.DNS.DNSInput'
-Note: the configuration keeps the entry point 'org.xbill.DNS.Record { void toWire(org.xbill.DNS.DNSOutput,int,org.xbill.DNS.Compression); }', but not the descriptor class 'org.xbill.DNS.DNSOutput'
-Note: the configuration keeps the entry point 'org.xbill.DNS.Record { void toWire(org.xbill.DNS.DNSOutput,int,org.xbill.DNS.Compression); }', but not the descriptor class 'org.xbill.DNS.Compression'
-Note: the configuration keeps the entry point 'org.xbill.DNS.Record { void rdataFromString(org.xbill.DNS.Tokenizer,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Tokenizer'
-Note: the configuration keeps the entry point 'org.xbill.DNS.Record { void rdataFromString(org.xbill.DNS.Tokenizer,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.Record { org.xbill.DNS.Record fromString(org.xbill.DNS.Name,int,int,long,org.xbill.DNS.Tokenizer,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.Record { org.xbill.DNS.Record fromString(org.xbill.DNS.Name,int,int,long,org.xbill.DNS.Tokenizer,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Tokenizer'
-Note: the configuration keeps the entry point 'org.xbill.DNS.Record { org.xbill.DNS.Record fromString(org.xbill.DNS.Name,int,int,long,org.xbill.DNS.Tokenizer,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.Record { org.xbill.DNS.Record fromString(org.xbill.DNS.Name,int,int,long,java.lang.String,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.Record { org.xbill.DNS.Record fromString(org.xbill.DNS.Name,int,int,long,java.lang.String,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.Record { void rrToWire(org.xbill.DNS.DNSOutput,org.xbill.DNS.Compression,boolean); }', but not the descriptor class 'org.xbill.DNS.DNSOutput'
-Note: the configuration keeps the entry point 'org.xbill.DNS.Record { void rrToWire(org.xbill.DNS.DNSOutput,org.xbill.DNS.Compression,boolean); }', but not the descriptor class 'org.xbill.DNS.Compression'
-Note: the configuration keeps the entry point 'org.xbill.DNS.Record { boolean sameRRset(org.xbill.DNS.Record); }', but not the descriptor class 'org.xbill.DNS.Record'
-Note: the configuration keeps the entry point 'org.xbill.DNS.Record { org.xbill.DNS.Record withName(org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.Record { org.xbill.DNS.Name checkName(java.lang.String,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.RelativeNameException { RelativeNameException(org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.SIGBase { SIGBase(org.xbill.DNS.Name,int,int,long,int,int,long,java.util.Date,java.util.Date,int,org.xbill.DNS.Name,byte[]); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.SIGBase { SIGBase(org.xbill.DNS.Name,int,int,long,int,int,long,java.util.Date,java.util.Date,int,org.xbill.DNS.Name,byte[]); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.SIGBase { void rrFromWire(org.xbill.DNS.DNSInput); }', but not the descriptor class 'org.xbill.DNS.DNSInput'
-Note: the configuration keeps the entry point 'org.xbill.DNS.SIGBase { void rdataFromString(org.xbill.DNS.Tokenizer,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Tokenizer'
-Note: the configuration keeps the entry point 'org.xbill.DNS.SIGBase { void rdataFromString(org.xbill.DNS.Tokenizer,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.SIGBase { void rrToWire(org.xbill.DNS.DNSOutput,org.xbill.DNS.Compression,boolean); }', but not the descriptor class 'org.xbill.DNS.DNSOutput'
-Note: the configuration keeps the entry point 'org.xbill.DNS.SIGBase { void rrToWire(org.xbill.DNS.DNSOutput,org.xbill.DNS.Compression,boolean); }', but not the descriptor class 'org.xbill.DNS.Compression'
-Note: the configuration keeps the entry point 'org.xbill.DNS.SIGRecord { SIGRecord(org.xbill.DNS.Name,int,long,int,int,long,java.util.Date,java.util.Date,int,org.xbill.DNS.Name,byte[]); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.SIGRecord { SIGRecord(org.xbill.DNS.Name,int,long,int,int,long,java.util.Date,java.util.Date,int,org.xbill.DNS.Name,byte[]); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.SOARecord { SOARecord(org.xbill.DNS.Name,int,long,org.xbill.DNS.Name,org.xbill.DNS.Name,long,long,long,long,long); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.SOARecord { SOARecord(org.xbill.DNS.Name,int,long,org.xbill.DNS.Name,org.xbill.DNS.Name,long,long,long,long,long); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.SOARecord { SOARecord(org.xbill.DNS.Name,int,long,org.xbill.DNS.Name,org.xbill.DNS.Name,long,long,long,long,long); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.SOARecord { void rrFromWire(org.xbill.DNS.DNSInput); }', but not the descriptor class 'org.xbill.DNS.DNSInput'
-Note: the configuration keeps the entry point 'org.xbill.DNS.SOARecord { void rdataFromString(org.xbill.DNS.Tokenizer,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Tokenizer'
-Note: the configuration keeps the entry point 'org.xbill.DNS.SOARecord { void rdataFromString(org.xbill.DNS.Tokenizer,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.SOARecord { void rrToWire(org.xbill.DNS.DNSOutput,org.xbill.DNS.Compression,boolean); }', but not the descriptor class 'org.xbill.DNS.DNSOutput'
-Note: the configuration keeps the entry point 'org.xbill.DNS.SOARecord { void rrToWire(org.xbill.DNS.DNSOutput,org.xbill.DNS.Compression,boolean); }', but not the descriptor class 'org.xbill.DNS.Compression'
-Note: the configuration keeps the entry point 'org.xbill.DNS.SPFRecord { SPFRecord(org.xbill.DNS.Name,int,long,java.util.List); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.SPFRecord { SPFRecord(org.xbill.DNS.Name,int,long,java.lang.String); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.SRVRecord { SRVRecord(org.xbill.DNS.Name,int,long,int,int,int,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.SRVRecord { SRVRecord(org.xbill.DNS.Name,int,long,int,int,int,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.SRVRecord { void rrFromWire(org.xbill.DNS.DNSInput); }', but not the descriptor class 'org.xbill.DNS.DNSInput'
-Note: the configuration keeps the entry point 'org.xbill.DNS.SRVRecord { void rdataFromString(org.xbill.DNS.Tokenizer,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Tokenizer'
-Note: the configuration keeps the entry point 'org.xbill.DNS.SRVRecord { void rdataFromString(org.xbill.DNS.Tokenizer,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.SRVRecord { void rrToWire(org.xbill.DNS.DNSOutput,org.xbill.DNS.Compression,boolean); }', but not the descriptor class 'org.xbill.DNS.DNSOutput'
-Note: the configuration keeps the entry point 'org.xbill.DNS.SRVRecord { void rrToWire(org.xbill.DNS.DNSOutput,org.xbill.DNS.Compression,boolean); }', but not the descriptor class 'org.xbill.DNS.Compression'
-Note: the configuration keeps the entry point 'org.xbill.DNS.SSHFPRecord { SSHFPRecord(org.xbill.DNS.Name,int,long,int,int,byte[]); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.SSHFPRecord { void rrFromWire(org.xbill.DNS.DNSInput); }', but not the descriptor class 'org.xbill.DNS.DNSInput'
-Note: the configuration keeps the entry point 'org.xbill.DNS.SSHFPRecord { void rdataFromString(org.xbill.DNS.Tokenizer,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Tokenizer'
-Note: the configuration keeps the entry point 'org.xbill.DNS.SSHFPRecord { void rdataFromString(org.xbill.DNS.Tokenizer,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.SSHFPRecord { void rrToWire(org.xbill.DNS.DNSOutput,org.xbill.DNS.Compression,boolean); }', but not the descriptor class 'org.xbill.DNS.DNSOutput'
-Note: the configuration keeps the entry point 'org.xbill.DNS.SSHFPRecord { void rrToWire(org.xbill.DNS.DNSOutput,org.xbill.DNS.Compression,boolean); }', but not the descriptor class 'org.xbill.DNS.Compression'
-Note: the configuration keeps the entry point 'org.xbill.DNS.SingleCompressedNameBase { SingleCompressedNameBase(org.xbill.DNS.Name,int,int,long,org.xbill.DNS.Name,java.lang.String); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.SingleCompressedNameBase { SingleCompressedNameBase(org.xbill.DNS.Name,int,int,long,org.xbill.DNS.Name,java.lang.String); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.SingleCompressedNameBase { void rrToWire(org.xbill.DNS.DNSOutput,org.xbill.DNS.Compression,boolean); }', but not the descriptor class 'org.xbill.DNS.DNSOutput'
-Note: the configuration keeps the entry point 'org.xbill.DNS.SingleCompressedNameBase { void rrToWire(org.xbill.DNS.DNSOutput,org.xbill.DNS.Compression,boolean); }', but not the descriptor class 'org.xbill.DNS.Compression'
-Note: the configuration keeps the entry point 'org.xbill.DNS.SingleNameBase { SingleNameBase(org.xbill.DNS.Name,int,int,long); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.SingleNameBase { SingleNameBase(org.xbill.DNS.Name,int,int,long,org.xbill.DNS.Name,java.lang.String); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.SingleNameBase { SingleNameBase(org.xbill.DNS.Name,int,int,long,org.xbill.DNS.Name,java.lang.String); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.SingleNameBase { void rrFromWire(org.xbill.DNS.DNSInput); }', but not the descriptor class 'org.xbill.DNS.DNSInput'
-Note: the configuration keeps the entry point 'org.xbill.DNS.SingleNameBase { void rdataFromString(org.xbill.DNS.Tokenizer,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Tokenizer'
-Note: the configuration keeps the entry point 'org.xbill.DNS.SingleNameBase { void rdataFromString(org.xbill.DNS.Tokenizer,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.SingleNameBase { void rrToWire(org.xbill.DNS.DNSOutput,org.xbill.DNS.Compression,boolean); }', but not the descriptor class 'org.xbill.DNS.DNSOutput'
-Note: the configuration keeps the entry point 'org.xbill.DNS.SingleNameBase { void rrToWire(org.xbill.DNS.DNSOutput,org.xbill.DNS.Compression,boolean); }', but not the descriptor class 'org.xbill.DNS.Compression'
-Note: the configuration keeps the entry point 'org.xbill.DNS.TKEYRecord { TKEYRecord(org.xbill.DNS.Name,int,long,org.xbill.DNS.Name,java.util.Date,java.util.Date,int,int,byte[],byte[]); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.TKEYRecord { TKEYRecord(org.xbill.DNS.Name,int,long,org.xbill.DNS.Name,java.util.Date,java.util.Date,int,int,byte[],byte[]); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.TKEYRecord { void rrFromWire(org.xbill.DNS.DNSInput); }', but not the descriptor class 'org.xbill.DNS.DNSInput'
-Note: the configuration keeps the entry point 'org.xbill.DNS.TKEYRecord { void rdataFromString(org.xbill.DNS.Tokenizer,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Tokenizer'
-Note: the configuration keeps the entry point 'org.xbill.DNS.TKEYRecord { void rdataFromString(org.xbill.DNS.Tokenizer,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.TKEYRecord { void rrToWire(org.xbill.DNS.DNSOutput,org.xbill.DNS.Compression,boolean); }', but not the descriptor class 'org.xbill.DNS.DNSOutput'
-Note: the configuration keeps the entry point 'org.xbill.DNS.TKEYRecord { void rrToWire(org.xbill.DNS.DNSOutput,org.xbill.DNS.Compression,boolean); }', but not the descriptor class 'org.xbill.DNS.Compression'
-Note: the configuration keeps the entry point 'org.xbill.DNS.TSIGRecord { TSIGRecord(org.xbill.DNS.Name,int,long,org.xbill.DNS.Name,java.util.Date,int,byte[],int,int,byte[]); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.TSIGRecord { TSIGRecord(org.xbill.DNS.Name,int,long,org.xbill.DNS.Name,java.util.Date,int,byte[],int,int,byte[]); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.TSIGRecord { void rrFromWire(org.xbill.DNS.DNSInput); }', but not the descriptor class 'org.xbill.DNS.DNSInput'
-Note: the configuration keeps the entry point 'org.xbill.DNS.TSIGRecord { void rdataFromString(org.xbill.DNS.Tokenizer,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Tokenizer'
-Note: the configuration keeps the entry point 'org.xbill.DNS.TSIGRecord { void rdataFromString(org.xbill.DNS.Tokenizer,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.TSIGRecord { void rrToWire(org.xbill.DNS.DNSOutput,org.xbill.DNS.Compression,boolean); }', but not the descriptor class 'org.xbill.DNS.DNSOutput'
-Note: the configuration keeps the entry point 'org.xbill.DNS.TSIGRecord { void rrToWire(org.xbill.DNS.DNSOutput,org.xbill.DNS.Compression,boolean); }', but not the descriptor class 'org.xbill.DNS.Compression'
-Note: the configuration keeps the entry point 'org.xbill.DNS.TXTBase { TXTBase(org.xbill.DNS.Name,int,int,long); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.TXTBase { TXTBase(org.xbill.DNS.Name,int,int,long,java.util.List); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.TXTBase { TXTBase(org.xbill.DNS.Name,int,int,long,java.lang.String); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.TXTBase { void rrFromWire(org.xbill.DNS.DNSInput); }', but not the descriptor class 'org.xbill.DNS.DNSInput'
-Note: the configuration keeps the entry point 'org.xbill.DNS.TXTBase { void rdataFromString(org.xbill.DNS.Tokenizer,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Tokenizer'
-Note: the configuration keeps the entry point 'org.xbill.DNS.TXTBase { void rdataFromString(org.xbill.DNS.Tokenizer,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.TXTBase { void rrToWire(org.xbill.DNS.DNSOutput,org.xbill.DNS.Compression,boolean); }', but not the descriptor class 'org.xbill.DNS.DNSOutput'
-Note: the configuration keeps the entry point 'org.xbill.DNS.TXTBase { void rrToWire(org.xbill.DNS.DNSOutput,org.xbill.DNS.Compression,boolean); }', but not the descriptor class 'org.xbill.DNS.Compression'
-Note: the configuration keeps the entry point 'org.xbill.DNS.TXTRecord { TXTRecord(org.xbill.DNS.Name,int,long,java.util.List); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.TXTRecord { TXTRecord(org.xbill.DNS.Name,int,long,java.lang.String); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.TypeBitmap { TypeBitmap(org.xbill.DNS.DNSInput); }', but not the descriptor class 'org.xbill.DNS.DNSInput'
-Note: the configuration keeps the entry point 'org.xbill.DNS.TypeBitmap { TypeBitmap(org.xbill.DNS.Tokenizer); }', but not the descriptor class 'org.xbill.DNS.Tokenizer'
-Note: the configuration keeps the entry point 'org.xbill.DNS.TypeBitmap { void toWire(org.xbill.DNS.DNSOutput); }', but not the descriptor class 'org.xbill.DNS.DNSOutput'
-Note: the configuration keeps the entry point 'org.xbill.DNS.U16NameBase { U16NameBase(org.xbill.DNS.Name,int,int,long); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.U16NameBase { U16NameBase(org.xbill.DNS.Name,int,int,long,int,java.lang.String,org.xbill.DNS.Name,java.lang.String); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.U16NameBase { U16NameBase(org.xbill.DNS.Name,int,int,long,int,java.lang.String,org.xbill.DNS.Name,java.lang.String); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.U16NameBase { void rrFromWire(org.xbill.DNS.DNSInput); }', but not the descriptor class 'org.xbill.DNS.DNSInput'
-Note: the configuration keeps the entry point 'org.xbill.DNS.U16NameBase { void rdataFromString(org.xbill.DNS.Tokenizer,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Tokenizer'
-Note: the configuration keeps the entry point 'org.xbill.DNS.U16NameBase { void rdataFromString(org.xbill.DNS.Tokenizer,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.U16NameBase { void rrToWire(org.xbill.DNS.DNSOutput,org.xbill.DNS.Compression,boolean); }', but not the descriptor class 'org.xbill.DNS.DNSOutput'
-Note: the configuration keeps the entry point 'org.xbill.DNS.U16NameBase { void rrToWire(org.xbill.DNS.DNSOutput,org.xbill.DNS.Compression,boolean); }', but not the descriptor class 'org.xbill.DNS.Compression'
-Note: the configuration keeps the entry point 'org.xbill.DNS.UNKRecord { void rrFromWire(org.xbill.DNS.DNSInput); }', but not the descriptor class 'org.xbill.DNS.DNSInput'
-Note: the configuration keeps the entry point 'org.xbill.DNS.UNKRecord { void rdataFromString(org.xbill.DNS.Tokenizer,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Tokenizer'
-Note: the configuration keeps the entry point 'org.xbill.DNS.UNKRecord { void rdataFromString(org.xbill.DNS.Tokenizer,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.UNKRecord { void rrToWire(org.xbill.DNS.DNSOutput,org.xbill.DNS.Compression,boolean); }', but not the descriptor class 'org.xbill.DNS.DNSOutput'
-Note: the configuration keeps the entry point 'org.xbill.DNS.UNKRecord { void rrToWire(org.xbill.DNS.DNSOutput,org.xbill.DNS.Compression,boolean); }', but not the descriptor class 'org.xbill.DNS.Compression'
-Note: the configuration keeps the entry point 'org.xbill.DNS.WKSRecord { WKSRecord(org.xbill.DNS.Name,int,long,java.net.InetAddress,int,int[]); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.WKSRecord { void rrFromWire(org.xbill.DNS.DNSInput); }', but not the descriptor class 'org.xbill.DNS.DNSInput'
-Note: the configuration keeps the entry point 'org.xbill.DNS.WKSRecord { void rdataFromString(org.xbill.DNS.Tokenizer,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Tokenizer'
-Note: the configuration keeps the entry point 'org.xbill.DNS.WKSRecord { void rdataFromString(org.xbill.DNS.Tokenizer,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.WKSRecord { void rrToWire(org.xbill.DNS.DNSOutput,org.xbill.DNS.Compression,boolean); }', but not the descriptor class 'org.xbill.DNS.DNSOutput'
-Note: the configuration keeps the entry point 'org.xbill.DNS.WKSRecord { void rrToWire(org.xbill.DNS.DNSOutput,org.xbill.DNS.Compression,boolean); }', but not the descriptor class 'org.xbill.DNS.Compression'
-Note: the configuration keeps the entry point 'org.xbill.DNS.X25Record { X25Record(org.xbill.DNS.Name,int,long,java.lang.String); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.X25Record { void rrFromWire(org.xbill.DNS.DNSInput); }', but not the descriptor class 'org.xbill.DNS.DNSInput'
-Note: the configuration keeps the entry point 'org.xbill.DNS.X25Record { void rdataFromString(org.xbill.DNS.Tokenizer,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Tokenizer'
-Note: the configuration keeps the entry point 'org.xbill.DNS.X25Record { void rdataFromString(org.xbill.DNS.Tokenizer,org.xbill.DNS.Name); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.X25Record { void rrToWire(org.xbill.DNS.DNSOutput,org.xbill.DNS.Compression,boolean); }', but not the descriptor class 'org.xbill.DNS.DNSOutput'
-Note: the configuration keeps the entry point 'org.xbill.DNS.X25Record { void rrToWire(org.xbill.DNS.DNSOutput,org.xbill.DNS.Compression,boolean); }', but not the descriptor class 'org.xbill.DNS.Compression'
-Note: the configuration keeps the entry point 'org.xbill.DNS.Zone { Zone(org.xbill.DNS.Name,java.lang.String); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.Zone { Zone(org.xbill.DNS.Name,org.xbill.DNS.Record[]); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.Zone { Zone(org.xbill.DNS.Name,org.xbill.DNS.Record[]); }', but not the descriptor class 'org.xbill.DNS.Record'
-Note: the configuration keeps the entry point 'org.xbill.DNS.Zone { Zone(org.xbill.DNS.ZoneTransferIn); }', but not the descriptor class 'org.xbill.DNS.ZoneTransferIn'
-Note: the configuration keeps the entry point 'org.xbill.DNS.Zone { Zone(org.xbill.DNS.Name,int,java.lang.String); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.Zone { org.xbill.DNS.SetResponse findRecords(org.xbill.DNS.Name,int); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.Zone { org.xbill.DNS.RRset findExactMatch(org.xbill.DNS.Name,int); }', but not the descriptor class 'org.xbill.DNS.Name'
-Note: the configuration keeps the entry point 'org.xbill.DNS.Zone { void addRRset(org.xbill.DNS.RRset); }', but not the descriptor class 'org.xbill.DNS.RRset'
-Note: the configuration keeps the entry point 'org.xbill.DNS.Zone { void addRecord(org.xbill.DNS.Record); }', but not the descriptor class 'org.xbill.DNS.Record'
-Note: the configuration keeps the entry point 'org.xbill.DNS.Zone { void removeRecord(org.xbill.DNS.Record); }', but not the descriptor class 'org.xbill.DNS.Record'
-Note: the configuration keeps the entry point 'org.xbill.DNS.Zone { java.util.Map access$0(org.xbill.DNS.Zone); }', but not the descriptor class 'org.xbill.DNS.Zone'
-Note: the configuration keeps the entry point 'org.xbill.DNS.Zone { java.lang.Object access$1(org.xbill.DNS.Zone); }', but not the descriptor class 'org.xbill.DNS.Zone'
-Note: the configuration keeps the entry point 'org.xbill.DNS.Zone { org.xbill.DNS.RRset[] access$2(org.xbill.DNS.Zone,java.lang.Object); }', but not the descriptor class 'org.xbill.DNS.Zone'
-Note: the configuration keeps the entry point 'org.xbill.DNS.Zone { org.xbill.DNS.RRset access$3(org.xbill.DNS.Zone,java.lang.Object,int); }', but not the descriptor class 'org.xbill.DNS.Zone'
-Note: the configuration keeps the entry point 'org.xbill.DNS.Zone { org.xbill.DNS.Name access$4(org.xbill.DNS.Zone); }', but not the descriptor class 'org.xbill.DNS.Zone'
-Note: the configuration keeps the entry point 'rx.internal.operators.BufferUntilSubscriber$State { boolean casObserverRef(rx.Observer,rx.Observer); }', but not the descriptor class 'rx.Observer'
-Note: the configuration keeps the entry point 'rx.internal.operators.BufferUntilSubscriber$State { boolean casObserverRef(rx.Observer,rx.Observer); }', but not the descriptor class 'rx.Observer'
-Note: the configuration keeps the entry point 'rx.internal.operators.CachedObservable$CachedSubscribe { CachedObservable$CachedSubscribe(rx.internal.operators.CachedObservable$CacheState); }', but not the descriptor class 'rx.internal.operators.CachedObservable$CacheState'
-Note: the configuration keeps the entry point 'rx.internal.operators.CachedObservable$CachedSubscribe { void call(rx.Subscriber); }', but not the descriptor class 'rx.Subscriber'
-Note: the configuration keeps the entry point 'rx.internal.operators.CachedObservable$ReplayProducer { CachedObservable$ReplayProducer(rx.Subscriber,rx.internal.operators.CachedObservable$CacheState); }', but not the descriptor class 'rx.Subscriber'
-Note: the configuration keeps the entry point 'rx.internal.operators.CachedObservable$ReplayProducer { CachedObservable$ReplayProducer(rx.Subscriber,rx.internal.operators.CachedObservable$CacheState); }', but not the descriptor class 'rx.internal.operators.CachedObservable$CacheState'
-Note: the configuration keeps the entry point 'rx.internal.operators.CompletableFromEmitter$FromEmitter { CompletableFromEmitter$FromEmitter(rx.CompletableSubscriber); }', but not the descriptor class 'rx.CompletableSubscriber'
-Note: the configuration keeps the entry point 'rx.internal.operators.CompletableFromEmitter$FromEmitter { void setSubscription(rx.Subscription); }', but not the descriptor class 'rx.Subscription'
-Note: the configuration keeps the entry point 'rx.internal.operators.CompletableFromEmitter$FromEmitter { void setCancellation(rx.functions.Cancellable); }', but not the descriptor class 'rx.functions.Cancellable'
-Note: the configuration keeps the entry point 'rx.internal.operators.CompletableOnSubscribeConcat$CompletableConcatSubscriber$ConcatInnerSubscriber { CompletableOnSubscribeConcat$CompletableConcatSubscriber$ConcatInnerSubscriber(rx.internal.operators.CompletableOnSubscribeConcat$CompletableConcatSubscriber); }', but not the descriptor class 'rx.internal.operators.CompletableOnSubscribeConcat$CompletableConcatSubscriber'
-Note: the configuration keeps the entry point 'rx.internal.operators.CompletableOnSubscribeConcat$CompletableConcatSubscriber$ConcatInnerSubscriber { void onSubscribe(rx.Subscription); }', but not the descriptor class 'rx.Subscription'
-Note: the configuration keeps the entry point 'rx.internal.operators.CompletableOnSubscribeConcatArray$ConcatInnerSubscriber { CompletableOnSubscribeConcatArray$ConcatInnerSubscriber(rx.CompletableSubscriber,rx.Completable[]); }', but not the descriptor class 'rx.CompletableSubscriber'
-Note: the configuration keeps the entry point 'rx.internal.operators.CompletableOnSubscribeConcatArray$ConcatInnerSubscriber { CompletableOnSubscribeConcatArray$ConcatInnerSubscriber(rx.CompletableSubscriber,rx.Completable[]); }', but not the descriptor class 'rx.Completable'
-Note: the configuration keeps the entry point 'rx.internal.operators.CompletableOnSubscribeConcatArray$ConcatInnerSubscriber { void onSubscribe(rx.Subscription); }', but not the descriptor class 'rx.Subscription'
-Note: the configuration keeps the entry point 'rx.internal.operators.CompletableOnSubscribeConcatIterable$ConcatInnerSubscriber { CompletableOnSubscribeConcatIterable$ConcatInnerSubscriber(rx.CompletableSubscriber,java.util.Iterator); }', but not the descriptor class 'rx.CompletableSubscriber'
-Note: the configuration keeps the entry point 'rx.internal.operators.CompletableOnSubscribeConcatIterable$ConcatInnerSubscriber { void onSubscribe(rx.Subscription); }', but not the descriptor class 'rx.Subscription'
-Note: the configuration keeps the entry point 'rx.internal.operators.EmptyObservableHolder { void call(rx.Subscriber); }', but not the descriptor class 'rx.Subscriber'
-Note: the configuration keeps the entry point 'rx.internal.operators.NeverObservableHolder { void call(rx.Subscriber); }', but not the descriptor class 'rx.Subscriber'
-Note: the configuration keeps the entry point 'rx.internal.operators.OnSubscribeAmb$Selection { void unsubscribeOthers(rx.internal.operators.OnSubscribeAmb$AmbSubscriber); }', but not the descriptor class 'rx.internal.operators.OnSubscribeAmb$AmbSubscriber'
-Note: the configuration keeps the entry point 'rx.internal.operators.OnSubscribeAutoConnect { OnSubscribeAutoConnect(rx.observables.ConnectableObservable,int,rx.functions.Action1); }', but not the descriptor class 'rx.observables.ConnectableObservable'
-Note: the configuration keeps the entry point 'rx.internal.operators.OnSubscribeAutoConnect { OnSubscribeAutoConnect(rx.observables.ConnectableObservable,int,rx.functions.Action1); }', but not the descriptor class 'rx.functions.Action1'
-Note: the configuration keeps the entry point 'rx.internal.operators.OnSubscribeAutoConnect { void call(rx.Subscriber); }', but not the descriptor class 'rx.Subscriber'
-Note: the configuration keeps the entry point 'rx.internal.operators.OnSubscribeCombineLatest$LatestCoordinator { OnSubscribeCombineLatest$LatestCoordinator(rx.Subscriber,rx.functions.FuncN,int,int,boolean); }', but not the descriptor class 'rx.Subscriber'
-Note: the configuration keeps the entry point 'rx.internal.operators.OnSubscribeCombineLatest$LatestCoordinator { OnSubscribeCombineLatest$LatestCoordinator(rx.Subscriber,rx.functions.FuncN,int,int,boolean); }', but not the descriptor class 'rx.functions.FuncN'
-Note: the configuration keeps the entry point 'rx.internal.operators.OnSubscribeCombineLatest$LatestCoordinator { void subscribe(rx.Observable[]); }', but not the descriptor class 'rx.Observable'
-Note: the configuration keeps the entry point 'rx.internal.operators.OnSubscribeCombineLatest$LatestCoordinator { boolean checkTerminated(boolean,boolean,rx.Subscriber,java.util.Queue,boolean); }', but not the descriptor class 'rx.Subscriber'
-Note: the configuration keeps the entry point 'rx.internal.operators.OnSubscribeFromArray$FromArrayProducer { OnSubscribeFromArray$FromArrayProducer(rx.Subscriber,java.lang.Object[]); }', but not the descriptor class 'rx.Subscriber'
-Note: the configuration keeps the entry point 'rx.internal.operators.OnSubscribeFromEmitter$BaseEmitter { OnSubscribeFromEmitter$BaseEmitter(rx.Subscriber); }', but not the descriptor class 'rx.Subscriber'
-Note: the configuration keeps the entry point 'rx.internal.operators.OnSubscribeFromEmitter$BaseEmitter { void setSubscription(rx.Subscription); }', but not the descriptor class 'rx.Subscription'
-Note: the configuration keeps the entry point 'rx.internal.operators.OnSubscribeFromEmitter$BaseEmitter { void setCancellation(rx.functions.Cancellable); }', but not the descriptor class 'rx.functions.Cancellable'
-Note: the configuration keeps the entry point 'rx.internal.operators.OnSubscribeFromEmitter$BufferEmitter { OnSubscribeFromEmitter$BufferEmitter(rx.Subscriber,int); }', but not the descriptor class 'rx.Subscriber'
-Note: the configuration keeps the entry point 'rx.internal.operators.OnSubscribeFromEmitter$DropEmitter { OnSubscribeFromEmitter$DropEmitter(rx.Subscriber); }', but not the descriptor class 'rx.Subscriber'
-Note: the configuration keeps the entry point 'rx.internal.operators.OnSubscribeFromEmitter$ErrorEmitter { OnSubscribeFromEmitter$ErrorEmitter(rx.Subscriber); }', but not the descriptor class 'rx.Subscriber'
-Note: the configuration keeps the entry point 'rx.internal.operators.OnSubscribeFromEmitter$LatestEmitter { OnSubscribeFromEmitter$LatestEmitter(rx.Subscriber); }', but not the descriptor class 'rx.Subscriber'
-Note: the configuration keeps the entry point 'rx.internal.operators.OnSubscribeFromEmitter$NoOverflowBaseEmitter { OnSubscribeFromEmitter$NoOverflowBaseEmitter(rx.Subscriber); }', but not the descriptor class 'rx.Subscriber'
-Note: the configuration keeps the entry point 'rx.internal.operators.OnSubscribeFromEmitter$NoneEmitter { OnSubscribeFromEmitter$NoneEmitter(rx.Subscriber); }', but not the descriptor class 'rx.Subscriber'
-Note: the configuration keeps the entry point 'rx.internal.operators.OnSubscribeFromIterable$IterableProducer { OnSubscribeFromIterable$IterableProducer(rx.Subscriber,java.util.Iterator); }', but not the descriptor class 'rx.Subscriber'
-Note: the configuration keeps the entry point 'rx.internal.operators.OnSubscribeGroupJoin$ResultManager { OnSubscribeGroupJoin$ResultManager(rx.internal.operators.OnSubscribeGroupJoin,rx.Subscriber); }', but not the descriptor class 'rx.internal.operators.OnSubscribeGroupJoin'
-Note: the configuration keeps the entry point 'rx.internal.operators.OnSubscribeGroupJoin$ResultManager { OnSubscribeGroupJoin$ResultManager(rx.internal.operators.OnSubscribeGroupJoin,rx.Subscriber); }', but not the descriptor class 'rx.Subscriber'
-Note: the configuration keeps the entry point 'rx.internal.operators.OnSubscribeJoin$ResultSink { OnSubscribeJoin$ResultSink(rx.internal.operators.OnSubscribeJoin,rx.Subscriber); }', but not the descriptor class 'rx.internal.operators.OnSubscribeJoin'
-Note: the configuration keeps the entry point 'rx.internal.operators.OnSubscribeJoin$ResultSink { OnSubscribeJoin$ResultSink(rx.internal.operators.OnSubscribeJoin,rx.Subscriber); }', but not the descriptor class 'rx.Subscriber'
-Note: the configuration keeps the entry point 'rx.internal.operators.OnSubscribePublishMulticast { void call(rx.Subscriber); }', but not the descriptor class 'rx.Subscriber'
-Note: the configuration keeps the entry point 'rx.internal.operators.OnSubscribePublishMulticast { void setProducer(rx.Producer); }', but not the descriptor class 'rx.Producer'
-Note: the configuration keeps the entry point 'rx.internal.operators.OnSubscribePublishMulticast { boolean add(rx.internal.operators.OnSubscribePublishMulticast$PublishProducer); }', but not the descriptor class 'rx.internal.operators.OnSubscribePublishMulticast$PublishProducer'
-Note: the configuration keeps the entry point 'rx.internal.operators.OnSubscribePublishMulticast { void remove(rx.internal.operators.OnSubscribePublishMulticast$PublishProducer); }', but not the descriptor class 'rx.internal.operators.OnSubscribePublishMulticast$PublishProducer'
-Note: the configuration keeps the entry point 'rx.internal.operators.OnSubscribePublishMulticast$PublishProducer { OnSubscribePublishMulticast$PublishProducer(rx.Subscriber,rx.internal.operators.OnSubscribePublishMulticast); }', but not the descriptor class 'rx.Subscriber'
-Note: the configuration keeps the entry point 'rx.internal.operators.OnSubscribePublishMulticast$PublishProducer { OnSubscribePublishMulticast$PublishProducer(rx.Subscriber,rx.internal.operators.OnSubscribePublishMulticast); }', but not the descriptor class 'rx.internal.operators.OnSubscribePublishMulticast'
-Note: the configuration keeps the entry point 'rx.internal.operators.OnSubscribeRange$RangeProducer { OnSubscribeRange$RangeProducer(rx.Subscriber,int,int); }', but not the descriptor class 'rx.Subscriber'
-Note: the configuration keeps the entry point 'rx.internal.operators.OnSubscribeUsing$DisposeAction { OnSubscribeUsing$DisposeAction(rx.functions.Action1,java.lang.Object); }', but not the descriptor class 'rx.functions.Action1'
-Note: the configuration keeps the entry point 'rx.internal.operators.OperatorBufferWithSize$BufferOverlap$BufferOverlapProducer { OperatorBufferWithSize$BufferOverlap$BufferOverlapProducer(rx.internal.operators.OperatorBufferWithSize$BufferOverlap); }', but not the descriptor class 'rx.internal.operators.OperatorBufferWithSize$BufferOverlap'
-Note: the configuration keeps the entry point 'rx.internal.operators.OperatorBufferWithSize$BufferSkip$BufferSkipProducer { OperatorBufferWithSize$BufferSkip$BufferSkipProducer(rx.internal.operators.OperatorBufferWithSize$BufferSkip); }', but not the descriptor class 'rx.internal.operators.OperatorBufferWithSize$BufferSkip'
-Note: the configuration keeps the entry point 'rx.internal.operators.OperatorEagerConcatMap$EagerOuterProducer { OperatorEagerConcatMap$EagerOuterProducer(rx.internal.operators.OperatorEagerConcatMap$EagerOuterSubscriber); }', but not the descriptor class 'rx.internal.operators.OperatorEagerConcatMap$EagerOuterSubscriber'
-Note: the configuration keeps the entry point 'rx.internal.operators.OperatorElementAt$InnerProducer { OperatorElementAt$InnerProducer(rx.Producer); }', but not the descriptor class 'rx.Producer'
-Note: the configuration keeps the entry point 'rx.internal.operators.OperatorGroupBy$State { OperatorGroupBy$State(int,rx.internal.operators.OperatorGroupBy$GroupBySubscriber,java.lang.Object,boolean); }', but not the descriptor class 'rx.internal.operators.OperatorGroupBy$GroupBySubscriber'
-Note: the configuration keeps the entry point 'rx.internal.operators.OperatorGroupBy$State { void call(rx.Subscriber); }', but not the descriptor class 'rx.Subscriber'
-Note: the configuration keeps the entry point 'rx.internal.operators.OperatorGroupBy$State { boolean checkTerminated(boolean,boolean,rx.Subscriber,boolean); }', but not the descriptor class 'rx.Subscriber'
-Note: the configuration keeps the entry point 'rx.internal.operators.OperatorMerge$MergeProducer { OperatorMerge$MergeProducer(rx.internal.operators.OperatorMerge$MergeSubscriber); }', but not the descriptor class 'rx.internal.operators.OperatorMerge$MergeSubscriber'
-Note: the configuration keeps the entry point 'rx.internal.operators.OperatorOnBackpressureLatest$LatestEmitter { OperatorOnBackpressureLatest$LatestEmitter(rx.Subscriber); }', but not the descriptor class 'rx.Subscriber'
-Note: the configuration keeps the entry point 'rx.internal.operators.OperatorPublish$InnerProducer { OperatorPublish$InnerProducer(rx.internal.operators.OperatorPublish$PublishSubscriber,rx.Subscriber); }', but not the descriptor class 'rx.internal.operators.OperatorPublish$PublishSubscriber'
-Note: the configuration keeps the entry point 'rx.internal.operators.OperatorPublish$InnerProducer { OperatorPublish$InnerProducer(rx.internal.operators.OperatorPublish$PublishSubscriber,rx.Subscriber); }', but not the descriptor class 'rx.Subscriber'
-Note: the configuration keeps the entry point 'rx.internal.operators.OperatorReplay$BoundedReplayBuffer { void addLast(rx.internal.operators.OperatorReplay$Node); }', but not the descriptor class 'rx.internal.operators.OperatorReplay$Node'
-Note: the configuration keeps the entry point 'rx.internal.operators.OperatorReplay$BoundedReplayBuffer { void setFirst(rx.internal.operators.OperatorReplay$Node); }', but not the descriptor class 'rx.internal.operators.OperatorReplay$Node'
-Note: the configuration keeps the entry point 'rx.internal.operators.OperatorReplay$BoundedReplayBuffer { void replay(rx.internal.operators.OperatorReplay$InnerProducer); }', but not the descriptor class 'rx.internal.operators.OperatorReplay$InnerProducer'
-Note: the configuration keeps the entry point 'rx.internal.operators.OperatorReplay$InnerProducer { OperatorReplay$InnerProducer(rx.internal.operators.OperatorReplay$ReplaySubscriber,rx.Subscriber); }', but not the descriptor class 'rx.internal.operators.OperatorReplay$ReplaySubscriber'
-Note: the configuration keeps the entry point 'rx.internal.operators.OperatorReplay$InnerProducer { OperatorReplay$InnerProducer(rx.internal.operators.OperatorReplay$ReplaySubscriber,rx.Subscriber); }', but not the descriptor class 'rx.Subscriber'
-Note: the configuration keeps the entry point 'rx.internal.operators.OperatorReplay$SizeAndTimeBoundReplayBuffer { OperatorReplay$SizeAndTimeBoundReplayBuffer(int,long,rx.Scheduler); }', but not the descriptor class 'rx.Scheduler'
-Note: the configuration keeps the entry point 'rx.internal.operators.OperatorReplay$UnboundedReplayBuffer { void replay(rx.internal.operators.OperatorReplay$InnerProducer); }', but not the descriptor class 'rx.internal.operators.OperatorReplay$InnerProducer'
-Note: the configuration keeps the entry point 'rx.internal.operators.OperatorWindowWithSize$WindowOverlap$WindowOverlapProducer { OperatorWindowWithSize$WindowOverlap$WindowOverlapProducer(rx.internal.operators.OperatorWindowWithSize$WindowOverlap); }', but not the descriptor class 'rx.internal.operators.OperatorWindowWithSize$WindowOverlap'
-Note: the configuration keeps the entry point 'rx.internal.operators.OperatorWindowWithSize$WindowSkip$WindowSkipProducer { OperatorWindowWithSize$WindowSkip$WindowSkipProducer(rx.internal.operators.OperatorWindowWithSize$WindowSkip); }', but not the descriptor class 'rx.internal.operators.OperatorWindowWithSize$WindowSkip'
-Note: the configuration keeps the entry point 'rx.internal.operators.OperatorZip$Zip { OperatorZip$Zip(rx.Subscriber,rx.functions.FuncN); }', but not the descriptor class 'rx.Subscriber'
-Note: the configuration keeps the entry point 'rx.internal.operators.OperatorZip$Zip { OperatorZip$Zip(rx.Subscriber,rx.functions.FuncN); }', but not the descriptor class 'rx.functions.FuncN'
-Note: the configuration keeps the entry point 'rx.internal.operators.OperatorZip$Zip { void start(rx.Observable[],java.util.concurrent.atomic.AtomicLong); }', but not the descriptor class 'rx.Observable'
-Note: the configuration keeps the entry point 'rx.internal.operators.OperatorZip$ZipProducer { OperatorZip$ZipProducer(rx.internal.operators.OperatorZip$Zip); }', but not the descriptor class 'rx.internal.operators.OperatorZip$Zip'
-Note: the configuration keeps the entry point 'rx.internal.operators.SingleFromEmitter$SingleEmitterImpl { SingleFromEmitter$SingleEmitterImpl(rx.SingleSubscriber); }', but not the descriptor class 'rx.SingleSubscriber'
-Note: the configuration keeps the entry point 'rx.internal.operators.SingleFromEmitter$SingleEmitterImpl { void setSubscription(rx.Subscription); }', but not the descriptor class 'rx.Subscription'
-Note: the configuration keeps the entry point 'rx.internal.operators.SingleFromEmitter$SingleEmitterImpl { void setCancellation(rx.functions.Cancellable); }', but not the descriptor class 'rx.functions.Cancellable'
-Note: the configuration keeps the entry point 'rx.internal.producers.QueuedProducer { QueuedProducer(rx.Subscriber); }', but not the descriptor class 'rx.Subscriber'
-Note: the configuration keeps the entry point 'rx.internal.producers.QueuedProducer { QueuedProducer(rx.Subscriber,java.util.Queue); }', but not the descriptor class 'rx.Subscriber'
-Note: the configuration keeps the entry point 'rx.internal.producers.QueuedValueProducer { QueuedValueProducer(rx.Subscriber); }', but not the descriptor class 'rx.Subscriber'
-Note: the configuration keeps the entry point 'rx.internal.producers.QueuedValueProducer { QueuedValueProducer(rx.Subscriber,java.util.Queue); }', but not the descriptor class 'rx.Subscriber'
-Note: the configuration keeps the entry point 'rx.internal.producers.SingleDelayedProducer { SingleDelayedProducer(rx.Subscriber); }', but not the descriptor class 'rx.Subscriber'
-Note: the configuration keeps the entry point 'rx.internal.producers.SingleProducer { SingleProducer(rx.Subscriber,java.lang.Object); }', but not the descriptor class 'rx.Subscriber'
-Note: the configuration keeps the entry point 'rx.internal.schedulers.ScheduledAction { ScheduledAction(rx.functions.Action0); }', but not the descriptor class 'rx.functions.Action0'
-Note: the configuration keeps the entry point 'rx.internal.schedulers.ScheduledAction { ScheduledAction(rx.functions.Action0,rx.subscriptions.CompositeSubscription); }', but not the descriptor class 'rx.functions.Action0'
-Note: the configuration keeps the entry point 'rx.internal.schedulers.ScheduledAction { ScheduledAction(rx.functions.Action0,rx.subscriptions.CompositeSubscription); }', but not the descriptor class 'rx.subscriptions.CompositeSubscription'
-Note: the configuration keeps the entry point 'rx.internal.schedulers.ScheduledAction { ScheduledAction(rx.functions.Action0,rx.internal.util.SubscriptionList); }', but not the descriptor class 'rx.functions.Action0'
-Note: the configuration keeps the entry point 'rx.internal.schedulers.ScheduledAction { ScheduledAction(rx.functions.Action0,rx.internal.util.SubscriptionList); }', but not the descriptor class 'rx.internal.util.SubscriptionList'
-Note: the configuration keeps the entry point 'rx.internal.schedulers.ScheduledAction { void add(rx.Subscription); }', but not the descriptor class 'rx.Subscription'
-Note: the configuration keeps the entry point 'rx.internal.schedulers.ScheduledAction { void addParent(rx.subscriptions.CompositeSubscription); }', but not the descriptor class 'rx.subscriptions.CompositeSubscription'
-Note: the configuration keeps the entry point 'rx.internal.schedulers.ScheduledAction { void addParent(rx.internal.util.SubscriptionList); }', but not the descriptor class 'rx.internal.util.SubscriptionList'
-Note: the configuration keeps the entry point 'rx.internal.schedulers.ScheduledAction$Remover { ScheduledAction$Remover(rx.internal.schedulers.ScheduledAction,rx.subscriptions.CompositeSubscription); }', but not the descriptor class 'rx.internal.schedulers.ScheduledAction'
-Note: the configuration keeps the entry point 'rx.internal.schedulers.ScheduledAction$Remover { ScheduledAction$Remover(rx.internal.schedulers.ScheduledAction,rx.subscriptions.CompositeSubscription); }', but not the descriptor class 'rx.subscriptions.CompositeSubscription'
-Note: the configuration keeps the entry point 'rx.internal.schedulers.ScheduledAction$Remover2 { ScheduledAction$Remover2(rx.internal.schedulers.ScheduledAction,rx.internal.util.SubscriptionList); }', but not the descriptor class 'rx.internal.schedulers.ScheduledAction'
-Note: the configuration keeps the entry point 'rx.internal.schedulers.ScheduledAction$Remover2 { ScheduledAction$Remover2(rx.internal.schedulers.ScheduledAction,rx.internal.util.SubscriptionList); }', but not the descriptor class 'rx.internal.util.SubscriptionList'
-Note: the configuration keeps the entry point 'rx.internal.schedulers.SchedulerWhen$DelayedAction { SchedulerWhen$DelayedAction(rx.functions.Action0,long,java.util.concurrent.TimeUnit); }', but not the descriptor class 'rx.functions.Action0'
-Note: the configuration keeps the entry point 'rx.internal.schedulers.SchedulerWhen$DelayedAction { rx.Subscription callActual(rx.Scheduler$Worker,rx.CompletableSubscriber); }', but not the descriptor class 'rx.Scheduler$Worker'
-Note: the configuration keeps the entry point 'rx.internal.schedulers.SchedulerWhen$DelayedAction { rx.Subscription callActual(rx.Scheduler$Worker,rx.CompletableSubscriber); }', but not the descriptor class 'rx.CompletableSubscriber'
-Note: the configuration keeps the entry point 'rx.internal.schedulers.SchedulerWhen$ImmediateAction { SchedulerWhen$ImmediateAction(rx.functions.Action0); }', but not the descriptor class 'rx.functions.Action0'
-Note: the configuration keeps the entry point 'rx.internal.schedulers.SchedulerWhen$ImmediateAction { rx.Subscription callActual(rx.Scheduler$Worker,rx.CompletableSubscriber); }', but not the descriptor class 'rx.Scheduler$Worker'
-Note: the configuration keeps the entry point 'rx.internal.schedulers.SchedulerWhen$ImmediateAction { rx.Subscription callActual(rx.Scheduler$Worker,rx.CompletableSubscriber); }', but not the descriptor class 'rx.CompletableSubscriber'
-Note: the configuration keeps the entry point 'rx.internal.schedulers.SchedulerWhen$ScheduledAction { rx.Subscription callActual(rx.Scheduler$Worker,rx.CompletableSubscriber); }', but not the descriptor class 'rx.Scheduler$Worker'
-Note: the configuration keeps the entry point 'rx.internal.schedulers.SchedulerWhen$ScheduledAction { rx.Subscription callActual(rx.Scheduler$Worker,rx.CompletableSubscriber); }', but not the descriptor class 'rx.CompletableSubscriber'
-Note: the configuration keeps the entry point 'rx.internal.schedulers.SchedulerWhen$ScheduledAction { void access$000(rx.internal.schedulers.SchedulerWhen$ScheduledAction,rx.Scheduler$Worker,rx.CompletableSubscriber); }', but not the descriptor class 'rx.internal.schedulers.SchedulerWhen$ScheduledAction'
-Note: the configuration keeps the entry point 'rx.internal.schedulers.SchedulerWhen$ScheduledAction { void access$000(rx.internal.schedulers.SchedulerWhen$ScheduledAction,rx.Scheduler$Worker,rx.CompletableSubscriber); }', but not the descriptor class 'rx.Scheduler$Worker'
-Note: the configuration keeps the entry point 'rx.internal.schedulers.SchedulerWhen$ScheduledAction { void access$000(rx.internal.schedulers.SchedulerWhen$ScheduledAction,rx.Scheduler$Worker,rx.CompletableSubscriber); }', but not the descriptor class 'rx.CompletableSubscriber'
-Note: the configuration keeps the entry point 'rx.internal.subscriptions.CancellableSubscription { CancellableSubscription(rx.functions.Cancellable); }', but not the descriptor class 'rx.functions.Cancellable'
-Note: the configuration keeps the entry point 'rx.internal.subscriptions.SequentialSubscription { SequentialSubscription(rx.Subscription); }', but not the descriptor class 'rx.Subscription'
-Note: the configuration keeps the entry point 'rx.internal.subscriptions.SequentialSubscription { boolean update(rx.Subscription); }', but not the descriptor class 'rx.Subscription'
-Note: the configuration keeps the entry point 'rx.internal.subscriptions.SequentialSubscription { boolean replace(rx.Subscription); }', but not the descriptor class 'rx.Subscription'
-Note: the configuration keeps the entry point 'rx.internal.subscriptions.SequentialSubscription { boolean updateWeak(rx.Subscription); }', but not the descriptor class 'rx.Subscription'
-Note: the configuration keeps the entry point 'rx.internal.subscriptions.SequentialSubscription { boolean replaceWeak(rx.Subscription); }', but not the descriptor class 'rx.Subscription'
-Note: the configuration keeps the entry point 'rx.internal.util.BackpressureDrainManager { BackpressureDrainManager(rx.internal.util.BackpressureDrainManager$BackpressureQueueCallback); }', but not the descriptor class 'rx.internal.util.BackpressureDrainManager$BackpressureQueueCallback'
-Note: the configuration keeps the entry point 'rx.internal.util.InternalObservableUtils { rx.functions.Func1 createRepeatDematerializer(rx.functions.Func1); }', but not the descriptor class 'rx.functions.Func1'
-Note: the configuration keeps the entry point 'rx.internal.util.InternalObservableUtils { rx.functions.Func1 createReplaySelectorAndObserveOn(rx.functions.Func1,rx.Scheduler); }', but not the descriptor class 'rx.functions.Func1'
-Note: the configuration keeps the entry point 'rx.internal.util.InternalObservableUtils { rx.functions.Func1 createReplaySelectorAndObserveOn(rx.functions.Func1,rx.Scheduler); }', but not the descriptor class 'rx.Scheduler'
-Note: the configuration keeps the entry point 'rx.internal.util.InternalObservableUtils { rx.functions.Func1 createRetryDematerializer(rx.functions.Func1); }', but not the descriptor class 'rx.functions.Func1'
-Note: the configuration keeps the entry point 'rx.internal.util.InternalObservableUtils { rx.functions.Func0 createReplaySupplier(rx.Observable); }', but not the descriptor class 'rx.Observable'
-Note: the configuration keeps the entry point 'rx.internal.util.InternalObservableUtils { rx.functions.Func0 createReplaySupplier(rx.Observable,int); }', but not the descriptor class 'rx.Observable'
-Note: the configuration keeps the entry point 'rx.internal.util.InternalObservableUtils { rx.functions.Func0 createReplaySupplier(rx.Observable,long,java.util.concurrent.TimeUnit,rx.Scheduler); }', but not the descriptor class 'rx.Observable'
-Note: the configuration keeps the entry point 'rx.internal.util.InternalObservableUtils { rx.functions.Func0 createReplaySupplier(rx.Observable,long,java.util.concurrent.TimeUnit,rx.Scheduler); }', but not the descriptor class 'rx.Scheduler'
-Note: the configuration keeps the entry point 'rx.internal.util.InternalObservableUtils { rx.functions.Func0 createReplaySupplier(rx.Observable,int,long,java.util.concurrent.TimeUnit,rx.Scheduler); }', but not the descriptor class 'rx.Observable'
-Note: the configuration keeps the entry point 'rx.internal.util.InternalObservableUtils { rx.functions.Func0 createReplaySupplier(rx.Observable,int,long,java.util.concurrent.TimeUnit,rx.Scheduler); }', but not the descriptor class 'rx.Scheduler'
-Note: the configuration keeps the entry point 'rx.internal.util.InternalObservableUtils { rx.functions.Func2 createCollectorCaller(rx.functions.Action2); }', but not the descriptor class 'rx.functions.Action2'
-Note: the configuration keeps the entry point 'rx.internal.util.ScalarSynchronousObservable$ScalarAsyncProducer { ScalarSynchronousObservable$ScalarAsyncProducer(rx.Subscriber,java.lang.Object,rx.functions.Func1); }', but not the descriptor class 'rx.Subscriber'
-Note: the configuration keeps the entry point 'rx.internal.util.ScalarSynchronousObservable$ScalarAsyncProducer { ScalarSynchronousObservable$ScalarAsyncProducer(rx.Subscriber,java.lang.Object,rx.functions.Func1); }', but not the descriptor class 'rx.functions.Func1'
-Note: the configuration keeps the entry point 'rx.internal.util.atomic.LinkedQueueNode { void soNext(rx.internal.util.atomic.LinkedQueueNode); }', but not the descriptor class 'rx.internal.util.atomic.LinkedQueueNode'
-Note: the configuration keeps the entry point 'rx.observables.SyncOnSubscribe$SubscriptionProducer { SyncOnSubscribe$SubscriptionProducer(rx.Subscriber,rx.observables.SyncOnSubscribe,java.lang.Object); }', but not the descriptor class 'rx.Subscriber'
-Note: the configuration keeps the entry point 'rx.observables.SyncOnSubscribe$SubscriptionProducer { SyncOnSubscribe$SubscriptionProducer(rx.Subscriber,rx.observables.SyncOnSubscribe,java.lang.Object); }', but not the descriptor class 'rx.observables.SyncOnSubscribe'
-Note: the configuration keeps the entry point 'rx.subjects.PublishSubject$PublishSubjectProducer { PublishSubject$PublishSubjectProducer(rx.subjects.PublishSubject$PublishSubjectState,rx.Subscriber); }', but not the descriptor class 'rx.subjects.PublishSubject$PublishSubjectState'
-Note: the configuration keeps the entry point 'rx.subjects.PublishSubject$PublishSubjectProducer { PublishSubject$PublishSubjectProducer(rx.subjects.PublishSubject$PublishSubjectState,rx.Subscriber); }', but not the descriptor class 'rx.Subscriber'
-Note: the configuration keeps the entry point 'rx.subjects.PublishSubject$PublishSubjectState { void call(rx.Subscriber); }', but not the descriptor class 'rx.Subscriber'
-Note: the configuration keeps the entry point 'rx.subjects.PublishSubject$PublishSubjectState { boolean add(rx.subjects.PublishSubject$PublishSubjectProducer); }', but not the descriptor class 'rx.subjects.PublishSubject$PublishSubjectProducer'
-Note: the configuration keeps the entry point 'rx.subjects.PublishSubject$PublishSubjectState { void remove(rx.subjects.PublishSubject$PublishSubjectProducer); }', but not the descriptor class 'rx.subjects.PublishSubject$PublishSubjectProducer'
-Note: the configuration keeps the entry point 'rx.subjects.ReplaySubject$ReplayProducer { ReplaySubject$ReplayProducer(rx.Subscriber,rx.subjects.ReplaySubject$ReplayState); }', but not the descriptor class 'rx.Subscriber'
-Note: the configuration keeps the entry point 'rx.subjects.ReplaySubject$ReplayProducer { ReplaySubject$ReplayProducer(rx.Subscriber,rx.subjects.ReplaySubject$ReplayState); }', but not the descriptor class 'rx.subjects.ReplaySubject$ReplayState'
-Note: the configuration keeps the entry point 'rx.subjects.ReplaySubject$ReplayState { ReplaySubject$ReplayState(rx.subjects.ReplaySubject$ReplayBuffer); }', but not the descriptor class 'rx.subjects.ReplaySubject$ReplayBuffer'
-Note: the configuration keeps the entry point 'rx.subjects.ReplaySubject$ReplayState { void call(rx.Subscriber); }', but not the descriptor class 'rx.Subscriber'
-Note: the configuration keeps the entry point 'rx.subjects.ReplaySubject$ReplayState { boolean add(rx.subjects.ReplaySubject$ReplayProducer); }', but not the descriptor class 'rx.subjects.ReplaySubject$ReplayProducer'
-Note: the configuration keeps the entry point 'rx.subjects.ReplaySubject$ReplayState { void remove(rx.subjects.ReplaySubject$ReplayProducer); }', but not the descriptor class 'rx.subjects.ReplaySubject$ReplayProducer'
-Note: the configuration keeps the entry point 'rx.subjects.SubjectSubscriptionManager { void call(rx.Subscriber); }', but not the descriptor class 'rx.Subscriber'
-Note: the configuration keeps the entry point 'rx.subjects.SubjectSubscriptionManager { void addUnsubscriber(rx.Subscriber,rx.subjects.SubjectSubscriptionManager$SubjectObserver); }', but not the descriptor class 'rx.Subscriber'
-Note: the configuration keeps the entry point 'rx.subjects.SubjectSubscriptionManager { void addUnsubscriber(rx.Subscriber,rx.subjects.SubjectSubscriptionManager$SubjectObserver); }', but not the descriptor class 'rx.subjects.SubjectSubscriptionManager$SubjectObserver'
-Note: the configuration keeps the entry point 'rx.subjects.SubjectSubscriptionManager { boolean add(rx.subjects.SubjectSubscriptionManager$SubjectObserver); }', but not the descriptor class 'rx.subjects.SubjectSubscriptionManager$SubjectObserver'
-Note: the configuration keeps the entry point 'rx.subjects.SubjectSubscriptionManager { void remove(rx.subjects.SubjectSubscriptionManager$SubjectObserver); }', but not the descriptor class 'rx.subjects.SubjectSubscriptionManager$SubjectObserver'
-Note: the configuration keeps the entry point 'rx.subjects.UnicastSubject$State { UnicastSubject$State(int,rx.functions.Action0); }', but not the descriptor class 'rx.functions.Action0'
-Note: the configuration keeps the entry point 'rx.subjects.UnicastSubject$State { void call(rx.Subscriber); }', but not the descriptor class 'rx.Subscriber'
-Note: the configuration keeps the entry point 'rx.subjects.UnicastSubject$State { boolean checkTerminated(boolean,boolean,rx.Subscriber); }', but not the descriptor class 'rx.Subscriber'
-Note: the configuration keeps the entry point 'rx.subscriptions.RefCountSubscription$InnerSubscription { RefCountSubscription$InnerSubscription(rx.subscriptions.RefCountSubscription); }', but not the descriptor class 'rx.subscriptions.RefCountSubscription'
-Note: there were 519 unkept descriptor classes in kept class members.
-      You should consider explicitly keeping the mentioned classes
-      (using '-keep').
-      (http://proguard.sourceforge.net/manual/troubleshooting.html#descriptorclass)
-Note: there were 1 unresolved dynamic references to classes or interfaces.
-      You should check if you need to specify additional program jars.
-      (http://proguard.sourceforge.net/manual/troubleshooting.html#dynamicalclass)
-Note: there were 1 accesses to class members by means of introspection.
-      You should consider explicitly keeping the mentioned class members
-      (using '-keep' or '-keepclassmembers').
-      (http://proguard.sourceforge.net/manual/troubleshooting.html#dynamicalclassmember)
-Ignoring unused library classes...
-  Original number of library classes: 4237
-  Final number of library classes:    1418
-Printing kept classes, fields, and methods...
-Shrinking...
-Printing usage to [/Users/meiweibuyongdeng/AndroidStudioProjects/MyRxDemo/app/build/outputs/mapping/release/usage.txt]...
-Removing unused program classes and class elements...
-  Original number of program classes: 5438
-  Final number of program classes:    2916
-Obfuscating...
-Printing mapping to [/Users/meiweibuyongdeng/AndroidStudioProjects/MyRxDemo/app/build/outputs/mapping/release/mapping.txt]...
-Writing output...
-Preparing output jar [/Users/meiweibuyongdeng/AndroidStudioProjects/MyRxDemo/app/build/intermediates/transforms/proguard/release/jars/3/1f/main.jar]
-  Copying resources from program jar [/Users/meiweibuyondeng/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.1/f7be08ec23c21485b9b5a1cf1654c2ec8c58168d/jsr305-3.0.1.jar] (filtered)
-  Copying resources from program jar [/Users/meiweibuyondeng/.android/build-cache/c58ea22871f68e27dcca34b62505e64ab52fd843/output/jars/classes.jar] (filtered)
-  Copying resources from program jar [/Users/meiweibuyondeng/.android/build-cache/141bb1b437e58336c85caadfabf7e7fb185e1200/output/jars/classes.jar] (filtered)
-  Copying resources from program jar [/Users/meiweibuyondeng/.android/build-cache/55ab6dcb8117da0c802e853f92ee3a0422bd93dd/output/jars/classes.jar] (filtered)
-  Copying resources from program jar [/Users/meiweibuyondeng/.android/build-cache/5b171f5169d2b86dc6d9c1025753fbafd8e8b226/output/jars/classes.jar] (filtered)
-  Copying resources from program jar [/Users/meiweibuyondeng/.android/build-cache/b5072299552c42ba57ba75c6a3de6a7d4751d264/output/jars/classes.jar] (filtered)
-  Copying resources from program jar [/Users/meiweibuyondeng/.android/build-cache/7de81487690ef2ef371ca31ad4fd32848b5d81e6/output/jars/classes.jar] (filtered)
-  Copying resources from program jar [/Users/meiweibuyondeng/.android/build-cache/c070f7b215c77126f7f6db3c9bb62a5e85d3e576/output/jars/classes.jar] (filtered)
-  Copying resources from program jar [/Users/meiweibuyondeng/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.2.0/support-annotations-25.2.0.jar] (filtered)
-  Copying resources from program jar [/Users/meiweibuyondeng/.android/build-cache/d1e9d86f2d5922da5351600d1fa4eb861773c5e2/output/jars/classes.jar] (filtered)
-  Copying resources from program jar [/Users/meiweibuyondeng/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.11.0/840897fcd7223a8143f1d9b6f69714e7be34fd50/okio-1.11.0.jar] (filtered)
-  Copying resources from program jar [/Users/meiweibuyondeng/.gradle/caches/modules-2/files-2.1/com.trello/rxlifecycle/1.0/6a38e2cd80f46ecaf6553b2eb5a05eee6d472fdb/rxlifecycle-1.0.jar] (filtered)
-  Copying resources from program jar [/Users/meiweibuyondeng/.android/build-cache/282e3912e1e834dacb8fb37e5e3ede0bf6446a19/output/jars/classes.jar] (filtered)
-  Copying resources from program jar [/Users/meiweibuyondeng/.android/build-cache/a89e763ac7bd4656adbe0142d72e12e0268b5cec/output/jars/classes.jar] (filtered)
-  Copying resources from program jar [/Users/meiweibuyondeng/.android/build-cache/3eaa5d2975591a719bcc369252669b92688639c8/output/jars/classes.jar] (filtered)
-  Copying resources from program jar [/Users/meiweibuyondeng/.android/build-cache/5594a35b5065c92d2613032081a0508949187221/output/jars/classes.jar] (filtered)
-  Copying resources from program jar [/Users/meiweibuyondeng/.gradle/caches/modules-2/files-2.1/io.reactivex/rxjava/1.2.3/7fe1a94c1aeb958acc876fe616922cc191f3222c/rxjava-1.2.3.jar] (filtered)
-  Copying resources from program jar [/Users/meiweibuyondeng/.android/build-cache/d1e1fe7f71889891fb13784fdd3615efac289fa3/output/jars/classes.jar] (filtered)
-  Copying resources from program jar [/Users/meiweibuyondeng/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/adapter-rxjava/2.1.0/693eddc23e87ab13f9cf5001707ce8e7e1d1ff01/adapter-rxjava-2.1.0.jar] (filtered)
-  Copying resources from program jar [/Users/meiweibuyondeng/.gradle/caches/modules-2/files-2.1/nl.qbusict/cupboard/2.2.0/dc6f78fc951c5bdeec92c14c6dd6adc9ce6195d0/cupboard-2.2.0.jar] (filtered)
-  Copying resources from program jar [/Users/meiweibuyondeng/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.6.0/69edde9fc4b01c9fd51d25b83428837478c27254/okhttp-3.6.0.jar] (filtered)
-  Copying resources from program jar [/Users/meiweibuyondeng/.android/build-cache/b628974e79d626fdd938204e968df1649c14fbb5/output/jars/classes.jar] (filtered)
-  Copying resources from program jar [/Users/meiweibuyondeng/.android/build-cache/132ad6024eb159ae7e65636313318a35cdd723bf/output/jars/classes.jar] (filtered)
-  Copying resources from program jar [/Users/meiweibuyondeng/.android/build-cache/ed98924d3b0314da8db9e33f4ea921bfceb8bef9/output/jars/classes.jar] (filtered)
-  Copying resources from program jar [/Users/meiweibuyondeng/.android/build-cache/4457b244413d4aa418e06eedcfa0f780974d8f96/output/jars/classes.jar] (filtered)
-  Copying resources from program jar [/Users/meiweibuyondeng/.android/build-cache/5e0861e20fb794e02baceca42acb27b458c03db3/output/jars/classes.jar] (filtered)
-  Copying resources from program jar [/Users/meiweibuyondeng/.android/build-cache/99b4f22524c59f04f910e8d9493485847c291a9b/output/jars/classes.jar] (filtered)
-  Copying resources from program jar [/Users/meiweibuyondeng/.android/build-cache/7da2cf9487547c45dc974bfe201ab12a446eda66/output/jars/classes.jar] (filtered)
-  Copying resources from program jar [/Users/meiweibuyondeng/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/retrofit/2.1.0/2de7cd8b95b7021b1d597f049bcb422055119f2c/retrofit-2.1.0.jar] (filtered)
-  Copying resources from program jar [/Users/meiweibuyondeng/.android/build-cache/b1d8c472f067e54f38b0e2bdae885e491358df85/output/jars/classes.jar] (filtered)
-  Copying resources from program jar [/Users/meiweibuyondeng/.android/build-cache/e4a4228dbb4dbd8cefeb3cf1e301b8076097dfe8/output/jars/classes.jar] (filtered)
-  Copying resources from program jar [/Users/meiweibuyondeng/.android/build-cache/83c33c1f81bc751c1152cb5616f35960424bca8b/output/jars/classes.jar] (filtered)
-  Copying resources from program jar [/Users/meiweibuyondeng/.android/build-cache/5ce693ae8c37d01149583844e52a76d62a545095/output/jars/classes.jar] (filtered)
-  Copying resources from program jar [/Users/meiweibuyondeng/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.8.0/c4ba5371a29ac9b2ad6129b1d39ea38750043eff/gson-2.8.0.jar] (filtered)
-  Copying resources from program jar [/Users/meiweibuyondeng/.gradle/caches/modules-2/files-2.1/org.greenrobot/greendao/3.2.0/e70040568b2929b8e5869ad1ffca8e4386dc53bc/greendao-3.2.0.jar] (filtered)
-  Copying resources from program jar [/Users/meiweibuyondeng/.gradle/caches/modules-2/files-2.1/org.greenrobot/greendao-api/3.2.0/c6d610abe1d75d758431c9234917a349abc0a0ac/greendao-api-3.2.0.jar] (filtered)
-  Copying resources from program jar [/Users/meiweibuyondeng/.android/build-cache/cc08ccf6dc81a222bd594b3bb1b02c5351383797/output/jars/classes.jar] (filtered)
-  Copying resources from program jar [/Users/meiweibuyondeng/.android/build-cache/543fb52fbd4757d85819b60113054eda9564d5c6/output/jars/classes.jar] (filtered)
-  Copying resources from program jar [/Users/meiweibuyondeng/.android/build-cache/208e74f74bacc49750d95d7759eaac13166a6fa6/output/jars/classes.jar] (filtered)
-  Copying resources from program jar [/Users/meiweibuyondeng/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife-annotations/8.4.0/ea392375cf9ff59234a82e7928a204215ccc98cd/butterknife-annotations-8.4.0.jar] (filtered)
-  Copying resources from program jar [/Users/meiweibuyongdeng/AndroidStudioProjects/MyRxDemo/BusinessLib/cash/build/intermediates/bundles/default/classes.jar] (filtered)
-  Copying resources from program jar [/Users/meiweibuyongdeng/AndroidStudioProjects/MyRxDemo/BusinessLib/member/build/intermediates/bundles/default/classes.jar] (filtered)
-  Copying resources from program jar [/Users/meiweibuyongdeng/AndroidStudioProjects/MyRxDemo/BusinessLib/coupon/build/intermediates/bundles/default/classes.jar] (filtered)
-  Copying resources from program jar [/Users/meiweibuyongdeng/AndroidStudioProjects/MyRxDemo/BusinessLib/baselib/build/intermediates/bundles/default/classes.jar] (filtered)
-  Copying resources from program jar [/Users/meiweibuyongdeng/AndroidStudioProjects/MyRxDemo/ToolLib/zlibrary/build/intermediates/bundles/default/classes.jar] (filtered)
-  Copying resources from program jar [/Users/meiweibuyongdeng/AndroidStudioProjects/MyRxDemo/ToolLib/toasty/build/intermediates/bundles/default/classes.jar] (filtered)
-  Copying resources from program jar [/Users/meiweibuyongdeng/AndroidStudioProjects/MyRxDemo/ToolLib/bottom-bar/build/intermediates/bundles/default/classes.jar] (filtered)
-  Copying resources from program jar [/Users/meiweibuyongdeng/AndroidStudioProjects/MyRxDemo/BusinessLib/baselib/build/intermediates/bundles/default/libs/asmack.jar] (filtered)
-  Copying resources from program jar [/Users/meiweibuyongdeng/AndroidStudioProjects/MyRxDemo/app/build/intermediates/transforms/mergeJavaRes/release/jars/2/1f/main.jar] (filtered)
-  Copying resources from program directory [/Users/meiweibuyongdeng/AndroidStudioProjects/MyRxDemo/app/build/intermediates/transforms/retrolambda/release/folders/1/1/retrolambda] (filtered)
-Printing classes to [/Users/meiweibuyongdeng/AndroidStudioProjects/MyRxDemo/app/build/outputs/mapping/release/dump.txt]...
-:app:transformClassesWithDexForRelease
-:app:transformClassesWithShrinkResForRelease
-Removed unused resources: Binary resource data reduced from 947KB to 937KB: Removed 1%
-:app:mergeReleaseJniLibFolders UP-TO-DATE
-:app:transformNativeLibsWithMergeJniLibsForRelease UP-TO-DATE
-:app:packageRelease
-:app:assembleRelease
+Warning: Exception while processing task java.io.IOException: proguard.ParseException: Expecting class member description or closing '}' before '-keep' in line 83 of file '/Users/meiweibuyongdeng/AndroidStudioProjects/MyRxDemo/app/proguard-rules.pro'
+:app:transformClassesAndResourcesWithProguardForRelease FAILED
 
-BUILD SUCCESSFUL
+BUILD FAILED
 
-Total time: 48.551 secs
+Total time: 12.892 secs

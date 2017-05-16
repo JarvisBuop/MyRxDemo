@@ -18,6 +18,8 @@ import com.zjy.baselib.component.keyboard.KeyEntry;
 import com.zjy.cash.R;
 import com.zjy.cash.R2;
 import com.zjy.cash.business.cash.moneyedit.CashEditFragment;
+import com.zjy.cash.business.cash.tablemsg.TableMessageFragment;
+import com.zjy.cash.data.model.table.TableOrderMessage;
 import com.zjy.zlibrary.fragment.fragmentation.SupportFragment;
 import com.zjy.zlibrary.widget.TitleBar;
 
@@ -27,7 +29,7 @@ import es.dmoral.toasty.Toasty;
 import io.reactivex.annotations.NonNull;
 import io.reactivex.functions.Consumer;
 
-public class CashFragment extends SupportFragment implements CashContract.View {
+public class CashFragment extends SupportFragment implements CashContract.View, TableMessageFragment.OnTableBillListener {
     public static final String TAG = CashFragment.class.getSimpleName();
     @BindView(R2.id.titleBar)
     public TitleBar titleBar;
@@ -36,7 +38,6 @@ public class CashFragment extends SupportFragment implements CashContract.View {
     protected CashContract.Presenter mPresenter;
     protected KeyBoardFragment cashKeyBoard;
     protected CashEditFragment mCashEditFragment;
-
 
 
     public static CashFragment newInstance() {
@@ -81,8 +82,6 @@ public class CashFragment extends SupportFragment implements CashContract.View {
     }
 
 
-
-
     private void setUpTitleBar() {
         titleBar.setVisibility(View.VISIBLE);
         titleBar.addAction(new TitleBar.ImageAction(R.drawable.icon_cash_orders) {
@@ -95,6 +94,7 @@ public class CashFragment extends SupportFragment implements CashContract.View {
         titleBar.setTitle("体验店");
         titleBar.setLeftTextColor(Color.WHITE);
         titleBar.setLeftClickListener(v1 -> {
+            ARouter.getInstance().build("/table/tables_activity").navigation(getActivity());
         });
         titleBar.setTitleColor(Color.WHITE);
     }
@@ -105,17 +105,17 @@ public class CashFragment extends SupportFragment implements CashContract.View {
         cashKeyBoard.setKeyBoardClickListener(new KeyBoardListener() {
             @Override
             public void onVirtualClick(KeyEntry keyEntry) {
-                if(interceptKeyBoardClick(keyEntry)){
+                if (interceptKeyBoardClick(keyEntry)) {
                     return;
                 }
-                if(mCashEditFragment!=null){
+                if (mCashEditFragment != null) {
                     mCashEditFragment.appendKeyEntry(keyEntry);
                 }
             }
         });
     }
 
-    protected boolean interceptKeyBoardClick(KeyEntry keyEntry){
+    protected boolean interceptKeyBoardClick(KeyEntry keyEntry) {
         return false;
     }
 
@@ -127,7 +127,7 @@ public class CashFragment extends SupportFragment implements CashContract.View {
 
     protected void initPayButton() {
         RxView.clicks(btnScanPay)
-                .compose(RxLifecycle.bindUntilEvent(lifecycleSubject,FragmentEvent.DESTROY))
+                .compose(RxLifecycle.bindUntilEvent(lifecycleSubject, FragmentEvent.DESTROY))
                 .subscribe(new Consumer<Object>() {
                     @Override
                     public void accept(@NonNull Object o) throws Exception {
@@ -139,6 +139,48 @@ public class CashFragment extends SupportFragment implements CashContract.View {
 
     @Override
     public void showToast(String msg) {
-        Toasty.warning(getContext(),msg).show();
+        Toasty.warning(getContext(), msg).show();
+    }
+
+    @Override
+    public void showPayMoney(Double fee) {
+        if (mCashEditFragment != null) {
+            mCashEditFragment.showPayMoney(fee);
+        }
+    }
+
+    ///////////////////////////////////////////////////////////////////////////
+    //       TableMessage
+    ///////////////////////////////////////////////////////////////////////////
+    public void showTableMessage(String message) {
+        TableMessageFragment tableMessageFragment = findChildFragment(TableMessageFragment.class);
+        if (tableMessageFragment != null) {
+            getChildFragmentManager().beginTransaction().show(tableMessageFragment).commitAllowingStateLoss();
+            tableMessageFragment.showTableMessage(message);
+        } else {
+            loadRootFragment(R.id.layout_table_bill, TableMessageFragment.newInstance(message));
+        }
+    }
+
+    public void hideTableMessage() {
+        TableMessageFragment tableMessageFragment = findChildFragment(TableMessageFragment.class);
+        if (tableMessageFragment != null) {
+            getChildFragmentManager().beginTransaction().hide(tableMessageFragment).commitAllowingStateLoss();
+        }
+    }
+
+    @Override
+    public void onCancelTableBill() {
+        hideTableMessage();
+    }
+
+    @Override
+    public void onTableMessageChange(TableOrderMessage tableOrderMessage) {
+        if (tableOrderMessage == null) {
+            tableOrderMessage = new TableOrderMessage();
+        }
+        showPayMoney(tableOrderMessage.payMoney);
+        mPresenter.setOrderid(tableOrderMessage.orderId);
+        mPresenter.setThirdId(tableOrderMessage.thirdId);
     }
 }
